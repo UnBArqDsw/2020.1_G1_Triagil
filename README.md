@@ -1,40 +1,41 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-Demais diretrizes sobre a organização da wiki constam no Moodle Aprender 3.
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
+# TRIAGIL
 
-**!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2020.1_G1_ProjetoPandora!!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 01<br>
 **Código da Disciplina**: FGA0208-T01<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0008762 | Débora Pereira Vilela |
+| 16/0006210 | Francisco Heronildo Sousa Santos |
+| 16/0127912 | João Vitor Ferreira Alves |
+| 15/0137770 | Lude Yuri de Castro Ribeiro |
+| 15/0018614 | Miguel Henrique de Oliveira Alves |
+| 14/0156909 | Nathalia Lorena Cardoso |
 
-## Sobre 
-Descreva o seu projeto em linhas gerais. 
+## Sobre
 
-## Screenshots
-Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
+![logo](https://imgur.com/yBMVGy9.png)
+
+Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profissionais da saúde no processo de triagem de maneira mais rápida e ágil.
+
+<!-- ## Screenshots
+Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento. -->
 
 ## Instalação 
 **Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
+**Tecnologias**:
 
-## Uso 
+<img width="55px" height="50px" src="https://imgur.com/wVQA02I.png"/> <img width="75px" height="50px" src="https://imgur.com/g75zlLp.gif"/>  <img width="70px" height="50px" src="https://imgur.com/UWlGuMy.gif"/> <img width="75px" height="50px" src="https://imgur.com/vDctx6l.gif"/> <br>
+
+<!-- Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Insira um manual ou um script para auxiliar ainda mais. -->
+
+<!-- ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto final.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Quaisquer outras informações sobre seu projeto podem ser descritas abaixo. -->
