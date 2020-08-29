@@ -15,7 +15,7 @@
 
 ## Sobre
 
-![logo](https://imgur.com/yBMVGy9.png)
+<center><img width="300px" height="175px" src="https://imgur.com/yBMVGy9.png"/></center>
 
 Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profissionais da saúde no processo de triagem de maneira mais rápida e ágil.
 
