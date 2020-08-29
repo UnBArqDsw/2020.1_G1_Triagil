@@ -1,0 +1,5 @@
+# mkdocs documentation
+/site
+
+# Apple macOS
+.DS_Store
