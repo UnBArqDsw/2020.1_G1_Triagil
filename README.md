@@ -25,8 +25,8 @@ Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento
 
 ## Instalação 
 **Linguagens**: JavaScript<br>
-**Tecnologias**: 
-<img width="55px" height="50px" src="https://imgur.com/wVQA02I.png"/> <img width="75px" height="50px" src="https://imgur.com/g75zlLp.gif"/>  <img width="70px" height="50px" src="https://imgur.com/UWlGuMy.gif"/> <img width="75px" height="50px" src="https://imgur.com/vDctx6l.gif"/><br>
+**Tecnologias**: <br>
+<img width="55px" height="50px" src="https://imgur.com/wVQA02I.png"/> <img width="75px" height="50px" src="https://imgur.com/g75zlLp.gif"/>  <img width="70px" height="50px" src="https://imgur.com/UWlGuMy.gif"/> <img width="75px" height="50px" src="https://imgur.com/vDctx6l.gif"/>
 
 <!-- Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais. -->
