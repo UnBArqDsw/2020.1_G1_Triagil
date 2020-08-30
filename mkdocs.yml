@@ -1,40 +1,40 @@
 site_name: Triagil
 
-repo_name: '2020.1_G1_Triagil'
+repo_name: 'GitHub Repository'
+repo_url: 'https://github.com/UnBArqDsw/2020.1_G1_Triagil'
 
-copyright: 'Copyright &copy; 2020 Universidade de Brasilia - Campus Gama'
+copyright: 'Copyright &copy; 2020 UnB Gama - FGA'
 
 theme:
   name: material
   language: 'pt'
   logo: 'images/icon-white.png'
-  favicon: 'images/favicon.ico'
+  favicon: 'images/icon-color-favicon.ico'
   palette:
     primary: 'light blue'
     accent: 'red'
   font:
-    text: 'Montserrat'
-    code: 'sans-serif'
+    text: 'Roboto'
 
 nav:
   - Início: index.md
   - Base:
     - Abordagens Específicas:
       - Pré-Rastriabilidade:
-        - Rich Picture: abordagensEspecificas/pre/rp.md
+        - Rich Picture: base/abordagensEspecificas/pre/rp.md
       - Elicitação:
-        - Brainstorming: abordagensEspecificas/elicitacao/brainstorming.md
-        - Entrevista: abordagensEspecificas/elicitacao/entrevista.md
-        - Questionário: abordagensEspecificas/elicitacao/questionario.md
-        - Storyboard: abordagensEspecificas/elicitacao/storyboard.md
+        - Brainstorming: base/abordagensEspecificas/elicitacao/brainstorming.md
+        - Entrevista: base/abordagensEspecificas/elicitacao/entrevista.md
+        - Questionário: base/abordagensEspecificas/elicitacao/questionario.md
+        - Storyboard: base/abordagensEspecificas/elicitacao/storyboard.md
       - Modelagem:
-        - Backlog do Produto: abordagensEspecificas/modelagem/backlog.md
+        - Backlog do Produto: base/abordagensEspecificas/modelagem/backlog.md
       - Análise:
-        - Verificação: abordagensEspecificas/analise/verificacao.md
-        - Validação: abordagensEspecificas/analise/validacao.md
+        - Verificação: base/abordagensEspecificas/analise/verificacao.md
+        - Validação: base/abordagensEspecificas/analise/validacao.md
     - Apresentação:
       - Metodologias:
-        - Scrum: apresentacao/metodologia/scrum.md
-        - Programação Extrema(XP): apresentacao/metodologia/xp.md
-    - Modelagem BPMN: modelagemBPMN/bpmn.md
-    - Iniciativas Extras: extras/extras.md
+        - Scrum: base/apresentacao/metodologia/scrum.md
+        - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
+    - Modelagem BPMN: base/modelagemBPMN/bpmn.md
+    - Iniciativas Extras: base/extras/extras.md
