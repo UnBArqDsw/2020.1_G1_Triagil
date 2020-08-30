@@ -7,5 +7,4 @@ assignees: ''
 
 ---
 # Descrição
-
-Por favor, descreva de forma objetiva as informações do problema a ser realizado.
+<!-- Por favor, descreva de forma objetiva as informações do problema a ser realizado -->
