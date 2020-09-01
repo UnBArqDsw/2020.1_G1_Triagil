@@ -19,22 +19,23 @@ theme:
 nav:
   - Início: index.md
   - Base:
-    - Abordagens Específicas:
+    - Projeto Não Orientado a Abordagens Específicas:
       - Pré-Rastriabilidade:
-        - Rich Picture: base/abordagensEspecificas/pre/rp.md
+        - Rich Picture: base/projeto_nao_orientado_abordagens_especificas/pre/rp.md
       - Elicitação:
-        - Brainstorming: base/abordagensEspecificas/elicitacao/brainstorming.md
-        - Entrevista: base/abordagensEspecificas/elicitacao/entrevista.md
-        - Questionário: base/abordagensEspecificas/elicitacao/questionario.md
-        - Storyboard: base/abordagensEspecificas/elicitacao/storyboard.md
+        - Brainstorming: base/projeto_nao_orientado_abordagens_especificas/elicitacao/brainstorming.md
+        - Entrevista: base/projeto_nao_orientado_abordagens_especificas/elicitacao/entrevista.md
+        - Questionário: base/projeto_nao_orientado_abordagens_especificas/elicitacao/questionario.md
+        - Storyboard: base/projeto_nao_orientado_abordagens_especificas/elicitacao/storyboard.md
       - Modelagem:
-        - Backlog do Produto: base/abordagensEspecificas/modelagem/backlog.md
+        - Backlog do Produto: base/projeto_nao_orientado_abordagens_especificas/modelagem/backlog.md
       - Análise:
-        - Verificação: base/abordagensEspecificas/analise/verificacao.md
-        - Validação: base/abordagensEspecificas/analise/validacao.md
+        - Verificação: base/projeto_nao_orientado_abordagens_especificas/analise/verificacao.md
+        - Validação: base/projeto_nao_orientado_abordagens_especificas/analise/validacao.md
+      - Plano de Custos: base/projeto_nao_orientado_abordagens_especificas/plano_custos/custo.md
     - Apresentação:
       - Metodologias:
         - Scrum: base/apresentacao/metodologia/scrum.md
         - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
-    - Modelagem BPMN: base/modelagemBPMN/bpmn.md
-    - Iniciativas Extras: base/extras/extras.md
+    - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
+    - Iniciativas Extras: base/iniciativas_extras/extras.md
