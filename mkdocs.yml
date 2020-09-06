@@ -26,12 +26,12 @@ nav:
         - Brainstorming: base/projeto_nao_orientado_abordagens_especificas/elicitacao/brainstorming.md
         - Entrevista: base/projeto_nao_orientado_abordagens_especificas/elicitacao/entrevista.md
         - Questionário: base/projeto_nao_orientado_abordagens_especificas/elicitacao/questionario.md
-        - Storyboard: base/projeto_nao_orientado_abordagens_especificas/elicitacao/storyboard.md
+        # - Storyboard: base/projeto_nao_orientado_abordagens_especificas/elicitacao/storyboard.md
       - Modelagem:
         - Backlog do Produto: base/projeto_nao_orientado_abordagens_especificas/modelagem/backlog.md
-      - Análise:
-        - Verificação: base/projeto_nao_orientado_abordagens_especificas/analise/verificacao.md
-        - Validação: base/projeto_nao_orientado_abordagens_especificas/analise/validacao.md
+      # - Análise:
+      #   - Verificação: base/projeto_nao_orientado_abordagens_especificas/analise/verificacao.md
+      #   - Validação: base/projeto_nao_orientado_abordagens_especificas/analise/validacao.md
       - Plano de Custos: base/projeto_nao_orientado_abordagens_especificas/plano_custos/custo.md
     - Apresentação:
       - Metodologias:
