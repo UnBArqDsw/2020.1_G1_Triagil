@@ -19,23 +19,27 @@ theme:
 nav:
   - Início: index.md
   - Base:
-    - Projeto Não Orientado a Abordagens Específicas:
+    # - Design Sprint: base/design_sprint/ds.md
+    - Requisitos:
       - Pré-Rastriabilidade:
-        - Rich Picture: base/projeto_nao_orientado_abordagens_especificas/pre/rp.md
+        # - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
+        - Rich Picture: base/requisitos/pre-rastriabilidade/rp.md
+        # - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
       - Elicitação:
-        - Brainstorming: base/projeto_nao_orientado_abordagens_especificas/elicitacao/brainstorming.md
-        - Entrevista: base/projeto_nao_orientado_abordagens_especificas/elicitacao/entrevista.md
-        - Questionário: base/projeto_nao_orientado_abordagens_especificas/elicitacao/questionario.md
-        # - Storyboard: base/projeto_nao_orientado_abordagens_especificas/elicitacao/storyboard.md
+        - Brainstorming: base/requisitos/elicitacao/brainstorming.md
+        - Entrevista: base/requisitos/elicitacao/entrevista.md
+        - Questionário: base/requisitos/elicitacao/questionario.md
+        # - Storyboard: base/requisitos/elicitacao/storyboard.md
       - Modelagem:
-        - Backlog do Produto: base/projeto_nao_orientado_abordagens_especificas/modelagem/backlog.md
+        - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
-      #   - Verificação: base/projeto_nao_orientado_abordagens_especificas/analise/verificacao.md
-      #   - Validação: base/projeto_nao_orientado_abordagens_especificas/analise/validacao.md
-      - Plano de Custos: base/projeto_nao_orientado_abordagens_especificas/plano_custos/custo.md
+      #   - Verificação: base/requisitos/analise/verificacao.md
+      #   - Validação: base/requisitos/analise/validacao.md
+    - Plano de Custos: base/documentos/plano_custos.md
+    - Plano de Riscos: base/documentos/plano_risco.md    
     - Apresentação:
       - Metodologias:
         - Scrum: base/apresentacao/metodologia/scrum.md
         - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
     - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
-    - Iniciativas Extras: base/iniciativas_extras/extras.md
+    # - Iniciativas Extras:
