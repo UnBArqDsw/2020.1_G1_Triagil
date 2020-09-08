@@ -22,9 +22,9 @@ nav:
     # - Design Sprint: base/design_sprint/ds.md
     - Requisitos:
       - Pré-Rastriabilidade:
-        # - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
+        - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
         - Rich Picture: base/requisitos/pre-rastriabilidade/rp.md
-        # - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
+        - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
       - Elicitação:
         - Brainstorming: base/requisitos/elicitacao/brainstorming.md
         - Entrevista: base/requisitos/elicitacao/entrevista.md
