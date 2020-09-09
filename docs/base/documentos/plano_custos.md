@@ -266,7 +266,7 @@ onde:
 
 ### Estimativa de Quantidade de Linhas de Códigos
 
-O projeto exigirá um certo nivel de complexidade,levando em conta o uso de frameworks (NodeJS e React Native) para agilidade e padronização de código, também, considerado as linguagem de programação (JavaScript) que serão utilizadas no escopo do produto. Assim, a equipe estimulou que a aplicação deverá ter em média **3000 linhas de código** úteisdescartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo.
+O projeto exigirá um certo nivel de complexidade,levando em conta o uso de frameworks (NodeJS e React Native) para agilidade e padronização de código, também, considerado as linguagem de programação (JavaScript) que serão utilizadas no escopo do produto. Assim, a equipe estimulou que a aplicação deverá ter em média **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo. Além disso, algo longo da aplicação sua estrutura será mais perceptível, assim, a equipe terá mais precisão na quantidade de linhas e se necessários os cálculos de esforço poderam ser atualizados.
 
 ### Pesos dos Atributos
 
@@ -437,7 +437,7 @@ Pesos atribuidos a cada atributo através de uma reunião em grupo para a conver
 
 Fator de Ajustamento do Esforço (**fae**) = **0.91**
 
-Como mencionado na introdução, nosso projeto é do tipo Semidestacado, portanto os valores dos coeficientes serão **a = 3.00**, **b = 1.12**, **c = 2.50** e **d=0.35** para realizar os devidos cálculos.
+Como mencionado na introdução, nosso projeto é do tipo <i>Semidestacado</i>, portanto os valores dos coeficientes serão **a = 3.00**, **b = 1.12**, **c = 2.50** e **d=0.35** para realizar os devidos cálculos.
 
 ### Estimativa de Esforço
 
@@ -455,7 +455,7 @@ $$
 E = 9.34 pessoas/mês
 $$
 
-#### Estimativa de Tempo
+### Estimativa de Tempo
 
 3500 linhas = 3.5Kloc
 
