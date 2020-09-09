@@ -16,6 +16,16 @@ theme:
   font:
     text: 'Roboto'
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences    
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Início: index.md
   - Base:
