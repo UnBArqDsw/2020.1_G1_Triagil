@@ -28,7 +28,7 @@ extra_javascript:
 nav:
   - Início: index.md
   - Base:
-    # - Design Sprint: base/design_sprint/ds.md
+    - Design Sprint: base/design_sprint/ds.md
     - Requisitos:
       - Pré-Rastriabilidade:
         - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
@@ -40,6 +40,8 @@ nav:
         - Questionário: base/requisitos/elicitacao/questionario.md
         # - Storyboard: base/requisitos/elicitacao/storyboard.md
       - Modelagem:
+        - Léxicos: base/requisitos/modelagem/lexicos.md
+        - Glossário: base/requisitos/modelagem/glossario.md
         - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
