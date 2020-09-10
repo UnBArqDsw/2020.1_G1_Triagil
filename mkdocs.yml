@@ -16,6 +16,15 @@ theme:
   font:
     text: 'Roboto'
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences    
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 nav:
   - Início: index.md
   - Base:
@@ -24,7 +33,7 @@ nav:
       - Pré-Rastriabilidade:
         - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
         - Rich Picture: base/requisitos/pre-rastriabilidade/rp.md
-        # - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
+        - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
       - Elicitação:
         - Brainstorming: base/requisitos/elicitacao/brainstorming.md
         - Entrevista: base/requisitos/elicitacao/entrevista.md
@@ -35,7 +44,7 @@ nav:
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
       #   - Validação: base/requisitos/analise/validacao.md
-    - Plano de Custos: base/documentos/plano_custos.md
+    - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
     - Apresentação:
       - Metodologias:
