@@ -1,19 +1,10 @@
 # Brainstorming
 
-## Sumário
-
-### [1. Introdução](#1-introdução) 
-### [2. Dados da reunião](#2-dados-da-reunião)
-### [3. Contribuições dos membros durante o Brainstorming](#3-contribuições-dos-membros-durante-o-brainstorming)
-### [4. Requisitos levantados](#4-requisitos-levantados)
-### [5. Versionamento](5-versionamento)
-### [6. Referências](6-referências-bibliográficas)
-
 ## 1. Introdução
 <p align="justify">Mais do que uma técnica, é uma atividade desenvolvida individualmente ou em grupo que visa explorar toda a capacidade criativa e intelectual. Essa "tempestade de ideias" acontece com objetivos já bem definidos. A ideia é dar espaço para a diversidade de pensamentos e experiências e extrair as melhores ideias a partir de ponto de vista diferentes. Após as ideias, visões e possibilidades, cabe a equipe encontrar o denominador comum. Ao contrário do que se costuma pensar, o Brainstorming não deve ser realizado como um bate-papo, no qual as ideias simplesmente podem “surgir do nada”. É importante ter um ambiente propício para que as contribuições dos participantes aconteçam, sendo melhor executado quando há um roteiro mediado por um coordenador e a divisão do processo entre etapas. Dessa forma, um Brainstorming bem construído é uma técnica útil em agregar conhecimento para os participantes e auxiliar na gestão de problemas.</p>
 
 ## 2. Dados da reunião
-<p align="justify">A reunião de equipe foi realizada no dia 03/09/2020 com início às 17:00 e término às 20:16. O Brainstorming teve como base os Rich Pictures desenvolvidos pela equipe. Esses Rich Pictures foram desenvolvidos por pares e após explanação das idéias,foram discutidas soluções para o projeto. A reunião, realizada e gravada no MS Teams foi, posteriormente, auscutada e redigida neste documento.</p>
+<p align="justify">A reunião de equipe foi realizada no dia 03/09/2020 com início às 17:00 e término às 20:16. O Brainstorming teve como base os [Rich Pictures]() desenvolvidos pela equipe. Esses Rich Pictures foram desenvolvidos por pares e após explanação das idéias,foram discutidas soluções para o projeto. A reunião, realizada e gravada no MS Teams foi, posteriormente, auscutada e redigida neste documento.</p>
 
 
   |Nome do integrante|Abreviação| Rich Picture responsável|
@@ -85,6 +76,8 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 |Data|Versão|Alteração|Responsável(eis)|
 |:--:|:----:|:-------:|:---:|
 | 10/09/2020 | 1.0 | Criação do documento na wiki  | Débora Vilela |
+| 10/09/2020 | 1.0 | Adicionando rastreamento e retirando sumário  | Débora Vilela |
+
 
 ## 6. Referências Bibliográficas
 
