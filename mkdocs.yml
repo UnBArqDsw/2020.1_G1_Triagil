@@ -34,6 +34,7 @@ nav:
         - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
         - Rich Picture: base/requisitos/pre-rastriabilidade/rp.md
         - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
+        - Mapa Mental: base/requisitos/pre-rastriabilidade/mapa_mental.md
       - Elicitação:
         - Brainstorming: base/requisitos/elicitacao/brainstorming.md
         - Entrevista: base/requisitos/elicitacao/entrevista.md
@@ -42,7 +43,7 @@ nav:
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexicos.md
         - Glossário: base/requisitos/modelagem/glossario.md
-        - Backlog do Produto: base/requisitos/modelagem/backlog.md
+        # - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
       #   - Validação: base/requisitos/analise/validacao.md
