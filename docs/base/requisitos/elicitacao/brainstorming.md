@@ -1,9 +1,9 @@
 # Brainstorming
 
-## 1. Introdução
+## Introdução
 <p align="justify">Mais do que uma técnica, é uma atividade desenvolvida individualmente ou em grupo que visa explorar toda a capacidade criativa e intelectual. Essa "tempestade de ideias" acontece com objetivos já bem definidos. A ideia é dar espaço para a diversidade de pensamentos e experiências e extrair as melhores ideias a partir de ponto de vista diferentes. Após as ideias, visões e possibilidades, cabe a equipe encontrar o denominador comum. Ao contrário do que se costuma pensar, o Brainstorming não deve ser realizado como um bate-papo, no qual as ideias simplesmente podem “surgir do nada”. É importante ter um ambiente propício para que as contribuições dos participantes aconteçam, sendo melhor executado quando há um roteiro mediado por um coordenador e a divisão do processo entre etapas. Dessa forma, um Brainstorming bem construído é uma técnica útil em agregar conhecimento para os participantes e auxiliar na gestão de problemas.</p>
 
-## 2. Dados da reunião
+## Dados da reunião
 <p align="justify">A reunião de equipe foi realizada no dia 03/09/2020 com início às 17:00 e término às 20:16. O Brainstorming teve como base os [Rich Pictures]() desenvolvidos pela equipe. Esses Rich Pictures foram desenvolvidos por pares e após explanação das idéias,foram discutidas soluções para o projeto. A reunião, realizada e gravada no MS Teams foi, posteriormente, auscutada e redigida neste documento.</p>
 
 
@@ -17,7 +17,7 @@
   |Vitor Alves|VA|Sistema|
 
 
-## 3. Contribuições dos membros durante o Brainstorming
+## Contribuições dos membros durante o Brainstorming
 
 * **MA/LR:** <p align="justify">O enfermeiro realiza o cadastro com a chave de acesso do hospital, permitindo registro de quem realizou a triagem. O enfermeiro visualiza a lista de pacientes (normal e preferencial); ao escolher o paciente ela visualiza os dados do paciente e faz a triagem, enviando os dados para o Triagil,que classificará de acordo com o protocolo de Manchester. Esses dados são retornados para a enfermeira que decide se vai alterar a classificação ou cofirmar a classificação feita por ela. O nosso sistema não deve retirar a autonomia do enfermeiro no processo de triagem, pois o sistema não tem a sensibilidade na visualização do paciente. Todavia, em caso de correção, o enfermeiro só poderá mudar em 1 nível a classificação do paciente.Ex: se o Triagil retornou que o paciente tem a classificação laranja, a enfermeira tem autonomia para mudar a classificação apenas pra amarelo ouvermelho (1 nível abaixo e 1 nível acima, respectivamente). Ao finalizar essa triagem, ela passa para outro paciente.Em caso do paciente não ter cadastro no sistema ou não tiver um aplicativo, deve haver uma opção para a enfermeira de "criar paciente", para identificação básica do paciente para início do processo de triagem.</p>
 
@@ -40,7 +40,7 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
  
 
 
-## 4. Requisitos levantados
+## Requisitos levantados
 
 |Requisito|Descrição|
 |:--:|:----:|
@@ -71,7 +71,7 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 |BS25|O aplicativo pode ser customizado de acordo com o hospital|
 
 
-## 5. Versionamento
+## **Histórico de Versão**
 
 |Data|Versão|Alteração|Responsável(eis)|
 |:--:|:----:|:-------:|:---:|
@@ -79,7 +79,7 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 | 10/09/2020 | 1.0 | Adicionando rastreamento e retirando sumário  | Débora Vilela |
 
 
-## 6. Referências Bibliográficas
+## Referências Bibliográficas
 
 - SERRANO, Maurício; SERRANO, Milene. Requisitos - Aula 07. 1º/2019. 50 slides. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.
 
