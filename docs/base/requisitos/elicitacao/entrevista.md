@@ -107,7 +107,7 @@ R: Resposta
 
 * **13 - Em relação ao preenchimento da ficha, se este aplicativo também disponibilizasse ali as informações persistentes sobre o histórico de saúde daquele paciente, você acredita que ajudaria e evitaria erros e problemas em relação a triagem?**
 
-    R: Claro, se tivesse uma aba, por exemplo alergias que o paciente tem, coisa que muitas vezes o paciente sempre esquece de informar, numa situaçãi de emergencia se ele acaba esquecendo que tem alergias a medicações entre outras informações que são importantes para a gente ter, se a gente tivesse acesso rápido e preciso  no momento da triagem seria excelente.
+    R: Claro, se tivesse uma aba, por exemplo alergias que o paciente tem, coisa que muitas vezes o paciente sempre esquece de informar, numa situação de emergência se ele acaba esquecendo que tem alergias a medicações entre outras informações que são importantes para a gente ter, se a gente tivesse acesso rápido e preciso  no momento da triagem seria excelente.
 
 ## Requisitos Elicitados
 
