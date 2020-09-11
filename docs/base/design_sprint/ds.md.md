@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<p align="justify">O _Design Sprint_ é um processo de cinco dias para responder a questões críticas de negócios por meio de design, prototipagem e ideias de teste com os clientes. É um processo desenvolvido pela _Google Ventures_ para ideias na fase inicial de desenvolvimento. A metodologia consiste em 5 dias onde cada etapa do processo é realizada em um dia de forma a alcançar resultados objetivos em um curto período de tempo. As etapas são:</p>
+<p align="justify">O Design Sprint é um processo de cinco dias para responder a questões críticas de negócios por meio de design, prototipagem e ideias de teste com os clientes. É um processo desenvolvido pela Google Ventures para ideias na fase inicial de desenvolvimento. A metodologia consiste em 5 dias onde cada etapa do processo é realizada em um dia de forma a alcançar resultados objetivos em um curto período de tempo. As etapas são:</p>
 
 * **_UNPACK_(descompactar):**
 <p align="justify">No primeiro dia, a equipe deve exteriorizar tudo o que eles sabem sobre a ideia.</p>
@@ -17,7 +17,7 @@
 <p align="justify">Resumidamente, nessa etapa a equipe monta o protótipo da idéia escolhida.</p>
 
 * **_TEST_(testar):**
-<p align="justify">Por fim, nessa etapa do processo o protótipo passa por um teste entre usuários para ter um _feedback_ sobre o projeto.</p>
+<p align="justify">Por fim, nessa etapa do processo o protótipo passa por um teste entre usuários para ter um feedback sobre o projeto.</p>
 
 ![etapas-design-sprint](https://i.imgur.com/BBSFBAd.png)
 
@@ -49,9 +49,11 @@
 |Data|Versão|Alteração|Responsável(eis)|
 |:--:|:----:|:-------:|:---:|
 | 11/09/2020 | 1.0 | Criação do documento na wiki  | Débora Vilela |
+| 11/09/2020 | 1.1 |Correção no texto| Débora Vilela |
+
 
 ## Referências Bibliográficas
 
 - Google Design Sprint: como funciona e como aplicar no seu projeto. Disponível em: https://brasil.uxdesign.cc/google-design-sprint-como-funciona-e-como-aplicar-no-seu-projeto-279107363659 Acesso em: 10 de setembro de 2020.
 
-- The Design Sprint. Disponível em: https://www.gv.com/sprint/ Acesso em: 10 de setembro de 2020.
+- _The Design Sprint_. Disponível em: https://www.gv.com/sprint/ Acesso em: 10 de setembro de 2020.
