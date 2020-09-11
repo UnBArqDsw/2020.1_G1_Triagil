@@ -39,7 +39,7 @@ nav:
         - Brainstorming: base/requisitos/elicitacao/brainstorming.md
         - Entrevista: base/requisitos/elicitacao/entrevista.md
         - Questionário: base/requisitos/elicitacao/questionario.md
-        # - Storyboard: base/requisitos/elicitacao/storyboard.md
+        - Storyboard: base/requisitos/elicitacao/storyboard.md
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexicos.md
         - Glossário: base/requisitos/modelagem/glossario.md
