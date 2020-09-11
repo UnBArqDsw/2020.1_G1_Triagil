@@ -32,13 +32,19 @@ O Backlog do Produto é um lista de requisitos desejados que deverá ser desenvo
 
 ### Kanban
 
-O Kanban será usado como uma ferramenta ágil de gerenciamento de projetos elaborada para ajudar a visualizar o trabalho, limitar o trabalho em andamento e maximizar a eficiência
+O Kanban será usado como uma ferramenta ágil de gerenciamento de projetos elaborada para ajudar a visualizar o trabalho, limitar o trabalho em andamento e maximizar a eficiência. Assim teremos uma forma de garantir a entrega dentro dos prazos.
 
 <div align="center"><img src="https://imgur.com/H97SEwi.gif"></img></div>
 
+E devido a integração com a plataforma GitHub a equipe utilizará da ferramenta [ZenHub](https://github.com/UnBArqDsw/2020.1_G1_Triagil#zenhub).
+
 ### Sprints
 
-Um sprint é um período curto e fixo em que uma equipe scrum trabalha para concluir uma quantidade definida de trabalho. E em relação ao Triagil ocorrer semanalmente.
+Um sprint é um período curto e fixo em que uma equipe scrum trabalha para concluir uma quantidade definida de trabalho.
+
+<iframe width="700" height="320" frameborder="0" scrolling="no" src="https://unbbr-my.sharepoint.com/personal/160006210_aluno_unb_br/_layouts/15/Doc.aspx?sourcedoc={4bd27021-72fb-457f-b3e2-2ec4ff9e70e8}&action=embedview&wdAllowInteractivity=False&Item='Geral'!B2%3AI12&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+
+Em relação a equipe Triagil ocorrer semanalmente, iniciando-se nas quintas-feiras e finalizando-se na quartas-feiras, segundo o heatmap de horário dos membros.
 
 #### Sprint Planning
 
@@ -46,11 +52,13 @@ O Product Owner priorizará a lista do Backlog do Procuto definindo as metas par
 
 #### Sprint Retrospective
 
-NUma retrospectiva é aquele momento em que sua equipe pode refletir sobre o passado para poder melhorar no futuro projeto
+Uma retrospectiva é aquele momento em que sua equipe pode refletir sobre o passado para poder melhorar no futuro projeto
 
 #### Sprint Review
 
-Nessa fase final é feito um Review da Sprint e vemos o que funcionou ou não em relação aos objetivos da Sprint
+Nessa fase é feito um Review da Sprint e vemos o que funcionou ou não em relação aos objetivos da Sprint e se necessário adaptar o backlog do produto
+
+![tab-review](https://i.imgur.com/j43BO00.png)
 
 ### Daily
 
