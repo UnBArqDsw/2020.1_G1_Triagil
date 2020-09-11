@@ -23,7 +23,7 @@ A reunião de equipe foi realizada no dia 03/09/2020 com início às 17:00 e té
 
 * **NL/DV:** <p align="justify">O sistema deve ser pensado para hospitais públicos e privados, de forma que seja um serviço mais geral. O fluxo seria parecido com o proposto pelo Miguel e Lude, mas enfatizando que os dados da triagem cheguem ao médico, evitando a repetição de perguntas que já foram feitas na triagem.</P>
 
-* **FH/VA:** <p align="justify"> A enfermeira é o centro do sistema do aplicativo; ela tem acesso ao app na parte de priorização da triagem e de dados dos paciente.O sistema deve verificar se o paciente está cadastrado e caso não esteja, a enfermeira deve ter a possibilidade de cadastrar o paciente no sistema do Triagil. O sistema também deve confirmar os dados do paciente com os dados do banco de dados.O sistema deve ter uma ligação entre o banco externo do Triagil e o hospital. O sistema Triagil deve serguir o padrão de Mnachester para classificação
+* **FH/VA:** <p align="justify"> A enfermeira é o centro do sistema do aplicativo; ela tem acesso ao app na parte de priorização da triagem e de dados dos paciente.O sistema deve verificar se o paciente está cadastrado e caso não esteja, a enfermeira deve ter a possibilidade de cadastrar o paciente no sistema do Triagil. O sistema também deve confirmar os dados do paciente com os dados do banco de dados.O sistema deve ter uma ligação entre o banco externo do Triagil e o hospital. O sistema Triagil deve serguir o padrão de Manchester para classificação
 na triagem do paciente.O triágil deve verificar o vínculo do enfermeiro com o hospital de forma a garantir que o aplicativo não será usado para fins ilícitos.</p>
 
 * **LR:** <p align="justify">Unificação dos sistemas, de forma que agilize a triagem independente do ambiente ser público ou privado.
@@ -67,8 +67,6 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 |BS25|O aplicativo pode ser customizado de acordo com o hospital|
 
 ---
-
-**Histórico de Versão**
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
