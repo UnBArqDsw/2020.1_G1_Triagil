@@ -13,7 +13,7 @@ Storyboard são organizadores gráficos tais como uma série de ilustrações ou
     **Data:** 09 de Setembro de 2020 </br>
     **Versão:** [0.1](https://unbbr-my.sharepoint.com/:i:/g/personal/160006210_aluno_unb_br/EStGAIFfClREhZq4DCNTJPcBaDys_eaWIX1Knst5TvKvZg?e=WiCX53)
 
-## Requisitos levantados
+## Requisitos Elicitados
 
 |Requisito|Descrição|
 |:--:|:----:|

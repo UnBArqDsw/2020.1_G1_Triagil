@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<p align="justify">O léxicos é um documento com um conjunto de palavras que são/serão utilizadas com mais frequência em um projeto. Nele, as palavras são classificadas em estado,objeto e verbo e recebem especificações sobre noção e impacto no projeto.</p>
+O léxicos é um documento com um conjunto de palavras que são/serão utilizadas com mais frequência em um projeto. Nele, as palavras são classificadas em estado,objeto e verbo e recebem especificações sobre noção e impacto no projeto.
 
 ## Categoria
 |Nome|Categora|
@@ -28,7 +28,6 @@
 |Impacto|Responsável por receber e oferecer atendimento aos paciente e dados à nossa aplicação|
 |Tipo|Objeto|
 
-
 ## Triagem
 |Nome|Triagem|
 |:--:|:---:|
@@ -37,7 +36,6 @@
 |Impacto|classifica os pacientes para atendimento de acordo com prioridade|
 |Tipo|Objeto|
 
-
 ## Enfermeiro
 |Nome|Enfermeiro|
 |:--:|:---:|
@@ -45,7 +43,6 @@
 |Noção|Profissional da saúde responsáel por contato direto com o paciente|
 |Impacto|Realiza a trigem dos pacientes|
 |Tipo|Objeto|
-
 
 ## Paciente
 |Nome|Paciente|
@@ -95,12 +92,14 @@
 |Impacto|Formação de fila de acordo com a classificação da triagem|
 |Tipo|Objeto|
 
-### **Histórico de Versão**
+---
 
-|Data|Versão|Descrição|Responsável|
-|:---:|:---:|:-------:|:---------:|
-|11/09/2020|1.0|Criação do documento na wiki|Débora Vilela|
+**Histórico de Versão**
 
-## Referência Bibliográficas
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 11/09 | 0.1 | Criação do documento na wiki | Débora Vilela |
 
-- https://search.google.com/search-console?hl=pt-BR Acesso em 11 de setembro de 2020.
+## Referências
+
+Google Search Console <https://search.google.com/search-console?hl=pt-BR>. Acesso em 11 de setembro de 2020.

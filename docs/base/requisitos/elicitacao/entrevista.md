@@ -1,4 +1,4 @@
- # Entrevista
+# Entrevista
 
 ## Introdução
 
@@ -124,3 +124,15 @@ R: Resposta
 | ENT03  | O aplicativo deve apresentar fila ou filas de triagem para o/a enfermeiro(a) | RF03 |
 | ENT04  | O aplicativo deve possuir uma aba com informações consideradas essencias pelos profissionais da saúde | RF04 |
 | ENT05  | O aplicativo deve apresentar o histórico médico do paciente | RF05 |
+
+---
+
+**Histórico de versão**
+
+Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 10/09 | 0.1 | Criação do Documento | Lude Ribeiro |
+
+## Referências
+
+SERRANO, Maurício; SERRANO, Milene. Requisitos - Aula 07. 1º/2019. 50 slides. Material apresentado para a disciplina de Requisitos de Software no curso de Engenharia de Software da UnB, FGA.

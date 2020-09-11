@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<p align="justify">O Design Sprint é um processo de cinco dias para responder a questões críticas de negócios por meio de design, prototipagem e ideias de teste com os clientes. É um processo desenvolvido pela Google Ventures para ideias na fase inicial de desenvolvimento. A metodologia consiste em 5 dias onde cada etapa do processo é realizada em um dia de forma a alcançar resultados objetivos em um curto período de tempo. As etapas são:</p>
+O Design Sprint é um processo de cinco dias para responder a questões críticas de negócios por meio de design, prototipagem e ideias de teste com os clientes. É um processo desenvolvido pela Google Ventures para ideias na fase inicial de desenvolvimento. A metodologia consiste em 5 dias onde cada etapa do processo é realizada em um dia de forma a alcançar resultados objetivos em um curto período de tempo. As etapas são:
 
 * **_UNPACK_(descompactar):**
 <p align="justify">No primeiro dia, a equipe deve exteriorizar tudo o que eles sabem sobre a ideia.</p>
@@ -37,23 +37,23 @@
     * [Brainstorming](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/)
     * [Plano de Custos e Esforços](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/documentos/plano_custos/)
     * [Plano de Riscos](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/documentos/plano_risco/)
-    * [Storyboard]()
+    * [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/)
 
 * _Prototype_  
-    * [Modelagem BPMN](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/modelagem_bpmn/bpmn/)
 
 * _Test_
 
+---
 
-### **Histórico de Versão**
-|Data|Versão|Alteração|Responsável(eis)|
-|:--:|:----:|:-------:|:---:|
-| 11/09/2020 | 1.0 | Criação do documento na wiki  | Débora Vilela |
-| 11/09/2020 | 1.1 |Correção no texto| Débora Vilela |
+**Histórico de Versão**
 
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 11/09 | 0.1 | Criação do documento na wiki  | Débora Vilela |
+| 11/09 | 0.2 |Correção no texto| Débora Vilela |
 
 ## Referências Bibliográficas
 
-- Google Design Sprint: como funciona e como aplicar no seu projeto. Disponível em: https://brasil.uxdesign.cc/google-design-sprint-como-funciona-e-como-aplicar-no-seu-projeto-279107363659 Acesso em: 10 de setembro de 2020.
+Google Design Sprint: como funciona e como aplicar no seu projeto. Disponível em: <https://brasil.uxdesign.cc/google-design-sprint-como-funciona-e-como-aplicar-no-seu-projeto-279107363659>. Acesso em: 10, Setembro de 2020.
 
-- _The Design Sprint_. Disponível em: https://www.gv.com/sprint/ Acesso em: 10 de setembro de 2020.
+_The Design Sprint_. Disponível em: <https://www.gv.com/sprint/>. Acesso em: 10, Setembro de 2020.

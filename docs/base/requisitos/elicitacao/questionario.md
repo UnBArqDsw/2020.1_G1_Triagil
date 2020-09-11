@@ -77,9 +77,9 @@ O questionário é uma técinica utilizada para coletar informações e levantar
 
 ![Imgur](https://imgur.com/ag2trBK.jpg)
 
-## Análise 
+## Análise
 
-Com os resultados dos questionários apresentados, pode-se tirar algumas conclusões, como por exemplo, cerca de 70% dos profissionais que respoderam trabalham em hospitais públicos. Já entre os pacientes 69% vão à hospitais da rede privada.  Dos pacientes consultados 55,7% tiveram problemas com preenchimento repetitivo de fichas e 82% dos profissionais se depararam com classificações erradas de paciêntes. 
+Com os resultados dos questionários apresentados, pode-se tirar algumas conclusões, como por exemplo, cerca de 70% dos profissionais que respoderam trabalham em hospitais públicos. Já entre os pacientes 69% vão à hospitais da rede privada.  Dos pacientes consultados 55,7% tiveram problemas com preenchimento repetitivo de fichas e 82% dos profissionais se depararam com classificações erradas de paciêntes.
 
 Assim podemos percerber que ambas as partes já se depararam com esses problemas no ambiente hospitalar, segundo os profissionais uma classificação errada pode ser bastante grave ou crucial para a saúde de um paciênte, e 100% dos enfermeiros e técnico em enfermagem acreditam que uma aplicação que auxiliasse o processo de triagem seria últil.
 
@@ -109,17 +109,14 @@ Assim podemos percerber que ambas as partes já se depararam com esses problemas
 | Q12  | O sistema deve ser de fácil adaptação | RNF |
 | Q13  | O enfermeiro deve ter acesso ao dados de todos os pacientes | RF |
 
+---
+
 **Histórico de versão**
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 10/09 | 0.1 | Criação do Documento | João Vitor Alves |
 
----
-
 ## Referências
 
-SERRANO,Milene. Questionário, 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB,FGA. Acesso em: 07, Setembro de 2020.
-
-
-
+SERRANO, Milene. Questionário, 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB,FGA. Acesso em: 07, Setembro de 2020.

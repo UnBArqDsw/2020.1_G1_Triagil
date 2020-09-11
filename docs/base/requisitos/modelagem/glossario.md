@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Neste tópico elicitamos as palavras-chaves do nosso projeto e apresentamos suas definições para auxiliar no entendimento das informações ao longo das documentações. 
+Neste tópico elicitamos as palavras-chaves do nosso projeto e apresentamos suas definições para auxiliar no entendimento das informações ao longo das documentações.
 
 * **_[Brainstorming](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/):_**<p align="justify">É uma técnica utilizada para propor soluções a um problema específico. Consiste em uma reunião também chamada de "tempestade de ideias", na qual os participantes devem ter liberdade de expor suas sugestões e debater sobre as contribuições dos colegas sobre um tema pré-determinado.</p>
 
@@ -32,20 +32,22 @@ Neste tópico elicitamos as palavras-chaves do nosso projeto e apresentamos suas
 
 * **[Triagil](https://unbarqdsw.github.io/2020.1_G1_Triagil/):**<p align="justify">Aplicação que tem como objetivo auxiliar os profissionais da saúde no processo de triagem de maneira mais rápida e ágil.</p>
 
-* **_[XP](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/apresentacao/metodologia/xp/)_**<p align="justify">_Extreme Programming_ (XP) é uma metodologia de desenvolvimento de software</p>
+* **_[XP](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/apresentacao/metodologia/xp/)_:**<p align="justify">_Extreme Programming_ (XP) é uma metodologia de desenvolvimento de software</p>
 
-### **Histórico de Versão**
+---
 
-|Data|Versão|Descrição|Responsável|
-|:---:|:---:|:-------:|:---------:|
-|11/09/2020|1.0|Criação do documento na wiki|Débora Vilela|
+**Histórico de Versão**
 
-## Referência Bibliográficas
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 11/09 | 0.1 | Criação do documento na wiki|Débora Vilela |
 
-- SCRUM. Diponível em: https://www.desenvolvimentoagil.com.br/scrum/ Acesso em 11 de setembro de 2020.
+## Referência
 
-- Triagil. Disponível em: https://unbarqdsw.github.io/2020.1_G1_Triagil/ Acesso em 11 de setembro de 2020.
+SCRUM. **Desenvolvimentoagil.com.br**, 2013/2014. Disponível em: <https://www.desenvolvimentoagil.com.br/scrum/>. Acesso em 11 de setembro de 2020.
 
-- Enfermeiro: o que faz, formação e salários. Disponível em: https://querobolsa.com.br/carreiras-e-profissoes/enfermeiro. Acesso em 11 de setembro de 2020.
+Triagil. 2020. Disponível em: <https://unbarqdsw.github.io/2020.1_G1_Triagil/>. Acesso em 11 de setembro de 2020.
 
-- https://search.google.com/search-console?hl=pt-BR Acesso em 11 de setembro de 2020.
+Enfermeiro: o que faz, formação e salários. Disponível em: <https://querobolsa.com.br/carreiras-e-profissoes/enfermeiro>. Acesso em 11 de setembro de 2020.
+
+Google Search Console <https://search.google.com/search-console?hl=pt-BR>. Acesso em 11 de setembro de 2020.
