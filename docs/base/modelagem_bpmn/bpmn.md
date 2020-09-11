@@ -35,6 +35,12 @@ Desde sua disponibilização formal em 2004, BPMN tem sido amplamente utilizada 
     **Data:** 07 de Setembro de 2020 </br>
     **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/ElfU2vG635VMjeSKTVtcGO4BBRbKIrO6MLXzN_kFymUzzQ?e=fTnn1C)
 
+#### Áudio da Metodologia
+
+<audio autoplay="autoplay" controls="controls"><source src="metodologia" type="https://soundcloud.com/user-83178647/metodologia-triagil/s-WQe4sox6WAp" /></audio>
+
+Se ocorrer algum problema com a reprodução do áudio [clique aqui](https://unbbr-my.sharepoint.com/:v:/g/personal/160006210_aluno_unb_br/EQjYXQjCqC9Li8YJdwVmSRIBTTle9rX0XjqB0IM2N3XJBg?e=hikDMG) para escuta-ló.
+
 ---
 
 **Histórico de Versão**
@@ -42,6 +48,7 @@ Desde sua disponibilização formal em 2004, BPMN tem sido amplamente utilizada 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 08/09 | 0.1 | Criação do documento da modelagem BPMN | Francisco Heronildo e Lude Ribeiro|
+| 11/09 | 0.1 | Anexado o audio da metodologia | Francisco Heronildo |
 
 ## Referências
 

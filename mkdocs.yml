@@ -41,7 +41,7 @@ nav:
         - Questionário: base/requisitos/elicitacao/questionario.md
         - Storyboard: base/requisitos/elicitacao/storyboard.md
       - Modelagem:
-        - Léxicos: base/requisitos/modelagem/lexicos.md
+        - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
         # - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
