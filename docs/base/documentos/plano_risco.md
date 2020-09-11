@@ -107,7 +107,7 @@ Nessa fase final será levantados os possíveis erros, seguindo os tópicos menc
 | --- | --- | --- | --- | --- | --- | --- |
 | - | - | - | - | - | - | - |
 
-Eventualmente algo longo do desenvolvimento da aplicação poderá ser levatamos mais erros que serão registrados em busca de mitigá-los.
+Eventualmente ao longo do desenvolvimento da aplicação poderá ser levatamos mais erros que serão registrados em busca de mitigá-los.
 
 ---
 

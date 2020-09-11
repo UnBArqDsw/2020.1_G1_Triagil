@@ -28,19 +28,22 @@ extra_javascript:
 nav:
   - Início: index.md
   - Base:
-    # - Design Sprint: base/design_sprint/ds.md
+    - Design Sprint: base/design_sprint/ds.md
     - Requisitos:
       - Pré-Rastriabilidade:
         - 5W2H: base/requisitos/pre-rastriabilidade/5w2h.md
         - Rich Picture: base/requisitos/pre-rastriabilidade/rp.md
         - Causa-Efeito: base/requisitos/pre-rastriabilidade/causa_e_efeito.md
+        - Mapa Mental: base/requisitos/pre-rastriabilidade/mapa_mental.md
       - Elicitação:
         - Brainstorming: base/requisitos/elicitacao/brainstorming.md
         - Entrevista: base/requisitos/elicitacao/entrevista.md
         - Questionário: base/requisitos/elicitacao/questionario.md
-        # - Storyboard: base/requisitos/elicitacao/storyboard.md
+        - Storyboard: base/requisitos/elicitacao/storyboard.md
       - Modelagem:
-        - Backlog do Produto: base/requisitos/modelagem/backlog.md
+        - Léxicos: base/requisitos/modelagem/lexico.md
+        - Glossário: base/requisitos/modelagem/glossario.md
+        # - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
       #   - Validação: base/requisitos/analise/validacao.md

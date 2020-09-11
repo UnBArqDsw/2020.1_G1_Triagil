@@ -6,7 +6,7 @@ Extreme Programming (XP) é uma metodologia de desenvolvimento de software, nasc
 
 <div align="center"><img src="https://imgur.com/9ywFcl5.png"></img></div>
 
-E Por meio de uma reunião remota pela plataforma [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3Ae595cf6cc5214fa98300b044b21f7ab7%40thread.tacv2/tab%3A%3A7de02cdd-ceda-4ca3-9f1a-1bbb6c4b3d0a?groupId=d1a1d9e3-ea25-46e9-a59c-3606cf72fc81&tenantId=ec359ba1-630b-4d2b-b833-c8e6d48f8059), foi discutido a utilização de tal metodologia sobre escopo de desenvolvimento do projeto, buscando maior eficiência e produtividade da equipe.
+E Por meio de uma reunião remota pela plataforma [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3Ae595cf6cc5214fa98300b044b21f7ab7%40thread.tacv2/tab%3A%3A7de02cdd-ceda-4ca3-9f1a-1bbb6c4b3d0a?groupId=d1a1d9e3-ea25-46e9-a59c-3606cf72fc81&tenantId=ec359ba1-630b-4d2b-b833-c8e6d48f8059), foi discutido a utilização de tal metodologia sobre escopo de desenvolvimento do projeto, buscando maior eficiência e produtividade da equipe. Assim foi definido a escolha de algumas princípios e práticas xp que se adequa ao desenvolvimento do triagil nesse momento de pademenia em que estamos passando.
 
 ## Princípios Básicos
 

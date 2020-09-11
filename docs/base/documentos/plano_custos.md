@@ -441,7 +441,7 @@ Como mencionado na introdução, nosso projeto é do tipo <i>Semidestacado</i>, 
 
 ### Estimativa de Esforço
 
-3500 linhas = 3.5Kloc
+3000 linhas = 3Kloc
 
 $$
 E = a * S^b * fae
@@ -457,7 +457,7 @@ $$
 
 ### Estimativa de Tempo
 
-3500 linhas = 3.5Kloc
+3000 linhas = 3Kloc
 
 $$
 T = c * E^d
