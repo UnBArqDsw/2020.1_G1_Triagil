@@ -83,6 +83,37 @@ Com os resultados dos questionários apresentados, pode-se tirar algumas conclus
 
 Assim podemos percerber que ambas as partes já se depararam com esses problemas no ambiente hospitalar, segundo os profissionais uma classificação errada pode ser bastante grave ou crucial para a saúde de um paciênte, e 100% dos enfermeiros e técnico em enfermagem acreditam que uma aplicação que auxiliasse o processo de triagem seria últil.
 
+## Requisitos Elicitados
+
+**Legenda**
+
+* Q:Questionário
+* PS:Profissionais da saúde
+* P:Paciente
+* RF: Requisito Funcional
+* RNF: Requisito Não Funcional
+
+| ID | Descrição | Tipo |
+|----|:---------:|------|
+| Q01 | O enfermeiro deve realizar cadastro com vinculação de algum hospital| RF |
+| Q02 | O enfermeiro deve consultar pacientes já cadastrados | RF |
+| Q03 | O enfermeiro deve cadastrar novos pacientes | RF |
+| Q04 | O paciente pode realizar cadastro | RF |
+| Q05 | O sistema deve autenticar os dados enfermeiro e do hospital | RF |
+| Q06 | O sitema deve classificar o paciente de acordo o Sistema Manchester | RF |
+| Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RF  |
+| Q08 | O sistema deve ser seguro | RNF  |
+| Q09  | O sistema deve ter uma boa usabilidade | RNF |
+| Q10  | O sistema deve ter alta disponibilidade  | RNF |
+| Q11  | O sistema deve acessar um banco de dodos externo | RF |
+| Q12  | O sistema deve ser de fácil adaptação | RNF |
+| Q13  | O enfermeiro deve ter acesso ao dados de todos os pacientes | RF |
+
+**Histórico de versão**
+
+Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 10/09 | 0.1 | Criação do Documento | João Vitor Alves |
 
 ---
 
