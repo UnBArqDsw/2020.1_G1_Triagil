@@ -6,13 +6,14 @@ Um mapa mental é um diagrama que se elabora para representar ideias, tarefas ou
 A sua principal função é geração, visualização e classificação taxonômica das ideias, pelo que serve de ajuda para o estudo, a organização de informações, a tomada de decisões e a escrita.
 A partir das ideias que a equipe discutiu em um primeiro momento desenvolvemos o nosso mapa mental, centralizando o nosso foco e derivando outros elementos a partir do central.
 
-
 ![Mapa Mental](https://i.imgur.com/XRc1EE7.png)
 
 !!! note ""
     **Autor(es):** Debóra, Nathalia Lorena</br>
     **Data:** 03 de Setembro de 2020 </br>
     **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/EuTwLqIfDJdMqKI0ISFe8NsBSs6pvd-MC78REDQF94DUkg?e=HQHvUV)
+
+---
 
 **Histórico de Versão**
 
