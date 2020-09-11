@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O questionário é uma técinica utilizada para coletar informações e levantar requisitos bastante comum no meio de desenvolvimento de software. Utlizamos dois questionários a fim de atender uma maior cobertura de usuários e pessoas que serão impactadas. Foi feito um para pacientes e outro para proficionais de enfermagem. Os questionários foram divulgados em grupos nas redes sociais e conseguimos 61 respostas de pacientes e 17 de profissionais de enfermagem.
+O questionário é uma técnica utilizada para coletar informações e levantar requisitos bastante comum no meio de desenvolvimento de software. Utilizamos dois questionários a fim de atender uma maior cobertura de usuários e pessoas que serão impactadas. Foi feito um para pacientes e outro para profissionais de enfermagem. Os questionários foram divulgados em grupos nas redes sociais e conseguimos 61 respostas de pacientes e 17 de profissionais de enfermagem.
 
 ## Questionário pacientes
 
