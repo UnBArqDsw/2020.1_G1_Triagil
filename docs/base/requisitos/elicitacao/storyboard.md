@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Storyboard são organizadores gráficos tais como uma série de ilustrações ou imagens arranjadas em sequência com o propósito de pré-visualizar um filme, animação ou gráfico animado, incluindo elementos interativos em websites, técnica na qual foi usada para avaliar a interface da aplicação.
+Storyboards são organizadores gráficos tais como uma série de ilustrações ou imagens arranjadas em sequência com o propósito de pré-visualizar um filme, animação ou gráfico animado, incluindo elementos interativos em websites, técnica que foi usada para avaliar a interface da aplicação.
 
 ## StoryBoards
 
@@ -17,9 +17,9 @@ Storyboard são organizadores gráficos tais como uma série de ilustrações ou
 
 |Requisito|Descrição|
 |:--:|:----:|
-|SB01|O paciente deve conseguir se cadrastrar a qualquer momento|
-|SB02|O enfermeiro deve conseguir amazenar os dados do paciente|
-|SB03|O enfeirmeiro deve confirmar os dados do paciente|
+|SB01|O paciente deve conseguir se cadastrar a qualquer momento|
+|SB02|O enfermeiro deve conseguir armazenar os dados do paciente|
+|SB03|O enfermeiro deve confirmar os dados do paciente|
 |SB04|O Triagil deve ser associado a rede do hospital|
 |SB05|O Triagil deve gerar um relatório de classificação Manchester|
 |SB06|O enfermeiro deve ter autonomia na aplicação|
