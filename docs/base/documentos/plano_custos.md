@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Neste documento será abordado sobre técnicas utilizadas para a medição de custos de fabricação do software, onde esses custos representam o valor dos insumos utilizados na fabricação de um determinado produto. Segundo Fenton e Pfleeger (1997), uma estimativa é uma avaliação de probabilidade. Uma estimativa só é útil se for razoavelmente precisa.
+Este documento abordará sobre técnicas utilizadas para a medição de custos de fabricação do software, onde esses custos representam o valor dos insumos utilizados na fabricação de um determinado produto. Segundo Fenton e Pfleeger (1997), uma estimativa é uma avaliação de probabilidade. Uma estimativa só é útil se for razoavelmente precisa.
 
 Estimativas são necessárias nas fases iniciais do ciclo de vida de cada projeto, pois há uma necessidade de apresentar propostas apropriadas de negócio e administrar corretamente os recursos ao longo do mesmo. O uso de técnicas formais de estimativa pode dobrar a probabilidade do projeto de software ser concluído com sucesso, conforme indicaram as pesquisas de Roetzheim (2000b).
 
@@ -22,11 +22,11 @@ COCOMO ou Modelo de Custo Construtivo, é um modelo de estimativa do tempo de de
 * **Modo Semidestacado:** Projetos intermediários (em tamanho e complexidade), com alguns requisitos rígidos e outros não tão rígidos, com níveis mistos de experiência nas equipes.
 * **Modo Embutido:** Projetos com conjunto rígido de restrições operacionais, tanto de hardware, quanto de software.
 
-Dado as características do software que será desenvolvido, no caso um aplicativo para facilitar e agilizar o cadastro de possíveis monitores em disciplinas, o projeto se encaixa na classe de **Semidestacado**, pois ele exige certos requisitos rígidos, como confiabilidade na identificação dos dados corretos de monitores, há normas internas a FGA no processo de monitoria, entre outros requisitos que não são considerados triviais. Além do projeto ser composto por vários alunos que não fazem parte de uma equipe fixa, e que possuem níveis mistos de experiência tanto nas questões tecnológicas quanto no entendimento dos processos de monitoria.
+Dado as características do software que será desenvolvido, no caso um aplicativo para facilitar e agilizar o cadastro de possíveis monitores em disciplinas, o projeto se encaixa na classe de **Semidestacado**, pois ele exige certos requisitos rígidos, como confiabilidade na identificação dos dados corretos de monitores, há normas internas na FGA no processo de monitoria, entre outros requisitos que não são considerados triviais. Além do projeto ser composto por vários alunos que não fazem parte de uma equipe fixa, e que possuem níveis mistos de experiência tanto nas questões tecnológicas quanto no entendimento dos processos de monitoria.
 
 ### COCOMO Intermediário
 
-De acordo com as caracteristicas do projeto a ser densenvolvido, se torna necessário o uso de uma implementação mais avançada que o **COCOMO Básico**, mas que também não tenha que lidar com variáveis muito complexas, como no **COCOMO Detalhado** que se faz uso de multiplicadores sensiveis à fase do projeto, ou hierarquia do produto(Nível de Módulo, Nível de Subsistema e Nível de Sistema). Então a implementação Intermediária que considera atributos de esforços e unindo com a simplicidade comparada com o **COCOMO Detalhado** é a melhor escolha.
+De acordo com as características do projeto a ser densenvolvido, se torna necessário o uso de uma implementação mais avançada que o **COCOMO Básico**, mas que também não tenha que lidar com variáveis muito complexas, como no **COCOMO Detalhado** que se faz uso de multiplicadores sensíveis à fase do projeto, ou hierarquia do produto(Nível de Módulo, Nível de Subsistema e Nível de Sistema). Então a implementação Intermediária que considera atributos de esforços e unindo com a simplicidade comparada com o **COCOMO Detalhado** é a melhor escolha.
 
 Neste modelo, o COCOMO Básico é ampliado com a finalidade de levar em consideração um conjunto de atributos direcionadores do custo que são agrupados em quatro categorias:
 
@@ -266,11 +266,11 @@ onde:
 
 ### Estimativa de Quantidade de Linhas de Códigos
 
-O projeto exigirá um certo nivel de complexidade,levando em conta o uso de frameworks (NodeJS e React Native) para agilidade e padronização de código, também, considerado as linguagem de programação (JavaScript) que serão utilizadas no escopo do produto. Assim, a equipe estimulou que a aplicação deverá ter em média **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo. Além disso, algo longo da aplicação sua estrutura será mais perceptível, assim, a equipe terá mais precisão na quantidade de linhas e se necessários os cálculos de esforço poderam ser atualizados.
+O projeto exigirá um certo nível de complexidade, levando em conta o uso de frameworks (NodeJS e React Native) para agilidade e padronização de código, também, considerado a linguagem de programação (JavaScript) que serão utilizados no escopo do produto. Assim, a equipe estimulou que a aplicação deverá ter em média **3000 linhas de código** úteis, descartando as linhas de código que serão geradas devido ao uso de frameworks que facilitam o processo. Além disso, ao longo da aplicação sua estrutura será mais perceptível, assim, a equipe terá mais precisão na quantidade de linhas e se necessários os cálculos de esforço poderão ser atualizados.
 
 ### Pesos dos Atributos
 
-Pesos atribuidos a cada atributo através de uma reunião em grupo para a convergência em cada esforço de cada atributo:
+Pesos atribuídos a cada atributo através de uma reunião em grupo para a convergência em cada esforço de cada atributo:
 
 <table>
     <thead>
@@ -477,7 +477,8 @@ $$
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 08/09 | 0.1 | Criação do documento de gerenciamento de custos | Francisco Heronildo e João Vitor |
+| 08/09 | 1.0.0 | Criação do documento de gerenciamento de custos | Francisco Heronildo e João Vitor |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

@@ -32,7 +32,8 @@ Storyboards são organizadores gráficos tais como uma série de ilustrações o
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criado o documento | Francisco Heronildo |
+| 10/09 | 1.0.0 | Criado o documento | Francisco Heronildo |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

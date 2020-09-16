@@ -115,7 +115,8 @@ Assim podemos perceber que ambas as partes já se depararam com esses problemas 
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criação do Documento | João Vitor Alves |
+| 10/09 | 1.0.0 | Criação do Documento | João Vitor Alves |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Um Rich Picture é uma maneira de explorar, reconhecer e definir uma situação e expressar pensamentos através de diagramas para criar um modelo mental preliminar. Um Rich Picture ajuda a abrir uma discursão e chegar a um entendimento geral de uma situação. E a abordagem adotada pela equipe foi na elaboração de cada parte dos interressados para chegamos ao entendimento geral do produto <i>Triagil</i>.
+Um Rich Picture é uma maneira de explorar, reconhecer, definir uma situação e expressar pensamentos através de diagramas para criar um modelo mental preliminar. Um Rich Picture ajuda a abrir uma discurssão e chegar a um entendimento geral de uma situação. E a abordagem adotada pela equipe foi na elaboração de cada parte dos interressados para chegamos ao entendimento geral do produto <i>Triagil</i>.
 
 ## Rich Picture - Partes
 
@@ -11,7 +11,7 @@ Um Rich Picture é uma maneira de explorar, reconhecer e definir uma situação 
 ![paciente](https://imgur.com/MEcGO4G.jpg)
 
 !!! note ""
-    **Autor(es):** Debóra, Nathalia</br>
+    **Autor(es):** Débora, Nathalia</br>
     **Data:** 03 de Setembro de 2020 </br>
     **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/EvRkLqlY7vpIncI7K2OOeOEB3ED_9mnDH-43Tw_j1TH4vw?e=YWsbNo)
 
@@ -48,7 +48,8 @@ Um Rich Picture é uma maneira de explorar, reconhecer e definir uma situação 
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 09/09 | 0.1 | Criação do Documento | Francisco Heronildo |
+| 09/09 | 1.0.0 | Criação do Documento | Francisco Heronildo |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

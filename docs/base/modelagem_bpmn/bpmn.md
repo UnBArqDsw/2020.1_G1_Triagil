@@ -47,8 +47,8 @@ Se ocorrer algum problema com a reprodução do áudio [clique aqui](https://unb
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 08/09 | 0.1 | Criação do documento da modelagem BPMN | Francisco Heronildo e Lude Ribeiro|
-| 11/09 | 0.1 | Anexado o audio da metodologia | Francisco Heronildo |
+| 08/09 | 1.0.0 | Criação do documento da modelagem BPMN | Francisco Heronildo e Lude Ribeiro|
+| 11/09 | 1.1.0 | Anexado o audio da metodologia | Francisco Heronildo |
 
 ## Referências
 

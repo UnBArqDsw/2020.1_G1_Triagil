@@ -131,7 +131,8 @@ R: Resposta
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criação do Documento | Lude Ribeiro |
+| 10/09 | 1.0.0 | Criação do Documento | Lude Ribeiro |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O diagrama causa e efeito, conhecido também como diagrama espinha de peixe ou ishikawa, é um diagrama conceitual utilizado para descobrir as causas de um determinado problema. É uma ferramenta muito utilizada em analizes estas causas e elimina-las ou mitigalas futuramente.
+O diagrama causa e efeito, conhecido também como diagrama espinha de peixe ou Ishikawa, é um diagrama conceitual utilizado para descobrir as possíveis causas de um determinado problema. É uma ferramenta muito utilizada em análises, auxiliando a identificar essas causas, mitigá-las e elimina-las futuramente.
 
 ## Diagrama
 
@@ -14,7 +14,8 @@ O diagrama causa e efeito, conhecido também como diagrama espinha de peixe ou i
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 08/09 | 0.1 | Criação do Documento | João Vitor Alves e Francisco Heronildo |
+| 08/09 | 1.0.0 | Criação do Documento | João Vitor Alves e Francisco Heronildo |
+| 16/09 | 1.0.1 | Correções| Nathalia Lorena |
 
 ## Referências
 
