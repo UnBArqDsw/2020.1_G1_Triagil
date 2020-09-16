@@ -46,7 +46,7 @@ nav:
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
-        # - Backlog do Produto: base/requisitos/modelagem/backlog.md
+        - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
       #   - Validação: base/requisitos/analise/validacao.md
