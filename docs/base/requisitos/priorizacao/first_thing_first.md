@@ -38,5 +38,3 @@ Data | Versão | Descrição | Autor(es) |
 ## Referências Bibliográficas
 
 - First Things First: Prioritizing Requirements. E.Wiegers, Karl. Disponível em: https://www.processimpact.com/articles/prioritizing.pdf Acesso em 16 de setembro de 2020.
-
-- First Thing First. Disciplina Requisitos de Software 2019.2, grupo Shazam. Disponível em: https://requisitos-de-software.github.io/2019.2-Shazam/priorizacao/firstThingFirst/ Acesso em 16 de setembro de 2020.
