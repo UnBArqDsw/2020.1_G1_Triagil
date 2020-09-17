@@ -12,16 +12,16 @@ Para a confecção do nosso backlog utilizamos todos nossos documentos de elicit
 
 | ID | Eu como | Desejo | Para que|
 |----|---------|--------|---------|
-| | Eu como enfermeiro |desejo visualizar duas listas de pacientes | para que possa classificar os pacientes entre normal e preferencial |
-| |Eu como enfermeiro | desejo realizar cadastro com chave de acesso do hospital | para garantir que apenas enfemeiros que trabalham em hospital tenham esse acesso |
-| | Eu como enfermeiro | desejo visualizar os dados específicos de um paciente | para que possa enviar o paciente para o atendimento |
-| |Eu como enfermeiro |desejo verificar a classificação do paciente| para ter autonomia humana no processo de priorização |
-| |Eu como enfermeiro | desejo cadastrar novos pacientes no sistema | para que paceintes sem o app possam ser atendidos normalmente |
-| |Eu como médico | desejo envio previo dos dados do paciente | para evitar perda de informações
-| |Eu como paciente | desejo poder fazer o cadastro a qualquer momento | para evitar preenchimento de ficha em situação de emergência |
-| |Eu como enfermeiro | desejo ter autonomia em todos os processos de atendimento | para ter autonomia humana no processo de priorização |
-| | Eu como enfermeiro | desejo verificar a existencia de um paceinte no sistema | para evitar recadastramento de pacientes | 
-| |Eu como enfermeiro | desejo poder alterar a fila de atendimento | para mitigar erro de priorização|
+| [RF01](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) | Eu como enfermeiro |desejo visualizar duas listas de pacientes | para que possa classificar os pacientes entre normal e preferencial |
+| [RF02](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como enfermeiro | desejo realizar cadastro com chave de acesso do hospital | para garantir que apenas enfemeiros que trabalham em hospital tenham esse acesso |
+| [RF03](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) | Eu como enfermeiro | desejo visualizar os dados específicos de um paciente | para que possa enviar o paciente para o atendimento |
+| [RF04](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como enfermeiro |desejo verificar a classificação do paciente| para ter autonomia humana no processo de priorização |
+| [RF05](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como enfermeiro | desejo cadastrar novos pacientes no sistema | para que paceintes sem o app possam ser atendidos normalmente |
+| [RF06](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como médico | desejo envio previo dos dados do paciente | para evitar perda de informações
+| [RF07](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como paciente | desejo poder fazer o cadastro a qualquer momento | para evitar preenchimento de ficha em situação de emergência |
+| [RF08](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como enfermeiro | desejo ter autonomia em todos os processos de atendimento | para ter autonomia humana no processo de priorização |
+| [RF09](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) | Eu como enfermeiro | desejo verificar a existencia de um paceinte no sistema | para evitar recadastramento de pacientes | 
+| [RF10](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/priorizacao/first_thing_first/) |Eu como enfermeiro | desejo poder alterar a fila de atendimento | para mitigar erro de priorização|
 
 ## Backlog do produto
 
@@ -31,6 +31,7 @@ Para a confecção do nosso backlog utilizamos todos nossos documentos de elicit
 | ---  | --- | --- | --- |
 | 16/09/2020 | 1.0.0 | Criação do documento na wiki  | João Victor |
 | 16/09/2020 | 1.0.1 | Adição da introdução e da metodologia  | Lude Ribeiro |
+| 17/09/2020 | 1.0.2 | Adição da introdução e da metodologia  | Lude Ribeiro |
 
 ## Referências
 
