@@ -15,16 +15,16 @@ Storyboards são organizadores gráficos tais como uma série de ilustrações o
 
 ## Requisitos Elicitados
 
-|Requisito|Descrição|
-|:--:|:----:|
-|SB01|O paciente deve conseguir se cadastrar a qualquer momento|
-|SB02|O enfermeiro deve conseguir armazenar os dados do paciente|
-|SB03|O enfermeiro deve confirmar os dados do paciente|
-|SB04|O Triagil deve ser associado a rede do hospital|
-|SB05|O Triagil deve gerar um relatório de classificação Manchester|
-|SB06|O enfermeiro deve ter autonomia na aplicação|
-|SB07|O enfermeiro deve poder corrigir a classificação do paciente|
-|SB08|O enfermeiro deve alterar a posição do paciente na fila|
+|Requisito|Descrição| Tipo|
+|:--:|:----:|:-----:|
+|SB01|O paciente deve conseguir se cadastrar a qualquer momento| RF08|
+|SB02|O Triagil deve conseguir armazenar os dados do paciente| RNF08|
+|SB03|O Triagil deve confirmar os dados do paciente| RNF08|
+|SB04|O Triagil deve ser associado a rede do hospital| RNF21|
+|SB05|O Triagil deve gerar um relatório de classificação Manchester| RNF02|
+|SB06|O enfermeiro deve ter autonomia na aplicação| RNF03|
+|SB07|O enfermeiro deve poder corrigir a classificação do paciente| RF04|
+|SB08|O enfermeiro deve alterar a posição do paciente na fila| RF18|
 
 ---
 
@@ -32,7 +32,8 @@ Storyboards são organizadores gráficos tais como uma série de ilustrações o
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criado o documento | Francisco Heronildo |
+| 10/09 | 1.0.0 | Criado o documento | Francisco Heronildo |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

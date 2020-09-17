@@ -11,10 +11,10 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
 <p align="justify">No segundo dia, todo mundo coloca as ideias de soluções para o problema no papel. Após esse momento, é feita uma discussão democrática para eleger as melhores ideias.</p>
 
 * **_DECIDE_(decidir):**
-<p align="justify">No terceiro dia, a equipe deve aprimorar as idéias e escolher a melhor solução; a decisão final da equipe passará então para a próxima etapa.</p>
+<p align="justify">No terceiro dia, a equipe deve aprimorar as ideias e escolher a melhor solução; a decisão final da equipe passará então para a próxima etapa.</p>
 
 * **_PROTOTYPE_(prototipar):**
-<p align="justify">Resumidamente, nessa etapa a equipe monta o protótipo da idéia escolhida.</p>
+<p align="justify">Resumidamente, nessa etapa a equipe monta o protótipo da ideia escolhida.</p>
 
 * **_TEST_(testar):**
 <p align="justify">Por fim, nessa etapa do processo o protótipo passa por um teste entre usuários para ter um feedback sobre o projeto.</p>
@@ -40,6 +40,7 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
     * [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/)
 
 * _Prototype_  
+    [Protótipo de Alta Fidelidade](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/prototipo/prototipo_de_alta/)
 
 * _Test_
 
@@ -49,8 +50,10 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 11/09 | 0.1 | Criação do documento na wiki  | Débora Vilela |
-| 11/09 | 0.2 |Correção no texto| Débora Vilela |
+| 11/09 | 1.0.0 | Criação do documento na wiki  | Débora Vilela |
+| 11/09 | 1.0.1 |Correção no texto| Débora Vilela |
+| 16/09 | 1.0.2 | Correções| Nathalia Lorena |
+| 17/09 | 1.0.3 | Adicionado o link do protótipo e correções | Francisco Heronildo |
 
 ## Referências Bibliográficas
 
