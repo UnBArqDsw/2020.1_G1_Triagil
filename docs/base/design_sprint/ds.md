@@ -35,7 +35,7 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
     * [5W2H](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/pre-rastriabilidade/5w2h/)
     * [Causa-efeito](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/pre-rastriabilidade/causa_e_efeito/)
     * [Brainstorming](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/)
-    * [Plano de Custos e Esforços](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/documentos/plano_custos)
+    * [Plano de Custos e Esforços](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/documentos/plano_custos/)
     * [Plano de Riscos](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/documentos/plano_risco/)
     * [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/)
 
