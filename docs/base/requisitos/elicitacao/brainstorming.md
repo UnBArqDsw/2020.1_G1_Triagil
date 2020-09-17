@@ -38,37 +38,37 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 
 ## Requisitos Elicitados
 
-|Requisito|Descrição|
-|:--:|:----:|
-|BS01|O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial"|
-|BS02|O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital|
-|BS03|O sistema Tragil deve guardar o histórico de enferemiros que realizaram a triagem do dia|
-|BS04|O enfermeiro deve escolher um paciente para poder visualizar os dados dele|
-|BS05|O sistema Triagil deve classificar de acordo com o protocolo de Manchester|
-|BS06|A enfermeira deve ter a opção de alterar ou confirmar a classificação do paciente feita por ela|
-|BS07|O sistema Tragil não deve tirar a autonomia do enfermeiro no processo de triagem|
-|BS08|O enfermeiro deve poder corrigir a classificação do paciente em apenas 1 nível abaixo ou acima da análise que ele fez previamente|
-|BS09|O enfermeiro deve ter a opção de "criar paciente"|
-|BS10|O sistema Triagil deve atender aos hospitais públicos e privados|
-|BS11|Os dados da triagem devem chegar sem alteração para o médico, de forma a evitar repetição de perguntas|
-|BS12|O enfermeiro deve ser o centro do sistema|
-|BS13|O enfermeiro tem acesso à parte de priorização da triagem|
-|BS14|O sistema triágil deve verificar se o paciente está cadastrado no sistema|
-|BS15|O sistema Triágil deve confirmar os dados do paciente no banco de dados|
-|BS16|O hospital deve ter uma ligação ao banco externo do Triágil|
-|BS17|O sistema Triágil deve verificar o vínculo entre enfermeiro e hospital|
-|BS18|O hospital deve enviar dados dos enfermeiros para nosso sistema|
-|BS19|O sistema deve ser unificado|
-|BS20|O paciente pode se cadastrar no aplicativo a qualquer momento|
-|BS21|O login do paciente para entrar na fila do hospital só pode ser feito ao entrar na rede de hospital|
-|BS22|O acesso à rede do hospital deve ser feito por um código de acesso|
-|BS23|O sistema deve diferenciar o acessos a funcionalidades de acordo com o login de paciente e enfermeiro|
-|BS24|O sistema Triágil deve enviar ao hospital atualização constante da fila de pacientes de acordo com os níveis de classificação|
-|BS25|O aplicativo pode ser customizado de acordo com o hospital|
+|Requisito|Descrição| Tipo|
+|:--:|:----:|:----:|
+|BS01|O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial"| RF01|
+|BS02|O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital| RF02|
+|BS03|O sistema Triagil deve guardar o histórico de enfermeiros que realizaram a triagem do dia| RNF01|
+|BS04|O enfermeiro deve escolher um paciente para poder visualizar os dados dele| RF03|
+|BS05|O sistema Triagil deve classificar de acordo com o protocolo de Manchester| RNF02|
+|BS06|A enfermeira deve ter a opção de alterar ou confirmar a classificação do paciente feita por ela| RF04|
+|BS07|O sistema Triagil não deve tirar a autonomia do enfermeiro no processo de triagem| RNF03|
+|BS08|O enfermeiro deve poder corrigir a classificação do paciente em apenas 1 nível abaixo ou acima da análise que ele fez previamente| RF05|
+|BS09|O enfermeiro deve ter a opção de "criar paciente"|RF06|
+|BS10|O sistema Triagil deve atender aos hospitais públicos e privados|RNF04|
+|BS11|Os dados da triagem devem chegar sem alteração para o médico, de forma a evitar repetição de perguntas|RNF05|
+|BS12|O enfermeiro deve ser o centro do sistema|RNF06|
+|BS13|O enfermeiro tem acesso à parte de priorização da triagem|RF07|
+|BS14|O sistema triágil deve verificar se o paciente está cadastrado no sistema|RNF07|
+|BS15|O sistema Triágil deve confirmar os dados do paciente no banco de dados|RNF08|
+|BS16|O hospital deve ter uma ligação ao banco externo do Triágil|RNF09|
+|BS17|O sistema Triágil deve verificar o vínculo entre enfermeiro e hospital|RNF10|
+|BS18|O hospital deve enviar dados dos enfermeiros para nosso sistema|RNF11|
+|BS19|O sistema deve ser unificado|RN12|
+|BS20|O paciente pode se cadastrar no aplicativo a qualquer momento|RF08|
+|BS21|O login do paciente para entrar na fila do hospital só pode ser feito ao entrar na rede de hospital|RF09|
+|BS22|O acesso à rede do hospital deve ser feito por um código de acesso|RNF12|
+|BS23|O sistema deve diferenciar o acessos a funcionalidades de acordo com o login de paciente e enfermeiro|RNF13|
+|BS24|O sistema Triágil deve enviar ao hospital atualização constante da fila de pacientes de acordo com os níveis de classificação|RF1O|
+|BS25|O aplicativo pode ser customizado de acordo com o hospital|RNF14|
 
 ---
 
-Data | Versão | Descrição | Autor(es) |
+|Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 10/09/2020 | 0.1 | Criação do documento na wiki  | Débora Vilela |
 | 10/09/2020 | 0.1 | Adicionando rastreamento e retirando sumário  | Débora Vilela |

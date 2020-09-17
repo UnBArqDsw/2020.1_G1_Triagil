@@ -95,19 +95,19 @@ Assim podemos perceber que ambas as partes já se depararam com esses problemas 
 
 | ID | Descrição | Tipo |
 |----|:---------:|------|
-| Q01 | O enfermeiro deve realizar cadastro com vinculação de algum hospital| RF |
-| Q02 | O enfermeiro deve consultar pacientes já cadastrados | RF |
-| Q03 | O enfermeiro deve cadastrar novos pacientes | RF |
-| Q04 | O paciente pode realizar cadastro | RF |
-| Q05 | O sistema deve autenticar os dados do enfermeiro e do hospital | RF |
-| Q06 | O sistema deve classificar o paciente de acordo o Sistema Manchester | RF |
-| Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RF  |
-| Q08 | O sistema deve ser seguro | RNF  |
-| Q09  | O sistema deve ter uma boa usabilidade | RNF |
-| Q10  | O sistema deve ter alta disponibilidade  | RNF |
-| Q11  | O sistema deve acessar um banco de dados externo | RF |
-| Q12  | O sistema deve ser de fácil adaptação | RNF |
-| Q13  | O enfermeiro deve ter acesso aos dados de todos os pacientes | RF |
+| Q01 | O enfermeiro deve realizar cadastro com vinculação de algum hospital| RF15 |
+| Q02 | O enfermeiro deve consultar pacientes já cadastrados | RF16 |
+| Q03 | O enfermeiro deve cadastrar novos pacientes | RF06 |
+| Q04 | O paciente pode realizar cadastro | RF08 |
+| Q05 | O sistema deve autenticar os dados do enfermeiro e do hospital | RF17 |
+| Q06 | O sistema deve classificar o paciente de acordo o Sistema Manchester | RNF02 |
+| Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RNF03  |
+| Q08 | O sistema deve ser seguro | RNF17  |
+| Q09  | O sistema deve ter uma boa usabilidade | RNF18 |
+| Q10  | O sistema deve ter alta disponibilidade  | RNF19 |
+| Q11  | O sistema deve acessar um banco de dados externo | RNF09 |
+| Q12  | O sistema deve ser de fácil adaptação | RNF16 |
+| Q13  | O enfermeiro deve ter acesso aos dados de todos os pacientes | RF03 |
 
 ---
 
