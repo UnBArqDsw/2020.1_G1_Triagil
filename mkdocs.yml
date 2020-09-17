@@ -47,6 +47,9 @@ nav:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
         - Backlog do Produto: base/requisitos/modelagem/backlog.md
+      # - Análise:
+      #   - Verificação: base/requisitos/analise/verificacao.md
+      #   - Validação: base/requisitos/analise/validacao.md
       - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
     - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
