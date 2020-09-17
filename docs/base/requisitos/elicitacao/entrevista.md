@@ -120,11 +120,11 @@ R: Resposta
 | ID | Descrição | Tipo |
 |----|:---------:|------|
 | ENT01  | O aplicativo deve possuir uma fila | RF11 |
-| ENT02  | O aplicativo deve possuir informações persistentes do paciente | RNF15 |
+| ENT02  | O aplicativo deve possuir informações persistentes do paciente | RNF16 |
 | ENT03  | O aplicativo deve apresentar fila ou filas de triagem para o/a enfermeiro(a) | RF12 |
 | ENT04  | O aplicativo deve possuir uma aba com informações consideradas essenciais pelos profissionais da saúde | RF13 |
 | ENT05  | O aplicativo deve apresentar o histórico médico do paciente | RF14 |
-| ENT06  | O aplicativo deve possuir interface intuitiva | RNF16 |
+| ENT06  | O aplicativo deve possuir interface intuitiva | RNF17|
 ---
 
 **Histórico de versão**

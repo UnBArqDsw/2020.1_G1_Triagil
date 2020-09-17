@@ -20,7 +20,7 @@ Storyboards são organizadores gráficos tais como uma série de ilustrações o
 |SB01|O paciente deve conseguir se cadastrar a qualquer momento| RF08|
 |SB02|O Triagil deve conseguir armazenar os dados do paciente| RNF08|
 |SB03|O Triagil deve confirmar os dados do paciente| RNF08|
-|SB04|O Triagil deve ser associado a rede do hospital| RNF20|
+|SB04|O Triagil deve ser associado a rede do hospital| RNF21|
 |SB05|O Triagil deve gerar um relatório de classificação Manchester| RNF02|
 |SB06|O enfermeiro deve ter autonomia na aplicação| RNF03|
 |SB07|O enfermeiro deve poder corrigir a classificação do paciente| RF04|

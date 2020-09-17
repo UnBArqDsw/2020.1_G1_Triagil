@@ -102,11 +102,11 @@ Assim podemos perceber que ambas as partes já se depararam com esses problemas 
 | Q05 | O sistema deve autenticar os dados do enfermeiro e do hospital | RF17 |
 | Q06 | O sistema deve classificar o paciente de acordo o Sistema Manchester | RNF02 |
 | Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RNF03  |
-| Q08 | O sistema deve ser seguro | RNF17  |
-| Q09  | O sistema deve ter uma boa usabilidade | RNF18 |
-| Q10  | O sistema deve ter alta disponibilidade  | RNF19 |
+| Q08 | O sistema deve ser seguro | RNF18  |
+| Q09  | O sistema deve ter uma boa usabilidade | RNF19 |
+| Q10  | O sistema deve ter alta disponibilidade  | RNF20 |
 | Q11  | O sistema deve acessar um banco de dados externo | RNF09 |
-| Q12  | O sistema deve ser de fácil adaptação | RNF16 |
+| Q12  | O sistema deve ser de fácil adaptação | RNF17 |
 | Q13  | O enfermeiro deve ter acesso aos dados de todos os pacientes | RF03 |
 
 ---
