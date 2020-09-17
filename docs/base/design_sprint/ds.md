@@ -40,6 +40,7 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
     * [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/)
 
 * _Prototype_  
+    [Protótipo de Alta Fidelidade](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/prototipo/prototipo_de_alta/)
 
 * _Test_
 
@@ -49,9 +50,11 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 11/09 | 1.1.0 | Criação do documento na wiki  | Débora Vilela |
+| 11/09 | 1.0.0 | Criação do documento na wiki  | Débora Vilela |
 | 11/09 | 1.0.1 |Correção no texto| Débora Vilela |
 | 16/09 | 1.0.2 | Correções| Nathalia Lorena |
+| 17/09 | 1.0.3 | Adicionado o link do protótipo e correções | Francisco Heronildo |
+
 ## Referências Bibliográficas
 
 Google Design Sprint: como funciona e como aplicar no seu projeto. Disponível em: <https://brasil.uxdesign.cc/google-design-sprint-como-funciona-e-como-aplicar-no-seu-projeto-279107363659>. Acesso em: 10, Setembro de 2020.
