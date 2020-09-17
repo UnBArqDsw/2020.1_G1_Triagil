@@ -79,7 +79,7 @@ Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 15/09/2020 |1.0.0 | Criação do documento na wiki  | Débora Vilela |
 | 16/09/2020 |1.1.0 | Adição dos tópicos expositivos| Débora Vilela|
-| 16/09/2020 |1.2.0 | Adição das tabelas classificadas pelo MoSCoW| Débora Vilela|
+| 16/09/2020 |1.2.0 | Adição das tabelas classificadas pelo MoSCoW| Nathalia Lorena|
 
 
 ## Referências Bibliográficas
