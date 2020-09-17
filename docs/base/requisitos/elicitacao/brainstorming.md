@@ -58,13 +58,13 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 |BS16|O hospital deve ter uma ligação ao banco externo do Triágil|RNF09|
 |BS17|O sistema Triágil deve verificar o vínculo entre enfermeiro e hospital|RNF10|
 |BS18|O hospital deve enviar dados dos enfermeiros para nosso sistema|RNF11|
-|BS19|O sistema deve ser unificado|RN12|
+|BS19|O sistema deve ser unificado|RNF12|
 |BS20|O paciente pode se cadastrar no aplicativo a qualquer momento|RF08|
 |BS21|O login do paciente para entrar na fila do hospital só pode ser feito ao entrar na rede de hospital|RF09|
-|BS22|O acesso à rede do hospital deve ser feito por um código de acesso|RNF12|
-|BS23|O sistema deve diferenciar o acessos a funcionalidades de acordo com o login de paciente e enfermeiro|RNF13|
+|BS22|O acesso à rede do hospital deve ser feito por um código de acesso|RNF13|
+|BS23|O sistema deve diferenciar o acessos a funcionalidades de acordo com o login de paciente e enfermeiro|RNF14|
 |BS24|O sistema Triágil deve enviar ao hospital atualização constante da fila de pacientes de acordo com os níveis de classificação|RF1O|
-|BS25|O aplicativo pode ser customizado de acordo com o hospital|RNF14|
+|BS25|O aplicativo pode ser customizado de acordo com o hospital|RNF15|
 
 ---
 
