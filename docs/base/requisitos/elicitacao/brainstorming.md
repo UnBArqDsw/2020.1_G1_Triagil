@@ -40,7 +40,7 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 
 |Requisito|Descrição| Tipo|
 |:--:|:----:|:----:|
-|BS01|O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial"| RF01|
+|[BS01](#bs01)|O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial"| RF01|
 |BS02|O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital| RF02|
 |BS03|O sistema Triagil deve guardar o histórico de enfermeiros que realizaram a triagem do dia| RNF01|
 |BS04|O enfermeiro deve escolher um paciente para poder visualizar os dados dele| RF03|
