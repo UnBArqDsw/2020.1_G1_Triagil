@@ -4,7 +4,7 @@
 
 O questionário é uma técnica utilizada para coletar informações e levantar requisitos bastante comum no meio de desenvolvimento de software. Utilizamos dois questionários a fim de atender uma maior cobertura de usuários e pessoas que serão impactadas. Foi feito um para pacientes e outro para profissionais de enfermagem. Os questionários foram divulgados em grupos nas redes sociais e conseguimos 61 respostas de pacientes e 17 de profissionais de enfermagem.
 
-## Questionário pacientes
+## Questionário Pacientes
 
 ## Questão 1
 
@@ -43,7 +43,7 @@ O questionário é uma técnica utilizada para coletar informações e levantar 
 ![Imgur](https://imgur.com/7AkUTxI.jpg)
 
 
-## Questionário proficionais de enfermagem
+## Questionário Profissionais de Enfermagem
 
 ## Questão 1
 
@@ -79,9 +79,9 @@ O questionário é uma técnica utilizada para coletar informações e levantar 
 
 ## Análise
 
-Com os resultados dos questionários apresentados, pode-se tirar algumas conclusões, como por exemplo, cerca de 70% dos profissionais que respoderam trabalham em hospitais públicos. Já entre os pacientes 69% vão à hospitais da rede privada.  Dos pacientes consultados 55,7% tiveram problemas com preenchimento repetitivo de fichas e 82% dos profissionais se depararam com classificações erradas de paciêntes.
+Com os resultados dos questionários apresentados, pode-se tirar algumas conclusões, como por exemplo, cerca de 70% dos profissionais que responderam trabalham em hospitais públicos. Já entre os pacientes, 69% vão à hospitais da rede privada.  Dos 55 pacientes consultados,7% tiveram problemas com preenchimento repetitivo de fichas e 82% dos profissionais se depararam com classificações erradas de pacientes.
 
-Assim podemos percerber que ambas as partes já se depararam com esses problemas no ambiente hospitalar, segundo os profissionais uma classificação errada pode ser bastante grave ou crucial para a saúde de um paciênte, e 100% dos enfermeiros e técnico em enfermagem acreditam que uma aplicação que auxiliasse o processo de triagem seria últil.
+Assim podemos perceber que ambas as partes já se depararam com esses problemas no ambiente hospitalar, segundo os profissionais uma classificação errada pode ser bastante grave ou crucial para a saúde de um paciente, e 100% dos enfermeiros e técnicos em enfermagem acreditam que uma aplicação que auxiliasse o processo de triagem seria útil.
 
 ## Requisitos Elicitados
 
@@ -95,19 +95,19 @@ Assim podemos percerber que ambas as partes já se depararam com esses problemas
 
 | ID | Descrição | Tipo |
 |----|:---------:|------|
-| Q01 | O enfermeiro deve realizar cadastro com vinculação de algum hospital| RF |
-| Q02 | O enfermeiro deve consultar pacientes já cadastrados | RF |
-| Q03 | O enfermeiro deve cadastrar novos pacientes | RF |
-| Q04 | O paciente pode realizar cadastro | RF |
-| Q05 | O sistema deve autenticar os dados enfermeiro e do hospital | RF |
-| Q06 | O sitema deve classificar o paciente de acordo o Sistema Manchester | RF |
-| Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RF  |
-| Q08 | O sistema deve ser seguro | RNF  |
-| Q09  | O sistema deve ter uma boa usabilidade | RNF |
-| Q10  | O sistema deve ter alta disponibilidade  | RNF |
-| Q11  | O sistema deve acessar um banco de dodos externo | RF |
-| Q12  | O sistema deve ser de fácil adaptação | RNF |
-| Q13  | O enfermeiro deve ter acesso ao dados de todos os pacientes | RF |
+| Q01 | O enfermeiro deve realizar cadastro com vinculação de algum hospital| RF15 |
+| Q02 | O enfermeiro deve consultar pacientes já cadastrados | RF16 |
+| Q03 | O enfermeiro deve cadastrar novos pacientes | RF06 |
+| Q04 | O paciente pode realizar cadastro | RF08 |
+| Q05 | O sistema deve autenticar os dados do enfermeiro e do hospital | RF17 |
+| Q06 | O sistema deve classificar o paciente de acordo o Sistema Manchester | RNF02 |
+| Q07 | O sistema deve dar autonomia ao enfermeiro em todos os processos | RNF03  |
+| Q08 | O sistema deve ser seguro | RNF18  |
+| Q09  | O sistema deve ter uma boa usabilidade | RNF19 |
+| Q10  | O sistema deve ter alta disponibilidade  | RNF20 |
+| Q11  | O sistema deve acessar um banco de dados externo | RNF09 |
+| Q12  | O sistema deve ser de fácil adaptação | RNF17 |
+| Q13  | O enfermeiro deve ter acesso aos dados de todos os pacientes | RF03 |
 
 ---
 
@@ -115,7 +115,8 @@ Assim podemos percerber que ambas as partes já se depararam com esses problemas
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criação do Documento | João Vitor Alves |
+| 10/09 | 1.0.0 | Criação do Documento | João Vitor Alves |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

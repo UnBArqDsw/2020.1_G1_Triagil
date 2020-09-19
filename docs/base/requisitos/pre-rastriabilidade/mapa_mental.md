@@ -9,7 +9,7 @@ A partir das ideias que a equipe discutiu em um primeiro momento desenvolvemos o
 ![Mapa Mental](https://i.imgur.com/XRc1EE7.png)
 
 !!! note ""
-    **Autor(es):** Debóra, Nathalia Lorena</br>
+    **Autor(es):** Débora, Nathalia Lorena</br>
     **Data:** 03 de Setembro de 2020 </br>
     **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/EuTwLqIfDJdMqKI0ISFe8NsBSs6pvd-MC78REDQF94DUkg?e=HQHvUV)
 
@@ -19,7 +19,8 @@ A partir das ideias que a equipe discutiu em um primeiro momento desenvolvemos o
 
  Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criação do Documento e Introdução | Nathalia Lorena Cardoso e Francisco Heronildo|
+| 10/09 | 1.0.0 | Criação do Documento e Introdução | Nathalia Lorena Cardoso e Francisco Heronildo|
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

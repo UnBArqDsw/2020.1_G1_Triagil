@@ -68,7 +68,7 @@ O hospital deve enviar para o nosso sistema dados dos enfermeiros.</p>
 
 ---
 
-Data | Versão | Descrição | Autor(es) |
+|Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 10/09/2020 | 0.1 | Criação do documento na wiki  | Débora Vilela |
 | 10/09/2020 | 0.1 | Adicionando rastreamento e retirando sumário  | Débora Vilela |

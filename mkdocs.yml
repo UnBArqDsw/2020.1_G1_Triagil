@@ -40,13 +40,17 @@ nav:
         - Entrevista: base/requisitos/elicitacao/entrevista.md
         - Questionário: base/requisitos/elicitacao/questionario.md
         - Storyboard: base/requisitos/elicitacao/storyboard.md
+      - Priorização:
+        - First Thing First: base/requisitos/priorizacao/first_thing_first.md
+        - MoSCoW: base/requisitos/priorizacao/moscow.md    
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
-        # - Backlog do Produto: base/requisitos/modelagem/backlog.md
+        - Backlog do Produto: base/requisitos/modelagem/backlog.md
       # - Análise:
       #   - Verificação: base/requisitos/analise/verificacao.md
       #   - Validação: base/requisitos/analise/validacao.md
+      - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
     - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
     - Apresentação:
@@ -54,4 +58,3 @@ nav:
         - Scrum: base/apresentacao/metodologia/scrum.md
         - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
     - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
-    # - Iniciativas Extras:

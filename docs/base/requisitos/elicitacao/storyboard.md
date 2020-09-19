@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Storyboard são organizadores gráficos tais como uma série de ilustrações ou imagens arranjadas em sequência com o propósito de pré-visualizar um filme, animação ou gráfico animado, incluindo elementos interativos em websites, técnica na qual foi usada para avaliar a interface da aplicação.
+Storyboards são organizadores gráficos tais como uma série de ilustrações ou imagens arranjadas em sequência com o propósito de pré-visualizar um filme, animação ou gráfico animado, incluindo elementos interativos em websites, técnica que foi usada para avaliar a interface da aplicação.
 
 ## StoryBoards
 
@@ -15,16 +15,16 @@ Storyboard são organizadores gráficos tais como uma série de ilustrações ou
 
 ## Requisitos Elicitados
 
-|Requisito|Descrição|
-|:--:|:----:|
-|SB01|O paciente deve conseguir se cadrastrar a qualquer momento|
-|SB02|O enfermeiro deve conseguir amazenar os dados do paciente|
-|SB03|O enfeirmeiro deve confirmar os dados do paciente|
-|SB04|O Triagil deve ser associado a rede do hospital|
-|SB05|O Triagil deve gerar um relatório de classificação Manchester|
-|SB06|O enfermeiro deve ter autonomia na aplicação|
-|SB07|O enfermeiro deve poder corrigir a classificação do paciente|
-|SB08|O enfermeiro deve alterar a posição do paciente na fila|
+|Requisito|Descrição| Tipo|
+|:--:|:----:|:-----:|
+|SB01|O paciente deve conseguir se cadastrar a qualquer momento| RF08|
+|SB02|O Triagil deve conseguir armazenar os dados do paciente| RNF08|
+|SB03|O Triagil deve confirmar os dados do paciente| RNF08|
+|SB04|O Triagil deve ser associado a rede do hospital| RNF21|
+|SB05|O Triagil deve gerar um relatório de classificação Manchester| RNF02|
+|SB06|O enfermeiro deve ter autonomia na aplicação| RNF03|
+|SB07|O enfermeiro deve poder corrigir a classificação do paciente| RF04|
+|SB08|O enfermeiro deve alterar a posição do paciente na fila| RF18|
 
 ---
 
@@ -32,7 +32,8 @@ Storyboard são organizadores gráficos tais como uma série de ilustrações ou
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/09 | 0.1 | Criado o documento | Francisco Heronildo |
+| 10/09 | 1.0.0 | Criado o documento | Francisco Heronildo |
+| 16/09 | 1.0.1 | Correções | Nathalia Lorena |
 
 ## Referências
 

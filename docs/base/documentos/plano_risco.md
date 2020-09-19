@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O  Gerenciamento  dos  riscos  do  projeto  inclui  os  processos  de  planejamento,  identificação,  análise,  planejamento de respostas e controle de riscos de um projeto. Os objetivos do gerenciamento dos riscos do projeto são aumentar a probabilidade e o impacto dos eventos positivos e reduzir a probabilidade e o impacto dos eventos negativos no projeto.
+O  Gerenciamento  dos  riscos  do  projeto  inclui  os  processos  de  planejamento,  identificação,  análise,  planejamento de respostas e controle de riscos de um projeto. Os objetivos do gerenciamento dos riscos do projeto são: aumentar a probabilidade e o impacto dos eventos positivos, reduzir a probabilidade e o impacto dos eventos negativos no projeto.
 
 ## Planejar o gerenciamento dos riscos
 
@@ -10,15 +10,15 @@ Planejar  o  gerenciamento  dos  riscos  é  o  processo  de  definição  de  c
 
 ## Identificar os riscos
 
-Identificar os riscos é o processo de determinação dos riscos que podem afetar o projeto e de documentação de  suas  características.  O  principal  benefício  desse  processo  é  a  documentação  dos  riscos  existentes  e  o  conhecimento  e  a  capacidade  que  ele  fornece  à  equipe  do  projeto  de  antecipar  os  eventos.
+Identificar os riscos é o processo de determinação dos riscos que podem afetar o projeto e de documentação de suas características.  O  principal  benefício  desse  processo  é  a  documentação  dos  riscos  existentes, o conhecimento e a capacidade que ele fornece à  equipe do projeto de antecipar os eventos.
 
-Seguindo as recomendações do PMBOK a equipe realizará a identificação por meio de uma reunião afim de antecipar possíveis erros e mitigá-los.
+Seguindo as recomendações do PMBOK a equipe realizará a identificação por meio de uma reunião a fim de antecipar possíveis erros e mitigá-los.
 
 ## Realizar a análise dos riscos
 
-Segundo o PMBOK nessa fase existirá duas partes a ser analisadas. A **análise qualitativa** que é o processo de priorização de riscos para análise ou ação adicional através da avaliação e combinação de sua probabilidade de ocorrência e impacto. E a **análise qualitativa** que é o é  o  processo  de  analisar  numericamente  o  efeito  dos  riscos  identificados nos objetivos gerais do projeto.
+Segundo o PMBOK nessa fase existirão duas partes a serem analisadas. A **análise qualitativa** que é o processo de priorização de riscos para análise ou ação adicional através da avaliação e combinação de sua probabilidade de ocorrência e impacto. E a **análise qualitativa** que é o processo  de  analisar  numericamente  o  efeito  dos  riscos  identificados nos objetivos gerais do projeto.
 
-Para isso é necessário classificar os riscos designados com base na avaliação da sua probabilidade, impacto e categorias. Nas tabelas abaixo temos a classificação das probabilidade, impacto e os tipos de riscos:
+Para isso é necessário classificar os riscos designados com base na avaliação da sua probabilidade, impacto e categorias. Nas tabelas abaixo temos a classificação das probabilidades, impacto e os tipos de riscos:
 
 ### Probabilidade
 
@@ -66,7 +66,7 @@ Controlar os riscos é o processo de implementação de planos de respostas aos 
 
 ## Registros
 
-O principal resultado do processo identificar os riscos é a entrada inicial no registro dos riscos. O registro dos riscos é o documento em que os resultados da análise dos riscos e o planejamento das respostas aos riscos são registrados.
+O principal resultado do processo de identificar os riscos é a entrada inicial no registro dos riscos. O registro dos riscos é o documento em que os resultados da análise dos riscos e o planejamento das respostas aos riscos são registrados.
 
 E para registrar um risco foi utilizado o seguinte formato:
 
@@ -88,7 +88,7 @@ E para registrar um risco foi utilizado o seguinte formato:
 
 ### Tabela de Riscos
 
-Nessa fase final será levantados os possíveis erros, seguindo os tópicos mencionados anteriormente nesse documento segundo o PMBOK.
+Nessa fase final serão levantados os possíveis erros, seguindo os tópicos mencionados anteriormente nesse documento segundo o PMBOK.
 
 #### Riscos Negativos
 
@@ -98,7 +98,7 @@ Nessa fase final será levantados os possíveis erros, seguindo os tópicos menc
 | RN2 | Membros terem problemas de conexão | Desmotivação dos integrantes |  Sobrecarga de trabalho para os demais membros | Recursos | Alto | Média |
 | RN3 | Falta de integração entre a equipe | Membros trabalharem juntos pela primeira vez | Atraso no cronograma | Recursos | Alto | Alta |
 | RN 4 | Mudança no cronograma de atividades | Suspensão do ensino remoto na Universidade de Brasília | Suspensão do projeto | Ambiente | Alto | Média |
-| RN 5 | Dificuldades com as tecnologias | Alguns membros não trabalhou com as tecnologias sugeridas | Atraso na entrega das atividades | Tecnologia | Alto | Média |
+| RN 5 | Dificuldades com as tecnologias | Alguns membros não trabalharam com as tecnologias sugeridas | Atraso na entrega das atividades | Tecnologia | Alto | Média |
 | RN 6 | Membro ou seu familiar adquirir COVID-19 ou ficar doente | Desmotivação dos integrantes | Sobrecarga de trabalho para os demais membros | Ambiente | Alto | Média |
 
 #### Riscos Positivos
@@ -107,7 +107,7 @@ Nessa fase final será levantados os possíveis erros, seguindo os tópicos menc
 | --- | --- | --- | --- | --- | --- | --- |
 | - | - | - | - | - | - | - |
 
-Eventualmente ao longo do desenvolvimento da aplicação poderá ser levatamos mais erros que serão registrados em busca de mitigá-los.
+Eventualmente ao longo do desenvolvimento da aplicação poderão ser identificados mais erros que serão registrados em busca de mitigá-los.
 
 ---
 
@@ -115,8 +115,8 @@ Eventualmente ao longo do desenvolvimento da aplicação poderá ser levatamos m
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 09/09 | 0.1 | Criação do documento de gerenciamento dos riscos | Francisco Heronildo |
-
+| 09/09 | 1.0.0 | Criação do documento de gerenciamento dos riscos | Francisco Heronildo |
+| 16/09 | 1.0.1| Correções | Nathalia Lorena |
 ## Referências
 
 Plano de gerenciamento de Riscos. **HubCare**, 2019. Disponível em: <https://cjjcastro.gitlab.io/2019-1-hubcare-docs/project-risk-management/risk-management-plan/>. Acesso em: 09, Setembro e 2020.
