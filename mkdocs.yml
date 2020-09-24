@@ -46,10 +46,7 @@ nav:
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
-        - Backlog do Produto: base/requisitos/modelagem/backlog.md
-      # - Análise:
-      #   - Verificação: base/requisitos/analise/verificacao.md
-      #   - Validação: base/requisitos/analise/validacao.md
+        # - Backlog do Produto: base/requisitos/modelagem/backlog.md
       - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
     - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
@@ -58,3 +55,8 @@ nav:
         - Scrum: base/apresentacao/metodologia/scrum.md
         - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
     - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
+  - Modelagem:
+    - UML – Diagramas Estáticos: modelagem/diagramas/uml_estatico.md
+    - UML – Diagramas Dinâmicos: modelagem/diagramas/uml_dinamico.md
+    - Iniciativa Extra:
+      - Backlog do Produto: modelagem/extra/backlog.md
