@@ -17,7 +17,7 @@ Clique na imagem abaixo para abrir o Protótipo de Alta Fidelidade
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 17/09 | 1.0.0 | Criação do documento na wiki  | Francisco Heronildo |
-| 26/09 | 1.1.0 | Atualizando o link e imagem do novo protótipo  | Francisco Heronildo |
+| 26/09 | 1.1.0 | Atualizando o link e imagem do novo protótipo  | Lude Ribeiro |
 ## Referências
 
 FIGMA. FIGMA, 2020. Disponível em: <https://www.figma.com/>. Acesso em: 16, Novembro de 2020.
