@@ -2,25 +2,25 @@
 
 ## Introdução
 
-O backlog do Produto é uma listagem de todos os afazeres pendentes a ser fazer no projeto. Esses afazeres geralmente são levantados a partir de reuniões entre a equipe de desenvolvimento, ou algum representante, o PO (Product Owner). Por isso geralmente esses afazeres são bem subjetivos.
+O backlog do Produto é uma listagem de todos os afazeres pendentes a ser fazer no projeto. Esses afazeres geralmente são levantados a partir de reuniões entre a equipe de desenvolvimento, ou algum representante, o PO (Product Owner). Por isso, geralmente esses afazeres são bem subjetivos.
 
 ## Metodologia
 
-Para a confecção do nosso backlog utilizamos todos nossos documentos de elicitação, são eles: [Brainstorm](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/entrevista/), [Questionario](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/questionario/), [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/). Depois disso foi deita a refatoração e a confecção de um novo protótipo de alta fidelidade que permitiu que pudessemos averiguar e levantar novos requisitos e histórias de usuário, e assim foi feito nossa mais nova versão do Backlog g
+Para a confecção do nosso backlog utilizamos todos nossos documentos de elicitação, são eles: [Brainstorm](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/entrevista/), [Questionario](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/questionario/), [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/). Depois disso foi deita a refatoração e a confecção de um novo protótipo de alta fidelidade que permitiu que pudessemos averiguar e levantar novos requisitos e histórias de usuário, e assim foi feito nossa mais nova versão do Backlog.
 o Produto.
 
 ## Histórias de usuário
 
-![BacklogdoProduto](https://i.imgur.com/qcaB5A0.jpg)
+![BacklogdoProduto](https://i.imgur.com/h291JFR.png)
 
 ---
 
 | Data | Versão | Descrição | Autor(es) |
 | ---  | --- | --- | --- |
 | 16/09/2020 | 1.0.0 | Criação do documento na wiki  | João Victor |
-| 16/09/2020 | 1.0.1 | Adição da introdução e da metodologia  | Lude Ribeiro |
-| 17/09/2020 | 1.0.2 | Adição da introdução e da metodologia  | Lude Ribeiro |
-| 17/09/2020 | 2.0.0 | Nova nersão após refatoração do Backlog  | Lude Ribeiro e Miguel Alves |
+| 16/09/2020 | 1.1.0 | Adição da introdução e da metodologia  | Lude Ribeiro |
+| 17/09/2020 | 1.2.0 | Adição da introdução e da metodologia  | Lude Ribeiro |
+| 17/09/2020 | 2.0.0 | Nova versão após refatoração do Backlog  | Lude Ribeiro e Miguel Alves |
 
 ## Referências
 
