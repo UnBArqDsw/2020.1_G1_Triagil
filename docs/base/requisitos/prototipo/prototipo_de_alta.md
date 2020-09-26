@@ -8,7 +8,7 @@ O protótipo é usado para mencionar o dispositivo que se desenvolve/concebe de 
 
 Clique na imagem abaixo para abrir o Protótipo de Alta Fidelidade
 
-[<div align="center"><img width="300px" height="auto" src="https://i.imgur.com/NUQ8GTw.png"/></div>](https://www.figma.com/proto/8FBJBhjV9gqLoorpl7u3lP/High-Prototype-TRIAGIL?node-id=0%3A1&scaling=scale-down)
+[<div align="center"><img width="300px" height="auto" src="https://imgur.com/a/Zend5Yk.png"/></div>](https://www.figma.com/proto/Xa8vbwRrB9mXiYjerwYTzS/High-Prototype-TRIAGIL?node-id=0%3A1&scaling=scale-down)
 
 ---
 
@@ -17,7 +17,7 @@ Clique na imagem abaixo para abrir o Protótipo de Alta Fidelidade
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 17/09 | 1.0.0 | Criação do documento na wiki  | Francisco Heronildo |
-
+| 26/09 | 1.1.0 | Atualizando o link e imagem do novo protótipo  | Francisco Heronildo |
 ## Referências
 
 FIGMA. FIGMA, 2020. Disponível em: <https://www.figma.com/>. Acesso em: 16, Novembro de 2020.
