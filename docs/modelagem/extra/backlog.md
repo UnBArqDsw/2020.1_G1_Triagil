@@ -11,7 +11,7 @@ o Produto.
 
 ## Histórias de usuário
 
-![BacklogdoProduto](https://imgur.com/a/b3B65Kb)
+![BacklogdoProduto](https://i.imgur.com/qcaB5A0.jpg)
 
 ---
 
