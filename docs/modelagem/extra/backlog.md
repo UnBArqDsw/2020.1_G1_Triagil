@@ -22,7 +22,7 @@ o Produto.
 | 16/09/2020 | 1.0.0 | Criação do documento na wiki  | João Victor |
 | 16/09/2020 | 1.0.1 | Adição da introdução e da metodologia  | Lude Ribeiro |
 | 17/09/2020 | 1.0.2 | Adição da introdução e da metodologia  | Lude Ribeiro |
-| 17/09/2020 | 2.0.0 | Nova nersão após refatoração do Backlog  | Lude Ribeiro |
+| 17/09/2020 | 2.0.0 | Nova nersão após refatoração do Backlog  | Lude Ribeiro e Miguel Alves |
 
 ## Referências
 
