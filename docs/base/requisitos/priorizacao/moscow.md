@@ -25,7 +25,7 @@ Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos [Brai
 
 |Requisitos|Origem|Descrição|Classificação MoSCoW|
 |:--------:|:-------:|:------------------:|:-----|
-|RF01   |BS01 |O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial" |MUST|
+|RF01   |[BS01](brainstorming.md#bs01) |O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial" |MUST|
 |RF02   |BS02|O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital|MUST|
 |RF03   |BS04, Q13|O enfermeiro deve ter acesso ao dados de todos os pacientes|MUST|
 |RF04   |BS06, SB07|A enfermeira deve ter a opção de alterar ou confirmar a classificação do paciente feita por ela|MUST|

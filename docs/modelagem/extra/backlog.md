@@ -13,8 +13,6 @@ o Produto.
 
 ![BacklogdoProduto](https://imgur.com/a/b3B65Kb)
 
-## Backlog do produto
-
 ---
 
 | Data | Versão | Descrição | Autor(es) |
