@@ -6,8 +6,6 @@ Diagramas dinâmicos são usados ​​para descrever o comportamento para visua
 
 ## Diagrama de Sequência
 
-## Diagrama de Estado
-
 ## Diagrama de Atividades
 
 O objetivo do diagrama de atividades é mostrar o fluxo de atividades em um único processo. O diagrama mostra como um atividade depende uma da outra.
@@ -74,6 +72,26 @@ O diagrama de estados tem o objetivo de mostrar as transições entre os objetos
 
 ## Diagrama de Comunicação
 
+O diagrama de comunicação se preocupa com a organização estrutural dos objetos e indica quais as mensagens trocadas entre eles, além de mostrar implementações de operações.
+
+### Acesso do paciente
+
+![com-p-acess](https://southcentralus1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Funbbr-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!C6WZURgUY0-RZ8MNXWjnwvW0H_QCWdFJi-IiH8y71Ds65CVZhPRoSZVIK1LvKDXz%2Fitems%2F01KNGN7ES6C2UG5VTPJRCZMQCW4G23QHCW%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdW5iYnItbXkuc2hhcmVwb2ludC5jb21AZWMzNTliYTEtNjMwYi00ZDJiLWI4MzMtYzhlNmQ0OGY4MDU5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYwMTI1MTIwMCIsImV4cCI6IjE2MDEyNzI4MDAiLCJlbmRwb2ludHVybCI6ImJyOTBJR2srOUpvRWdLMTI1dU5UU2l2NmExbjNRSUZYS3FmSDJoUjJ4KzQ9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJOVEU1T1dFMU1HSXRNVFF4T0MwMFpqWXpMVGt4TmpjdFl6TXdaRFZrTmpobE4yTXkiLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8MTYwMTI3OTEyQGFsdW5vLnVuYi5iciIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDBkZWNmZjlAbGl2ZS5jb20iLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMiJ9.QVFmLzYrMFA4cXhaV0RmUXFnbUVOZzlmbDBxLy9jUDVIKzh0MnowaFo4VT0&encodeFailures=1&srcWidth=&srcHeight=&width=991&height=512&action=Access)
+
+!!! note ""
+    **Autor(es):** João Vitor, Francisco Heronildo</br>
+    **Data:** 27 de Setembro de 2020 </br>
+    **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/EswswTkPAoFJpGw10qh2fQwBYCiMaLSuITPgUwLmwh20lQ?e=H9twj5)
+
+### Acesso do Enfermeiro
+
+![com-e-acess](https://southcentralus1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Funbbr-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!C6WZURgUY0-RZ8MNXWjnwvW0H_QCWdFJi-IiH8y71Ds65CVZhPRoSZVIK1LvKDXz%2Fitems%2F01KNGN7EU64HSDIE2S3BAYJLGWNQQ4GTL4%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvdW5iYnItbXkuc2hhcmVwb2ludC5jb21AZWMzNTliYTEtNjMwYi00ZDJiLWI4MzMtYzhlNmQ0OGY4MDU5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYwMTI1MTIwMCIsImV4cCI6IjE2MDEyNzI4MDAiLCJlbmRwb2ludHVybCI6ImJyOTBJR2srOUpvRWdLMTI1dU5UU2l2NmExbjNRSUZYS3FmSDJoUjJ4KzQ9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJOVEU1T1dFMU1HSXRNVFF4T0MwMFpqWXpMVGt4TmpjdFl6TXdaRFZrTmpobE4yTXkiLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8MTYwMTI3OTEyQGFsdW5vLnVuYi5iciIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDBkZWNmZjlAbGl2ZS5jb20iLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMiJ9.QVFmLzYrMFA4cXhaV0RmUXFnbUVOZzlmbDBxLy9jUDVIKzh0MnowaFo4VT0&encodeFailures=1&srcWidth=&srcHeight=&width=1074&height=532&action=Access)
+
+!!! note ""
+    **Autor(es):** João Vitor,Francisco Heronildo</br>
+    **Data:** 27 de Setembro de 2020 </br>
+    **Versão:** [0.1](https://unbbr-my.sharepoint.com/:f:/g/personal/160006210_aluno_unb_br/EswswTkPAoFJpGw10qh2fQwBYCiMaLSuITPgUwLmwh20lQ?e=H9twj5)
+
 
 ---
 
@@ -83,7 +101,8 @@ O diagrama de estados tem o objetivo de mostrar as transições entre os objetos
 |:--:|:----:|:-------:|:-------:|
 | 27/09/2020 | 1.0.0 | Criação do documento no pages | Francisco Heronildo e João Vitor |
 | 27/09/2020 | 1.1.0 | Adicionado os diagramas de atividades | Francisco Heronildo e João Vitor |
-| 27/09/2020 | 1.2.0 | Adicionado os diagramas de estados | Francisco Heronildo e João Vitor |
+| 27/09/2020 | 1.2.0 | Adicionado os diagramas de estados |  João Vitor e Francisco Heronildo |
+| 27/09/2020 | 1.3.0 | Adicionado os diagramas de comunicação | João Vitor e Francisco Heronildo |
 
 ## Referências Bibliográficas
 
@@ -96,3 +115,5 @@ O que é diagrama de atividades UML? . **Lucidchart**, 2020. Disponível em: <ht
 O que é um diagrama de máquina de estados?. **Lucidchart** <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-maquina-de-estados-uml> Acesso em: 26, Setembro de 2020.
 
 Diagramas dinâmicos **Qr comer** <https://fga-desenho-2019-2.github.io/Wiki/seminario3/diagramas_dinamicos/> Acessado em: 27, Setembro de 2020.
+
+BRAZ, Geraldo. **Diagrama de Comunicação** 19 slides. Disponível em: <http://www.deinf.ufma.br/~geraldo/dob/10.Comunicacao.pdf> Acessado em: 27, Setembro de 2020.
