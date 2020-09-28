@@ -29,12 +29,12 @@ Abaixo, os diagramas de pacotes do projeto Triagil:
 **Autor(es):** Débora Vilela</br>
 **Data:** 26 de Setembro de 2020 </br>
 **Versão:** [1.0](https:\\unbbr-my.sharepoint.com\personal\160006210_aluno_unb_br\_layouts/15/onedrive.aspx?id=%2Fpersonal%2F160006210%5Faluno%5Funb%5Fbr%2FDocuments%2FADS%20%2D%20GRUPO%5F01%2FDiagramas%2FUML%20%2D%20Est%C3%A1ticos%2FPacotes)
-## Diagrama pacote Users 
+### Diagrama pacote Users 
 ![Users](https://imgur.com/TXSoPJS.png)
 **Autor(es):** Débora Vilela</br>
 **Data:** 26 de Setembro de 2020 </br>
 **Versão:** [1.0](https:\\unbbr-my.sharepoint.com\personal\160006210_aluno_unb_br\_layouts/15/onedrive.aspx?id=%2Fpersonal%2F160006210%5Faluno%5Funb%5Fbr%2FDocuments%2FADS%20%2D%20GRUPO%5F01%2FDiagramas%2FUML%20%2D%20Est%C3%A1ticos%2FPacotes)
-## Diagrama pacotes Systems 
+### Diagrama pacotes Systems 
 ![Systems](https://imgur.com/sbUnffl.png)
 **Autor(es):** Débora Vilela</br>
 **Data:** 26 de Setembro de 2020 </br>
@@ -55,6 +55,8 @@ Abaixo, os diagramas de pacotes do projeto Triagil:
 | 28/09 | 1.2.0 | Adicionando diagramas de pacotes | Débora Vilela |
 | 28/09 | 1.3.0 | Adicionando tópico de referências ao documento | Débora Vilela |
 | 28/09 | 1.4.0 | Adicionando autoria dos diagramas | Débora Vilela |
+| 28/09 | 1.4.1 | Corrigindo título dos diagramas | Débora Vilela |
+
 
 ## Referências
 
