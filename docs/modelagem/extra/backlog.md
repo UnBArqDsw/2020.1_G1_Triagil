@@ -10,7 +10,7 @@ Para a confecção do nosso backlog utilizamos todos nossos documentos de elicit
 
 ## Histórias de usuário
 
-![BacklogdoProduto](https://i.imgur.com/DxlAHcC.png)
+![BacklogdoProduto](https://i.imgur.com/QttvAux.png)
 
 [Planilha_BacklogProduto](https://docs.google.com/spreadsheets/d/1oNXpRmYNi-lmX1658zFyt23FzQxhIiJNmI9wpbBIuY4/edit?usp=sharing)
 
@@ -23,6 +23,7 @@ Para a confecção do nosso backlog utilizamos todos nossos documentos de elicit
 | 17/09/2020 | 1.2.0 | Adição da introdução e da metodologia  | Lude Ribeiro |
 | 17/09/2020 | 2.0.0 | Nova versão após refatoração do Backlog  | Lude Ribeiro e Miguel Alves |
 | 28/09/2020 | 3.0.0 | Nova versão após produção do protótipo | Miguel Alves e Lude Ribeiro | 
+| 28/09/2020 | 3.0.1 | Atualizando imagem correta do Backlog | Miguel Alves e Lude Ribeiro | 
 
 ## Referências
 
