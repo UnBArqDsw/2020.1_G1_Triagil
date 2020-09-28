@@ -40,14 +40,14 @@ nav:
         - Entrevista: base/requisitos/elicitacao/entrevista.md
         - Questionário: base/requisitos/elicitacao/questionario.md
         - Storyboard: base/requisitos/elicitacao/storyboard.md
-      - Priorização:
-        - First Thing First: base/requisitos/priorizacao/first_thing_first.md
-        - MoSCoW: base/requisitos/priorizacao/moscow.md    
+      # - Priorização:
+      #   - First Thing First: base/requisitos/priorizacao/first_thing_first.md
+      #   - MoSCoW: base/requisitos/priorizacao/moscow.md    
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
         # - Backlog do Produto: base/requisitos/modelagem/backlog.md
-      - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
+      # - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
     - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
     - Apresentação:
@@ -68,3 +68,7 @@ nav:
         - Diagrama de Caso de Uso: modelagem/diagramas/dinamicos/diagrama_use_case.md
     - Iniciativa Extra:
       - Backlog do Produto: modelagem/extra/backlog.md
+      - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
+      - Priorização:
+        - First Thing First: base/requisitos/priorizacao/first_thing_first.md
+        - MoSCoW: base/requisitos/priorizacao/moscow.md

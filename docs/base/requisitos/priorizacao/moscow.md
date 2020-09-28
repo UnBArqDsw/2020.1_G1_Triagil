@@ -2,7 +2,7 @@
 
 ## Introdução
 
-<p align="justify">É uma técnica de priorização utilizada para elencar os requisitos de um projeto de acordo com a sua criticidade e seu valor no negócio. Ajuda a priorizar o escopo de forma a dividir quais tarefas são de extrema importância para o sucesso do projeto e quais poderão ser descartadas caso o projeto sofra mudança de prazo e/ou perda de recursos.</p>   
+É uma técnica de priorização utilizada para elencar os requisitos de um projeto de acordo com a sua criticidade e seu valor no negócio. Ajuda a priorizar o escopo de forma a dividir quais tarefas são de extrema importância para o sucesso do projeto e quais poderão ser descartadas caso o projeto sofra mudança de prazo e/ou perda de recursos.
 
 ## Sobre a técnica MoSCoW
 
@@ -18,14 +18,13 @@ MoSCoW é um acrônimo para as 4 (quatro) categorias de requisitos utilizados na
 
 ## Aplicação da técnica no projeto
 
-Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos [Brainstorming](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\brainstorming.md), [Entrevista](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\entrevista.md), [Questionário](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\questionario.md) e [Storyboard](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\storyboard.md).
-
+Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos [Brainstorming](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/brainstorming.md), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/entrevista.md), [Questionário](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/questionario.md) e [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/storyboard.md).
 
 ## Requisitos Funcionais
 
 |Requisitos|Origem|Descrição|Classificação MoSCoW|
 |:--------:|:-------:|:------------------:|:-----|
-|RF01   |[BS01](brainstorming.md#bs01) |O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial" |MUST|
+|RF01   |BS01|O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial" |MUST|
 |RF02   |BS02|O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital|MUST|
 |RF03   |BS04, Q13|O enfermeiro deve ter acesso ao dados de todos os pacientes|MUST|
 |RF04   |BS06, SB07|A enfermeira deve ter a opção de alterar ou confirmar a classificação do paciente feita por ela|MUST|
@@ -43,7 +42,6 @@ Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos [Brai
 |RF16   |Q02|O enfermeiro deve consultar pacientes já cadastrados|MUST|
 |RF17   |Q05|O sistema deve autenticar os dados enfermeiro e do hospital|MUST|
 |RF18   |SB08|O enfermeiro deve alterar a posição do paciente na fila|MUST| 
-
 
 ## Requisitos Não Funcionais
 
@@ -71,21 +69,19 @@ Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos [Brai
 |RNF20   |Q10|O sistema deve ter alta disponibilidade|COULD|
 |RNF21   |SB04|O Triagil deve ser associado a rede do hospital|MUST|
 
-
-
 **Histórico de versões**
 
 Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 15/09/2020 |1.0.0 | Criação do documento na wiki  | Débora Vilela |
-| 16/09/2020 |1.1.0 | Adição dos tópicos expositivos| Débora Vilela|
-| 16/09/2020 |1.2.0 | Adição das tabelas classificadas pelo MoSCoW| Nathalia Lorena|
-
+| 16/09/2020 |1.1.0 | Adição dos tópicos expositivos | Débora Vilela |
+| 16/09/2020 |1.2.0 | Adição das tabelas classificadas pelo MoSCoW | Nathalia Lorena |
+| 28/09/2020 |1.2.1 | Correções dos links dos rastros | Francisco e Miguel |
 
 ## Referências Bibliográficas
 
-- Framework de priorização: MoSCoW. Disponível em: https://vidadeproduto.com.br/framework-moscow/ Acesso em 16 de setembro de 2020.
+Framework de priorização: MoSCoW. Disponível em: https://vidadeproduto.com.br/framework-moscow/ Acesso em 16 de setembro de 2020.
 
-- Priorizando Backlog com a Técnica MoSCoW. Disponível em: https://cafecomscrum.com/2015/11/07/priorizando-backlog-com-a-tecnica-moscow/ Acesso em 16 de setembro de 2020. 
+Priorizando Backlog com a Técnica MoSCoW. Disponível em: https://cafecomscrum.com/2015/11/07/priorizando-backlog-com-a-tecnica-moscow/ Acesso em 16 de setembro de 2020. 
 
-- Técnica MoSCoW – o que é? Vantagens e desvantagens em utilizar. Disponível em: https://www.linkedin.com/pulse/t%C3%A9cnica-moscow-o-que-%C3%A9-vantagens-e-desvantagens-em-felipe Acesso em 16 de setembro de 2020
+Técnica MoSCoW – o que é? Vantagens e desvantagens em utilizar. Disponível em: https://www.linkedin.com/pulse/t%C3%A9cnica-moscow-o-que-%C3%A9-vantagens-e-desvantagens-em-felipe Acesso em 16 de setembro de 2020

@@ -8,7 +8,7 @@ O protótipo é usado para mencionar o dispositivo que se desenvolve/concebe de 
 
 Clique na imagem abaixo para abrir o Protótipo de Alta Fidelidade
 
-[<div align="center"><img width="300px" height="auto" src="https://imgur.com/a/Zend5Yk.png"/></div>](https://www.figma.com/proto/Xa8vbwRrB9mXiYjerwYTzS/High-Prototype-TRIAGIL?node-id=1%3A8&scaling=scale-down)
+![<div align="center"><img width="300px" height="auto" src="https://imgur.com/a/Zend5Yk.png"/></div>](https://www.figma.com/proto/Xa8vbwRrB9mXiYjerwYTzS/High-Prototype-TRIAGIL?node-id=1%3A8&scaling=scale-down)
 
 ---
 
