@@ -13,7 +13,7 @@ O diagrama de estados tem o objetivo de mostrar as transições entre os objetos
 
 ### Login Enfermeira
 
-![est-l-enfemeira](https://imgur.com/cGLodJj.img)
+![est-l-enfemeira](https://imgur.com/cGLodJj.png)
 
 !!! note ""
     **Autor(es):** Francisco Heronildo </br>
@@ -22,7 +22,7 @@ O diagrama de estados tem o objetivo de mostrar as transições entre os objetos
 
 ### Login Paciente
 
-![est-l-paciente](https://imgur.com/HUqptQl.img)
+![est-l-paciente](https://imgur.com/HUqptQl.png)
 
 !!! note ""
     **Autor(es):**João Vitor, Francisco</br>
