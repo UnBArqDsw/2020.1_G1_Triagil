@@ -11,7 +11,9 @@ o Produto.
 
 ## Histórias de usuário
 
-![BacklogdoProduto](https://i.imgur.com/h291JFR.png)
+![BacklogdoProduto](https://i.imgur.com/DxlAHcC.png)
+
+[Planilha_BacklogProduto](https://docs.google.com/spreadsheets/d/1oNXpRmYNi-lmX1658zFyt23FzQxhIiJNmI9wpbBIuY4/edit?usp=sharing)
 
 ---
 
@@ -21,6 +23,7 @@ o Produto.
 | 16/09/2020 | 1.1.0 | Adição da introdução e da metodologia  | Lude Ribeiro |
 | 17/09/2020 | 1.2.0 | Adição da introdução e da metodologia  | Lude Ribeiro |
 | 17/09/2020 | 2.0.0 | Nova versão após refatoração do Backlog  | Lude Ribeiro e Miguel Alves |
+| 28/09/2020 | 3.0.0 | Nova versão após produção do protótipo | Miguel Alves e Lude Ribeiro | 
 
 ## Referências
 
