@@ -7,12 +7,12 @@
 
 ## Diagrama de Classes 0.1
 
-![Diagrama de Classes](https://imgur.com/bf42qs8.jpg)
+![Diagrama de Classes](https://i.imgur.com/VyIhd2K.png)
 
 !!! note ""
-    **Autor(es):** Nathalia, Francisco, João Vitor e Débora</br>
-    **Data:** 26 de Setembro de 2020 </br>
-    **Versão:** [0.1](https://unbbr-my.sharepoint.com/:i:/g/personal/160006210_aluno_unb_br/EX1ZoIwNqH9GrVIOkbsRoOwBaksQGU-87O1hmNQCJ32qSQ?e=6NU5Ve)
+    **Autor(es):** Nathalia, Francisco, João Vitor, Débora, Miguel e Lude</br>
+    **Data:** 28 de Setembro de 2020 </br>
+    **Versão:** [2.0](https://unbbr-my.sharepoint.com/:i:/g/personal/160006210_aluno_unb_br/Edha0MdQJzlLulnjlzswbXMB7M2BqRtJrBmt59guVpG--w?e=l9fYU8)
 
 **Histórico de Versão**
 
@@ -21,6 +21,7 @@
 | 28/09 | 1.0.0 | Criação do Documento | Nathalia Lorena |
 | 28/09 | 1.1.0 | Acrescentando o tópico de introdução| Nathalia Lorena |
 | 28/09 | 1.2.0 | Acrescentando o diagrama de classes | Nathalia Lorena |
+| 28/09 | 2.0.0 | Atualizando a versão do diagrama de classes | Miguel Alves e Lude Ribeiro|
 
 ## Referências
 
