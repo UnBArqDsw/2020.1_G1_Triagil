@@ -60,11 +60,10 @@ nav:
         - Diagrama de Classes: modelagem/diagramas/diagrama_classes.md
         - Diagrama de Pacotes: modelagem/diagramas/diagrama_pacotes.md
         - Diagrama de Componentes: modelagem/diagramas/diagrama_componentes.md
-    - UML – Diagramas Dinâmicos: 
-        - Diagrama de Sequências: 
-        - Diagrama de Comunicação: 
-        - Diagrama de Atividades: 
-        - Diagrama de Estados: 
-      
+    # - UML – Diagramas Dinâmicos: 
+    #     - Diagrama de Sequências: 
+    #     - Diagrama de Comunicação: 
+    #     - Diagrama de Atividades: 
+    #     - Diagrama de Estados:
     - Iniciativa Extra:
       - Backlog do Produto: modelagem/extra/backlog.md
