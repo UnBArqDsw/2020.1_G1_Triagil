@@ -24,7 +24,7 @@ Nessa prática de priorização, é construída uma tabela de forma que equilibr
 
 ## Aplicação da técnica no projeto
 
-Para esse método de priorização, utilizamos os requisitos elicitados nos documentos de [Brainstorming](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\brainstorming.md), [Entrevista](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\entrevista.md), [Questionário](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\questionario.md) e [Storyboard](2020.1_G1_Triagil\docs\base\requisitos\elicitacao\storyboard.md).
+Para esse método de priorização, utilizamos os requisitos elicitados nos documentos de [Brainstorming](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/brainstorming.md), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/entrevista.md), [Questionário](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/questionario.md) e [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/storyboard.md).
 
 ![First_Thing_First](https://imgur.com/BcGrAmi.png)
 
@@ -59,7 +59,6 @@ Para esse método de priorização, utilizamos os requisitos elicitados nos docu
 | 16/09/2020 |1.0.0 | Criação do documento na wiki  | Débora Vilela |
 | 16/09/2020 |1.1.0 | Adição dos tópicos expositivos| Débora Vilela|
 |17/09/2020| 1.2.0| Adição de tabelas ao documento| Débora Vilela| 
-
 
 ## Referências Bibliográficas
 
