@@ -56,7 +56,14 @@ nav:
         - Programação Extrema(XP): base/apresentacao/metodologia/xp.md
     - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
   - Modelagem:
-    - UML – Diagramas Estáticos: modelagem/diagramas/uml_estatico.md
-    - UML – Diagramas Dinâmicos: modelagem/diagramas/uml_dinamico.md
+    - UML – Diagramas Estáticos: 
+        - Diagrama de Classes: modelagem/diagramas/diagrama_classes.md
+        - Diagrama de Pacotes: modelagem/diagramas/diagrama_pacotes.md
+        - Diagrama de Componentes: modelagem/diagramas/diagrama_componentes.md
+    # - UML – Diagramas Dinâmicos: 
+    #     - Diagrama de Sequências: 
+    #     - Diagrama de Comunicação: 
+    #     - Diagrama de Atividades: 
+    #     - Diagrama de Estados:
     - Iniciativa Extra:
       - Backlog do Produto: modelagem/extra/backlog.md
