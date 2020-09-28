@@ -1,2 +1,0 @@
-# UMLs Dinâmicos
-
