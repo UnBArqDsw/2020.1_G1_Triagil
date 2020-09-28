@@ -45,6 +45,7 @@ O objetivo do diagrama de atividades é mostrar o fluxo de atividades em um úni
 | 28/09/2020 | 1.2.1 | Adicionando uma nova versão do diagrama de atividades | Francisco Heronildo e João Vitor |
 
 ## Refêrencias
+
 SERRANO,Milene. **AULA - UML DINÂMICO**,  37 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 25, Setembro de 2020.
 
 O que é um diagrama UML? . **Lucidchart**, 2020. Disponível em: <https://www.lucidchart.com/pages/pt/o-que-e-uml>. Acesso em: 26, Setembro de 2020.
