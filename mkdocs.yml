@@ -57,14 +57,14 @@ nav:
     - Modelagem BPMN: base/modelagem_bpmn/bpmn.md
   - Modelagem:
     - UML – Diagramas Estáticos: 
-      - Diagrama de Classes: modelagem/diagramas/diagrama_classes.md
-      - Diagrama de Pacotes: modelagem/diagramas/diagrama_pacotes.md
-      - Diagrama de Componentes: modelagem/diagramas/diagrama_componentes.md
+        - Diagrama de Classes: modelagem/diagramas/estaticos/diagrama_classes.md
+        - Diagrama de Pacotes: modelagem/diagramas/estaticos/diagrama_pacotes.md
+        - Diagrama de Componentes: modelagem/diagramas/estaticos/diagrama_componentes.md
     - UML – Diagramas Dinâmicos: 
-      - Diagrama de Sequências: 
-      - Diagrama de Comunicação: 
-      - Diagrama de Atividades: 
-      - Diagrama de Estados: 
-      
+        - Diagrama de Sequências: modelagem/diagramas/dinamicos/diagrama_sequencia.md
+        - Diagrama de Comunicação: modelagem/diagramas/dinamicos/diagrama_comunicacao.md
+        - Diagrama de Atividades: modelagem/diagramas/dinamicos/diagrama_atividade.md
+        - Diagrama de Estados: modelagem/diagramas/dinamicos/diagrama_estado.md
+        - Diagrama de Caso de Uso: modelagem/diagramas/dinamicos/diagrama_use_case.md
     - Iniciativa Extra:
       - Backlog do Produto: modelagem/extra/backlog.md
