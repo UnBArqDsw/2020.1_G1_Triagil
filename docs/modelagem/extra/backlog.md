@@ -6,8 +6,7 @@ O backlog do Produto é uma listagem de todos os afazeres pendentes a ser fazer 
 
 ## Metodologia
 
-Para a confecção do nosso backlog utilizamos todos nossos documentos de elicitação, são eles: [Brainstorm](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/entrevista/), [Questionario](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/questionario/), [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/). Depois disso foi deita a refatoração e a confecção de um novo protótipo de alta fidelidade que permitiu que pudessemos averiguar e levantar novos requisitos e histórias de usuário, e assim foi feito nossa mais nova versão do Backlog.
-o Produto.
+Para a confecção do nosso backlog utilizamos todos nossos documentos de elicitação, são eles: [Brainstorm](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/brainstorming/), [Entrevista](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/entrevista/), [Questionario](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/questionario/), [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/). Depois disso, foi deita a refatoração e a confecção de um novo protótipo de alta fidelidade que permitiu que pudéssemos averiguar e levantar novos requisitos e histórias de usuário, e assim foi feito nossa mais nova versão do Backlog do Produto.
 
 ## Histórias de usuário
 
