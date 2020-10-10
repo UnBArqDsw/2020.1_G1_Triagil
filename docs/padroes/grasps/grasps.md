@@ -12,6 +12,10 @@ O **GRASP** também pode ser feito visto em foco da visão do "Criador", visando
 
 O **GRASP** "Criador" também precisa se atentar para as relações existentes dentro do projeto. Muito semelhante ao diagrama de classes, ele precisa analisar relações como as de TODO/PARTE, por exemplo. Respeitando essas relações as atribuições podem ser feitas de maneira mais coerentes e organizadas para promover inclusive encapsulamentos.
 
-## GRASP - Foco: Expecialista
+## GRASP - Foco: Especialista
+
+O **GRASP** Especialista é um padrão que têm seu foco e preocupação na atribuição das responsabilidades para a entidade mais especialista dentro do contexto. É literalmente atribuir a repsonsabilidade para a entidade mais específica possível. Ele se relaciona de maneira bem próxima com o **GRASP** Criador, afinal todo criador é um especialista. Porém, o contrário não é válido. Assim sendo, ao aplicar um **GRASP** Criador, também se aplicou um **GRASP** Especialista, visto que nos preocupamos em atribuir à entidade mais especializada a responsabilidade de criar as instâncias.
+
+É a identificação da melhor classe para realizar qualquer ação, não apenas na criação de instâncias, mas de todos os aspectos do sistema.O **GRASP** Especialista é aplicado por todo o código, não somente em um momento ou local específico. Ele é aplicado em todo o código, distribuindo as ações e responsabilidades de maneira eficiente e mais eficaz. Sua utilização gera baixo acoplamento e diminui as dependências entre as classes, trazendo maior coesão. Ele também respeita as relações entre as entidades, como as citadas acima, de TODO/PARTE.
 
 ## GRASPS - Foco: Demais Padrões
