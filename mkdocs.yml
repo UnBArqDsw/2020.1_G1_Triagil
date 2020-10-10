@@ -72,3 +72,5 @@ nav:
       - Priorização:
         - First Thing First: modelagem/extra/priorizacao/first_thing_first.md
         - MoSCoW: modelagem/extra/priorizacao/moscow.md
+  - Padrões de Projeto:
+    - GRASPs: padoes/grasps/grasps.md
