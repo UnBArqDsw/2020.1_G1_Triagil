@@ -41,3 +41,14 @@ O Flyweight é um padrão de projeto estrutural que permite a você colocar mais
 O Proxy é um padrão de projeto estrutural que permite que você forneça um substituto ou um espaço reservado para outro objeto. Um proxy controla o acesso ao objeto original, permitindo que você faça algo ou antes ou depois do pedido chegar ao objeto original.
 
 
+**Histórico de Versão**
+
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 10/10/2020 | 1.0.0 | Criação do documento no pages |  Nathalia Lorena  |
+| 10/10/2020 | 1.1.0 | Adicionado Introdução ao documento | Nathalia Lorena |
+| 10/10/2020 | 1.2.0 | Acrescentando novos tópicos | Nathalia Lorena |
+
+
+## Refêrencias
+
