@@ -22,6 +22,10 @@ O **GRASP** Especialista é um padrão que têm seu foco e preocupação na atri
 
 É a identificação da melhor classe para realizar qualquer ação, não apenas na criação de instâncias, mas de todos os aspectos do sistema.O **GRASP** Especialista é aplicado por todo o código, não somente em um momento ou local específico. Ele é aplicado em todo o código, distribuindo as ações e responsabilidades de maneira eficiente e mais eficaz. Sua utilização gera baixo acoplamento e diminui as dependências entre as classes, trazendo maior coesão. Ele também respeita as relações entre as entidades, como as citadas acima, de TODO/PARTE.
 
+- Exemplo produzido pelo grupo
+
+![Ex Foco Especialista](https://i.imgur.com/RibLzLO.png)
+
 ## GRASPS - Foco: Demais Padrões
 
 Existem vários outros padrões **GRASP**. E realmente é bastante vasta a extensão que eles podem cobrir, desde sistemas específicas a soluções genéricas, existe bastante liberdade em adotar ou criar um padrão para solucionar uma questão. É o caso da Invenção Pura, que caracteriza o desenvolvimento de um novo padrão que foi aplicado para solucionar uma questão específica. Podemos exemplificar essa Invenção Pura com a criação de uma API para autenticar os usuários de um sistema. A simples necessidade de autenticação já geraria a justificativa para utilizar a Invenção Pura, que no caso se manifesta como a API. Requisitos não funcionais apoiam bastante essa prática, aqui eles dão prerrogativa para fazer o uso dessa técnica.
