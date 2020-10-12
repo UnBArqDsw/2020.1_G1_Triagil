@@ -78,6 +78,18 @@ module.export = {
 
 ~~~
 
+## Singleton
+
+O Singleton é um padrão de projeto criacional que permite a você garantir que uma classe tenha apenas uma instância, enquanto provê um ponto de acesso global para essa instância.
+
+### Objetivo
+
+### Exemplo produzido pelo Grupo:
+
+~~~javascript
+
+~~~
+
 **Histórico de Versão**
 
 | Data | Versão | Descrição | Autor(es) |
@@ -85,6 +97,7 @@ module.export = {
 | 10/10 | 1.0.0 | Criação do documento | Francisco Heronildo e João Vitor |
 | 12/10 | 1.1.0 | Criação do tópico de Objetivo |João Vitor e Francisco Heronildo |
 | 12/10 | 1.2.0 | Criação do tópico de exemplo | João Vitor e Francisco Heronildo |
+| 12/10 | 1.2.0 | Criação da introdução do Singleton | Francisco Heronildo e João Vitor |
 
 ## Referências
 
