@@ -33,7 +33,11 @@ propósito e divididos em três grupos: criacionais, estruturais e comportamenta
 
 - O _**Visitor**_ : que permite que você separe algoritmos dos objetos nos quais eles operam.
 
+## Proposta de aplicação no projeto 
 
+- ### Problema
+
+- ### Solução
 
 
 **Histórico de Versão**
@@ -41,8 +45,12 @@ propósito e divididos em três grupos: criacionais, estruturais e comportamenta
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 11/10/2020 | 1.0.0 | Criação do documento no pages |  Débora Vilela  |
-| 12/10/2020 | 1.1.0 | Adição dos tópicos Introdução e GOF's comportamentais ao documento |  Débora Vilela  |
+| 12/10/2020 | 1.2.0 | Adição dos tópicos Introdução e GOF's comportamentais ao documento |  Débora Vilela  |
+| 12/10/2020 | 1.3.0 | Criação do tópico Proposta de aplicação no projeto e adição de referências |  Débora Vilela  |
 
 
 ## Referências
 
+- Padrões de projetos comportamentais. Disponível em: https://refactoring.guru/pt-br/design-patterns/behavioral-patterns. Acesso em 11 de outubro de 2020.
+
+- Padrões de Projetos GoF: Dicas de Memorização e Questões de Concursos. Disponível em: https://blog.grancursosonline.com.br/padroes-de-projetos-gof-dicas-de-memorizacao-e-questoes-de-concursos/. Acesso em 12 de outubro de 2020.
