@@ -20,19 +20,63 @@ O padrão Factory Method sugere que você substitua chamadas diretas de constru�
 
 Com o objetivo de evitar acoplamentos firmes entre o criador e os produtos concretos utilizaremos o padrão de projeto Factory Method. Ele utiliza o princípio de responsabilidade única, além de poder mover o código de criação do produto para um único local do programa, facilitando a manutenção do código. 
 
-### Solução
+### Exemplo produzido pelo Grupo:
 
-<!-- ~~~javascript
+![FactoryMethod](https://imgur.com/SWS9q2J.png)
 
-let Person = class Person {
-  constructor(fullName, email, password) {
-    this.fullName = fullName;
-    this.email = email;
-    this.password = password;
-  }
+~~~javascript
+
+class ManagePerson {
+    factoryMethod(){
+        let person = new Person();
+        return person;
+    }
 }
 
-~~~ -->
+class ManagePatient extends ManagePerson {
+    factoryMethod(fullName, email, password) {
+        let patient = new Patient(fullName, email, password);
+        return patient;
+    }
+}
+
+class ManageNurse extends ManagePerson {
+    factoryMethod(fullName, email, password) {
+        let nurse = new Nurse(fullName, email, password);
+        return nurse;
+    }
+}
+
+ class Person {
+    constructor(fullName, email, password){
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+    }
+ }
+
+function createPerson(type, fullName, email, password) {
+    if (type == 'patient') {
+        let patient = new ManagePatient(); 
+        patient.factoryMethod(fullName, email, password);
+        return patient;
+    }
+    else {
+        let nurse = new ManageNurse(); 
+        nurse.factoryMethod(fullName, email, password);
+        return nurse;
+    }
+}
+
+module.export = {
+    ManagePerson,
+    ManagePatient,
+    ManageNurse,
+    Person,
+    createPerson,
+};
+
+~~~
 
 ---
 
