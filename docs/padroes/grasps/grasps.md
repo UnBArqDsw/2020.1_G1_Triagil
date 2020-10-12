@@ -33,3 +33,7 @@ Existem vários outros padrões **GRASP**. E realmente é bastante vasta a exten
 Ao utilizarmos **GRASPS** com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato0. As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão **GRASP**.
 
 Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas E um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.
+
+- Exemplo produzido pelo grupo
+
+![Ex Foco Demais Padroes](https://i.imgur.com/Cew2QcP.png)
