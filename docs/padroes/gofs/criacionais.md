@@ -16,7 +16,9 @@ O Factory Method é um padrão criacional de projeto que fornece uma interface p
 
 O padrão Factory Method sugere que você substitua chamadas diretas de construção de objetos (usando o operador **new**) por chamadas para um método fábrica especial. Não se preocupe: os objetos ainda são criados através do operador **new**, mas esse está sendo chamado de dentro do método fábrica. Objetos retornados por um método fábrica geralmente são chamados de _produtos_.
 
-### Problema
+### Objetivo
+
+Com o objetivo de evitar acoplamentos firmes entre o criador e os produtos concretos utilizaremos o padrão de projeto Factory Method. Ele utiliza o princípio de responsabilidade única, além de poder mover o código de criação do produto para um único local do programa, facilitando a manutenção do código. 
 
 ### Solução
 
