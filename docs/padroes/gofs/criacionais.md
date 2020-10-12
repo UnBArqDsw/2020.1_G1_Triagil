@@ -1,0 +1,47 @@
+# GOF's – Criacionais
+
+## Introdução
+
+Antes de entendermos o que é GOF, temos que entender o que é padrões de projeto, que são soluções típicas para problemas comuns em projeto de software. Cada padrão é como uma planta de construção que você pode customizar para resolver um problema de projeto particular em seu código.
+
+GOF é uma abreviação da palavra _Gang of Four_ que são padrões de projetos que busca uma solução consolidada para um problema recorrente no desenvolvimento e manutenção de software orientado a objetos.
+
+E nesse caso será apresentado os padrões **GOF's – Criacionais** que tem como objetivo definir qual classe concreta deve ser utilizada para criar tal, como os objetos devem ser criados e como eles se relacionam com outros objetos do sistema, assim, aumentando a flexibilidade e reutilização de código já existente no software.
+
+## Factory Method
+
+O Factory Method é um padrão criacional de projeto que fornece uma interface para criar objetos em uma superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados.
+
+<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Factory_Method_UML_class_diagram.png"/></div>
+
+O padrão Factory Method sugere que você substitua chamadas diretas de construção de objetos (usando o operador **new**) por chamadas para um método fábrica especial. Não se preocupe: os objetos ainda são criados através do operador **new**, mas esse está sendo chamado de dentro do método fábrica. Objetos retornados por um método fábrica geralmente são chamados de _produtos_.
+
+### Problema
+
+### Solução
+
+<!-- ~~~javascript
+
+let Person = class Person {
+  constructor(fullName, email, password) {
+    this.fullName = fullName;
+    this.email = email;
+    this.password = password;
+  }
+}
+
+~~~ -->
+
+---
+
+**Histórico de Versão**
+
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 10/10 | 1.0.0 | Criação do documento | Francisco Heronildo e João Vitor |
+
+## Referências
+
+SERRANO,Milene. **AULA - GOFS CRIACIONAIS**, 64 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
+
+Padrões de projeto criacionais . **Refactoring.Guru**, 2020. Disponível em: <https://refactoring.guru/pt-br/design-patterns/creational-patterns>. Acesso em: 10, Outubro de 2020.
