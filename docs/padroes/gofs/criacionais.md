@@ -12,7 +12,7 @@ E nesse caso será apresentado os padrões **GOF's – Criacionais** que tem com
 
 O Factory Method é um padrão criacional de projeto que fornece uma interface para criar objetos em uma superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados.
 
-<div align="center"><img width="300px" height="175px" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Factory_Method_UML_class_diagram.png"/></div>
+<div align="center"><img width="300px" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Factory_Method_UML_class_diagram.png"/></div>
 
 O padrão Factory Method sugere que você substitua chamadas diretas de construção de objetos (usando o operador **new**) por chamadas para um método fábrica especial. Não se preocupe: os objetos ainda são criados através do operador **new**, mas esse está sendo chamado de dentro do método fábrica. Objetos retornados por um método fábrica geralmente são chamados de _produtos_.
 
@@ -20,7 +20,7 @@ O padrão Factory Method sugere que você substitua chamadas diretas de constru�
 
 Com o objetivo de evitar acoplamentos firmes entre o criador e os produtos concretos utilizaremos o padrão de projeto Factory Method. Ele utiliza o princípio de responsabilidade única, além de poder mover o código de criação do produto para um único local do programa, facilitando a manutenção do código.
 
-### Exemplo produzido pelo Grupo:
+### Exemplo produzido pelo Grupo :
 
 ![FactoryMethod](https://imgur.com/SWS9q2J.png)
 
@@ -57,12 +57,12 @@ class ManageNurse extends ManagePerson {
 
 function createPerson(type, fullName, email, password) {
     if (type == 'patient') {
-        let patient = new ManagePatient(); 
+        let patient = new ManagePatient();
         patient.factoryMethod(fullName, email, password);
         return patient;
     }
     else {
-        let nurse = new ManageNurse(); 
+        let nurse = new ManageNurse();
         nurse.factoryMethod(fullName, email, password);
         return nurse;
     }
@@ -82,11 +82,27 @@ module.export = {
 
 O Singleton é um padrão de projeto criacional que permite a você garantir que uma classe tenha apenas uma instância, enquanto provê um ponto de acesso global para essa instância.
 
+<div align="center"><img width="300px" height="200px" src="https://refactoring.guru/images/patterns/diagrams/singleton/structure-pt-br.png"/></div>
+
 ### Objetivo
 
-### Exemplo produzido pelo Grupo:
+* **Garantir que uma classe tenha apenas uma única instância**. Por que alguém iria querer controlar quantas instâncias uma classe tem? A razão mais comum para isso é para controlar o acesso a algum recurso compartilhado—por exemplo, uma base de dados ou um arquivo.
+
+* **Fornece um ponto de acesso global para aquela instância**. Se lembra daquelas variáveis globais que você (tá bom, eu) usou para guardar alguns objetos essenciais? Embora sejam muito úteis, elas também são muito inseguras uma vez que qualquer código pode potencialmente sobrescrever os conteúdos daquelas variáveis e quebrar a aplicação.
+
+### Exemplo produzido pelo Grupo :
 
 ~~~javascript
+
+// Uma única conexão com o bancos de dados.
+
+getConnection: function() {
+    let app = common.model.connections.App.getInstance();
+    if(!app.connection.isConnected()){
+       app.connection.connect();
+    }
+    return app.connection;
+}
 
 ~~~
 
@@ -97,7 +113,8 @@ O Singleton é um padrão de projeto criacional que permite a você garantir que
 | 10/10 | 1.0.0 | Criação do documento | Francisco Heronildo e João Vitor |
 | 12/10 | 1.1.0 | Criação do tópico de Objetivo |João Vitor e Francisco Heronildo |
 | 12/10 | 1.2.0 | Criação do tópico de exemplo | João Vitor e Francisco Heronildo |
-| 12/10 | 1.2.0 | Criação da introdução do Singleton | Francisco Heronildo e João Vitor |
+| 12/10 | 1.3.0 | Adicionando introdução do Singleton | Francisco Heronildo e João Vitor |
+| 12/10 | 1.4.0 | Adicionando objetivo e um exemplo no Singleton | Francisco Heronildo |
 
 ## Referências
 
