@@ -12,6 +12,10 @@ O **GRASP** também pode ser feito visto em foco da visão do "Criador", visando
 
 O **GRASP** "Criador" também precisa se atentar para as relações existentes dentro do projeto. Muito semelhante ao diagrama de classes, ele precisa analisar relações como as de TODO/PARTE, por exemplo. Respeitando essas relações as atribuições podem ser feitas de maneira mais coerentes e organizadas para promover inclusive encapsulamentos.
 
+- Exemplo produzido pelo grupo
+
+![Exemplo de Foco Criador](https://i.imgur.com/9OAL8bl.png)
+
 ## GRASP - Foco: Especialista
 
 O **GRASP** Especialista é um padrão que têm seu foco e preocupação na atribuição das responsabilidades para a entidade mais especialista dentro do contexto. É literalmente atribuir a repsonsabilidade para a entidade mais específica possível. Ele se relaciona de maneira bem próxima com o **GRASP** Criador, afinal todo criador é um especialista. Porém, o contrário não é válido. Assim sendo, ao aplicar um **GRASP** Criador, também se aplicou um **GRASP** Especialista, visto que nos preocupamos em atribuir à entidade mais especializada a responsabilidade de criar as instâncias.
@@ -20,8 +24,8 @@ O **GRASP** Especialista é um padrão que têm seu foco e preocupação na atri
 
 ## GRASPS - Foco: Demais Padrões
 
-Existem vários outros padrões **GRASP**. E realmente é bastante vasta a extensão que eles podem cobrir, desde sistemas específicas a soluções genéricas, existe bastante liberdade em adotar ou criar um padrão para solucionar uma questão. É o caso da Invenção Pura, que caracteriza o desenvolvimento de um novo padrão que foi aplicado para solucionar uma questão específica. Podemos exemplificar essa Invenção Pura com a criação de uma API para autenticar os usuários de um sistema. A simples necessidade de autenticação já geraria a justificativa para utilizar a Invenção Pura, que no caso se manifesta como a API. Requisitos não funcionais apoiam bastante essa prática, aqui eles dão prerrogativa para fazer o uso dessa técnica. 
+Existem vários outros padrões **GRASP**. E realmente é bastante vasta a extensão que eles podem cobrir, desde sistemas específicas a soluções genéricas, existe bastante liberdade em adotar ou criar um padrão para solucionar uma questão. É o caso da Invenção Pura, que caracteriza o desenvolvimento de um novo padrão que foi aplicado para solucionar uma questão específica. Podemos exemplificar essa Invenção Pura com a criação de uma API para autenticar os usuários de um sistema. A simples necessidade de autenticação já geraria a justificativa para utilizar a Invenção Pura, que no caso se manifesta como a API. Requisitos não funcionais apoiam bastante essa prática, aqui eles dão prerrogativa para fazer o uso dessa técnica.
 
 Ao utilizarmos **GRASPS** com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato0. As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão **GRASP**.
 
-Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas E um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento. 
+Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas E um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.
