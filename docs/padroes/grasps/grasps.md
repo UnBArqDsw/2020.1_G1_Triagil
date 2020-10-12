@@ -37,3 +37,11 @@ Variações Protegidas caracterizam outro padrão. É necessário uma variação
 - Exemplo produzido pelo grupo
 
 ![Ex Foco Demais Padroes](https://i.imgur.com/Cew2QcP.png)
+
+## Proposta do Grupo para emplementação no Projeto
+
+Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nosso GRASP sujestão segue o Foco: Demais padrões, baseado em cima do invenção pura.
+
+- Exemplo de sujestão criado pelo grupo.
+
+![Ex Sujestao](https://i.imgur.com/Cew2QcP.png)
