@@ -30,7 +30,7 @@ O **GRASP** Especialista é um padrão que têm seu foco e preocupação na atri
 
 Existem vários outros padrões **GRASP**. E realmente é bastante vasta a extensão que eles podem cobrir, desde sistemas específicas a soluções genéricas, existe bastante liberdade em adotar ou criar um padrão para solucionar uma questão. É o caso da Invenção Pura, que caracteriza o desenvolvimento de um novo padrão que foi aplicado para solucionar uma questão específica. Podemos exemplificar essa Invenção Pura com a criação de uma API para autenticar os usuários de um sistema. A simples necessidade de autenticação já geraria a justificativa para utilizar a Invenção Pura, que no caso se manifesta como a API. Requisitos não funcionais apoiam bastante essa prática, aqui eles dão prerrogativa para fazer o uso dessa técnica.
 
-Ao utilizarmos **GRASPS** com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato0. As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão **GRASP**.
+Ao utilizarmos **GRASPS** com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato). As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão **GRASP**.
 
 Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas E um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.
 
@@ -40,8 +40,12 @@ Variações Protegidas caracterizam outro padrão. É necessário uma variação
 
 ## Proposta do Grupo para emplementação no Projeto
 
-Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nosso GRASP sujestão segue o Foco: Demais padrões, baseado em cima do invenção pura.
+Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nossos GRASP's de sujestão segue os seguintes focos:
 
-- Exemplo de sujestão criado pelo grupo.
+- Demais padrões, baseado em cima do **Invenção Pura**:
 
 ![Ex Sujestao](https://i.imgur.com/Cew2QcP.png)
+
+- Demais padrões, baseado em cima do **Polimofirmos**:
+
+![Ex Sujestao 2](https://i.imgur.com/fu8HRCl.png)
