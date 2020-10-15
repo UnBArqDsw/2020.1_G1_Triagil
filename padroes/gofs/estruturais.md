@@ -1,6 +1,5 @@
 ## Introdução
 
-
 A adoção de padrões pode trazer inúmeros benefícios para um projeto de desenvolvimento de  software. Um dos principais benefícios é que um padrão de projeto é algo que já foi utilizado inúmeras vezes na solução de um determinado tipo de problema e, devido a isso, o padrão já foi submetido à uma grande variedade de testes e, se ele se tornou um padrão de projeto, é porque foi aprovado nesses testes.
 
 Outro benefício da utilização dos padrões é a facilidade de entendimento e manutenção do código-fonte. A padronização contribui diretamente para a redução do acoplamento e para o aumento da coesão de nossas classes, proporcionando uma redução de custo e tempo em nossas futuras manutenções.
@@ -50,7 +49,12 @@ O Proxy é um padrão de projeto estrutural que permite que você forneça um su
 | 10/10/2020 | 1.1.0 | Adicionado Introdução ao documento | Nathalia Lorena |
 | 10/10/2020 | 1.2.0 | Acrescentando novos tópicos | Nathalia Lorena |
 | 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login |  Débora Vilela  |
+| 14/10/2020 | 1.4.0 | Adicionando Referências|  Nathalia Lorena|
+
 
 
 ## Refêrencias
 
+SERRANO,Milene. AULA - GOFS ESTRUTURAIS, 71 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
+
+Padrões de projeto Estruturais . Refactoring.Guru, 2020. Disponível em: https://refactoring.guru/pt-br/design-patterns/structural-patterns. Acesso em: 10, Outubro de 2020.
