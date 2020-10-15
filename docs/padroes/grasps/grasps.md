@@ -42,10 +42,35 @@ Variações Protegidas caracterizam outro padrão. É necessário uma variação
 
 Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nossos GRASP's de sujestão segue os seguintes focos:
 
-- Demais padrões, baseado em cima do **Invenção Pura**:
+### Invenção Pura
 
 ![Ex Sujestao](https://i.imgur.com/Cew2QcP.png)
 
-- Demais padrões, baseado em cima do **Polimofirmos**:
+### Polimofirmos
+
+O polimorfismo é um padrão que vem da orientação a objetos, no qual ela utilizar subclasses que se originam de uma superclasse, estas subclasses podem invocar metodos da superclasse e sobreescrevelos, pois em cada subclasses ela se comporta de forma diferente. No triagil temos a classe person e suas subclasses nurse e patient, no qual as subclasses vão utilizar o método acessHospital(), porém cada um dos agentes irá utilizar esse método de forma diferente, pois os pacientes não terão o mesmo acesso que a enfermeira.
 
 ![Ex Sujestao 2](https://i.imgur.com/fu8HRCl.png)
+
+---
+
+**Histórico de versões**
+
+|Data|Versão|Descrição|Autor(es)|
+|:--:|:----:|:-------:|:-------:|
+| 10/10/2020 | 1.0.0 | Criação do documento no pages | Miguel Alves e Lude Ribeiro |
+| 10/10/2020 | 1.1.0 | Adicionando introdução e definição dos GRASPs | Miguel Alves e Lude Ribeiro |
+| 10/10/2020 | 1.2.0 | Adicionado introducao e descricao de GRASP criador |  Miguel Alves e Lude Ribeiro |
+| 10/10/2020 | 1.3.0 | Adicionado descrição de GRASP Especialista |  Miguel Alves e Lude Ribeiro |
+| 10/10/2020 | 1.4.0 | Adicionando outros padrões | Miguel Alves e Lude Ribeiro |
+| 12/10/2020 | 1.4.1 | Adicionando exemplo do criador e do especialista | Miguel Alves e Lude Ribeiro |
+| 12/10/2020 | 1.4.2 | Adicionando exemplo dos outros padrões e proposta de invenção pura | Lude Ribeiro |
+| 14/10/2020 | 1.4.3 | Adicionando exemplo de proposta de polimorfismo e pequenas correções | Francisco Heronildo e João Vitor Alves |
+| 15/10/2020 | 1.4.3 | Adicionando justificativa do polimorfismo | João Vitor Alves e  Francisco Heronildo |
+
+
+## Referências
+
+SERRANO,Milene. **AULA - GRASPs** , 64 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
+
+UFU, **Padrões GRASP**, 2012. 111 slides. Disponível em: <http://www.facom.ufu.br/~bacala/ESOF/05a-Padr%C3%B5es%20GRASP.pdf>. Acesso em: 14, Outubro de 2020.
