@@ -38,23 +38,29 @@ Variações Protegidas caracterizam outro padrão. É necessário uma variação
 
 ![Ex Foco Demais Padroes](https://i.imgur.com/Cew2QcP.png)
 
-## Proposta do Grupo para emplementação no Projeto
+## Polimorfismo
+
+O polimorfismo é um padrão que vem da orientação a objetos, no qual ela utilizar subclasses que se originam de uma superclasse, estas subclasses podem invocar metodos da superclasse e sobreescrevelos, pois em cada subclasses ela se comporta de forma diferente. No triagil temos a classe person e suas subclasses nurse e patient, no qual as subclasses vão utilizar o método acessHospital(), porém cada um dos agentes irá utilizar esse método de forma diferente, pois os pacientes não terão o mesmo acesso que a enfermeira.
+
+- Exemplo produzido pelo grupo
+
+![Ex Polimorfismo](https://imgur.com/933Wovj.png)
+
+## Proposta do Grupo para implementação no Projeto
 
 Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nossos GRASP's de sujestão segue os seguintes focos:
 
-### Invenção Pura
+### Especialista Criador
 
 ![Ex Sujestao](https://i.imgur.com/Cew2QcP.png)
 
-### Polimofirmos
-
-O polimorfismo é um padrão que vem da orientação a objetos, no qual ela utilizar subclasses que se originam de uma superclasse, estas subclasses podem invocar metodos da superclasse e sobreescrevelos, pois em cada subclasses ela se comporta de forma diferente. No triagil temos a classe person e suas subclasses nurse e patient, no qual as subclasses vão utilizar o método acessHospital(), porém cada um dos agentes irá utilizar esse método de forma diferente, pois os pacientes não terão o mesmo acesso que a enfermeira.
+### Polimorfismo
 
 ![Ex Sujestao 2](https://i.imgur.com/fu8HRCl.png)
 
 ---
 
-**Histórico de versões**
+### Histórico de versões
 
 |Data|Versão|Descrição|Autor(es)|
 |:--:|:----:|:-------:|:-------:|
@@ -67,7 +73,7 @@ O polimorfismo é um padrão que vem da orientação a objetos, no qual ela util
 | 12/10/2020 | 1.4.2 | Adicionando exemplo dos outros padrões e proposta de invenção pura | Lude Ribeiro |
 | 14/10/2020 | 1.4.3 | Adicionando exemplo de proposta de polimorfismo e pequenas correções | Francisco Heronildo e João Vitor Alves |
 | 15/10/2020 | 1.4.3 | Adicionando justificativa do polimorfismo | João Vitor Alves e  Francisco Heronildo |
-
+| 16/10/2020 | 1.4.4 | Correções de português e adcionando exemplo de GRASP Polimorfismo | Lude Ribeiro e Miguel Alves |
 
 ## Referências
 
