@@ -1,3 +1,5 @@
+# GOFs Estruturais
+
 ## Introdução
 
 A adoção de padrões pode trazer inúmeros benefícios para um projeto de desenvolvimento de  software. Um dos principais benefícios é que um padrão de projeto é algo que já foi utilizado inúmeras vezes na solução de um determinado tipo de problema e, devido a isso, o padrão já foi submetido à uma grande variedade de testes e, se ele se tornou um padrão de projeto, é porque foi aprovado nesses testes.
@@ -9,7 +11,6 @@ Outro benefício da utilização dos padrões é a facilidade de entendimento e 
 Os padrões estruturais vão se preocupar em como as classes e objetos são compostos, ou seja, como é a sua estrutura. O objetivo destes padrões e facilitar o design do sistema identificando maneiras de realizar o relacionamento entre as entidades, deixando o desenvolvedor livre desta preocupação.
 
 Os padrões com escopo de classe utilizam a herança para compor implementações ou interfaces. O padrão Adapter, por exemplo, pode definir uma nova interface para adaptar duas outras já existentes, assim uma nova classe é criada para adaptar uma interface a outra. Os padrões com escopo de objeto utilizam a composição de objetos para definir uma estrutura. Por exemplo, o padrão Composite define (explicitamente) uma estrutura de hierárquica para classes primitivas e compostas em um objeto.
-
 
 ### Adapter
 
@@ -41,20 +42,18 @@ O Proxy é um padrão de projeto estrutural que permite que você forneça um su
 
 ![Adapter_login](https://imgur.com/H5EDEW5.png)
 
-**Histórico de Versão**
+#### Histórico de Versão
 
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
-| 10/10/2020 | 1.0.0 | Criação do documento no pages |  Nathalia Lorena  |
+| 10/10/2020 | 1.0.0 | Criação do documento no pages | Nathalia Lorena |
 | 10/10/2020 | 1.1.0 | Adicionado Introdução ao documento | Nathalia Lorena |
 | 10/10/2020 | 1.2.0 | Acrescentando novos tópicos | Nathalia Lorena |
-| 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login |  Débora Vilela  |
-| 14/10/2020 | 1.4.0 | Adicionando Referências|  Nathalia Lorena|
-
-
+| 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login | Débora Vilela |
+| 14/10/2020 | 1.4.0 | Adicionando Referências| Nathalia Lorena |
 
 ## Refêrencias
 
 SERRANO,Milene. AULA - GOFS ESTRUTURAIS, 71 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
 
-Padrões de projeto Estruturais . Refactoring.Guru, 2020. Disponível em: https://refactoring.guru/pt-br/design-patterns/structural-patterns. Acesso em: 10, Outubro de 2020.
+Padrões de projeto Estruturais . Refactoring.Guru, 2020. Disponível em: [https://refactoring.guru/pt-br/design-patterns/structural-patterns](https://refactoring.guru/pt-br/design-patterns/structural-patterns). Acesso em: 10, Outubro de 2020.
