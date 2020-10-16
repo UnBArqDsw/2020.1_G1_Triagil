@@ -16,6 +16,8 @@ Os padrões com escopo de classe utilizam a herança para compor implementaçõe
 
 O Adapter é um padrão de projeto estrutural que permite objetos com interfaces incompatíveis colaborarem entre si.
 
+![Adapter_login](https://imgur.com/H5EDEW5.png)
+
 ### Bridge
 
 O Bridge é um padrão de projeto estrutural que permite que você divida uma classe grande ou um conjunto de classes intimamente ligadas em duas hierarquias separadas—abstração e implementação—que podem ser desenvolvidas independentemente umas das outras.
@@ -40,7 +42,14 @@ O Flyweight é um padrão de projeto estrutural que permite a você colocar mais
 
 O Proxy é um padrão de projeto estrutural que permite que você forneça um substituto ou um espaço reservado para outro objeto. Um proxy controla o acesso ao objeto original, permitindo que você faça algo ou antes ou depois do pedido chegar ao objeto original.
 
-![Adapter_login](https://imgur.com/H5EDEW5.png)
+
+
+### Proposta do Grupo para implementação no Projeto
+Após estudar os GoFs estruturais, selecionamos alguns dos modelos para propor sugestões as quais possamos aplicar em nosso projeto. 
+
+##### **FACADE**
+A ideia é utilizarmos um FACADE para que a questão de organizar e priorizar a fila de pacientes possa desfrutar dos benefícios de tal técnica, como a agilidade, desacoplamento e rapidez. 
+![Facade_OrdenadorPrioridade](https://i.imgur.com/1Vr2XX5.jpg) 
 
 #### Histórico de Versão
 
@@ -51,6 +60,7 @@ O Proxy é um padrão de projeto estrutural que permite que você forneça um su
 | 10/10/2020 | 1.2.0 | Acrescentando novos tópicos | Nathalia Lorena |
 | 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login | Débora Vilela |
 | 14/10/2020 | 1.4.0 | Adicionando Referências| Nathalia Lorena |
+| 16/10/2020 | 1.5.0 | Adicionando Proposta de aplicação no projeto | Miguel Alves e Lude Ribeiro |
 
 ## Refêrencias
 
