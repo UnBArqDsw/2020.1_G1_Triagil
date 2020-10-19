@@ -42,14 +42,37 @@ O Flyweight é um padrão de projeto estrutural que permite a você colocar mais
 
 O Proxy é um padrão de projeto estrutural que permite que você forneça um substituto ou um espaço reservado para outro objeto. Um proxy controla o acesso ao objeto original, permitindo que você faça algo ou antes ou depois do pedido chegar ao objeto original.
 
-
-
 ### Proposta do Grupo para implementação no Projeto
-Após estudar os GoFs estruturais, selecionamos alguns dos modelos para propor sugestões as quais possamos aplicar em nosso projeto. 
 
-##### **FACADE**
-A ideia é utilizarmos um FACADE para que a questão de organizar e priorizar a fila de pacientes possa desfrutar dos benefícios de tal técnica, como a agilidade, desacoplamento e rapidez. 
-![Facade_OrdenadorPrioridade](https://i.imgur.com/1Vr2XX5.jpg) 
+Após estudar os GoFs estruturais, selecionamos alguns dos modelos para propor sugestões as quais possamos aplicar em nosso projeto.
+
+##### **Facade**
+
+A ideia é utilizarmos um _Facade_ para que a questão de organizar e priorizar a fila de pacientes possa desfrutar dos benefícios de tal técnica, como a agilidade, desacoplamento e rapidez.
+
+![Facade_OrdenadorPrioridade](https://i.imgur.com/1Vr2XX5.jpg)
+
+##### **Decorator**
+
+A ideia segundo o nosso contexto iremos utilizar o _Decorator_ para implementar a mecânica de requisições HTTP do Triagil, afim de comprimir dados sensiveis e flexibilizar novos comportamentos em tempo de execução sem erros no código.
+
+~~~javascript
+
+// Exemplo Genêrico de HTTP em NodeJS
+// Disponivel em: https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introdu%C3%A7%C3%A3o
+
+var http = require("http");
+
+http.createServer(function(request, response) {
+
+   response.writeHead(200, {'Content-Type': 'text/plain'});
+
+   response.end('Olá Mundo\n');
+}).listen(8000, '127.0.0.1');
+
+console.log('Servidor executando em http://127.0.0.1:8000/');
+
+~~~
 
 #### Histórico de Versão
 
@@ -61,9 +84,10 @@ A ideia é utilizarmos um FACADE para que a questão de organizar e priorizar a 
 | 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login | Débora Vilela |
 | 14/10/2020 | 1.4.0 | Adicionando Referências| Nathalia Lorena |
 | 16/10/2020 | 1.5.0 | Adicionando Proposta de aplicação no projeto | Miguel Alves e Lude Ribeiro |
+| 19/10/2020 | 1.5.0 | Adicionando Proposta de aplicação no projeto | Francisco Heronildo e João Vitor |
 
 ## Refêrencias
 
 SERRANO,Milene. AULA - GOFS ESTRUTURAIS, 71 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
 
-Padrões de projeto Estruturais . Refactoring.Guru, 2020. Disponível em: [https://refactoring.guru/pt-br/design-patterns/structural-patterns](https://refactoring.guru/pt-br/design-patterns/structural-patterns). Acesso em: 10, Outubro de 2020.
+Padrões de projeto Estruturais . Refactoring.Guru, 2020. Disponível em: <https://refactoring.guru/pt-br/design-patterns/structural-patterns>. Acesso em: 10, Outubro de 2020.
