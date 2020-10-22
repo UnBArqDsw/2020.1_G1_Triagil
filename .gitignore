@@ -3,3 +3,6 @@
 
 # Apple macOS
 .DS_Store
+
+#node_modules back
+/Back/node_modules
