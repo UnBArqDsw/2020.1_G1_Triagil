@@ -1,6 +1,3 @@
-import express from 'express';
-import routes from './routes';
+import app from './triagil';
 
-const app = express();
-
-app.listen(3000);
+app.listen(3333);
