@@ -56,7 +56,11 @@ Nesse princípio, é empregado que as classes devem ser manter focadas apenas na
 
 ## Controlador
 
+Atribui a responsabilidade de lidar com os eventos do sistema para uma classe que representa um cenário de caso de uso do sistema. Essa classe fica responsável por controlar as operações e delegar ações para outros objetos, de forma a tirar o controle da interface apresentada ao usuário. 
+
 ## Fabricação/Invenção Pura
+
+Nesse princípio, há a criação de uma classe prestadora de serviço e que não possui vínculo com o problema, é uma classe fictícia. Ao utilizar essa classe há ganho de alta coesão e baixo acoplamento das classes, o que facilita o reuso de código.
 
 ## Indireção
 
@@ -92,6 +96,8 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 | 15/10/2020 | 1.7.1 | Adicionando justificativa do polimorfismo | João Vitor Alves e  Francisco Heronildo |
 | 16/10/2020 | 1.7.2 | Correções de português e adicionando exemplo de GRASP Polimorfismo | Lude Ribeiro e Miguel Alves |
 | 24/10/2020 | 1.8.0 | Adicionando tópicos Baixo Acoplamento e Alta Coesão | Débora Vilela | 
+| 24/10/2020 | 1.9.0 | Adicionando tópicos Controlador e Fabricação/Invenção Pura | Débora Vilela | 
+
 
 ## Referências
 
