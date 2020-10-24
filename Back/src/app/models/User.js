@@ -1,13 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
 import bcryptjs from 'bcryptjs';
 
-export class User extends Model {
-  public name!: string;
-  public email!: string;
-  public password!: string;
-  public password_hash!: string;
-  public cpf!: string;
-
+class User extends Model {
   static init(sequelize) {
     super.init(
       {

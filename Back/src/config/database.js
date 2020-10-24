@@ -1,4 +1,4 @@
-export const databaseConfig  = {
+module.exports = {
   dialect: 'postgres',
   host: 'localhost',
   username: 'postgres',
