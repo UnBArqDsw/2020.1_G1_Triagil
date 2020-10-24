@@ -114,6 +114,9 @@ O Builder é um padrão de projeto criacional que permite  construir objetos com
 
 Prototype é um padrão que faz parte do grupo de padrões Criacionais e que permite a criação de novos objetos a partir de um modelo original, ou como o próprio nome indica, um protótipo, que é clonado.
 
+## Abstract Factory
+
+Abstract Factory é um padrão onde os ojetos são criados relacionados por um tema em comum. Nas linguagens que utilizam orientação à objetos, esse tema é abstraindo e passa a ser compartilhado nos objetos recém-criados.
 
 
 **Histórico de Versão**
@@ -127,6 +130,8 @@ Prototype é um padrão que faz parte do grupo de padrões Criacionais e que per
 | 12/10 | 1.4.0 | Adicionando objetivo e um exemplo no Singleton | Francisco Heronildo |
 | 23/10 | 1.5.0 | Adicionando introdução do Builder | Nathalia Lorena Cardoso |
 | 23/10 | 1.6.0 | Adicionando introdução do Prototype | Nathalia Lorena Cardoso |
+| 24/10 | 1.7.0 | Adicionando introdução do Abstract Factory | Débora Vilela |
+
 
 
 ## Referências
