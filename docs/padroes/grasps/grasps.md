@@ -64,7 +64,11 @@ Nesse princípio, há a criação de uma classe prestadora de serviço e que nã
 
 ## Indireção
 
+Utiliza um objeto intermediário entre componentes fazendo com que não estejam acoplados um ao outro. Funciona em harmonia com o Baixo Acoplamento, facilitando a reutilização.
+
 ## Variações protegidas
+
+O padrão variações protegidas protege elementos das variações em outros elementos (objetos, sistemas, subsistemas) envolvendo o foco de instabilidade com uma interface e usando polimorfismo para criar várias implementações desta interface.
 
 ## Proposta do Grupo para implementação no Projeto
 
@@ -97,6 +101,8 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 | 16/10/2020 | 1.7.2 | Correções de português e adicionando exemplo de GRASP Polimorfismo | Lude Ribeiro e Miguel Alves |
 | 24/10/2020 | 1.8.0 | Adicionando tópicos Baixo Acoplamento e Alta Coesão | Débora Vilela | 
 | 24/10/2020 | 1.9.0 | Adicionando tópicos Controlador e Fabricação/Invenção Pura | Débora Vilela | 
+| 24/10/2020 | 2.0.0 | Adicionando tópicos Indireção e Variações protegidas | Débora Vilela |
+| 24/10/2020 | 2.1.0 | Adicionando novas referências | Débora Vilela |
 
 
 ## Referências
@@ -104,3 +110,6 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 SERRANO,Milene. **AULA - GRASPs** , 64 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
 
 UFU, **Padrões GRASP**, 2012. 111 slides. Disponível em: <http://www.facom.ufu.br/~bacala/ESOF/05a-Padr%C3%B5es%20GRASP.pdf>. Acesso em: 14, Outubro de 2020.
+
+Padrões GRASP - Padrões de atribuir responsabilidades. Disponível em: <https://medium.com/@leandrovboas/padr%C3%B5es-grasp-padr%C3%B5es-de-atribuir-responsabilidades-1ae4351eb204> 
+
