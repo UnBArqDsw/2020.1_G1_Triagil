@@ -32,7 +32,7 @@ Existem vários outros padrões **GRASP**. E realmente é bastante vasta a exten
 
 Ao utilizarmos **GRASPS** com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato). As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão **GRASP**.
 
-Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas E um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.
+Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas e um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.
 
 - Exemplo produzido pelo grupo
 
@@ -45,6 +45,22 @@ O polimorfismo é um padrão que vem da orientação a objetos, no qual ela util
 - Exemplo produzido pelo grupo
 
 ![Ex Polimorfismo](https://imgur.com/933Wovj.png)
+
+## Baixo acoplamento 
+
+Esse princípio oferece baixo acoplamento de classes genéricas por serem altamente reutilizadas e sugere o não acoplamento para classes instáveis que precisam ser modificadas constantemente.  Determina que as classes não devem depender de objetos concretos e sim de abstrações, para permitir que haja mudanças sem impacto. 
+
+## Alta Coesão
+
+Nesse princípio, é empregado que as classes devem ser manter focadas apenas nas suas próprias responsabilidades, de forma que a classe tem menos métodos, o código fica mais reutilizável e sem margens pra incompreensão.
+
+## Controlador
+
+## Fabricação/Invenção Pura
+
+## Indireção
+
+## Variações protegidas
 
 ## Proposta do Grupo para implementação no Projeto
 
@@ -60,6 +76,7 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 
 ---
 
+
 ### Histórico de versões
 
 |Data|Versão|Descrição|Autor(es)|
@@ -69,11 +86,12 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 | 10/10/2020 | 1.2.0 | Adicionado introducao e descricao de GRASP criador |  Miguel Alves e Lude Ribeiro |
 | 10/10/2020 | 1.3.0 | Adicionado descrição de GRASP Especialista |  Miguel Alves e Lude Ribeiro |
 | 10/10/2020 | 1.4.0 | Adicionando outros padrões | Miguel Alves e Lude Ribeiro |
-| 12/10/2020 | 1.4.1 | Adicionando exemplo do criador e do especialista | Miguel Alves e Lude Ribeiro |
-| 12/10/2020 | 1.4.2 | Adicionando exemplo dos outros padrões e proposta de invenção pura | Lude Ribeiro |
-| 14/10/2020 | 1.4.3 | Adicionando exemplo de proposta de polimorfismo e pequenas correções | Francisco Heronildo e João Vitor Alves |
-| 15/10/2020 | 1.4.3 | Adicionando justificativa do polimorfismo | João Vitor Alves e  Francisco Heronildo |
-| 16/10/2020 | 1.4.4 | Correções de português e adcionando exemplo de GRASP Polimorfismo | Lude Ribeiro e Miguel Alves |
+| 12/10/2020 | 1.5.0 | Adicionando exemplo do criador e do especialista | Miguel Alves e Lude Ribeiro |
+| 12/10/2020 | 1.6.0 | Adicionando exemplo dos outros padrões e proposta de invenção pura | Lude Ribeiro |
+| 14/10/2020 | 1.7.0 | Adicionando exemplo de proposta de polimorfismo e pequenas correções | Francisco Heronildo e João Vitor Alves |
+| 15/10/2020 | 1.7.1 | Adicionando justificativa do polimorfismo | João Vitor Alves e  Francisco Heronildo |
+| 16/10/2020 | 1.7.2 | Correções de português e adicionando exemplo de GRASP Polimorfismo | Lude Ribeiro e Miguel Alves |
+| 24/10/2020 | 1.8.0 | Adicionando tópicos Baixo Acoplamento e Alta Coesão | Débora Vilela | 
 
 ## Referências
 
