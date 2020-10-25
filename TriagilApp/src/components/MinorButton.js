@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 0.2,
+        flex: 0.3,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,

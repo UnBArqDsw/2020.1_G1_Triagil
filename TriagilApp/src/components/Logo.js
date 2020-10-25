@@ -1,7 +1,7 @@
 import React from 'react';
-import { Image,Text, View } from 'react-native';
+import { Image, View } from 'react-native';
 
-import whiteLogo from '../Images/whiteLogo.png';
+import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
 const Logo = () => {
     return (
@@ -12,8 +12,8 @@ const Logo = () => {
                 alignContent: 'center',
                 flexDirection: 'row',
             }}>
-            <Image style ={{flex: 0.40 }} source={whiteLogo} resizeMode= 'contain'/>
-            <Text style={{ fontWeight: 'bold', fontSize: 50, color: 'white', borderLeftWidth: 2, borderColor:'white'}}> TRIAGIL</Text>
+            <Image style ={{flex: 0.90 }} source={whiteLogo} resizeMode= 'contain'/>
+            
         </View>
         
     );
