@@ -19,7 +19,7 @@ const Background = () => {
     return ( 
         <LinearGradient style={styles.container} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}> 
             <Logo/>
-            <Button label={'CADASTRAR'}/>
+            <Button label={'LOGIN'}/>
             <MinorButton label={'CANCELAR'} />
         </LinearGradient>          
     );
