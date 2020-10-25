@@ -1,8 +1,10 @@
 {
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
+    "start": "yarn sequelize db:migrate && yarn sequelize db:seed:all && node src/database/index.js",
     "dev": "nodemon src/server.js ",
     "dev:debug": "nodemon --inspect src/server.js"
   },

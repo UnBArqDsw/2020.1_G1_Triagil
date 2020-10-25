@@ -6,3 +6,6 @@
 
 #node_modules back
 /Back/node_modules
+
+#yarn.lock back
+/Back/yarn.lock
