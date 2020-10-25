@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
         
     },
     textInput: {
-        fontSize: 20,
+        fontSize: 16,
+        
         alignItems: 'center',
         padding: 15,
         width: '80%',
@@ -29,7 +30,7 @@ const TriTextInput = (props) => {
 
     return (
             <View style={styles.inputContainer}>
-                <Image style={{height: 40, width: 40, marginHorizontal: 10}} source={icon} />
+                <Image style={{height: 40, width: 40, marginLeft: 5}} source={icon} />
                 <TextInput style={[styles.textInput, style]} 
                     {...othersProps} 
                 />  

@@ -21,12 +21,12 @@ const styles = StyleSheet.create({
         flexDirection:'column-reverse',
     }, 
     midle: {
-        flex: 3,
+        flex: 2.5,
         alignItems: 'center',
         justifyContent: 'center',
     }, 
     bottom: {
-        flex: 1.5,
+        flex: 2,
         alignItems:'center',
     },
     signUpButton: {
