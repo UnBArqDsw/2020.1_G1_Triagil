@@ -4,6 +4,12 @@ services:
     image: postgres:11
     restart: always
     environment:
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: grupotop
+      POSTGRES_DB: database
+    volumes:
+      - database:/var/lib/postgresql/data
     ports:
       - 5432:5432
+volumes:
+  database:
