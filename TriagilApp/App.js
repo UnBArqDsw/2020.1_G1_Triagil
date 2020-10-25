@@ -7,7 +7,7 @@ import Logo from './src/components/Logo';
 export default function App() {
   return (
     <Background>
-      <Logo/>
+      
     </Background>
   );
 }

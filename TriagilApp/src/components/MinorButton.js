@@ -7,9 +7,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
-        padding: 10,
+        padding: 5,
         marginVertical: 10,
-        backgroundColor: '#1BC47D',
+        backgroundColor: '#FB0C0D',
 
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 1 },
@@ -18,14 +18,14 @@ const styles = StyleSheet.create({
         elevation: 5
     }, text: {
         color: '#FFFFFF',
-        fontSize: 26,
+        fontSize: 22,
         textAlign: 'center',
         fontWeight: 'bold',
     },
 });
 
 const Button = (props) => {
-    const { label, onPress, color} = props;
+    const { label, onPress} = props;
   return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
             <Text style={styles.text}>{label}</Text>
