@@ -1,35 +1,39 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TextInput, View } from 'react-native';
 
-import UserIcon from '../Icons/user.png';
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#C3ECFA',
-        marginHorizontal: 20,
-        borderRadius: 15,
-        flexDirection: 'row',
         justifyContent: 'center',
- 
+    },
+    inputContainer: {
+        flexDirection: 'row',
+        alignItems:'center',
+        backgroundColor: '#C3ECFA',
+        width: '80%',
+        marginVertical: 10,
+        borderRadius: 15,
+        
     },
     textInput: {
         fontSize: 20,
-        textAlign: 'center',
         alignItems: 'center',
-
+        padding: 15,
+        width: '80%',
+        borderRadius: 15,
     }
 })
 
 const TriTextInput = (props) => {
-    const { style, ...othersProps } = props;
+    const { style, icon, ...othersProps } = props;
 
     return (
-        <View style={styles.container}>
-            <Image style={{height: 40, width: 40, marginHorizontal: 10}} source={UserIcon} />
-            <TextInput style={[styles.textInput, style]} 
-                {...othersProps} 
-            />  
-        </View>
+            <View style={styles.inputContainer}>
+                <Image style={{height: 40, width: 40, marginHorizontal: 10}} source={icon} />
+                <TextInput style={[styles.textInput, style]} 
+                    {...othersProps} 
+                />  
+            </View>
     );
 }
 

@@ -3,21 +3,18 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        flex: 0.2,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 10,
         padding: 10,
-        marginVertical: 10,
-        backgroundColor: '#1BC47D',
+        
 
-        shadowColor: '#000',
+        shadowColor: '#000000',
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.8,
         shadowRadius: 2,  
         elevation: 5
     }, text: {
-        color: '#FFFFFF',
         fontSize: 26,
         textAlign: 'center',
         fontWeight: 'bold',
@@ -25,10 +22,10 @@ const styles = StyleSheet.create({
 });
 
 const Button = (props) => {
-    const { label, onPress, color} = props;
+    const { label, onPress, color, labelColor} = props;
   return (
-        <TouchableOpacity style={styles.container} onPress={onPress}>
-            <Text style={styles.text}>{label}</Text>
+        <TouchableOpacity style={[styles.container, {backgroundColor: color}]} onPress={onPress}>
+            <Text style={[{color: labelColor}, styles.text ]}>{label}</Text>
         </TouchableOpacity>
   );
 }

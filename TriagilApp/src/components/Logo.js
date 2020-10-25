@@ -5,16 +5,19 @@ import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
 const Logo = () => {
     return (
-        <View 
+        /*<View 
             style={{
-                justifyContent: 'center',
-                alignItems:'center',
-                alignContent: 'center',
-                flexDirection: 'row',
+                
+                //flexDirection:'row-reverse',
+                //justifyContent: 'flex-end',
+                //alignItems:'center',
+                //alignContent: 'center',
+                //flexDirection: 'row',
             }}>
-            <Image style ={{flex: 0.90 }} source={whiteLogo} resizeMode= 'contain'/>
+        */
+            <Image style ={{flex: 0.8 }} source={whiteLogo} resizeMode='center'/>
             
-        </View>
+        //</View>
         
     );
 }

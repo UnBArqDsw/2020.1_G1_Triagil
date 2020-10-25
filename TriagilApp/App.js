@@ -1,13 +1,21 @@
 import React from 'react';
 
-import Background from './src/components/Background';
-import Logo from './src/components/Logo';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import LoginScreen from './src/Screens/LoginScreen'
 
 
-export default function App() {
+const Stack = createStackNavigator();
+
+function App() {
   return (
-    <Background>
-      
-    </Background>
-  );
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login" headerMode="none">
+        <Stack.Screen name="Login" component={LoginScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  ); 
 }
+
+export default App;
