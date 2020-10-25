@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import UserIcon from '../Icons/user.png';
+import At from '../Icons/at.png';
 import PasswordIcon from '../Icons/key.png';
+import UserIcon from '../Icons/user.png';
 
-
-import Button from '../components/Button';
-import Logo from '../components/Logo';
-import TriTextInput from '../components/TriTextInput';
 import Background from '../components/Background';
+import Button from '../components/Button';
+import TriTextInput from '../components/TriTextInput';
 
 const styles = StyleSheet.create({
     container: {
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo: {
-        flex: 2,
+        flex: 1.5,
         alignItems:'center',
         flexDirection:'column-reverse',
     }, 
@@ -26,17 +25,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     }, 
     bottom: {
-        flex: 2,
+        flex: 1.5,
         alignItems:'center',
+        justifyContent: 'flex-start',
     },
-    signUpButton: {
-        marginTop: 20,
-        padding: 15,
-    }
-    
+
 })
 
-class LoginScreen extends React.Component {
+class SignInScreen extends React.Component {
     constructor(props) {
         super(props);
 
@@ -49,22 +45,21 @@ class LoginScreen extends React.Component {
             <Background> 
                 <View style={styles.container}> 
                     <View style={styles.logo}>
-                        <Logo/>
+                        <Text> CADASTRO </Text>
                     </View>
                     <View style={styles.midle}> 
-                        <TriTextInput placeholder={'Email'} icon={UserIcon}/>
+                        <TriTextInput placeholder={'Nome Completo'} icon={UserIcon}/>
+
+                        <TriTextInput placeholder={'Email'} icon={At}/>
             
                         <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
                         
                     </View>
                     <View style={styles.bottom}>
-                        <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
-                        
-                        <TouchableOpacity 
-                            style={styles.signUpButton}
-                        >
-                            <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
-                        </TouchableOpacity>
+                        <Button label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
+                        <View style={{marginTop: 20}}>
+                            <Button label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
+                        </View>
 
                     </View>
                 </View>
@@ -73,5 +68,5 @@ class LoginScreen extends React.Component {
     }
 }
 
-export default LoginScreen;
+export default SignInScreen;
 

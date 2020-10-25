@@ -3,11 +3,11 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        //alignItems: 'center',
+        //justifyContent: 'center',
         borderRadius: 10,
         padding: 10,
-        
+        backgroundColor: '#1BC47D',
 
         shadowColor: '#000000',
         shadowOffset: { width: 0, height: 1 },
@@ -15,16 +15,16 @@ const styles = StyleSheet.create({
         shadowRadius: 2,  
         elevation: 5
     }, text: {
-        fontSize: 26,
+        fontSize: 20,
         textAlign: 'center',
         fontWeight: 'bold',
     },
 });
 
 const Button = (props) => {
-    const { label, onPress, color, labelColor} = props;
+    const { label, onPress, color, labelColor, width} = props;
   return (
-        <TouchableOpacity style={[styles.container, {backgroundColor: color}]} onPress={onPress}>
+        <TouchableOpacity style={[styles.container, {backgroundColor: color, width: width}]} onPress={onPress}>
             <Text style={[{color: labelColor}, styles.text ]}>{label}</Text>
         </TouchableOpacity>
   );
