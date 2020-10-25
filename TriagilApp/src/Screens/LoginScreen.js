@@ -2,12 +2,13 @@ import React from 'react';
 import { View } from 'react-native';
 
 
-import Background from '../components/Background';
-
-// import { Container } from './styles';
+import TriView from '../components/TriView';
 
 const styles = SyleSheet.create({
-
+    container: {
+        flex: 1,
+        justifyContent: 'center' ,
+    }
 })
 
 class LoginScreen extends React.Component {
@@ -20,13 +21,9 @@ class LoginScreen extends React.Component {
     }
     render () {
         return (
-            <Background>
-                
+            <TriView>
 
-
-
-
-            </Background>
+            </TriView>
         );
     }
 }
