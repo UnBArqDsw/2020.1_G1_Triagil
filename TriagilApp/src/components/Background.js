@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
+        alignItems: 'center',
     },
 });
 
@@ -20,8 +21,9 @@ const Background = () => {
         <LinearGradient style={styles.container} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}> 
             <Logo/>
             <TriTextInput placeholder={' Email '} />
+            <TriTextInput placeholder={' Senha '} />
             <Button label={'LOGIN'}/>
-            <MinorButton label={'CANCELAR'} />
+            <MinorButton label={'Cadastrar'} />
         </LinearGradient>          
     );
 }
