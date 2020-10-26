@@ -28,6 +28,20 @@
 ![Código exemplo](https://imgur.com/vNHtXtm.png)
 ![Código exemplo](https://imgur.com/yPgbCxI.png)
 
+## Diagrama Decorator
+
+![Decorator](https://imgur.com/6pZk2nN.png)
+
+### Código exemplo
+
+
+![Código exemplo](https://imgur.com/4nFKEPb.png)
+![Código exemplo](https://imgur.com/ftWiAFU.png)
+![Código exemplo](https://imgur.com/I2VXnI0.png)
+![Código exemplo](https://imgur.com/u1D4bVD.png)
+![Código exemplo](https://imgur.com/KPIqY3q.png)
+
+
 
 
 **Histórico de Versões**
@@ -40,6 +54,9 @@
 | 26/10 | 1.4.0 |  Adicionando código exemplo do Flyweigth| Nathalia Lorena Cardoso |
 | 26/10 | 1.5.0 |  Adicionando diagrama do Bridge| Nathalia Lorena Cardoso |
 | 26/10 | 1.6.0 |  Adicionando código exemplo do Bridge| Nathalia Lorena Cardoso |
+| 26/10 | 1.7.0 |  Adicionando diagrama do Decorator| Nathalia Lorena Cardoso |
+| 26/10 | 1.8.0 |  Adicionando código exemplo do Decorator| Nathalia Lorena Cardoso |
+
 
 
 ## Refêrencias
