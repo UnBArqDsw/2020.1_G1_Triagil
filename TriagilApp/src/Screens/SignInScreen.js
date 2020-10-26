@@ -7,6 +7,7 @@ import UserIcon from '../Icons/user.png';
 
 import Background from '../components/Background';
 import Button from '../components/Button';
+import Title from '../components/Title';
 import TriTextInput from '../components/TriTextInput';
 
 const styles = StyleSheet.create({
@@ -45,7 +46,7 @@ class SignInScreen extends React.Component {
             <Background> 
                 <View style={styles.container}> 
                     <View style={styles.logo}>
-                        <Text> CADASTRO </Text>
+                        <Title label={'CADASTRO'}/>
                     </View>
                     <View style={styles.midle}> 
                         <TriTextInput placeholder={'Nome Completo'} icon={UserIcon}/>
