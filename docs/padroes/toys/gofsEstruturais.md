@@ -1,6 +1,6 @@
 ## Diagrama Proxy
 
-![Diagrama Proxy](https://imgur.com/XeAVuew.png)
+![Proxy](https://imgur.com/XeAVuew.png)
 
 
 ### Código exemplo
@@ -18,6 +18,17 @@
 ![Código exemplo](https://imgur.com/52zrZQ8.png)
 ![Código exemplo](https://imgur.com/AboW8ah.png)
 
+## Diagram Bridge
+
+![Bridge](https://imgur.com/9nSNglq.png)
+
+### Código exemplo
+
+![Código exemplo](https://imgur.com/o2o0UK4.png)
+![Código exemplo](https://imgur.com/vNHtXtm.png)
+![Código exemplo](https://imgur.com/yPgbCxI.png)
+
+
 
 **Histórico de Versões**
 | Data | Versão | Descrição | Autor(es) |
@@ -27,6 +38,8 @@
 | 26/10 | 1.2.0 |  Adicionando código exemplo do Proxy| Nathalia Lorena Cardoso |
 | 26/10 | 1.3.0 |  Adicionando diagrama do Flyweight| Nathalia Lorena Cardoso |
 | 26/10 | 1.4.0 |  Adicionando código exemplo do Flyweigth| Nathalia Lorena Cardoso |
+| 26/10 | 1.5.0 |  Adicionando diagrama do Bridge| Nathalia Lorena Cardoso |
+| 26/10 | 1.6.0 |  Adicionando código exemplo do Bridge| Nathalia Lorena Cardoso |
 
 
 ## Refêrencias
