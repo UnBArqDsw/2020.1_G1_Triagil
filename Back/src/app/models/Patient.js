@@ -1,8 +1,8 @@
-import Sequelize from 'sequelize';
+import Sequelize, { Model } from 'sequelize';
 import bcryptjs from 'bcryptjs';
-import User from './Person';
+import Person from './Person';
 
-class Patient extends User {
+class Patient extends Model {
   static init(sequelize) {
     super.init(
       {

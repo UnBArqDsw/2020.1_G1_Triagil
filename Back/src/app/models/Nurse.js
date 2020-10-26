@@ -1,8 +1,8 @@
-import Sequelize from 'sequelize';
+import Sequelize, { Model }  from 'sequelize';
 import bcryptjs from 'bcryptjs';
 import Person from './Person';
 
-class Nurse extends Person {
+class Nurse extends Model {
   static init(sequelize) {
     super.init(
       {
@@ -21,9 +21,9 @@ class Nurse extends Person {
       }
     );
 
-    this.addHook('beforeSave', async (person) => {
-      if (person.password) {
-        person.password_hash = await bcryptjs.hash(person.password, 8);
+    this.addHook('beforeSave', async (nurse) => {
+      if (nurse.password) {
+        nurse.password_hash = await bcryptjs.hash(nurse.password, 8);
       }
     });
 
