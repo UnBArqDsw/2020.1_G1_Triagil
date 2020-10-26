@@ -7,12 +7,26 @@
 ![Código exemplo](https://imgur.com/eyzAjhx.png)
 
 
+## Diagrama Builder 
+
+![Builder](https://imgur.com/sztVX9t.png)
+
+### Código exemplo
+
+![Código exemplo](https://imgur.com/uknsHsj.png)
+![Código exemplo](https://imgur.com/a8mXWmL.png)
+![Código exemplo](https://imgur.com/NeZqbcp.png)
+
+
+
 **Histórico de Versões**
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
 | 25/10 | 1.1.0 |  Adicionando diagrama do Abstract Factory| Nathalia Lorena Cardoso |
 | 25/10 | 1.2.0 |  Adicionando código exemplo do Abstract Factory| Nathalia Lorena Cardoso |
+| 26/10 | 1.3.0 |  Adicionando diagrama do Builder| Nathalia Lorena Cardoso |
+| 26/10 | 1.4.0 |  Adicionando códigos exemplos do Builder| Nathalia Lorena Cardoso |
 
 
 
