@@ -2,7 +2,7 @@
 
 ![Abstract Factory](https://imgur.com/w12gxUJ.png)
 
-### Código exemplo
+### Código exemplo Abstract Factory
 
 ![Código exemplo](https://imgur.com/eyzAjhx.png)
 
@@ -11,7 +11,7 @@
 
 ![Builder](https://imgur.com/sztVX9t.png)
 
-### Código exemplo
+### Código exemplo Builder 
 
 ![Código exemplo](https://imgur.com/uknsHsj.png)
 ![Código exemplo](https://imgur.com/a8mXWmL.png)
@@ -21,7 +21,7 @@
 
 ![Prototype](https://imgur.com/Vm1C5UM.png)
 
-### Código exemplo 
+### Código exemplo Prototype
 
 ![Código exemplo](https://imgur.com/zaPPIau.png)
 
@@ -34,7 +34,7 @@
 | 26/10 | 1.3.0 |  Adicionando diagrama do Builder| Nathalia Lorena Cardoso |
 | 26/10 | 1.4.0 |  Adicionando códigos exemplos do Builder| Nathalia Lorena Cardoso |
 | 26/10 | 1.5.0 |  Adicionando diagrama do Prototype| Nathalia Lorena Cardoso |
-| 26/10 | 1.6.0 |  Adicionando código exemplo do Prototpe| Nathalia Lorena Cardoso |
+| 26/10 | 1.6.0 |  Adicionando código exemplo do Prototype| Nathalia Lorena Cardoso |
 
 
 

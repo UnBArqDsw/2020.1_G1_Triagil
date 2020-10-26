@@ -3,7 +3,7 @@
 ![Proxy](https://imgur.com/XeAVuew.png)
 
 
-### Código exemplo
+### Código exemplo Proxy
 
 ![Código exemplo](https://imgur.com/pzbdNo5.png)
 ![Código exemplo](https://imgur.com/NbBkeOi.png)
@@ -12,17 +12,17 @@
 
 ![Flyweight](https://imgur.com/Ld1nzKr.png)
 
-### Código exemplo
+### Código exemplo Flyweight
 
 ![Código exemplo](https://imgur.com/oaOMTyz.png)
 ![Código exemplo](https://imgur.com/52zrZQ8.png)
 ![Código exemplo](https://imgur.com/AboW8ah.png)
 
-## Diagram Bridge
+## Diagrama Bridge
 
 ![Bridge](https://imgur.com/9nSNglq.png)
 
-### Código exemplo
+### Código exemplo Bridge
 
 ![Código exemplo](https://imgur.com/o2o0UK4.png)
 ![Código exemplo](https://imgur.com/vNHtXtm.png)
@@ -32,7 +32,7 @@
 
 ![Decorator](https://imgur.com/6pZk2nN.png)
 
-### Código exemplo
+### Código exemplo Decorator
 
 
 ![Código exemplo](https://imgur.com/4nFKEPb.png)
@@ -45,7 +45,7 @@
 
 ![Composite](https://imgur.com/iYaq6bc.png)
 
-### Código exemplo
+### Código exemplo Composite
 
 ![Código exemplo](https://imgur.com/0KRWJ0g.png)
 ![Código exemplo](https://imgur.com/C4lAd55.png)
@@ -66,7 +66,7 @@
 | 26/10 | 1.7.0 |  Adicionando diagrama do Decorator| Nathalia Lorena Cardoso |
 | 26/10 | 1.8.0 |  Adicionando código exemplo do Decorator| Nathalia Lorena Cardoso |
 | 26/10 | 1.9.0 |  Adicionando diagrama do Composite| Nathalia Lorena Cardoso |
-| 26/10 | 1.10.0 |  Adicionando código exemplo do Composite| Nathalia Lorena Cardoso |
+| 26/10 | 2.0.0 |  Adicionando código exemplo do Composite| Nathalia Lorena Cardoso |
 
 
 ## Refêrencias
