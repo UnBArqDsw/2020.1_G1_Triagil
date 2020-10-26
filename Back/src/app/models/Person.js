@@ -24,7 +24,6 @@ class Person extends Model {
         person.password_hash = await bcryptjs.hash(person.password, 8);
       }
     });
-
     return this;
   }
 }

@@ -7,6 +7,8 @@ import NurseController from './app/controller/NurseController';
 const routes = new Router();
 
 routes.post('/person', PersonController.store);
+routes.get('/person', PersonController.show);
+
 routes.post('/patient', PatientController.store);
 routes.post('/nurse', NurseController.store);
 
