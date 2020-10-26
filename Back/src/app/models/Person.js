@@ -12,7 +12,10 @@ class Person extends Model {
         provider: Sequelize.BOOLEAN,
       },
       {
-        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        tableName: 'person',
+        sequelize
       }
     );
 

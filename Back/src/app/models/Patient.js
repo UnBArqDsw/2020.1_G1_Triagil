@@ -14,7 +14,10 @@ class Patient extends User {
         provider: Sequelize.BOOLEAN,
       },
       {
-        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        tableName: 'patient',
+        sequelize
       }
     );
 
