@@ -33,8 +33,10 @@
 ![codigo_command_4](https://imgur.com/pNLdYJN.png)
 
 ## Diagrama Iterator
+![diagrama_iterator](https://imgur.com/uHUMKfj.png)
 
 ### Código exemplo Iterator
+![codigo_iterator](https://imgur.com/YlWQVwk.png)
 
 ## Diagrama Mediator
 
