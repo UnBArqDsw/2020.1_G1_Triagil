@@ -52,14 +52,20 @@
 ![codigo_memento_2](https://imgur.com/n6mxCmx.png)
 
 ## Diagrama State
+![diagrama_state](https://imgur.com/qYX79Fi.png)
 
 ### Código exemplo State
+![codigo_state](https://imgur.com/FvpmhsL.png)
+![codigo_state_2](https://imgur.com/rG2XkoF.png)
 
 ## Diagrama Visitor
 
+
 ### Código exemplo Visitor
 
+
 ## Diagrama Template Method
+
 
 ### Código exemplo Template Method
 
