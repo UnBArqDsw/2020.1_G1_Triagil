@@ -8,6 +8,6 @@ const routes = new Router();
 
 routes.post('/person', PersonController.store);
 routes.post('/patient', PatientController.store);
-routes.post('/Nurse',NurseController.store);
+routes.post('/nurse', NurseController.store);
 
 export default routes;

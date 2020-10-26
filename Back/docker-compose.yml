@@ -7,7 +7,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: grupotop
       POSTGRES_DB: triagil-database
-      command: bash -c "yarn sequelize db:migrate && sequelize db:seed:all"
     volumes:
       - triagil-database:/var/lib/postgresql/data
     ports:

@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "yarn sequelize db:migrate && yarn sequelize db:seed:all && node src/database/index.js",
+    "start": "yarn dev && yarn sequelize db:migrate && yarn sequelize db:all",
     "dev": "nodemon src/server.js ",
     "dev:debug": "nodemon --inspect src/server.js"
   },
@@ -13,6 +13,7 @@
     "bcryptjs": "^2.4.3",
     "bscript": "^0.1.0",
     "express": "^4.17.1",
+    "node-sass": "^4.14.1",
     "pg": "^8.4.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5"
