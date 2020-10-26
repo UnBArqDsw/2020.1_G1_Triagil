@@ -5,7 +5,7 @@ import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
 const Logo = () => {
     return (
-        <Image style ={{flex: 0.1 }} source={whiteLogo} />
+        <Image style={{width: '80%', height: '10%'}} source={whiteLogo}  resizeMode='center'/>
     );
 }
 

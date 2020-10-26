@@ -1,33 +1,36 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import UserIcon from '../Icons/user.png';
 import PasswordIcon from '../Icons/key.png';
 
+import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
 import Button from '../components/Button';
 import Logo from '../components/Logo';
 import TriTextInput from '../components/TriTextInput';
-import Background from '../components/Background';
+import RootContainer from '../components/RootContainer';
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent:'center',
     },
-    logo: {
-        //flex: 0.05,
-        alignItems:'center',
+    top: {
+        flex: 0.01,
+        alignItems: 'center',
+        justifyContent:'flex-start',
         flexDirection:'column-reverse',
-    }, 
+    },
     midle: {
-        flex: 2.5,
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     }, 
     bottom: {
-        flex: 2,
+        flex: 1,
         alignItems:'center',
+        justifyContent:'center',
     },
     signUpButton: {
         marginTop: 20,
@@ -56,34 +59,36 @@ class LoginScreen extends React.Component {
 
 
         return (
-            <Background> 
-                <ScrollView>
+                <RootContainer>
 
-            
-                    <View style={styles.container}> 
-                        <View style={styles.logo}>
-                            <Logo/>
-                        </View>
+                    <SafeAreaView style={styles.container}>
+                        
+                        
+                        <View style={styles.top}>
+                            <Image style={{width:300, height:300}} source={whiteLogo} resizeMode='contain'/>
+                        </View>                        
+
                         <View style={styles.midle}> 
                             <TriTextInput placeholder={'Email'} icon={UserIcon}/>
-                
                             <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
-                            
                         </View>
+
                         <View style={styles.bottom}>
                             <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
-                            
                             <TouchableOpacity 
                                 style={styles.signUpButton}
                                 onPress={this.handleSignInPress}
-                            >
+                                >
                                 <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
                             </TouchableOpacity>
-
                         </View>
-                    </View>
-                </ScrollView>
-            </Background>
+                        
+                        
+
+
+                    </SafeAreaView>
+
+                </RootContainer>
         );
     }
 }

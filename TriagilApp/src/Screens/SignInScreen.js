@@ -9,11 +9,12 @@ import Background from '../components/Background';
 import Button from '../components/Button';
 import Title from '../components/Title';
 import TriTextInput from '../components/TriTextInput';
+import RootContainer from '../components/RootContainer';
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        //justifyContent: 'center',
+        justifyContent: 'center',
     },
     logo: {
         flex: 1.5,
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
     bottom: {
         flex: 1.5,
         alignItems:'center',
-        justifyContent: 'flex-start',
     },
 
 })
@@ -48,28 +48,28 @@ class SignInScreen extends React.Component {
 
     render () {
         return (
-            <Background> 
-                <ScrollView style={styles.container}> 
-                    <View style={styles.logo}>
-                        <Title label={'CADASTRO'}/>
-                    </View>
-                    <View style={styles.midle}> 
-                        <TriTextInput placeholder={'Nome Completo'} icon={UserIcon}/>
-
-                        <TriTextInput placeholder={'Email'} icon={At}/>
-            
-                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
-                        
-                    </View>
-                    <View style={styles.bottom}>
-                        <Button label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
-                        <View style={{marginTop: 20}}>
-                            <Button onPress={this.handleCancelPress} label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
+                <RootContainer>
+                    <View style={styles.container}> 
+                        <View style={styles.logo}>
+                            <Title label={'CADASTRO'}/>
                         </View>
+                        <View style={styles.midle}> 
+                            <TriTextInput placeholder={'Nome Completo'} icon={UserIcon}/>
 
+                            <TriTextInput placeholder={'Email'} icon={At}/>
+                
+                            <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
+                            
+                        </View>
+                        <View style={styles.bottom}>
+                            <Button label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
+                            <View style={{marginTop: 20}}>
+                                <Button onPress={this.handleCancelPress} label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
+                            </View>
+
+                        </View>
                     </View>
-                </ScrollView>
-            </Background>
+                </RootContainer>
         );
     }
 }

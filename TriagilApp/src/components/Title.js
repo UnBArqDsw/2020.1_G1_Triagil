@@ -3,7 +3,6 @@ import { TouchableWithoutFeedback, Text } from 'react-native';
 
 import styled from 'styled-components/native';
 
-
 const StyledText = styled.Text`
     color: #FFFFFF;
     text-shadow: 0px 4px 4px #DC1A23;

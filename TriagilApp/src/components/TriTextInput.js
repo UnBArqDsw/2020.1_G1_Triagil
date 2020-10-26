@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     },
     textInput: {
         fontSize: 16,
-        
         alignItems: 'center',
         padding: 15,
         width: '80%',
