@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import At from '../Icons/at.png';
 import PasswordIcon from '../Icons/key.png';
@@ -13,7 +13,7 @@ import TriTextInput from '../components/TriTextInput';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        //justifyContent: 'center',
     },
     logo: {
         flex: 1.5,
@@ -41,10 +41,15 @@ class SignInScreen extends React.Component {
 
         };
     }
+
+    handleCancelPress = async () => {
+        this.props.navigation.goBack();
+    }
+
     render () {
         return (
             <Background> 
-                <View style={styles.container}> 
+                <ScrollView style={styles.container}> 
                     <View style={styles.logo}>
                         <Title label={'CADASTRO'}/>
                     </View>
@@ -59,11 +64,11 @@ class SignInScreen extends React.Component {
                     <View style={styles.bottom}>
                         <Button label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
                         <View style={{marginTop: 20}}>
-                            <Button label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
+                            <Button onPress={this.handleCancelPress} label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
                         </View>
 
                     </View>
-                </View>
+                </ScrollView>
             </Background>
         );
     }

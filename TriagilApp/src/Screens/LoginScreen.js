@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import UserIcon from '../Icons/user.png';
 import PasswordIcon from '../Icons/key.png';
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo: {
-        flex: 2,
+        //flex: 0.05,
         alignItems:'center',
         flexDirection:'column-reverse',
     }, 
@@ -43,31 +43,46 @@ class LoginScreen extends React.Component {
         this.state = {
 
         };
+
+        
     }
+
+    handleSignInPress = async () => {
+        this.props.navigation.navigate('SignIn');
+    }
+
+    
     render () {
+
+
         return (
             <Background> 
-                <View style={styles.container}> 
-                    <View style={styles.logo}>
-                        <Logo/>
-                    </View>
-                    <View style={styles.midle}> 
-                        <TriTextInput placeholder={'Email'} icon={UserIcon}/>
-            
-                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
-                        
-                    </View>
-                    <View style={styles.bottom}>
-                        <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
-                        
-                        <TouchableOpacity 
-                            style={styles.signUpButton}
-                        >
-                            <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
-                        </TouchableOpacity>
+                <ScrollView>
 
+            
+                    <View style={styles.container}> 
+                        <View style={styles.logo}>
+                            <Logo/>
+                        </View>
+                        <View style={styles.midle}> 
+                            <TriTextInput placeholder={'Email'} icon={UserIcon}/>
+                
+                            <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
+                            
+                        </View>
+                        <View style={styles.bottom}>
+                            <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
+                            
+                            <TouchableOpacity 
+                                style={styles.signUpButton}
+                                onPress={this.handleSignInPress}
+                            >
+                                <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
+                            </TouchableOpacity>
+
+                        </View>
                     </View>
-                </View>
+                </ScrollView>
             </Background>
         );
     }
