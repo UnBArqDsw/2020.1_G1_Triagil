@@ -59,10 +59,11 @@
 ![codigo_state_2](https://imgur.com/rG2XkoF.png)
 
 ## Diagrama Visitor
-
+![diagrama_visitor](https://imgur.com/6gy7eRP.png)
 
 ### Código exemplo Visitor
-
+![codigo_visitor](https://imgur.com/BeTwsBH.png)
+![codigo_visitor_2](https://imgur.com/6E2gc40.png)
 
 ## Diagrama Template Method
 
