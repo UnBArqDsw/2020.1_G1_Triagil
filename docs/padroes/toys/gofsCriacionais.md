@@ -17,7 +17,13 @@
 ![Código exemplo](https://imgur.com/a8mXWmL.png)
 ![Código exemplo](https://imgur.com/NeZqbcp.png)
 
+## Diagrama Prototype
 
+![Prototype](https://imgur.com/Vm1C5UM.png)
+
+### Código exemplo 
+
+![Código exemplo](https://imgur.com/zaPPIau.png)
 
 **Histórico de Versões**
 | Data | Versão | Descrição | Autor(es) |
@@ -27,6 +33,8 @@
 | 25/10 | 1.2.0 |  Adicionando código exemplo do Abstract Factory| Nathalia Lorena Cardoso |
 | 26/10 | 1.3.0 |  Adicionando diagrama do Builder| Nathalia Lorena Cardoso |
 | 26/10 | 1.4.0 |  Adicionando códigos exemplos do Builder| Nathalia Lorena Cardoso |
+| 26/10 | 1.5.0 |  Adicionando diagrama do Prototype| Nathalia Lorena Cardoso |
+| 26/10 | 1.6.0 |  Adicionando código exemplo do Prototpe| Nathalia Lorena Cardoso |
 
 
 
