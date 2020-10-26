@@ -16,6 +16,13 @@
 
 ![codigo_observer_3](https://imgur.com/Uko0h21.png)
 
+## Diagrama Chain of Responsability
+![diagrama_chain_of_responsability](https://imgur.com/GMq3MFv.png)
+
+### Código  exemplo Chain of Responsability
+![codigo_chain_of_responsability](https://imgur.com/PFXpq7v.png)
+![codigo_chain_of_responsability_2](https://imgur.com/fbxsidf)
+
 
 
 
@@ -30,6 +37,8 @@
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
 | 26/10 | 1.1.0 | Adicionando tópicos Strategy | Débora Pereira Vilela |
 | 26/10 | 1.2.0 | Adicionando tópicos Observer | Débora Pereira Vilela |
+| 26/10 | 1.2.0 | Adicionando tópicos Chain of Responsability | Débora Pereira Vilela |
+
 
 
 
