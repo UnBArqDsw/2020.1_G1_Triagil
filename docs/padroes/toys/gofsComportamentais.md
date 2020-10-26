@@ -6,6 +6,18 @@
 
 ![codigo_strategy](https://imgur.com/qTxcXrz.png)
 
+## Diagrama Observer
+![diagrama_observer](https://imgur.com/22njvYg.png)
+
+### Código exemplo Observer
+![codigo_observer](https://imgur.com/ADezqw1.png)
+
+![codigo_observer_2](https://imgur.com/fAuvKlM.png)
+
+![codigo_observer_3](https://imgur.com/Uko0h21.png)
+
+
+
 
 
 
@@ -17,6 +29,8 @@
 | --- | --- | --- | --- |
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
 | 26/10 | 1.1.0 | Adicionando tópicos Strategy | Débora Pereira Vilela |
+| 26/10 | 1.2.0 | Adicionando tópicos Observer | Débora Pereira Vilela |
+
 
 
 
