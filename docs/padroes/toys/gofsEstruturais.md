@@ -41,6 +41,15 @@
 ![Código exemplo](https://imgur.com/u1D4bVD.png)
 ![Código exemplo](https://imgur.com/KPIqY3q.png)
 
+## Diagrama Composite
+
+![Composite](https://imgur.com/iYaq6bc.png)
+
+### Código exemplo
+
+![Código exemplo](https://imgur.com/0KRWJ0g.png)
+![Código exemplo](https://imgur.com/C4lAd55.png)
+![Código exemplo](https://imgur.com/23HlgqH.png)
 
 
 
@@ -56,7 +65,8 @@
 | 26/10 | 1.6.0 |  Adicionando código exemplo do Bridge| Nathalia Lorena Cardoso |
 | 26/10 | 1.7.0 |  Adicionando diagrama do Decorator| Nathalia Lorena Cardoso |
 | 26/10 | 1.8.0 |  Adicionando código exemplo do Decorator| Nathalia Lorena Cardoso |
-
+| 26/10 | 1.9.0 |  Adicionando diagrama do Composite| Nathalia Lorena Cardoso |
+| 26/10 | 1.10.0 |  Adicionando código exemplo do Composite| Nathalia Lorena Cardoso |
 
 
 ## Refêrencias
