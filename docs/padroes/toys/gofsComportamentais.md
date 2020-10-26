@@ -66,10 +66,11 @@
 ![codigo_visitor_2](https://imgur.com/6E2gc40.png)
 
 ## Diagrama Template Method
-
+![diagrama_template](https://imgur.com/9pOKMRC.png)
 
 ### Código exemplo Template Method
-
+![diagrama_template](https://imgur.com/R4q8apZ.png)
+![diagrama_template_2](https://imgur.com/M4ONPFD.png)
 
 
 
@@ -89,12 +90,10 @@
 | 26/10 | 2.0.0 | Adicionando tópicos Template Method | Débora Pereira Vilela |
 
 
-
-
-
 ## Referências
 
 SERRANO,Milene. **AULA - GOFS COMPORTAMENTAIS**, 67 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 25, Outubro de 2020.
 
 Padrões de projeto comportamentais . **Refactoring.Guru**, 2020. Disponível em: <https://refactoring.guru/pt-br/design-patterns/behavioral-patterns>. Acesso em: 25, Outubro de 2020.
 
+**Padrões de projeto**. Disponível em <https://www.dofactory.com/javascript/design-patterns/>. Acesso em: 26 de outubro de 2020.
