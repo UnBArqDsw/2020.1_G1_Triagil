@@ -46,8 +46,10 @@
 ![codigo_mediator_2](https://imgur.com/NFQsKLY.png)
 
 ## Diagrama Memento
-
+![diagrama_memento](https://imgur.com/BNkojEs.png)
 ### Código exemplo Memento
+![codigo_memento](https://imgur.com/lbJY54I.png)
+![codigo_memento_2](https://imgur.com/n6mxCmx.png)
 
 ## Diagrama State
 
