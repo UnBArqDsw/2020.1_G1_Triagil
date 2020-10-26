@@ -39,8 +39,11 @@
 ![codigo_iterator](https://imgur.com/YlWQVwk.png)
 
 ## Diagrama Mediator
+![diagrama_mediator](https://imgur.com/7vQZd6b.png)
 
 ### Código exemplo Mediator
+![codigo_mediator](https://imgur.com/O1pR9IY.png)
+![codigo_mediator_2](https://imgur.com/NFQsKLY.png)
 
 ## Diagrama Memento
 
