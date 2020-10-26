@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
 })
 
 const TriTextInput = (props) => {
-    const { style, icon, ...othersProps } = props;
+    const { style, icon, secureTextEntry, ...othersProps } = props;
 
     return (
             <View style={styles.inputContainer}>
                 <Image style={{height: 40, width: 40, marginLeft: 5}} source={icon} />
-                <TextInput style={[styles.textInput, style]} 
+                <TextInput style={[styles.textInput, style]} secureTextEntry={secureTextEntry}
                     {...othersProps} 
                 />  
             </View>

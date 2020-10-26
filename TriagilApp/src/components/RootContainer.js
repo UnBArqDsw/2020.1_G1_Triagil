@@ -14,22 +14,22 @@ const styles = StyleSheet.create({
 
 const RootContainer = (props) => {
     return(
-		<LinearGradient style={{flex: 1}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
-			<ScrollView
-				keyboardShouldPersistTaps="handled"
-				keyboardDismissMode="on-drag"
-				style={{flex: 1, flexGrow:1}}
-				contentContainerStyle={{
-					display: 'flex',
-					flexGrow: 1,
-					justifyContent: 'center'
-				}}
-			>
-				<View style={styles.container}>
-					{props.children}
-				</View>
-			</ScrollView>
-		</LinearGradient>
+			<LinearGradient style={{flex: 1}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
+				<ScrollView
+					keyboardShouldPersistTaps="handled"
+					keyboardDismissMode="on-drag"
+					style={{flex: 1, flexGrow:1}}
+					contentContainerStyle={{
+						display: 'flex',
+						flexGrow: 1,
+						justifyContent: 'center'
+					}}
+				>
+					<View style={styles.container}>
+						{props.children}
+					</View>
+				</ScrollView>
+			</LinearGradient>
 
 
     );

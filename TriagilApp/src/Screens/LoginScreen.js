@@ -7,7 +7,6 @@ import PasswordIcon from '../Icons/key.png';
 import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
 import Button from '../components/Button';
-import Logo from '../components/Logo';
 import TriTextInput from '../components/TriTextInput';
 import RootContainer from '../components/RootContainer';
 
@@ -17,20 +16,18 @@ const styles = StyleSheet.create({
         justifyContent:'center',
     },
     top: {
-        flex: 0.01,
+        flex: 1,
         alignItems: 'center',
-        justifyContent:'flex-start',
-        flexDirection:'column-reverse',
+        justifyContent:'flex-end',
     },
     midle: {
-        flex: 1,
+        flex: 1.25,
         alignItems: 'center',
         justifyContent: 'center',
     }, 
     bottom: {
-        flex: 1,
+        flex: 0.5,
         alignItems:'center',
-        justifyContent:'center',
     },
     signUpButton: {
         marginTop: 20,
@@ -44,51 +41,68 @@ class LoginScreen extends React.Component {
         super(props);
 
         this.state = {
-
+            email: '',
+            password: '',
+            loading: false,
         };
 
         
-    }
+    };
 
     handleSignInPress = async () => {
         this.props.navigation.navigate('SignIn');
-    }
+    };
+    
+    handleEmailChange = (email) => {
+        this.setState({email});
+    };
+
+    handlePasswordChange = (password) => {
+        this.setState({password});
+    };
+
+    handleLoginPress = async () => {
+        this.setState({loading: true});
+        const { email, password } = this.state;
+
+        const response = await LoginScreen(email,password);
+
+        if (response.status === 200) {
+            //deu bom
+        } else {
+            //deu ruim
+        }
+    };
 
     
     render () {
 
 
         return (
-                <RootContainer>
+            <RootContainer>
+                <SafeAreaView style={styles.container}>
+                    
+                    <View style={styles.top}>
+                        <Image style={{width:'80%', height:100}} source={whiteLogo} resizeMode='contain'/>
+                    </View>                        
 
-                    <SafeAreaView style={styles.container}>
-                        
-                        
-                        <View style={styles.top}>
-                            <Image style={{width:300, height:300}} source={whiteLogo} resizeMode='contain'/>
-                        </View>                        
+                    <View style={styles.midle}> 
+                        <TriTextInput placeholder={'Email'} icon={UserIcon} onChangeText={this.handleEmailChange}/>
+                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handlePasswordChange} secureTextEntry={true}/>
+                    </View>
 
-                        <View style={styles.midle}> 
-                            <TriTextInput placeholder={'Email'} icon={UserIcon}/>
-                            <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
-                        </View>
-
-                        <View style={styles.bottom}>
-                            <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
-                            <TouchableOpacity 
-                                style={styles.signUpButton}
-                                onPress={this.handleSignInPress}
-                                >
-                                <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
-                            </TouchableOpacity>
-                        </View>
-                        
-                        
-
-
-                    </SafeAreaView>
-
-                </RootContainer>
+                    <View style={styles.bottom}>
+                        <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
+                        <TouchableOpacity 
+                            style={styles.signUpButton}
+                            onPress={this.handleSignInPress}
+                            >
+                            <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
+                        </TouchableOpacity>
+                    </View>
+                    
+                </SafeAreaView>
+            </RootContainer>
         );
     }
 }
