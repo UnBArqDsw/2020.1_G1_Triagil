@@ -1,0 +1,29 @@
+## Diagrama Strategy 
+![diagrama_strategy](https://imgur.com/TZjmcIT.png)
+
+### Código exemplo Strategy
+![codigo_strategy_1](https://imgur.com/6ZN6xNA.png)
+
+![codigo_strategy](https://imgur.com/qTxcXrz.png)
+
+
+
+
+
+
+
+**Histórico de Versões**
+| Data | Versão | Descrição | Autor(es) |
+| --- | --- | --- | --- |
+| 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
+| 26/10 | 1.1.0 | Adicionando tópicos Strategy | Débora Pereira Vilela |
+
+
+
+
+## Referências
+
+SERRANO,Milene. **AULA - GOFS COMPORTAMENTAIS**, 67 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 25, Outubro de 2020.
+
+Padrões de projeto comportamentais . **Refactoring.Guru**, 2020. Disponível em: <https://refactoring.guru/pt-br/design-patterns/behavioral-patterns>. Acesso em: 25, Outubro de 2020.
+
