@@ -118,6 +118,8 @@ Prototype é um padrão que faz parte do grupo de padrões Criacionais e que per
 
 Abstract Factory é um padrão onde os ojetos são criados relacionados por um tema em comum. Nas linguagens que utilizam orientação à objetos, esse tema é abstraindo e passa a ser compartilhado nos objetos recém-criados.
 
+** Diagramas e trechos de códigos não abordados nesse documento podem ser encontrados no seguinte link:** 
+[Toys](https://unbarqdsw.github.io/2020.1_G1_Triagil/padroes/toys/gofsCriacionais/)
 
 **Histórico de Versão**
 
@@ -131,6 +133,7 @@ Abstract Factory é um padrão onde os ojetos são criados relacionados por um t
 | 23/10 | 1.5.0 | Adicionando introdução do Builder | Nathalia Lorena Cardoso |
 | 23/10 | 1.6.0 | Adicionando introdução do Prototype | Nathalia Lorena Cardoso |
 | 24/10 | 1.7.0 | Adicionando introdução do Abstract Factory | Débora Vilela |
+| 26/10 | 1.8.0 | Adicionando rastros para toys | Nathalia Lorena Cardoso |
 
 
 
