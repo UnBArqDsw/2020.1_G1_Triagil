@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "TriagilApp",
+    "slug": "TriagilApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/Assets/icon.png",
+    "splash": {
+      "image": "./src/Assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./src/Assets/favicon.png"
+    }
+  }
+}

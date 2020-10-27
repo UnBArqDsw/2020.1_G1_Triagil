@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  triagil-database:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: grupotop
+      POSTGRES_DB: triagil-database
+    volumes:
+      - triagil-database:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+volumes:
+  triagil-database:
