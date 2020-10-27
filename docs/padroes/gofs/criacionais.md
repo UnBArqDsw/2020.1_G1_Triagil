@@ -121,6 +121,7 @@ Abstract Factory é um padrão onde os ojetos são criados relacionados por um t
 **Diagramas e trechos de códigos não abordados nesse documento podem ser encontrados no seguinte link:** 
 [Toys](https://unbarqdsw.github.io/2020.1_G1_Triagil/padroes/toys/gofsCriacionais/)
 
+
 **Histórico de Versão**
 
 | Data | Versão | Descrição | Autor(es) |
@@ -134,6 +135,7 @@ Abstract Factory é um padrão onde os ojetos são criados relacionados por um t
 | 23/10 | 1.6.0 | Adicionando introdução do Prototype | Nathalia Lorena Cardoso |
 | 24/10 | 1.7.0 | Adicionando introdução do Abstract Factory | Débora Vilela |
 | 26/10 | 1.8.0 | Adicionando rastros para toys | Nathalia Lorena Cardoso |
+
 
 
 
