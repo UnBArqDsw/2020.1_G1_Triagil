@@ -76,9 +76,8 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 ![diagrama_template](https://imgur.com/R4q8apZ.png)
 ![diagrama_template_2](https://imgur.com/M4ONPFD.png)
 
-
-
 **Histórico de Versões**
+
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
@@ -92,7 +91,6 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 | 26/10 | 1.8.0 | Adicionando tópicos State | Débora Pereira Vilela |
 | 26/10 | 1.9.0 | Adicionando tópicos Visitor | Débora Pereira Vilela |
 | 26/10 | 2.0.0 | Adicionando tópicos Template Method | Débora Pereira Vilela |
-
 
 ## Referências
 
