@@ -74,3 +74,5 @@ nav:
         - MoSCoW: modelagem/extra/priorizacao/moscow.md
   - Padrões de Projeto:
     - GRASPs: padroes/grasps/grasps.md
+    - GOF's – Criacionais: padroes/gofs/criacionais.md
+
