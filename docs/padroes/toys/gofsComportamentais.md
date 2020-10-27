@@ -1,3 +1,7 @@
+## Introdução
+
+Após reunião com a professora e a equipe foi decidido o desenvolvimento desse documento com o objetivo de abordar os Padrões de Projeto que não conseguimos aplicar no escopo do nosso projeto no momento, dessa forma, servindo de estudo e compreensão para a equipe para aplicações posteriores no projeto. E aqui está o link da reunião: [Reunião](https://teams.microsoft.com/l/channel/19%3ae595cf6cc5214fa98300b044b21f7ab7%40thread.tacv2/Geral?groupId=d1a1d9e3-ea25-46e9-a59c-3606cf72fc81&tenantId=ec359ba1-630b-4d2b-b833-c8e6d48f8059)
+
 ## Diagrama Strategy 
 ![diagrama_strategy](https://imgur.com/TZjmcIT.png)
 
@@ -101,3 +105,5 @@ Padrões de projeto comportamentais . **Refactoring.Guru**, 2020. Disponível em
 **JavaScript Design Patterns**. Disponível em <https://medium.com/better-programming/javascript-design-patterns-25f0faaaa15> . Acesso em 26 de outubro de 2020.
 
 **Design Pattern Game**. Disponível em <https://designpatternsgame.com/patterns/template>. Acesso em 26 de outubro de 2020.
+
+**Design Patterns com JavaScript & TypeScript: Padrões Comportamentais**. Disponível em <https://imasters.com.br/javascript/design-patterns-com-javascript-typescript-padroes-comportamentais>. Acesso em; 26 de Outubro de 2020.
