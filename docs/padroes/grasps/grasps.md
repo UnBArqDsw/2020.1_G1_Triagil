@@ -84,7 +84,6 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 
 ---
 
-
 ### Histórico de versões
 
 |Data|Versão|Descrição|Autor(es)|
@@ -104,7 +103,6 @@ Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como 
 | 24/10/2020 | 2.0.0 | Adicionando tópicos Indireção e Variações protegidas | Débora Vilela |
 | 24/10/2020 | 2.1.0 | Adicionando novas referências | Débora Vilela |
 
-
 ## Referências
 
 SERRANO,Milene. **AULA - GRASPs** , 64 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.
@@ -112,4 +110,3 @@ SERRANO,Milene. **AULA - GRASPs** , 64 slides. 2020. Material apresentado para D
 UFU, **Padrões GRASP**, 2012. 111 slides. Disponível em: <http://www.facom.ufu.br/~bacala/ESOF/05a-Padr%C3%B5es%20GRASP.pdf>. Acesso em: 14, Outubro de 2020.
 
 Padrões GRASP - Padrões de atribuir responsabilidades. Disponível em: <https://medium.com/@leandrovboas/padr%C3%B5es-grasp-padr%C3%B5es-de-atribuir-responsabilidades-1ae4351eb204> 
-

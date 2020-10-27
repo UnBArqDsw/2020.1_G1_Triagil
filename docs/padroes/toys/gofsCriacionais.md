@@ -10,12 +10,11 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 
 ![Código exemplo](https://imgur.com/eyzAjhx.png)
 
-
-## Diagrama Builder 
+## Diagrama Builder
 
 ![Builder](https://imgur.com/sztVX9t.png)
 
-### Código exemplo Builder 
+### Código exemplo Builder
 
 ![Código exemplo](https://imgur.com/uknsHsj.png)
 ![Código exemplo](https://imgur.com/a8mXWmL.png)
@@ -30,6 +29,7 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 ![Código exemplo](https://imgur.com/zaPPIau.png)
 
 **Histórico de Versões**
+
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |
@@ -39,8 +39,6 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 | 26/10 | 1.4.0 |  Adicionando códigos exemplos do Builder| Nathalia Lorena Cardoso |
 | 26/10 | 1.5.0 |  Adicionando diagrama do Prototype| Nathalia Lorena Cardoso |
 | 26/10 | 1.6.0 |  Adicionando código exemplo do Prototype| Nathalia Lorena Cardoso |
-
-
 
 ## Referências
 

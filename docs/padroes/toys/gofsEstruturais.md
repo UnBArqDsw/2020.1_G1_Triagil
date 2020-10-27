@@ -55,9 +55,8 @@ Após reunião com a professora e a equipe foi decidido o desenvolvimento desse 
 ![Código exemplo](https://imgur.com/C4lAd55.png)
 ![Código exemplo](https://imgur.com/23HlgqH.png)
 
-
-
 **Histórico de Versões**
+
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 25/10 | 1.0.0 | Criação do documento | Nathalia Lorena Cardoso |

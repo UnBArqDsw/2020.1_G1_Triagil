@@ -77,7 +77,6 @@ console.log('Servidor executando em http://127.0.0.1:8000/');
 **Diagramas e trechos de códigos não abordados nesse documento podem ser encontrados no seguinte link:** 
 [Toys](https://unbarqdsw.github.io/2020.1_G1_Triagil/padroes/toys/gofsEstruturais/)
 
-
 #### Histórico de Versão
 
 | Data | Versão | Descrição | Autor(es) |
