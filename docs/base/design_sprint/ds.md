@@ -40,7 +40,7 @@ O Design Sprint é um processo de cinco dias para responder a questões crítica
     * [Storyboard](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/elicitacao/storyboard/)
 
 * _Prototype_  
-    [Protótipo de Alta Fidelidade](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/prototipo/prototipo_de_alta/)
+    * [Protótipo de Alta Fidelidade](https://unbarqdsw.github.io/2020.1_G1_Triagil/base/requisitos/prototipo/prototipo_de_alta/)
 
 * _Test_
 

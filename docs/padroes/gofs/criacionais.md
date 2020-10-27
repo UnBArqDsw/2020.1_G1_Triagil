@@ -78,6 +78,8 @@ module.export = {
 
 ~~~
 
+[**Implementação no Triagil**](https://github.com/UnBArqDsw/2020.1_G1_Triagil/tree/master/Back/src/app)
+
 ## Singleton
 
 O Singleton é um padrão de projeto criacional que permite a você garantir que uma classe tenha apenas uma instância, enquanto provê um ponto de acesso global para essa instância.
@@ -105,6 +107,8 @@ getConnection: function() {
 }
 
 ~~~
+
+[**Implementação no Triagil**](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/database/index.js)
 
 ## Builder
 
@@ -135,9 +139,6 @@ Abstract Factory é um padrão onde os ojetos são criados relacionados por um t
 | 23/10 | 1.6.0 | Adicionando introdução do Prototype | Nathalia Lorena Cardoso |
 | 24/10 | 1.7.0 | Adicionando introdução do Abstract Factory | Débora Vilela |
 | 26/10 | 1.8.0 | Adicionando rastros para toys | Nathalia Lorena Cardoso |
-
-
-
 
 ## Referências
 
