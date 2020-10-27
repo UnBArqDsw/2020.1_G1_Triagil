@@ -33,11 +33,8 @@ propósito e divididos em três grupos: criacionais, estruturais e comportamenta
 
 - O _**Visitor**_ : que permite que você separe algoritmos dos objetos nos quais eles operam.
 
-## Proposta de aplicação no projeto 
-
-- ### Problema
-
-- ### Solução
+**Diagramas e trechos de códigos não abordados nesse documento podem ser encontrados no seguinte link:** 
+[Toys](https://unbarqdsw.github.io/2020.1_G1_Triagil/padroes/toys/gofsComportamentais/)
 
 
 **Histórico de Versão**
@@ -45,8 +42,9 @@ propósito e divididos em três grupos: criacionais, estruturais e comportamenta
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 11/10/2020 | 1.0.0 | Criação do documento no pages |  Débora Vilela  |
-| 12/10/2020 | 1.2.0 | Adição dos tópicos Introdução e GOF's comportamentais ao documento |  Débora Vilela  |
-| 12/10/2020 | 1.3.0 | Criação do tópico Proposta de aplicação no projeto e adição de referências |  Débora Vilela  |
+| 12/10/2020 | 1.1.0 | Adição dos tópicos Introdução e GOF's comportamentais ao documento |  Débora Vilela  |
+| 12/10/2020 | 1.2.0 | Criação do tópico Proposta de aplicação no projeto e adição de referências |  Débora Vilela  |
+| 26/10/2020 | 1.3.0 | Acrescentando rastros para toys | Nathalia Lorena |
 
 
 ## Referências
