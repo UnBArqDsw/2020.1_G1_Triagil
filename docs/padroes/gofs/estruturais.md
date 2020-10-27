@@ -88,7 +88,8 @@ console.log('Servidor executando em http://127.0.0.1:8000/');
 | 12/10/2020 | 1.3.0 | Adicionando exemplo Adapter no login | Débora Vilela |
 | 14/10/2020 | 1.4.0 | Adicionando Referências| Nathalia Lorena |
 | 16/10/2020 | 1.5.0 | Adicionando Proposta de aplicação no projeto | Miguel Alves e Lude Ribeiro |
-| 19/10/2020 | 1.5.0 | Adicionando Proposta de aplicação no projeto | Francisco Heronildo e João Vitor |
+| 19/10/2020 | 1.6.0 | Adicionando Proposta de aplicação no projeto | Francisco Heronildo e João Vitor |
+| 26/10/2020 | 1.7.0 | Acrescentando rastros para toys | Nathalia Lorena |
 
 ## Refêrencias
 
