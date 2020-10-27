@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "yarn dev && yarn sequelize db:migrate && yarn sequelize db:all",
+    "start": "yarn dev && yarn sequelize db:migrate",
     "dev": "nodemon src/server.js ",
     "dev:debug": "nodemon --inspect src/server.js"
   },
