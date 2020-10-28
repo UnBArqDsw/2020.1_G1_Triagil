@@ -10,6 +10,9 @@ routes.post('/person', PersonController.store);
 routes.get('/person', PersonController.show);
 
 routes.post('/patient', PatientController.store);
+routes.get('/patient', PatientController.show);
+
 routes.post('/nurse', NurseController.store);
+routes.get('/nurse', NurseController.show);
 
 export default routes;
