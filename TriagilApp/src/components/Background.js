@@ -1,16 +1,22 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { LinearGradient } from "expo-linear-gradient";
+import { Platform, KeyboardAvoidingView} from 'react-native';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-});
 
-const Background = () => {
+const Background = (props) => {
+     
     return ( 
-        <LinearGradient style={styles.container} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']} />           
+        <KeyboardAvoidingView
+            behavior= {Platform.OS === 'ios' ? 'padding' : 'height'}
+            style={{
+                display: 'flex',
+                flex: 1,
+                justifyContent: 'center',
+                flexDirection: 'column',
+            }}
+            >
+            {props.children}
+
+        </KeyboardAvoidingView>      
     );
 }
 
