@@ -13,6 +13,12 @@ import Title from '../components/Title';
 import TriTextInput from '../components/TriTextInput';
 import RootContainer from '../components/RootContainer';
 
+
+import { storeData, getData } from '../utils/persist';
+import { signin } from '../utils/requests';
+
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -63,6 +69,8 @@ class SignInScreen extends React.Component {
         this.setState({password});
     };
 
+
+/*
     handleSignInPress = async () => {
         this.setState({loading: true});
         const { cpf, name, email, password } = this.state;
@@ -82,6 +90,29 @@ class SignInScreen extends React.Component {
             console.log('ERRO:', JSON.stringify(error));
         })
     
+    };
+
+*/
+
+    handleSignInPress = async () => {
+        this.setState({loading: true});
+        const { cpf, name, email, password } = this.state;
+
+        const response = await signin(cpf, name, email, password);
+
+        if (response.status === 200) {
+            console.log('DEU CERTO O CADASTRO:', response.data);
+            await storeData('id', response.data.patient.id);
+            await storeData('isNurse', response.data.patient.provider);
+
+            this.props.navigation.reset({
+                index: 0,
+                routes: [{ name: 'PatientHomeScreen' }],
+            });
+
+        } else {
+            console.log('ERRO:', JSON.stringify(response));
+        }
     };
 
     handleCancelPress = async () => {

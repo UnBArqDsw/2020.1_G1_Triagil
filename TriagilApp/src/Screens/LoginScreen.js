@@ -87,7 +87,7 @@ class LoginScreen extends React.Component {
             console.log('DEU CERTO:', response.data);
             this.identifyUser(response.data);
         } else {
-            console.log('ERRO:', JSON.stringify(error));
+            console.log('ERRO:', JSON.stringify(response));
         }
     };
 
