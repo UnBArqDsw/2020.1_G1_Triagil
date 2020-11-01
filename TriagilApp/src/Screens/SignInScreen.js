@@ -77,7 +77,7 @@ class SignInScreen extends React.Component {
         await axios.request(request)
         .then(response => {
             console.log('DEU CERTO:', response.data);
-            //this.props.navigation.navigate('PatientHomeScreen');
+            this.props.navigation.navigate('PatientHomeScreen');
         }).catch(error => {
             console.log('ERRO:', JSON.stringify(error));
         })

@@ -1,7 +1,7 @@
 import initialState from './initialState';
-import { ADD_PATIENT_INFO } from '../actions/types';
+import { ADD_USER_INFO } from '../actions/types';
 
-const patientReducer = (state = initialState.user.patient, action) => {
+const userReducer = (state = initialState.user, action) => {
   console.log(`Action: ${JSON.stringify(action)}`);
 
   if (action === undefined) {
@@ -9,7 +9,7 @@ const patientReducer = (state = initialState.user.patient, action) => {
   }
 
   switch (action.type) {
-    case ADD_PATIENT_INFO:
+    case ADD_USER_INFO:
       return {
         ...action.payload,
       };
@@ -19,4 +19,4 @@ const patientReducer = (state = initialState.user.patient, action) => {
   }
 };
 
-export default patientReducer;
+export default userReducer;

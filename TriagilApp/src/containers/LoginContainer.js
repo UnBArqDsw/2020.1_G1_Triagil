@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import Login from '../Screens/LoginScreen';
 import { addUserInfo } from '../actions/userActions';
+import { addPatientInfo } from '../actions/patientActions';
 
 const mapDispatchToProps = (dispatch) => {
   return {

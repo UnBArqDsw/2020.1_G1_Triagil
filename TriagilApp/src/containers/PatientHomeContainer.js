@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import PatientHome from '../Screens/Patient/PatientHomeScreen';
 
 const mapStateToProps = (state) => ({
-  cpf: state.patient.cpf,
-  name: state.patient.name,
-  email: state.patient.email,
-  password: state.patient.password,
-  provider: state.provider,
+  cpf: state.user.patient.cpf,
+  name: state.user.patient.name,
+  email: state.user.patient.email,
+  password: state.user.patient.password,
+  provider: state.user.provider,
 });
 
 const ResellerHomeContainer = connect(mapStateToProps, null)(PatientHome);
