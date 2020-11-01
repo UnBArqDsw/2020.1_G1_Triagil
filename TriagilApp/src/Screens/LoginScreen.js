@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import UserIcon from '../Icons/user.png';
@@ -41,8 +42,8 @@ class LoginScreen extends React.Component {
         super(props);
 
         this.state = {
-            email: '',
-            password: '',
+            email: "",
+            password: "",
             loading: false,
         };
 
@@ -65,13 +66,34 @@ class LoginScreen extends React.Component {
         this.setState({loading: true});
         const { email, password } = this.state;
 
-        const response = await LoginScreen(email,password);
+        const request = {
+            method: 'POST',
+            url: 'http://192.168.0.17:3333/login',
+            headers: {'Content-Type': 'application/json'},
+            data: {email, password}
+        };
 
-        if (response.status === 200) {
-            //deu bom
-        } else {
-            //deu ruim
-        }
+        await axios.request(request)
+        .then(response => {
+            console.log('DEU CERTO:', response.data);
+            this.identifyUser(response.data);
+
+        }).catch(error => {
+            console.log('ERRO:', JSON.stringify(error));
+        })
+    
+    };
+
+
+    identifyUser = (response) => {
+        response.patientExists.provider === false ? (
+            //setar na store as informações do usuário
+            this.props.navigation.navigate('PatientHomeScreen')
+        ) : (
+            //setar na store as informações da enfermeira
+            this.props.navigation.navigate('NurseHomeScreen')
+        )
+
     };
 
     
@@ -92,10 +114,11 @@ class LoginScreen extends React.Component {
                     </View>
 
                     <View style={styles.bottom}>
-                        <Button label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
+                        <Button onPress={this.handleLoginPress} label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
                         <TouchableOpacity 
                             style={styles.signUpButton}
                             onPress={this.handleSignInPress}
+                            enabled={!this.state.loading}
                             >
                             <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
                         </TouchableOpacity>

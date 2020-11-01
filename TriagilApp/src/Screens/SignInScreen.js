@@ -1,5 +1,7 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import axios from 'axios';
+
 
 import At from '../Icons/at.png';
 import PasswordIcon from '../Icons/key.png';
@@ -17,7 +19,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo: {
-        flex: 1.5,
+        flex: 5,
         alignItems:'center',
         flexDirection:'column-reverse',
     }, 
@@ -38,13 +40,56 @@ class SignInScreen extends React.Component {
         super(props);
 
         this.state = {
-
+            cpf: '',
+            name: '',
+            email: '',
+            password: '',
         };
     }
 
+    handleCPFChange = (cpf) => {
+        this.setState({cpf});
+    };
+
+    handleNameChange = (name) => {
+        this.setState({name});
+    };
+
+    handleEmailChange = (email) => {
+        this.setState({email});
+    };
+
+    handlePasswordChange = (password) => {
+        this.setState({password});
+    };
+
+    handleSignInPress = async () => {
+        this.setState({loading: true});
+        const { cpf, name, email, password } = this.state;
+
+        const request = {
+            method: 'POST',
+            url: 'http://192.168.0.17:3333/patient',
+            headers: {'Content-Type': 'application/json'},
+            data: {cpf, name, email, password}
+        };
+
+        await axios.request(request)
+        .then(response => {
+            console.log('DEU CERTO:', response.data);
+            //this.props.navigation.navigate('PatientHomeScreen');
+        }).catch(error => {
+            console.log('ERRO:', JSON.stringify(error));
+        })
+    
+    };
+
     handleCancelPress = async () => {
         this.props.navigation.goBack();
-    }
+    };
+
+    
+
 
     render () {
         return (
@@ -54,15 +99,17 @@ class SignInScreen extends React.Component {
                             <Title label={'CADASTRO'}/>
                         </View>
                         <View style={styles.midle}> 
-                            <TriTextInput placeholder={'Nome Completo'} icon={UserIcon}/>
+                            <TriTextInput placeholder={'CPF'} icon={UserIcon} onChangeText={this.handleCPFChange}/>
 
-                            <TriTextInput placeholder={'Email'} icon={At}/>
+                            <TriTextInput placeholder={'Nome Completo'} icon={UserIcon} onChangeText={this.handleNameChange}/>
+
+                            <TriTextInput placeholder={'Email'} icon={At} onChangeText={this.handleEmailChange}/>
                 
-                            <TriTextInput placeholder={'Senha'} icon={PasswordIcon}/>
+                            <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handlePasswordChange}/>
                             
                         </View>
                         <View style={styles.bottom}>
-                            <Button label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
+                            <Button onPress={this.handleSignInPress} label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
                             <View style={{marginTop: 20}}>
                                 <Button onPress={this.handleCancelPress} label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
                             </View>
