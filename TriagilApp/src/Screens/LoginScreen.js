@@ -1,15 +1,29 @@
 import React from 'react';
-import axios from 'axios';
+import { CommonActions, StackActions } from '@react-navigation/native';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+
+import axios from 'axios';
 
 import UserIcon from '../Icons/user.png';
 import PasswordIcon from '../Icons/key.png';
-
 import whiteLogo from '../Images/logoTriagilRedWhite.png';
-
 import Button from '../components/Button';
 import TriTextInput from '../components/TriTextInput';
 import RootContainer from '../components/RootContainer';
+
+import {
+    LOGIN,
+    PASSWORD,
+    EMAIL,
+    FAILED_LOGIN,
+    TRY_AGAIN,
+    MISTAKEN_INFO,
+  } from '../utils/strings';
+
+import { login } from '../utils/requests';
+import { storeData, getData } from '../utils/persist';
+
+
 
 const styles = StyleSheet.create({
     container: {
@@ -45,10 +59,11 @@ class LoginScreen extends React.Component {
             email: "",
             password: "",
             loading: false,
+            failed: false,
         };
 
-        
-    };
+    }; 
+
 
     handleSignInPress = async () => {
         this.props.navigation.navigate('SignIn');
@@ -66,32 +81,34 @@ class LoginScreen extends React.Component {
         this.setState({loading: true});
         const { email, password } = this.state;
 
-        const request = {
-            method: 'POST',
-            url: 'http://192.168.0.17:3333/login',
-            headers: {'Content-Type': 'application/json'},
-            data: {email, password}
-        };
+        const response = await login(email, password);
 
-        await axios.request(request)
-        .then(response => {
+        if (response.status === 200) {
             console.log('DEU CERTO:', response.data);
             this.identifyUser(response.data);
-
-        }).catch(error => {
+        } else {
             console.log('ERRO:', JSON.stringify(error));
-        })
-    
+        }
     };
 
+    identifyUser = async (response) => {
+        await storeData('id', response.patientExists.id);
+        await storeData('isNurse', response.patientExists.provider);
+        //await storeData('token', response.data.accessToken);
 
-    identifyUser = (response) => {
         response.patientExists.provider === false ? (
             //setar na store as informações do usuário
-            this.props.navigation.navigate('PatientHomeScreen')
+            this.props.navigation.reset({
+                index: 0,
+                routes: [{ name: 'PatientHomeScreen' }],
+              })
+
         ) : (
             //setar na store as informações da enfermeira
-            this.props.navigation.navigate('NurseHomeScreen')
+            this.props.navigation.reset({
+                index: 0,
+                routes: [{ name: 'NurseHomeScreen' }],
+              })
         )
 
     };
