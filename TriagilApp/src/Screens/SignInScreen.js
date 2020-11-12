@@ -128,7 +128,7 @@ class SignInScreen extends React.Component {
                 <RootContainer>
                     <View style={styles.container}> 
                         <View style={styles.logo}>
-                            <Title label={'CADASTRO'}/>
+                            <Title fontsize={46} label={'CADASTRO'}/>
                         </View>
                         <View style={styles.midle}> 
                             <TriTextInput placeholder={'CPF'} icon={CPFIcon} onChangeText={this.handleCPFChange}/>
