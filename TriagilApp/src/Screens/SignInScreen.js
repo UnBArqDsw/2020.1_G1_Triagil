@@ -6,6 +6,7 @@ import axios from 'axios';
 import At from '../Icons/at.png';
 import PasswordIcon from '../Icons/key.png';
 import UserIcon from '../Icons/user.png';
+import CPFIcon from '../Icons/CPF.png';
 
 import Background from '../components/Background';
 import Button from '../components/Button';
@@ -130,7 +131,7 @@ class SignInScreen extends React.Component {
                             <Title label={'CADASTRO'}/>
                         </View>
                         <View style={styles.midle}> 
-                            <TriTextInput placeholder={'CPF'} icon={UserIcon} onChangeText={this.handleCPFChange}/>
+                            <TriTextInput placeholder={'CPF'} icon={CPFIcon} onChangeText={this.handleCPFChange}/>
 
                             <TriTextInput placeholder={'Nome Completo'} icon={UserIcon} onChangeText={this.handleNameChange}/>
 
