@@ -6,6 +6,19 @@ import LogOutIcon from '../Icons/logout.png';
 import UserWhiteIcon from '../Icons/userWhiteIcon.png';
 import ListIcon from '../Icons/list.png';
 
+import styled from 'styled-components/native';
+
+const StyledText = styled.Text`
+    color: #FFFFFF;
+    text-shadow: 1px 2px 2px #DC1A23;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+`;
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -31,14 +44,8 @@ const styles = StyleSheet.create({
         elevation: 5
     },
     menuBarIconImage: {
-        height: 50,
-        width: 50,
-    },
-    text: {
-        fontSize: 14,
-        fontWeight: 'bold',
-        color: '#fafafa',
-        textAlign: 'center'
+        height: 45,
+        width: 45,
     },
   });
 
@@ -57,22 +64,22 @@ class PatientMenuBar extends React.Component {
                 <View style={styles.menuBar}>
                     <TouchableOpacity style={styles.menuBarButtons}>
                         <Image style={styles.menuBarIconImage} source={HospitalIcon} resizeMode='contain'/>
-                        <Text style={styles.text}>HOSPITAL</Text>
+                        <StyledText >HOSPITAL</StyledText>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.menuBarButtons}>
                         <Image style={styles.menuBarIconImage} source={ListIcon} resizeMode='contain'/>
-                        <Text style={styles.text}>FICHA</Text>
+                        <StyledText >FICHA</StyledText>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.menuBarButtons}>
                         <Image style={styles.menuBarIconImage} source={UserWhiteIcon} resizeMode='contain'/>
-                        <Text style={styles.text}>PERFIL</Text>
+                        <StyledText >PERFIL</StyledText>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.menuBarButtons}>
                         <Image style={styles.menuBarIconImage} source={LogOutIcon} resizeMode='contain'/>
-                        <Text style={styles.text}>SAIR</Text>
+                        <StyledText >SAIR</StyledText>
                     </TouchableOpacity>
                 </View>
             </View>
