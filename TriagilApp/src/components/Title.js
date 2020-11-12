@@ -14,11 +14,11 @@ const StyledText = styled.Text`
 `
 
 const Title = (props) => {
-    const {label} = props;
+    const {label, fontsize} = props;
 
     return (
         <TouchableWithoutFeedback> 
-            <StyledText>{label}</StyledText>
+            <StyledText style={{fontSize: fontsize}}>{label}</StyledText>
         </TouchableWithoutFeedback>
     );  
 }
