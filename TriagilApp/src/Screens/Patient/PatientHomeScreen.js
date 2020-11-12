@@ -5,6 +5,7 @@ import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 're
 import Button from '../../components/Button';
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
+import PatientMenuBar from '../../components/PatientMenuBar';
 
 const styles = StyleSheet.create({
     container: {
@@ -15,24 +16,15 @@ const styles = StyleSheet.create({
         flex: 1.5,
         alignItems: 'center',
         justifyContent:'center',
-        //backgroundColor: 'red'
     },
     midle: {
         flex: 2,
         alignItems: 'center',
         justifyContent: 'space-around',
-        //backgroundColor: 'blue'
- 
     }, 
     bottom: {
-        flex: 1,
-        alignItems:'center',
+        flex: 0.5,
     },
-    signUpButton: {
-        marginTop: 20,
-        padding: 15,
-    }
-    
 })
 
 class PatientHomeScreen extends React.Component {
@@ -43,18 +35,14 @@ class PatientHomeScreen extends React.Component {
             
         };
 
-        
     };
 
   
-
-    
     render () {
-
 
         return (
             <RootContainer>
-                <SafeAreaView style={styles.container}>
+                <View style={styles.container}>
                     <View style={styles.top}>
                         <Title fontsize={38} label={'BEM VINDO, CIDADÃO NOME!'}/>
                         <Text style={{color: 'white', fontWeight: 'bold'}}>Esperamos que esteja bem!</Text>
@@ -67,16 +55,14 @@ class PatientHomeScreen extends React.Component {
                         <Button label={'ALTERAR SENHA'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
 
                         <Button label={'EXCLUIR CONTA'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
-
-                        
                     </View>
+                    
                     <View style={styles.bottom}>
+                        <PatientMenuBar/>
 
                     </View>
 
-                    
-                    
-                </SafeAreaView>
+                </View>
             </RootContainer>
         );
     }
