@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import Button from '../../components/Button';
