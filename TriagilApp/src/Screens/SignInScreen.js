@@ -59,7 +59,7 @@ class SignInScreen extends React.Component {
     };
 
     handleNameChange = (name) => {
-        this.setState({name});
+        this.setState({name: name.toUpperCase()});
     };
 
     handleEmailChange = (email) => {

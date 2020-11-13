@@ -1,12 +1,10 @@
 import React from 'react';
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import Button from '../../components/Button';
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
 import TriTextInput from '../../components/TriTextInput';
-
-import store from '../../reducers/store';
 
 import UserIcon from '../../Icons/user.png';
 
@@ -46,7 +44,7 @@ class PatientHomeScreen extends React.Component {
 
 
     handleNameChange = (name) => {
-        this.setState({name});
+        this.setState({name: name.toUpperCase()});
     };
 
     handleChangeNamePress = async () => {
@@ -56,17 +54,16 @@ class PatientHomeScreen extends React.Component {
         }
         this.props.updatePatientName(patientInfo);
 
-/*
         this.props.navigation.reset({
             index: 0,
             routes: [{ name: 'PatientHomeScreen' }],
         });    
-*/
+
     };
 
     handleCancelPress = async () => {
-        console.log('AQUI A STORE: ',store.getState());
-        //this.props.navigation.goBack();
+        //console.log('AQUI A STORE: ',store.getState());
+        this.props.navigation.goBack();
     };
     
 

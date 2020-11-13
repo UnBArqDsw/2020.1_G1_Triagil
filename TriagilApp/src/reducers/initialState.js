@@ -5,16 +5,13 @@ const initialState = {
             id: 0,
             cpf: '',
             name: '',
-            email: '',
-            //password:'',
-            
+            email: '',            
         },
         nurse: {
             id: 0,
             cre: '',
             name: '',
             email: '',
-            //password: '',
         },
     },
         
