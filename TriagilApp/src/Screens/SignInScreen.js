@@ -6,6 +6,7 @@ import axios from 'axios';
 import At from '../Icons/at.png';
 import PasswordIcon from '../Icons/key.png';
 import UserIcon from '../Icons/user.png';
+import CPFIcon from '../Icons/CPF.png';
 
 import Background from '../components/Background';
 import Button from '../components/Button';
@@ -58,7 +59,7 @@ class SignInScreen extends React.Component {
     };
 
     handleNameChange = (name) => {
-        this.setState({name});
+        this.setState({name: name.toUpperCase()});
     };
 
     handleEmailChange = (email) => {
@@ -127,10 +128,10 @@ class SignInScreen extends React.Component {
                 <RootContainer>
                     <View style={styles.container}> 
                         <View style={styles.logo}>
-                            <Title label={'CADASTRO'}/>
+                            <Title fontsize={46} label={'CADASTRO'}/>
                         </View>
                         <View style={styles.midle}> 
-                            <TriTextInput placeholder={'CPF'} icon={UserIcon} onChangeText={this.handleCPFChange}/>
+                            <TriTextInput placeholder={'CPF'} icon={CPFIcon} onChangeText={this.handleCPFChange}/>
 
                             <TriTextInput placeholder={'Nome Completo'} icon={UserIcon} onChangeText={this.handleNameChange}/>
 

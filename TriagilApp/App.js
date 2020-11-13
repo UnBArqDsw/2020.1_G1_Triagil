@@ -9,13 +9,16 @@ import store from './src/reducers/store';
 import LoginContainer from './src/containers/LoginContainer';
 import NurseHomeContainer from './src/containers/NurseHomeContainer';
 import PatientHomeContainer from './src/containers/PatientHomeContainer';
+import PatientChangeNameContainer from './src/containers/PatientChangeNameContainer';
+import PatientChangeEmailContainer from './src/containers/PatientChangeEmailContainer';
+import PatientChangePasswordContainer from './src/containers/PatientChangePasswordContainer';
+import PatientDeleteAccountContainer from './src/containers/PatientDeleteAccountContainer';
+
 import SignInContainer from './src/containers/SignInContainer';
 
-import LoginScreen from './src/Screens/LoginScreen';
-import SignInScreen from './src/Screens/SignInScreen';
 import Background from './src/components/Background';
-import PatientHomeScreen from './src/Screens/Patient/PatientHomeScreen';
-import NurseHomeScreen from './src/Screens/Nurse/NurseHomeScreen';
+import SignInScreen from './src/Screens/SignInScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -30,6 +33,11 @@ function App() {
             <Stack.Screen name="SignIn" component={SignInScreen} />
             <Stack.Screen name="PatientHomeScreen" component={PatientHomeContainer} />
             <Stack.Screen name="NurseHomeScreen" component={NurseHomeContainer} />
+            <Stack.Screen name="PatientChangeName" component={PatientChangeNameContainer} />
+            <Stack.Screen name="PatientChangeEmail" component={PatientChangeEmailContainer} />
+            <Stack.Screen name="PatientChangePassword" component={PatientChangePasswordContainer} />
+            <Stack.Screen name="PatientDeleteAccount" component={PatientDeleteAccountContainer} />
+
           </Stack.Navigator>
         </NavigationContainer>
       </Background>

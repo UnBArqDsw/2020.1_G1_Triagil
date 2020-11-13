@@ -1,24 +1,14 @@
 import React from 'react';
-import { CommonActions, StackActions } from '@react-navigation/native';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import axios from 'axios';
 
-import UserIcon from '../Icons/user.png';
-import PasswordIcon from '../Icons/key.png';
-import whiteLogo from '../Images/logoTriagilRedWhite.png';
 import Button from '../components/Button';
-import TriTextInput from '../components/TriTextInput';
+import PasswordIcon from '../Icons/key.png';
 import RootContainer from '../components/RootContainer';
+import TriTextInput from '../components/TriTextInput';
+import UserIcon from '../Icons/user.png';
+import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
-import {
-    LOGIN,
-    PASSWORD,
-    EMAIL,
-    FAILED_LOGIN,
-    TRY_AGAIN,
-    MISTAKEN_INFO,
-  } from '../utils/strings';
 
 import { login } from '../utils/requests';
 import { storeData, getData } from '../utils/persist';
@@ -95,14 +85,42 @@ class LoginScreen extends React.Component {
         await storeData('id', response.patientExists.id);
         await storeData('isNurse', response.patientExists.provider);
         //await storeData('token', response.data.accessToken);
+        let userInfo;
 
+        if (response.patientExists.provider === false) {
+            userInfo = {
+                provider: response.patientExists.provider,
+                patient: {
+                    id: response.patientExists.id,
+                    cpf: response.patientExists.cpf,
+                    email: response.patientExists.email,
+                    name: response.patientExists.name,
+                }
+            };
+        } else {
+            userInfo = {
+                provider: response.patientExists.provider,
+                nurse: {
+                    id: response.patientExists.id,
+                    cpf: response.patientExists.cpf,
+                    email: response.patientExists.email,
+                    name: response.patientExists.name,
+                }
+            };
+    
+        }
+
+        await this.props.addUserInfo(userInfo);
+        
+        //Posteriormente, trocar a passagem de tela para as actions
+        //e realizar a checagem pela store
         response.patientExists.provider === false ? (
             //setar na store as informações do usuário
             this.props.navigation.reset({
                 index: 0,
                 routes: [{ name: 'PatientHomeScreen' }],
               })
-
+            
         ) : (
             //setar na store as informações da enfermeira
             this.props.navigation.reset({
