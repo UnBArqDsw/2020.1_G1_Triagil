@@ -78,7 +78,7 @@ class PatientHomeScreen extends React.Component {
             <RootContainer>
                 <View style={styles.container}>
                     <View style={styles.top}>
-                        <Title fontsize={50} label={'ALTERE SEU PERFIL'}/>
+                        <Title fontsize={50} label={'ALTERE SEU NOME'}/>
                     </View>
                     <View style={styles.content}>
                         <TriTextInput placeholder={name} icon={UserIcon} onChangeText={this.handleNameChange}/>
