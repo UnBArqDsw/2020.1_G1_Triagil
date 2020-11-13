@@ -6,7 +6,7 @@ import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
 import TriTextInput from '../../components/TriTextInput';
 
-import UserIcon from '../../Icons/user.png';
+import AtIcon from '../../Icons/at.png';
 
 const styles = StyleSheet.create({
     container: {
@@ -43,11 +43,11 @@ class PatientHomeScreen extends React.Component {
     };
 
 
-    handleNameChange = (email) => {
+    handleEmailChange = (email) => {
         this.setState({email});
     };
 
-    handleChangeNamePress = async () => {
+    handleChangeEmailPress = async () => {
         //disparar a action e transicionar a tela
         const patientInfo = {
             email: this.state.email,
@@ -81,11 +81,11 @@ class PatientHomeScreen extends React.Component {
                         <Title fontsize={50} label={'ALTERE SEU EMAIL'}/>
                     </View>
                     <View style={styles.content}>
-                        <TriTextInput placeholder={email} icon={UserIcon} onChangeText={this.handleNameChange}/>
+                        <TriTextInput placeholder={email} icon={AtIcon} onChangeText={this.handleEmailChange}/>
 
                     </View>
                     <View style={styles.bottom}>
-                        <Button onPress={this.handleChangeNamePress} label={'ALTERAR EMAIL'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
+                        <Button onPress={this.handleChangeEmailPress} label={'ALTERAR EMAIL'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
                         <View style={{marginTop: 20}}>
                             <Button style={{marginTop:20}} onPress={this.handleCancelPress} label={'CANCELAR'} width={'40%'} labelColor={'#fafafa'} color={'#FB0C0D'} />
 

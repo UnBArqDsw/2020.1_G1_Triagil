@@ -1,5 +1,6 @@
 import initialState from './initialState';
-import { ADD_USER_INFO, UPDATE_PATIENT_EMAIL, UPDATE_PATIENT_NAME } from '../actions/types';
+import { ADD_USER_INFO, UPDATE_PATIENT_EMAIL,
+  UPDATE_PATIENT_NAME, UPDATE_PATIENT_PASSWORD } from '../actions/types';
 
 const userReducer = (state = initialState.user, action) => {
   console.log(`Action: ${JSON.stringify(action)}`);
@@ -29,6 +30,15 @@ const userReducer = (state = initialState.user, action) => {
         patient: {
           ...state.patient,
           email: action.payload.email,
+        }
+      };
+
+      case UPDATE_PATIENT_PASSWORD:
+      return{
+        ...state,
+        patient: {
+          ...state.patient,
+          password: action.payload.password,
         }
       };
 

@@ -63,7 +63,7 @@ class PatientHomeScreen extends React.Component {
             <RootContainer>
                 <View style={styles.container}>
                     <View style={styles.top}>
-                        <Title fontsize={38} label={'BEM VINDO, CIDADÃO '+ name +'!'}/>
+                        <Title fontsize={38} label={'BEM VINDO, '+ name +'!'}/>
                         <Text style={{marginTop: 5, color: 'white', fontWeight: 'bold'}}>Esperamos que esteja bem!</Text>
                     </View>
                     <View style={styles.midle}>
