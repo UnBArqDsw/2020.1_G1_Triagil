@@ -1,5 +1,5 @@
 import initialState from './initialState';
-import { ADD_PATIENT_INFO } from '../actions/types';
+import { UPDATE_PATIENT_NAME } from '../actions/types';
 
 const patientReducer = (state = initialState.user.patient, action) => {
   console.log(`Action: ${JSON.stringify(action)}`);
@@ -9,9 +9,10 @@ const patientReducer = (state = initialState.user.patient, action) => {
   }
 
   switch (action.type) {
-    case ADD_PATIENT_INFO:
+    case UPDATE_PATIENT_NAME:
       return {
-        ...action.payload,
+        
+        name: action.payload,
       };
 
     default:

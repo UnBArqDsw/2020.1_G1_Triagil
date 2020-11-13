@@ -9,11 +9,11 @@ import store from './src/reducers/store';
 import LoginContainer from './src/containers/LoginContainer';
 import NurseHomeContainer from './src/containers/NurseHomeContainer';
 import PatientHomeContainer from './src/containers/PatientHomeContainer';
+import PatientChangeNameContainer from './src/containers/PatientChangeNameContainer';
 import SignInContainer from './src/containers/SignInContainer';
 
 import Background from './src/components/Background';
 import SignInScreen from './src/Screens/SignInScreen';
-import PatientChangeName from './src/Screens/Patient/PatientChangeName';
 
 
 const Stack = createStackNavigator();
@@ -29,7 +29,7 @@ function App() {
             <Stack.Screen name="SignIn" component={SignInScreen} />
             <Stack.Screen name="PatientHomeScreen" component={PatientHomeContainer} />
             <Stack.Screen name="NurseHomeScreen" component={NurseHomeContainer} />
-            <Stack.Screen name="PatientChangeName" component={PatientChangeName} />
+            <Stack.Screen name="PatientChangeName" component={PatientChangeNameContainer} />
           </Stack.Navigator>
         </NavigationContainer>
       </Background>

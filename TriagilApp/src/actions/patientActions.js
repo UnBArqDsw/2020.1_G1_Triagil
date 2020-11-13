@@ -1,6 +1,6 @@
-import { ADD_PATIENT_INFO, } from './types';
+import { UPDATE_PATIENT_NAME, } from './types';
   
-export const addPatientInfo = (patientInfo) => ({
-    type: ADD_PATIENT_INFO,
+export const updatePatientName = (patientInfo) => ({
+    type: UPDATE_PATIENT_NAME,
     payload: patientInfo,
 });

@@ -56,9 +56,8 @@ class PatientHomeScreen extends React.Component {
   
     render () {
         const {
-            id, cpf, name, email,
+            name,
         } = this.props;
-        //console.log( 'AQUI O QUE TÁ NA STORE: ', id,cpf,name,email);
 
         return (
             <RootContainer>

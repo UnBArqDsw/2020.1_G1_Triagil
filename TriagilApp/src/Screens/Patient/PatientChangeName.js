@@ -6,6 +6,7 @@ import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
 import TriTextInput from '../../components/TriTextInput';
 
+import store from '../../reducers/store';
 
 import UserIcon from '../../Icons/user.png';
 
@@ -50,15 +51,22 @@ class PatientHomeScreen extends React.Component {
 
     handleChangeNamePress = async () => {
         //disparar a action e transicionar a tela
+        const patientInfo = {
+            name: this.state.name,
+        }
+        this.props.updatePatientName(patientInfo);
 
-
+/*
         this.props.navigation.reset({
             index: 0,
             routes: [{ name: 'PatientHomeScreen' }],
-        });    };
+        });    
+*/
+    };
 
     handleCancelPress = async () => {
-        this.props.navigation.goBack();
+        console.log('AQUI A STORE: ',store.getState());
+        //this.props.navigation.goBack();
     };
     
 
@@ -67,7 +75,7 @@ class PatientHomeScreen extends React.Component {
         const {
            name,
         } = this.props;
-        //console.log( 'AQUI O QUE TÁ NA STORE: ', id,cpf,name,email);
+        
 
         return (
             <RootContainer>
@@ -76,7 +84,7 @@ class PatientHomeScreen extends React.Component {
                         <Title fontsize={50} label={'ALTERE SEU PERFIL'}/>
                     </View>
                     <View style={styles.content}>
-                        <TriTextInput placeholder={'Nome Completo'} icon={UserIcon} onChangeText={this.handleNameChange}/>
+                        <TriTextInput placeholder={name} icon={UserIcon} onChangeText={this.handleNameChange}/>
 
                     </View>
                     <View style={styles.bottom}>
