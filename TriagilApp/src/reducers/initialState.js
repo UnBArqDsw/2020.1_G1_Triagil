@@ -6,7 +6,7 @@ const initialState = {
             cpf: '',
             name: '',
             email: '',
-            password:'',
+            //password:'',
             
         },
         nurse: {
@@ -14,7 +14,7 @@ const initialState = {
             cre: '',
             name: '',
             email: '',
-            password: '',
+            //password: '',
         },
     },
         

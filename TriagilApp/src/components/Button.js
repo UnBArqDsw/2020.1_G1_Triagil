@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 });
 
 const Button = (props) => {
-    const { label, onPress, color, labelColor, width} = props;
+    const { label, onPress, color, labelColor, width , } = props;
   return (
         <TouchableOpacity style={[styles.container, {backgroundColor: color, width: width}]} onPress={onPress}>
             <Text style={[{color: labelColor}, styles.text ]}>{label}</Text>

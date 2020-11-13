@@ -11,11 +11,10 @@ import NurseHomeContainer from './src/containers/NurseHomeContainer';
 import PatientHomeContainer from './src/containers/PatientHomeContainer';
 import SignInContainer from './src/containers/SignInContainer';
 
-import LoginScreen from './src/Screens/LoginScreen';
-import SignInScreen from './src/Screens/SignInScreen';
 import Background from './src/components/Background';
-import PatientHomeScreen from './src/Screens/Patient/PatientHomeScreen';
-import NurseHomeScreen from './src/Screens/Nurse/NurseHomeScreen';
+import SignInScreen from './src/Screens/SignInScreen';
+import PatientChangeName from './src/Screens/Patient/PatientChangeName';
+
 
 const Stack = createStackNavigator();
 
@@ -30,6 +29,7 @@ function App() {
             <Stack.Screen name="SignIn" component={SignInScreen} />
             <Stack.Screen name="PatientHomeScreen" component={PatientHomeContainer} />
             <Stack.Screen name="NurseHomeScreen" component={NurseHomeContainer} />
+            <Stack.Screen name="PatientChangeName" component={PatientChangeName} />
           </Stack.Navigator>
         </NavigationContainer>
       </Background>
