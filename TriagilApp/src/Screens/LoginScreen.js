@@ -1,12 +1,14 @@
 import React from 'react';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import UserIcon from '../Icons/user.png';
-import PasswordIcon from '../Icons/key.png';
-import whiteLogo from '../Images/logoTriagilRedWhite.png';
+
 import Button from '../components/Button';
-import TriTextInput from '../components/TriTextInput';
+import PasswordIcon from '../Icons/key.png';
 import RootContainer from '../components/RootContainer';
+import TriTextInput from '../components/TriTextInput';
+import UserIcon from '../Icons/user.png';
+import whiteLogo from '../Images/logoTriagilRedWhite.png';
+
 
 import { login } from '../utils/requests';
 import { storeData, getData } from '../utils/persist';

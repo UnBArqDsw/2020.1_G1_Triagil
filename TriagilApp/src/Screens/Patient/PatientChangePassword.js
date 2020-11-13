@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 
 })
 
-class PatientHomeScreen extends React.Component {
+class PatientChangePassword extends React.Component {
     constructor(props) {
         super(props);
 
@@ -112,5 +112,5 @@ class PatientHomeScreen extends React.Component {
     }
 }
 
-export default PatientHomeScreen;
+export default PatientChangePassword;
 
