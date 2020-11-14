@@ -4,6 +4,7 @@ class PatientRecord extends Model {
   static init(sequelize) {
     super.init(
       {
+        id_patient: Sequelize.INTEGER,
         name: Sequelize.STRING,
         mother_name: Sequelize.STRING,
         father_name: Sequelize.STRING,
