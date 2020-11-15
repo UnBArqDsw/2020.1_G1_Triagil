@@ -13,6 +13,17 @@ class PatientRecordController {
         patientRecord
     });
   }
+  async show(req,res) {
+    const allRecords = await PatientRecord.findAll();
+
+    if (!allRecords) {
+      return res.status(400).json({ error: 'There is no records saved.' });
+    }
+
+    return res.json({
+      allRecords,
+    });
+  }
 }
 
 export default new PatientRecordController();

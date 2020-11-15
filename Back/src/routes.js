@@ -20,5 +20,6 @@ routes.post('/nurse', NurseController.store);
 routes.get('/nurse', NurseController.show);
 
 routes.post('/patientRecord', PatientRecordController.store);
+routes.get('/patientRecord', PatientRecordController.show);
 
 export default routes;
