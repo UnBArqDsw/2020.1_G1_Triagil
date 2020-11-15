@@ -43,12 +43,8 @@ Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profission
 
 Certifique-se de ler o [Guia de Contribuição](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/CONTRIBUTING.md) antes de fazer um _Pull Request_.
 
-### Playlist for Spotify to enjoy while this application is in development
+### Playlist recomendada pela equipe Triagil para melhor Produtividade
 
-<div align="center">
+<iframe src="https://open.spotify.com/embed/playlist/3UofgfCHHvuv6PTXDOlxNj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=m64yqwippu73qdg9l9e76jv4l&cover_image=true&theme=default)](https://open.spotify.com/playlist/5ulJCwMOt9LJsy9bt3hHhJ)
-
-<footer>&copy; Copyright 2020 TRIAGIL</footer>
-
-</div>
+<div align="center"><footer>&copy; Copyright 2020 TRIAGIL</footer></div>

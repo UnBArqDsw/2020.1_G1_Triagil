@@ -15,7 +15,7 @@ module.exports = {
           key: 'id'
         }
       },
-      id_patient_recordt: {
+      id_patient_record: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
