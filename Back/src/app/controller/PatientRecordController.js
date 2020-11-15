@@ -20,8 +20,23 @@ class PatientRecordController {
       return res.status(400).json({ error: 'There is no records saved.' });
     }
 
+    let cont = 0;
+    let preferential = [];
+    let noPreferential = [];
+
+    while(cont !== allRecords.length){
+      if(allRecords[cont].age >= 60){
+        preferential.push(allRecords[cont]);
+      } else {
+        noPreferential.push(allRecords[cont]);
+      }
+
+      cont++;
+    }
+
     return res.json({
-      allRecords,
+      preferential,
+      noPreferential
     });
   }
 }
