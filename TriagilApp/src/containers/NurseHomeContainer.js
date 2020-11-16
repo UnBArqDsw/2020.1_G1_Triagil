@@ -1,6 +1,7 @@
 
 import { connect } from 'react-redux';
 import NurseHome from '../Screens/Nurse/NurseHomeScreen';
+import {resetSession} from '../actions/userActions';
 
 const mapStateToProps = (state) => ({
   name: state.user.nurse.name,
@@ -10,6 +11,12 @@ const mapStateToProps = (state) => ({
   //provider: state.user.provider,
 });
 
-const ResellerHomeContainer = connect(mapStateToProps, null)(NurseHome);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    resetSession: () => dispatch(resetSession()),
+  };
+};
+
+const ResellerHomeContainer = connect(mapStateToProps, mapDispatchToProps)(NurseHome);
 
 export default ResellerHomeContainer;

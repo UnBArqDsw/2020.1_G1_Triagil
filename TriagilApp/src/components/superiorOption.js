@@ -30,10 +30,11 @@ const styles = StyleSheet.create({
   });
 
 const superiorOption = (props) => {
+    const {logOff} = props;
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
         <Image style={{width:'40%', height:45, marginLeft: 10}} source={whiteLogo} resizeMode='contain'/>
-        <TouchableOpacity style={styles.menuBarButtons}>
+        <TouchableOpacity style={styles.menuBarButtons} onPress={logOff}>
             <Image style={styles.menuBarIconImage} source={LogOutIcon} resizeMode='contain'/>
             <StyledText>SAIR</StyledText>
         </TouchableOpacity>

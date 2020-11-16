@@ -1,3 +1,5 @@
+//app types
+export const RESET_SESSION = 'RESET_SESSION';
 //user types
 export const ADD_USER_INFO = 'ADD_USER_INFO';
 

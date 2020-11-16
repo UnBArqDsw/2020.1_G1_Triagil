@@ -9,6 +9,7 @@ import TriTextInput from '../components/TriTextInput';
 import UserIcon from '../Icons/user.png';
 import whiteLogo from '../Images/logoTriagilRedWhite.png';
 
+import store from '../reducers/store';
 
 import { login } from '../utils/requests';
 import { storeData, getData } from '../utils/persist';
@@ -56,6 +57,7 @@ class LoginScreen extends React.Component {
 
 
     handleSignInPress = async () => {
+        console.log('AQUI A STORE: ',store.getState());
         this.props.navigation.navigate('SignIn');
     };
     
@@ -79,6 +81,7 @@ class LoginScreen extends React.Component {
         } else {
             console.log('ERRO:', JSON.stringify(response));
         }
+        
     };
 
     identifyUser = async (response) => {
