@@ -82,29 +82,29 @@ class LoginScreen extends React.Component {
     };
 
     identifyUser = async (response) => {
-        await storeData('id', response.patientExists.id);
-        await storeData('isNurse', response.patientExists.provider);
+        await storeData('id', response.accountExists.id);
+        await storeData('isNurse', response.accountExists.provider);
         //await storeData('token', response.data.accessToken);
         let userInfo;
 
-        if (response.patientExists.provider === false) {
+        if (response.accountExists.provider === false) {
             userInfo = {
-                provider: response.patientExists.provider,
+                provider: response.accountExists.provider,
                 patient: {
-                    id: response.patientExists.id,
-                    cpf: response.patientExists.cpf,
-                    email: response.patientExists.email,
-                    name: response.patientExists.name,
+                    id: response.accountExists.id,
+                    cpf: response.accountExists.cpf,
+                    email: response.accountExists.email,
+                    name: response.accountExists.name,
                 }
             };
         } else {
             userInfo = {
-                provider: response.patientExists.provider,
+                provider: response.accountExists.provider,
                 nurse: {
-                    id: response.patientExists.id,
-                    cpf: response.patientExists.cpf,
-                    email: response.patientExists.email,
-                    name: response.patientExists.name,
+                    id: response.accountExists.id,
+                    cpf: response.accountExists.cpf,
+                    email: response.accountExists.email,
+                    name: response.accountExists.name,
                 }
             };
     
@@ -114,7 +114,7 @@ class LoginScreen extends React.Component {
         
         //Posteriormente, trocar a passagem de tela para as actions
         //e realizar a checagem pela store
-        response.patientExists.provider === false ? (
+        response.accountExists.provider === false ? (
             //setar na store as informações do usuário
             this.props.navigation.reset({
                 index: 0,

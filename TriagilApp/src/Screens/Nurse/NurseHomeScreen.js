@@ -1,14 +1,18 @@
 import React from 'react';
-import axios from 'axios';
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
+import SuperiorOption from '../../components/superiorOption';
+
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent:'center',
+        //justifyContent:'center',
+    },
+    SuperiorOption: {
+        marginTop: 30,
     },
     top: {
         flex: 1,
@@ -46,13 +50,18 @@ class NurseHomeScreen extends React.Component {
 
     
     render () {
-
+        const {
+            name,
+        } = this.props;
 
         return (
             <RootContainer>
                 <SafeAreaView style={styles.container}>
+                    <View style={styles.SuperiorOption}>
+                        <SuperiorOption/>
+                    </View>
                     <View style={styles.logo}>
-                        <Title label={'ENFERMEIRA'}/>
+                        <Title label={'BEM VINDA, ENFERMEIRA ' + {name} + '!'}/>
                     </View>
                     
                     
