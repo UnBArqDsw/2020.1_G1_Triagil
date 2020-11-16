@@ -55,9 +55,7 @@ class NurseHomeScreen extends React.Component {
     };
 
     handleLogOffPress = async (props) => {
-        //fazer a chamada para o backend e consumir o serviço
-        //também pode se restar a store por uma action
-        console.log('AQUI A STORE: ',store.getState());
+        //console.log('AQUI A STORE: ',store.getState());
         await this.props.resetSession();
         await eraseData();
 
@@ -67,6 +65,12 @@ class NurseHomeScreen extends React.Component {
         });    
 
     };
+
+    handleEnterHospitalPress = async (props) => {
+        //chamar a verificação do backend
+
+        this.props.navigation.navigate('hospitalLine');
+    }
     
     render () {
         const {
