@@ -102,7 +102,7 @@ class LoginScreen extends React.Component {
                 provider: response.accountExists.provider,
                 nurse: {
                     id: response.accountExists.id,
-                    cpf: response.accountExists.cpf,
+                    cre: response.accountExists.cre,
                     email: response.accountExists.email,
                     name: response.accountExists.name,
                 }
