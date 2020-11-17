@@ -5,9 +5,9 @@ import { SearchBar } from 'react-native-elements';
 import { LinearGradient } from "expo-linear-gradient";
 
 import Title from '../../components/Title';
-import RootContainer from '../../components/RootContainer';
 import SuperiorOption from '../../components/superiorOption';
 import PatientCard from '../../components/PatientCard';
+import RoundButton from '../../components/RoundButton';
 
 const styles = StyleSheet.create({
     SuperiorOption: {
@@ -19,10 +19,10 @@ const styles = StyleSheet.create({
         justifyContent:'center'
     },
     top: {
-        flex: 0.75,
-        //backgroundColor: 'red',
-        alignItems: 'center',
+        flex: 0.5,
         justifyContent: 'center',
+        //alignItems: 'center',
+        //backgroundColor: 'red',
     },
     lineButtons: {
         flex: 0.2,
@@ -143,20 +143,26 @@ class HospitalLineScreen extends React.Component {
                 </View>
                 <View style={styles.container}>
                     <View style={styles.top}>
-                        <Title fontsize={40} label={'FILA PARA TRIAGEM'}/>
+                        <Title fontsize={36} label={'FILA PARA TRIAGEM'}/>
                     </View>
                     <View style={styles.lineButtons}>
                         {PreferentialButton}
                         {RegularButton}
                     </View>
                     <View style={styles.content}>
-                        <SearchBar 
-                            placeholder="Nome do Paciente"
-                            onChangeText={this.updateSearch}
-                            value={this.state.search}
-                            lightTheme={true}
-                            containerStyle={{ width: '60%', borderRadius: 10, margin: 5}}
-                        />
+                        <View style={{flexDirection: 'row',justifyContent: 'space-around', alignItems: 'center'}}>
+                            <SearchBar 
+                                style={{flex: 1}}
+                                placeholder="Nome do Paciente"
+                                onChangeText={this.updateSearch}
+                                value={this.state.search}
+                                lightTheme={true}
+                                containerStyle={{ width: '70%', borderRadius: 10, margin: 5}}
+                            />
+                            <RoundButton style={{flex: 1}}/>
+
+
+                        </View>
                         <FlatList
                             data={this.state.data}
                             renderItem={({ item }) => (
