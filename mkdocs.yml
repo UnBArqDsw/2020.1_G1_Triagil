@@ -40,14 +40,14 @@ nav:
         - Entrevista: base/requisitos/elicitacao/entrevista.md
         - Questionário: base/requisitos/elicitacao/questionario.md
         - Storyboard: base/requisitos/elicitacao/storyboard.md
-      # - Priorização:
-      #   - First Thing First: base/requisitos/priorizacao/first_thing_first.md
-      #   - MoSCoW: base/requisitos/priorizacao/moscow.md    
+      - Priorização:
+        - First Thing First: base/requisitos/priorizacao/first_thing_first.md
+        - MoSCoW: base/requisitos/priorizacao/moscow.md    
       - Modelagem:
         - Léxicos: base/requisitos/modelagem/lexico.md
         - Glossário: base/requisitos/modelagem/glossario.md
-        # - Backlog Inicial: base/requisitos/modelagem/backlog.md
-      # - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
+        - Backlog Inicial: base/requisitos/modelagem/backlog.md
+      - Protótipo de Alta Fidelidade: base/requisitos/prototipo/prototipo_de_alta.md
     - Plano de Custos e Esforços: base/documentos/plano_custos.md
     - Plano de Riscos: base/documentos/plano_risco.md    
     - Apresentação:
@@ -72,3 +72,14 @@ nav:
       - Priorização:
         - First Thing First: modelagem/extra/priorizacao/first_thing_first.md
         - MoSCoW: modelagem/extra/priorizacao/moscow.md
+  - Padrões de Projeto:
+    - GRASPs: padroes/grasps/grasps.md
+    - GOF's – Criacionais: padroes/gofs/criacionais.md
+    - GOF's – Estruturais: padroes/gofs/estruturais.md
+    - GOF's – Comportamentais: padroes/gofs/comportamentais.md
+    - Toys:
+      - Toys – Criacionais: padroes/toys/gofsCriacionais.md
+      - Toys – Estruturais: padroes/toys/gofsEstruturais.md
+      - Toys – Comportamentais: padroes/toys/gofsComportamentais.md
+
+
