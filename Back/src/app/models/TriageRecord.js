@@ -119,7 +119,7 @@ class TriageRecord extends Model {
         desidratacao: Sequelize.BOOLEAN,
         desidratacaoNotes: Sequelize.STRING,
         vomitosEsparsos: Sequelize.BOOLEAN,
-        eventoRecente: Sequelize.BOOLEAN,        
+        eventoRecente: Sequelize.BOOLEAN,
       },
       {
         freezeTableName: true,

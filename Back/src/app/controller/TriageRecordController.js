@@ -3,16 +3,19 @@ import TriageRecord from '../models/TriageRecord';
 class TriageRecordController {
   async store(req, res) {
 
+    let teste = req.body;
 
+    let vetorExemplo = [];
+    vetorExemplo.push(teste.headacheSigns);
 
       return res.json({
-        triageRecord
+        vetorExemplo
     });
   }
-  
-  
+
+
   async show(req,res) {
-    
+
 
 
     return res.json({
