@@ -69,7 +69,7 @@ class NurseHomeScreen extends React.Component {
     handleEnterHospitalPress = async (props) => {
         //chamar a verificação do backend
 
-        this.props.navigation.navigate('hospitalLine');
+        this.props.navigation.navigate('HospitalLine');
     }
     
     render () {
@@ -94,7 +94,7 @@ class NurseHomeScreen extends React.Component {
                     
                     <View style={styles.midle}>
                         <TriTextInput placeholder={'Senha do Hospital'} icon={PasswordIcon} onChangeText={this.handlePasswordChange}/>
-                        <Button onPress={this.handleLoginPress} label={'ENTRAR'} width={'40%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                        <Button onPress={this.handleEnterHospitalPress} label={'ENTRAR'} width={'40%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
                     </View>
 
                     <View style={styles.bottom}>
