@@ -52,6 +52,6 @@ Certifique-se de ler o [Guia de Contribuição](https://github.com/UnBArqDsw/202
 
 ### Playlist Recomendada pela Equipe Triagil
 
-![[play](https://open.spotify.com/embed/playlist/3UofgfCHHvuv6PTXDOlxNj)](https://i.imgur.com/r2CyliD.jpg)
+[<img src="https://i.imgur.com/r2CyliD.jpg"/>](https://open.spotify.com/embed/playlist/3UofgfCHHvuv6PTXDOlxNj)
 
 <div align="center"><footer>&copy; Copyright 2020 TRIAGIL</footer></div>
