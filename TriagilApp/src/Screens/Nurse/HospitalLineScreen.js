@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, View} from 'react-native';
 
 import { SearchBar } from 'react-native-elements';
+import { LinearGradient } from "expo-linear-gradient";
 
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
@@ -10,6 +11,7 @@ import PatientCard from '../../components/PatientCard';
 
 const styles = StyleSheet.create({
     SuperiorOption: {
+        flex: 0.1,
         marginTop: 30,
     },
     container: {
@@ -17,11 +19,13 @@ const styles = StyleSheet.create({
         justifyContent:'center'
     },
     top: {
-        flex: 0.25,
+        flex: 0.75,
+        //backgroundColor: 'red',
         alignItems: 'center',
         justifyContent: 'center',
     },
     lineButtons: {
+        flex: 0.2,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -59,14 +63,13 @@ class HospitalLineScreen extends React.Component {
 
         this.state = { 
             regularLine: false,
-            data: [1,2,3],
+            data: [1, 2, 3, 4, 5, 6, 7],
             search: '',
             
         };
 
         
     };
-
 
 
     handleLinePress = () => {
@@ -78,27 +81,6 @@ class HospitalLineScreen extends React.Component {
         this.setState({ search });
       };
 
-
-
-    btnPress = (pressed) => {
-        if (pressed === true ){
-            return {
-                width: '50%',
-                padding: 10,
-                backgroundColor:'#1BC47D',
-            }
-        } else {
-            return {
-                btnPress:{
-                    width: '50%',
-                    padding: 10,
-                },
-            }
-        }
-
-    }
-  
-    
     
     render () {
  
@@ -150,8 +132,12 @@ class HospitalLineScreen extends React.Component {
         }
         
         
-        return (
-            <RootContainer>
+        return (			
+        
+        <LinearGradient style={{flex: 1,
+        flexGrow: 1,
+        justifyContent: 'center'}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
+
                 <View style={styles.SuperiorOption}>
                     <SuperiorOption logOff={this.handleLogOffPress}/>
                 </View>
@@ -184,7 +170,8 @@ class HospitalLineScreen extends React.Component {
                     
                     
                 </View>
-            </RootContainer>
+
+            </LinearGradient>
         );
     }
 }
