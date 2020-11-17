@@ -10,7 +10,6 @@ const modelsPerson = [Person];
 const modelsPatient = [Patient];
 const modelsNurse = [Nurse];
 const modelsPatientRecord = [PatientRecord];
-const modelsNurseRecord = [NurseRecord];
 
 class Database {
   constructor() {
@@ -23,7 +22,6 @@ class Database {
     modelsPatient.map((modelPatient) => modelPatient.init(this.connection));
     modelsNurse.map((modelNurse) => modelNurse.init(this.connection));
     modelsPatientRecord.map((modelPatientRecord) => modelPatientRecord.init(this.connection));
-    modelsNurseRecord.map((modelNurseRecord) => modelNurseRecord.init(this.connection));
   }
 }
 
