@@ -1,8 +1,6 @@
-'use strict';
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('patient-record', {
+    return queryInterface.createTable('triage-record', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -14,6 +12,22 @@ module.exports = {
         allowNull: false,
         references: {
           model: 'patient',
+          key: 'id'
+        }
+      },
+      id_nurse: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'nurse',
+          key: 'id'
+        }
+      },
+      id_patient_record: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'patient-record',
           key: 'id'
         }
       },
@@ -532,6 +546,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-
+    return queryInterface.dropTable('triage-record');
   }
 };
