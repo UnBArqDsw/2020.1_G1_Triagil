@@ -1,12 +1,11 @@
 import React from 'react';
 import { FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, View} from 'react-native';
 
+import { SearchBar } from 'react-native-elements';
 
-import Button from '../../components/Button';
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
 import SuperiorOption from '../../components/superiorOption';
-import TriTextInput from '../../components/TriTextInput';
 import PatientCard from '../../components/PatientCard';
 
 const styles = StyleSheet.create({
@@ -61,6 +60,7 @@ class HospitalLineScreen extends React.Component {
         this.state = { 
             regularLine: false,
             data: [1,2,3],
+            search: '',
             
         };
 
@@ -73,6 +73,10 @@ class HospitalLineScreen extends React.Component {
         this.setState({regularLine: !this.state.regularLine});
         console.log('O ESTADO AQUI: ', this.state.regularLine);
     }
+
+    updateSearch = (search) => {
+        this.setState({ search });
+      };
 
 
 
@@ -160,6 +164,13 @@ class HospitalLineScreen extends React.Component {
                         {RegularButton}
                     </View>
                     <View style={styles.content}>
+                        <SearchBar 
+                            placeholder="Nome do Paciente"
+                            onChangeText={this.updateSearch}
+                            value={this.state.search}
+                            lightTheme={true}
+                            containerStyle={{ width: '60%', borderRadius: 10, margin: 5}}
+                        />
                         <FlatList
                             data={this.state.data}
                             renderItem={({ item }) => (
