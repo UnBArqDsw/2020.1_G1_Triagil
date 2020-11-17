@@ -14,6 +14,7 @@ import PatientChangeEmailContainer from './src/containers/PatientChangeEmailCont
 import PatientChangePasswordContainer from './src/containers/PatientChangePasswordContainer';
 import PatientDeleteAccountContainer from './src/containers/PatientDeleteAccountContainer';
 
+import HospitalLineContainer from './src/containers/HospitalLineContainer';
 import HospitalLineScreen from './src/Screens/Nurse/HospitalLineScreen';
 
 import SignInContainer from './src/containers/SignInContainer';
@@ -39,7 +40,7 @@ function App() {
             <Stack.Screen name="PatientChangeEmail" component={PatientChangeEmailContainer} />
             <Stack.Screen name="PatientChangePassword" component={PatientChangePasswordContainer} />
             <Stack.Screen name="PatientDeleteAccount" component={PatientDeleteAccountContainer} />
-            <Stack.Screen name="HospitalLine" component={HospitalLineScreen} />
+            <Stack.Screen name="HospitalLine" component={HospitalLineContainer} />
 
           </Stack.Navigator>
         </NavigationContainer>
