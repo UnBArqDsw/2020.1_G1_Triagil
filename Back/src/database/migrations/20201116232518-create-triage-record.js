@@ -169,7 +169,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      diminuicaoVisao: {
+      diminuicao_visao: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,

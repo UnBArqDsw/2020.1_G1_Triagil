@@ -39,7 +39,7 @@ class TriageRecord extends Model {
         temperature_headache: Sequelize.FLOAT,
         inconsciencia_headache: Sequelize.BOOLEAN,
         inconsciencia_notes_headache: Sequelize.STRING,
-        diminuicaoVisao: Sequelize.BOOLEAN,
+        diminuicao_visao: Sequelize.BOOLEAN,
         nausea_e_vomito: Sequelize.BOOLEAN,
         sore_throat: Sequelize.BOOLEAN,
         comprometimento_vias_aereas_soathroat: Sequelize.BOOLEAN,
