@@ -28,11 +28,21 @@ class TriageRecordController {
       objectExemplo.diminuicaoVisao = teste.diminuicaoVisao;
       objectExemplo.nauseaEVomito = teste.nauseaEVomito;
 
-      // if(objectExemplo.estadoMentalAlterado || objectExemplo.sinaisDeChoque_headache
-      //    || objectExemplo.convulsion_headache || objectExemplo.sinaisNeurologicosFocais_headache ||
-      //    objectExemplo.aumentoSubitoDaDor){
-      //     teste.manchesterPriority = 5;
-      // }
+      if(objectExemplo.estadoMentalAlterado || objectExemplo.sinaisDeChoque_headache
+         || objectExemplo.convulsion_headache || objectExemplo.sinaisNeurologicosFocais_headache ||
+         objectExemplo.aumentoSubitoDaDor){
+          teste.manchesterPriority = 5;
+      } else if(objectExemplo.perdaAgudaCompletaVisao ||  objectExemplo.menigismo_headache || objectExemplo.pain_headache >= 7){
+        teste.manchesterPriority = 4;
+      } else if((objectExemplo.temperature_headache >= 35.00 && objectExemplo.temperature_headache <= 37.8) || objectExemplo.inconsciencia_headach ||
+          objectExemplo.diminuicaoVisao || (objectExemplo.pain_headache >= 4 && objectExemplo.pain_headache <= 6) ||
+          objectExemplo.nauseaEVomito){
+            teste.manchesterPriority = 3;
+      } else if(objectExemplo.pain_headache >= 1 && objectExemplo.pain_headache <= 3){
+            teste.manchesterPriority = 2;
+      } else {
+            teste.manchesterPriority = 1;
+      }
 
     }
     // else if(teste.soreThroat){
@@ -50,7 +60,6 @@ class TriageRecordController {
     // }
 
       return res.json({
-        objectExemplo,
         teste
     });
   }
