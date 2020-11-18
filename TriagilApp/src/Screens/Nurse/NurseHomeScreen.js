@@ -75,10 +75,10 @@ class NurseHomeScreen extends React.Component {
     }
 
     handleChangePasswordPress = async (props) => {
-        const response = await hospitalLine();
+        //const response = await hospitalLine();
+        //console.log('AQUI A RESPOSTA:\n', response.data);
 
-        console.log('AQUI A RESPOSTA:\n', response.data);
-
+        this.props.navigation.navigate('NurseChangePassword');
 
     }
     
