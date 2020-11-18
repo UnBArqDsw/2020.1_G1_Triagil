@@ -105,12 +105,14 @@ class HospitalLineScreen extends React.Component {
         this.setState({ search });
       };
 
+    moreInfo (item) {
+        this.props.navigation.navigate('SpecificPatient', { patient: item });
+    }
     
     render () {
  
         let PreferentialButton;
         let RegularButton;
-        let content;
 
         if(this.state.selectedLine === true) {
             PreferentialButton = (
