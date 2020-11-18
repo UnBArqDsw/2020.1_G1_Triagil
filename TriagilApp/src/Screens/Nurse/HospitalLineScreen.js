@@ -198,7 +198,7 @@ class HospitalLineScreen extends React.Component {
                                 onPress={() => this.moreInfo(item)}
                             />
                             )}
-                            keyExtractor={(item) => item.id}
+                            keyExtractor={(item) => item.id.toString()}
                         />
                     </View>
                     

@@ -1,11 +1,14 @@
 import React from 'react';
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 
 import Button from '../../components/Button';
 import Title from '../../components/Title';
-import RootContainer from '../../components/RootContainer';
 import SuperiorOption from '../../components/superiorOption';
+import TriTextInput from '../../components/TriTextInput';
+import { LinearGradient } from "expo-linear-gradient";
+
+import PasswordIcon from '../../Icons/key.png';
 
 const styles = StyleSheet.create({
     SuperiorOption: {
@@ -18,17 +21,25 @@ const styles = StyleSheet.create({
     top: {
         flex: 0.5,
         alignItems: 'center',
+        justifyContent: 'center'
     },
     midle: {
         flex: 2,
-        alignItems: 'center',
-        justifyContent: 'space-around',
+    },
+    patientName: {
+        borderColor: '#1BC47D',
+        borderWidth: 4,
+        borderBottomWidth: 0,
+        borderRadius: 2,
+        marginLeft: 10,
+        width: '60%',
         
-    }, 
+    },
     bottom: {
-        flex: 2,
+        flex: 0.5,
+        flexDirection: 'row',
         alignItems:'center',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
     },
     signUpButton: {
         marginTop: 20,
@@ -54,31 +65,46 @@ class NursePatientInfoScreen extends React.Component {
         
         
         return (
-            <RootContainer>
-                <View style={styles.SuperiorOption}>
-                    <SuperiorOption logOff={this.handleLogOffPress}/>
-                </View>
+            <LinearGradient style={{flex: 1,flexGrow: 1, justifyContent: 'center'}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
+
                 <View style={styles.container}>
+                    <View style={styles.SuperiorOption}>
+                        <SuperiorOption logOff={this.handleLogOffPress}/>
+                    </View>
+                    
                     <View style={styles.top}>
-                        <Title fontsize={32} label={'PACIENTE!'}/>
-                        <Text style={{
-                            marginTop: 20, color: 'white', fontWeight: 'bold', fontSize: 18, textAlign: 'center'}}
-                        >
-                            Está trabalhando? Insira a senha de seu hospital.
-                        </Text>
+                        <Title fontsize={32} label={'FICHA DO PACIENTE!'}/>
                     </View>
                     
                     <View style={styles.midle}>
-                        <Button label={'ENTRAR'} width={'40%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                        <View style={styles.patientName}>
+                            <Text style={{fontSize: 26, marginLeft: 10, color:'#FAFAFA'}}>Nome x</Text>
+                        </View>
+                        <ScrollView style={{ borderTopColor: '#1BC47D', borderTopWidth: 5}}
+                            contentContainerStyle={{ alignItems: 'center'}}
+                        >
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+                            <TriTextInput editable={false} placeholder={'Senha do Hospital'} icon={PasswordIcon}/>
+
+                        </ScrollView>
                     </View>
+                    
+                        
 
                     <View style={styles.bottom}>
-                        <Button label={'ALTERAR MINHA SENHA'} width={'80%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                        <Button label={'VOLTAR'} width={'35%'} labelColor={'#FAFAFA'} color={'#FB0C0D'} />
+                        <Button label={'INICIAR TRIAGEM'} width={'55%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
                     </View>
-                    
-                    
+            
                 </View>
-            </RootContainer>
+            </LinearGradient>
         );
     }
 }
