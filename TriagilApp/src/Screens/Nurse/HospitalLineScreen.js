@@ -9,6 +9,9 @@ import SuperiorOption from '../../components/superiorOption';
 import PatientCard from '../../components/PatientCard';
 import RoundButton from '../../components/RoundButton';
 
+import {hospitalLine} from '../../utils/requests';
+
+
 const styles = StyleSheet.create({
     SuperiorOption: {
         flex: 0.1,
@@ -62,19 +65,44 @@ class HospitalLineScreen extends React.Component {
         super(props);
 
         this.state = { 
-            regularLine: false,
-            data: [1, 2, 3, 4, 5, 6, 7],
+            selectedLine: true, //true-> preferential, false -> regular
+            data: [],
             search: '',
+            preferential: [],
+            regular: [],
             
         };
 
         
     };
 
+    async componentDidMount() {
+        const response = await hospitalLine();
+        //console.log('AQUI A RESPOSTA:\n', response.data);
+        const preferential = response.data.preferential;
+        const regular = response.data.noPreferential;
+        
+        await this.setState({preferential, regular});
+        //console.log('OLHA O STATE: ', this.state);
+        await this.setState({data: preferential});
+        console.log('OLHA O STATE DEPOIS: ', this.state);
+    }
 
-    handleLinePress = () => {
-        this.setState({regularLine: !this.state.regularLine});
-        console.log('O ESTADO AQUI: ', this.state.regularLine);
+
+    handleLinePress = async (boolean) => {
+        this.setState({selectedLine: boolean});
+        if ( boolean === true){
+            await this.setState({data: this.state.preferential});
+        } else {
+            await this.setState({data: this.state.regular});
+        }
+        //console.log('O ESTADO AQUI: ', this.state.selectedLine);
+        //this.changeLineSelection();
+        
+    };
+    
+    changeLineSelection = async () => {
+        
     }
 
     updateSearch = (search) => {
@@ -88,9 +116,9 @@ class HospitalLineScreen extends React.Component {
         let RegularButton;
         let content;
 
-        if(this.state.regularLine === false) {
+        if(this.state.selectedLine === true) {
             PreferentialButton = (
-                <TouchableOpacity style={styles.btnPressed} onPress={this.handleLinePress}>
+                <TouchableOpacity style={styles.btnPressed} onPress={() => this.handleLinePress(true)}>
                     <Text style={{textAlign: 'center', color: '#FAFAFA', fontWeight: 'bold'}}
                     >
                         PREFERENCIAL
@@ -99,7 +127,7 @@ class HospitalLineScreen extends React.Component {
             );
 
             RegularButton = (
-                <TouchableOpacity style={styles.btnNormal} onPress={this.handleLinePress}>
+                <TouchableOpacity style={styles.btnNormal} onPress={() => this.handleLinePress(false)}>
                     <Text style={{textAlign: 'center', color: '#FAFAFA', fontWeight: 'bold'}}
                     >
                         NORMAL
@@ -112,7 +140,7 @@ class HospitalLineScreen extends React.Component {
         } else {
             //mostrar os pacientes normais
             PreferentialButton = (
-                <TouchableOpacity style={styles.btnNormal} onPress={this.handleLinePress}>
+                <TouchableOpacity style={styles.btnNormal} onPress={() => this.handleLinePress(true)}>
                     <Text style={{textAlign: 'center', color: '#FAFAFA', fontWeight: 'bold'}}
                     >
                         PREFERENCIAL
@@ -121,7 +149,7 @@ class HospitalLineScreen extends React.Component {
             );
 
             RegularButton = (
-                <TouchableOpacity style={styles.btnPressed} onPress={this.handleLinePress}>
+                <TouchableOpacity style={styles.btnPressed} onPress={() =>this.handleLinePress(false)}>
                     <Text style={{textAlign: 'center', color: '#FAFAFA', fontWeight: 'bold'}}
                     >
                         NORMAL
@@ -134,9 +162,7 @@ class HospitalLineScreen extends React.Component {
         
         return (			
         
-        <LinearGradient style={{flex: 1,
-        flexGrow: 1,
-        justifyContent: 'center'}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
+        <LinearGradient style={{flex: 1,flexGrow: 1, justifyContent: 'center'}} colors={['rgba(1,50,126,1)', 'rgba(88,200,245,1)']}>
 
                 <View style={styles.SuperiorOption}>
                     <SuperiorOption logOff={this.handleLogOffPress}/>
@@ -170,7 +196,7 @@ class HospitalLineScreen extends React.Component {
                                 onPress={() => this.moreInfo(item)}
                             />
                             )}
-                            keyExtractor={(item) => item}
+                            keyExtractor={(item) => item.id}
                         />
                     </View>
                     

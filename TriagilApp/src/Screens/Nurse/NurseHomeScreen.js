@@ -11,6 +11,8 @@ import TriTextInput from '../../components/TriTextInput';
 import PasswordIcon from '../../Icons/key.png';
 import { eraseData } from '../../utils/persist';
 
+import {hospitalLine} from '../../utils/requests';
+
 import store from '../../reducers/store';
 
 const styles = StyleSheet.create({
@@ -71,6 +73,14 @@ class NurseHomeScreen extends React.Component {
 
         this.props.navigation.navigate('HospitalLine');
     }
+
+    handleChangePasswordPress = async (props) => {
+        const response = await hospitalLine();
+
+        console.log('AQUI A RESPOSTA:\n', response.data);
+
+
+    }
     
     render () {
         const {
@@ -98,7 +108,7 @@ class NurseHomeScreen extends React.Component {
                     </View>
 
                     <View style={styles.bottom}>
-                        <Button onPress={this.handleLoginPress} label={'ALTERAR MINHA SENHA'} width={'80%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                        <Button onPress={this.handleChangePasswordPress} label={'ALTERAR MINHA SENHA'} width={'80%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
                     </View>
                     
                     
