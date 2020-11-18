@@ -4,6 +4,7 @@
 
 ### 1.1 Finalidade
 Este documento tem como finalidade descrever a arquitetura da aplicação Triagil. Ele apresenta as decisões de arquitetura para o projeto de forma objetiva e clara e também contém informações que servem de guia para desenvolvedores compreenderem o fluxo de informações e tecnologias envolvidas.
+
 ### 1.2 Escopo
 
 ### 1.3 Definições, Acrônimos e Abreviações
