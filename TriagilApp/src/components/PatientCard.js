@@ -46,12 +46,13 @@ const styles = StyleSheet.create({
     password:{
         fontSize: 24,
         fontWeight: 'bold',
+        textAlign: 'center'
     }
   
   
   });
 const PatientCard = (props) => {
-    const { onPress, name, age, gender, ...otherProps} = props;
+    const { onPress, name, age, gender, queuePosition, ...otherProps} = props;
  
     return (
         <TouchableOpacity
@@ -63,12 +64,12 @@ const PatientCard = (props) => {
             </View>
 
             <View style={styles.patientInfo}>
-                <Text style={styles.textInfo}>NOME COMPLETO </Text>   
-                <Text style={styles.textInfo}>IDADE: X ANOS</Text>
-                <Text style={styles.textInfo}>SEXO: M</Text>
+                <Text style={styles.textInfo}>{name}</Text>   
+                <Text style={styles.textInfo}>Idade: {age} ANOS</Text>
+                <Text style={styles.textInfo}>Sexo: {gender}</Text>
             </View>
             <View style={styles.rightSide}>
-                <Text style={styles.password}> P13 G32</Text>
+                <Text style={styles.password}>#PC{queuePosition}</Text>
             </View>
         </TouchableOpacity>
 

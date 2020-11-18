@@ -70,6 +70,7 @@ class HospitalLineScreen extends React.Component {
             search: '',
             preferential: [],
             regular: [],
+            loading: false,
             
         };
 
@@ -97,13 +98,8 @@ class HospitalLineScreen extends React.Component {
             await this.setState({data: this.state.regular});
         }
         //console.log('O ESTADO AQUI: ', this.state.selectedLine);
-        //this.changeLineSelection();
         
     };
-    
-    changeLineSelection = async () => {
-        
-    }
 
     updateSearch = (search) => {
         this.setState({ search });
@@ -193,6 +189,10 @@ class HospitalLineScreen extends React.Component {
                             data={this.state.data}
                             renderItem={({ item }) => (
                             <PatientCard
+                                name={item.name}
+                                age={item.age}
+                                gender={item.sex}
+                                queuePosition={item.id}
                                 onPress={() => this.moreInfo(item)}
                             />
                             )}
