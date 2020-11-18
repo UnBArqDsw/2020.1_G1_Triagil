@@ -81,5 +81,5 @@ nav:
       - Toys – Criacionais: padroes/toys/gofsCriacionais.md
       - Toys – Estruturais: padroes/toys/gofsEstruturais.md
       - Toys – Comportamentais: padroes/toys/gofsComportamentais.md
-
-
+  - Arquitetura de Software & Reutilização:
+    - Documento de Arquitetura: arquitetura_software_e_reutilizacao/documento_de_arquitetura.md
