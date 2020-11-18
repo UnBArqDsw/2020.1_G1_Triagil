@@ -10,6 +10,7 @@ import PatientCard from '../../components/PatientCard';
 import RoundButton from '../../components/RoundButton';
 
 import {hospitalLine} from '../../utils/requests';
+import { eraseData } from '../../utils/persist';
 
 
 const styles = StyleSheet.create({
@@ -99,6 +100,18 @@ class HospitalLineScreen extends React.Component {
         }
         //console.log('O ESTADO AQUI: ', this.state.selectedLine);
         
+    };
+    
+    handleLogOffPress = async (props) => {
+        //console.log('AQUI A STORE: ',store.getState());
+        await this.props.resetSession();
+        await eraseData();
+
+        this.props.navigation.reset({
+            index: 0,
+            routes: [{ name: 'Login' }],
+        });    
+
     };
 
     updateSearch = (search) => {

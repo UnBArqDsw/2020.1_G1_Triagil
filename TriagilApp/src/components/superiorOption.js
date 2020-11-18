@@ -29,7 +29,10 @@ const styles = StyleSheet.create({
     },
   });
 
+  
+
 const superiorOption = (props) => {
+
     const {logOff} = props;
   return (
     <View style={{ flexDirection: 'row', justifyContent: 'space-between'}}>

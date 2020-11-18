@@ -1,12 +1,14 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
+import { LinearGradient } from "expo-linear-gradient";
+
+import { eraseData } from '../../utils/persist';
 
 import Button from '../../components/Button';
 import Title from '../../components/Title';
 import SuperiorOption from '../../components/superiorOption';
 import TriTextInput from '../../components/TriTextInput';
-import { LinearGradient } from "expo-linear-gradient";
 
 import PasswordIcon from '../../Icons/key.png';
 import userIcon from '../../Icons/user.png';
@@ -65,6 +67,22 @@ class NursePatientInfoScreen extends React.Component {
         
     };
 
+    handleGoBack = () => {
+        this.props.navigation.goBack();
+    };
+
+    handleLogOffPress = async (props) => {
+        //console.log('AQUI A STORE: ',store.getState());
+        await this.props.resetSession();
+        await eraseData();
+
+        this.props.navigation.reset({
+            index: 0,
+            routes: [{ name: 'Login' }],
+        });    
+
+    };
+
     
     render () {
         const patient = this.props.route.params.patient;
@@ -108,7 +126,7 @@ class NursePatientInfoScreen extends React.Component {
                     </View>
                     
                     <View style={styles.bottom}>
-                        <Button label={'VOLTAR'} width={'35%'} labelColor={'#FAFAFA'} color={'#FB0C0D'} />
+                        <Button onPress={this.handleGoBack}label={'VOLTAR'} width={'35%'} labelColor={'#FAFAFA'} color={'#FB0C0D'} />
                         <Button label={'INICIAR TRIAGEM'} width={'55%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
                     </View>
             

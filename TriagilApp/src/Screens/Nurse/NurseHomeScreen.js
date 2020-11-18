@@ -90,7 +90,7 @@ class NurseHomeScreen extends React.Component {
         return (
             <RootContainer>
                 <View style={styles.SuperiorOption}>
-                    <SuperiorOption logOff={this.handleLogOffPress}/>
+                    <SuperiorOption props={this.props} logOff={this.handleLogOffPress}/>
                 </View>
                 <View style={styles.container}>
                     <View style={styles.top}>
