@@ -3,9 +3,12 @@
 ## 1 Introdução
 
 ### 1.1 Finalidade
+
 Este documento tem como finalidade descrever a arquitetura da aplicação Triagil. Ele apresenta as decisões de arquitetura para o projeto de forma objetiva e clara e também contém informações que servem de guia para desenvolvedores compreenderem o fluxo de informações e tecnologias envolvidas.
 
 ### 1.2 Escopo
+
+Este documento possui o objetivo de apresentar as estruturas arquiteturais que fundamentaram a construção do projeto Triagil, bem como apresentar os padrões adotados pela equipe, tecnologias escolhidas, dessa forma, auxiliando no entendimento da estrutura do projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
@@ -49,5 +52,6 @@ Este documento tem como finalidade descrever a arquitetura da aplicação Triagi
 | --- | --- | --- | --- |
 | 17/11 | 1.0.0 | Criação do documento no Pages | Francisco Heronildo|
 | 18/11 | 1.1.0 | Adição do tópico finalidades | Francisco Heronildo| 
+| 18/11 | 1.2.0 | Adição do tópico Escopo | Nathalia e Miguel| 
 
 ## Referências Bibliográficas
