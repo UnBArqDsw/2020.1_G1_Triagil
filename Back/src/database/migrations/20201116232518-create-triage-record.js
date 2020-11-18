@@ -31,15 +31,15 @@ module.exports = {
           key: 'id'
         }
       },
-      manchesterPriority: {
+      manchester_priority: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      mainComplain: {
+      main_complain: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      nurseNotes: {
+      nurse_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -51,7 +51,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      hasAlergies: {
+      has_alergies: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -60,7 +60,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      painRule: {
+      pain_rule: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
@@ -97,21 +97,21 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      estadoMentalAlterado: {
+      estadomental_alterado: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      estadoMentalAlteradoNotes: {
+      estado_mental_alterado_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      sinaisDeChoque_headache: {
+      sinais_de_choque_headache: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      sinaisDeChoqueNotes_headache: {
+      sinaisdechoquenotes_headache: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -120,25 +120,25 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      sinaisNeurologicosFocais_headache: {
+      sinais_neurologicos_focais_headache: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      sinaisNeurologicosFocaisNotes_headache: {
+      sinais_neurologicos_focais_notes_headache: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      aumentoSubitoDaDor: {
+      aumento_subitodador: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      aumentoSubitoDaDorNotes: {
+      aumento_subito_da_dornotes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      perdaAgudaCompletaVisao: {
+      perda_aguda_completa_visao: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -148,7 +148,7 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      menigismoNotes_headache: {
+      menigismo_notes_headache: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -165,7 +165,7 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      inconscienciaNotes_headache: {
+      inconsciencia_notes_headache: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -174,22 +174,22 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      nauseaEVomito: {
+      nausea_e_vomito: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      soreThroat: {
+      sore_throat: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      comprometimentoViasAereas_soathroat: {
+      comprometimento_vias_aereas_soathroat: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      comprometimentoViasAereasNotes_soathroat: {
+      comprometimento_vias_aereas_notes_soathroat: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -197,16 +197,16 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      estridorLaringeo: {
+      estridor_laringeo: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      estridorLaringeoNotes: {
+      estridor_laringeo_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      viagemRecente: {
+      viagem_recente: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -215,12 +215,12 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      dificuldadeDeglutir: {
+      dificuldade_deglutir: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      ardenciaGarganta: {
+      ardencia_garganta: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -230,48 +230,48 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      convulsaoAtiva: {
+      convulsao_ativa: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      comprometimentoViasAereas_convulsion: {
+      comprometimento_vias_aereas_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      comprometimentoViasAereasNotes_convulsion: {
+      comprometimento_vias_aereas_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      alteracoesGlicemicas_convulsion: {
+      alteracoes_glicemicas_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      alteracoesGlicemicasNumber_convulsion: {
+      alteracoes_glicemicas_number_convulsion: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      respiracaoInadequada: {
+      respiracao_inadequada: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      respiracaoInadequadaNotes: {
+      respiracao_inadequada_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      sinaisNeurologicosFocais_convulsion: {
+      sinais_neurologicos_focais_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      sinaisNeurologicosFocaisNotes_convulsion: {
+      sinais_neurologicos_focais_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      criseConvulsivaReentrante: {
+      crise_convulsiva_reentrante: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -281,52 +281,52 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      menigismoNotes_convulsion: {
+      menigismo_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      overdoseEnvenenamento: {
+      overdose_envenenamento: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      overdoseEnvenenamentoNotes: {
+      overdose_envenenamento_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      traumaCranianoRecente_convulsion: {
+      trauma_craniano_recente_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      traumaCranianoRecenteNotes_convulsion: {
+      trauma_craniano_recente_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      posComicial_convulsion: {
+      pos_comicial_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      posComicialNotes_convulsion: {
+      pos_comicial_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      epilepsiaTratada: {
+      epilepsia_tratada: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      epilepsiaTratadaNotes: {
+      epilepsia_tratada_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      criseConvulsivaRecente_convulsion: {
+      crise_convulsiva_recente_convulsion: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      criseConvulsivaRecenteNotes_convulsion: {
+      crise_convulsiva_recente_notes_convulsion: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -335,25 +335,25 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      alteracaoConsciencia_fainting: {
+      alteracao_consciencia_fainting: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      comprometimentoViasAereas_fainting: {
+      comprometimento_vias_aereas_fainting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      comprometimentoViasAereasNotes_fainting: {
+      comprometimento_vias_areas_notes_fainting: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      alteracoesGlicemicas_fainting: {
+      alteracoes_glicemicas_fainting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      alteracoesGlicemicasNumber_fainting: {
+      alteracoes_glicemicas_number_fainting: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
@@ -361,40 +361,40 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      rigidezNotes: {
+      rigidez_notes: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      sinaisDeChoque_fainting: {
+      sinais_de_choque_fainting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      sinaisDeChoqueNotes_fainting: {
+      sinais_de_choque_notes_fainting: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      pulsoAnormal: {
+      pulso_anormal: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      dorToracica: {
+      dor_toracica: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      dorToracicaNotes: {
+      dor_toracica_notes: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      disturbioSubitoEquilibrio: {
+      disturbio_subito_equilibrio: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      disturbioSubitoEquilibrioNotes: {
+      disturbio_subito_equilibrio_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -402,16 +402,16 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      posComicial_fanting: {
+      pos_comicial_fanting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      posComicialNotes_faiting: {
+      pos_comicial_notes_faiting: {
           type: Sequelize.STRING,
           allowNull: false,
       },
-      dispneiaAguda: {
+      dispneia_aguda: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
@@ -420,12 +420,12 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      relatoAlergia: {
+      relato_alergia: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      relatoAlergiaNotes: {
+      relato_alergia_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -433,17 +433,17 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      deficitNeurologico: {
+      deficit_neurologico: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      traumaCranianoRecente_fainting: {
+      trauma_craniano_recente_fainting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      traumaCranianoRecenteNotes_fainting: {
+      trauma_craniano_recente_notes_fainting: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -452,17 +452,17 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      primeiraConvulsao: {
+      primeira_convulsao: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      criseConvulsivaRecente_fainting: {
+      crise_convulsiva_recente_fainting: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      criseConvulsivaRecenteNotes_fainting: {
+      crise_convulsiva_recente_notes_fainting: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -471,7 +471,7 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      parestesiaNotes: {
+      parestesia_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -480,25 +480,25 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      vomitoComSangue: {
+      vomito_com_sangue: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      vomitoComSangueNotes: {
+      vomito_com_sangue_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      dorAbdominal: {
+      dor_abdominal: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      alteracaoConsciencia_diarrhea: {
+      alteracao_consciencia_diarrhea: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      perfusaoPeriferica: {
+      perfusao_periferica: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
@@ -506,12 +506,12 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      fezesEnegrecidas: {
+      fezes_enegrecidas: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      fezesEnegrecidasNotes: {
+      fezes_enegrecidas_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -524,16 +524,16 @@ module.exports = {
         defaultValue: false,
         allowNull: false,
       },
-      desidratacaoNotes: {
+      desidratacao_notes: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      vomitosEsparsos: {
+      vomitos_esparsos: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
       },
-      eventoRecente: {
+      evento_recente: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false,
