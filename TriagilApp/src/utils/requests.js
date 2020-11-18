@@ -3,6 +3,7 @@ import MockAdapter from 'axios-mock-adapter';
 import {
   LOGIN,
   SIGNIN,
+  HOSPITALLINE,
 } from './endpoints';
 
 const request = (endpoint, method, object, config) => {
@@ -84,8 +85,16 @@ const signin = async (cpf, name, email, password, mocked) => {
   
     return response;
 };
+
+const hospitalLine = async () => {
+
+  const response = await request(HOSPITALLINE, 'GET', null);
+
+  return response;
+};
   
 export {
   login,
   signin,
+  hospitalLine,
 };
