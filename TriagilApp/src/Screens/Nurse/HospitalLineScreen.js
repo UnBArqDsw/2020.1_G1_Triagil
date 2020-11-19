@@ -116,7 +116,23 @@ class HospitalLineScreen extends React.Component {
 
     updateSearch = (search) => {
         this.setState({ search });
-      };
+    };
+
+    handleSearchPress = () =>  {
+        let filteredLine;
+        if (this.state.selectedLine) {//preferencial
+            let specificLine = this.state.preferential;
+            filteredLine = specificLine.filter(this.searchPatient);
+        } else {
+            let specificLine = this.state.regular;
+            filteredLine = specificLine.filter(this.searchPatient);
+        }
+        this.setState({data: filteredLine});
+    };
+
+    searchPatient = (patient) => {
+        return patient.name === this.state.search;
+    }
 
     moreInfo (item) {
         this.props.navigation.navigate('SpecificPatient', { patient: item });
@@ -196,7 +212,7 @@ class HospitalLineScreen extends React.Component {
                                 lightTheme={true}
                                 containerStyle={{ width: '70%', borderRadius: 10, margin: 5}}
                             />
-                            <RoundButton style={{flex: 1}}/>
+                            <RoundButton onPress={this.handleSearchPress} style={{flex: 1}}/>
 
 
                         </View>
