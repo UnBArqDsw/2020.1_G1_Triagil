@@ -20,9 +20,10 @@ class TriageRecordController {
         triageRecord.manchester_priority = 3;
       } else if(triageRecord.pain_headache >= 1 && triageRecord.pain_headache <= 3){
         triageRecord.manchester_priority = 2;
-      } else {
+      } else{
         triageRecord.manchester_priority = 1;
       }
+
     }
 
     if(triageRecord. sore_throat){
@@ -37,7 +38,7 @@ class TriageRecordController {
       } else if(triageRecord.dificuldade_deglutir || (triageRecord.pain_soathroat >= 1 && triageRecord.pain_soathroat <= 3)
       ||  triageRecordardencia_garganta){
           triageRecord.manchester_priority = 2;
-      } else {
+      } else{
         triageRecord.manchester_priority = 1;
       }
 
@@ -48,13 +49,13 @@ class TriageRecordController {
       if(triageRecord.comprometimentoViasAereas ||
         (triageRecord.alteracoesGlicemicasNumber < 70 && triageRecord.alteracoesGlicemicasNumber > 250) ||
         triageRecord.respiracaoInadequada || triageRecord.sinaisNeurologicosFocais
-        || triageRecord.criseConvulsivaReentrante || triageRecord.menigismo) {
+        || triageRecord.criseConvulsivaReentrante || triageRecord.menigismo){
         triageRecord.manchester_priority = 5;
-      } else if(triageRecord.overdoseEnvenenamento || triageRecord.traumaCranianoRecente) {
+      } else if(triageRecord.overdoseEnvenenamento || triageRecord.traumaCranianoRecente){
         triageRecord.manchester_priority = 4;
       } else if(triageRecord.posComicial || triageRecord.epilepsiaTratada || triageREcord.criseConvulsivaRecente){
         triageRecord.manchester_priority = 3;
-      } else {
+      } else{
         triageRecord.manchester_priority = 2;
       }
 
@@ -76,9 +77,32 @@ class TriageRecordController {
           triageRecord.manchester_priority = 3;
       } else if((triageRecord.pain_fainting >= 1 && triageRecord.pain_fainting <= 3) || triageRecord.parestesia){
           triageRecord.manchester_priority = 2;
-      } else {
+      } else{
           triageRecord.manchester_priority = 1;
       }
+
+    }
+
+
+    if(triageRecord.diarrhea){
+
+      if(triageRecord.vomito_com_sangue){
+        triageRecord.manchester_priority = 5;
+      } else if(triageRecord.dor_abdominal ||
+        (triageRecord.alteracao_consciencia_diarrhea >= 9 && triageRecord.alteracao_consciencia_diarrhea <= 14) ||
+        triageRecord.perfusao_periferica > 4){
+          triageRecord.manchester_priority = 4;
+      } else if(triageRecord.temperatura_diarrhhea || triageRecord.fezes_enegrecidas ||
+        (triageRecord.pain_diarrhea >= 4 && triageRecord.pain_diarrhea <= 6) ||
+        triageRecord.desidratacao){
+        triageRecord.manchester_priority = 3;
+      } else if((triageRecord.pain_diarrhea >= 1 && triageRecord.pain_diarrhea <= 3) ||
+      triageRecord.vomitos_esparsos || triageRecord.evento_recente){
+        triageRecord.manchester_priority = 2;
+      } else{
+        triageRecord.manchester_priority = 1;
+      }
+
     }
 
     const record = await TriageRecord.create(triageRecord);
