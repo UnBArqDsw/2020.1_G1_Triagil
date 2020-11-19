@@ -73,6 +73,14 @@ class PatientDeleteAccount extends React.Component {
         //console.log('AQUI A STORE: ',store.getState());
         this.props.navigation.goBack();
     };
+
+    checkString = () => {
+        if (this.state.email !== "" && this.state.password !== "" ){
+            return false;
+        } else {
+            return true;
+        }
+    }
     
 
   
@@ -87,13 +95,13 @@ class PatientDeleteAccount extends React.Component {
 
                     </View>
                     <View style={styles.content}>
-                        <TriTextInput placeholder={'Email'} icon={UserIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Email'} icon={UserIcon} onChangeText={this.handleEmailChange}/>
                         
-                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handleNewPasswordChange}/>
+                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handlePasswordChange}/>
                        
                     </View>
                     <View style={styles.bottom}>
-                        <Button onPress={this.handleDeleteAccountPress} label={'Excluir conta'} width={'50%'} labelColor={'#fafafa'} color={'#FB0C0D'}  />
+                        <Button disabled={this.checkString()} onPress={this.handleDeleteAccountPress} label={'Excluir conta'} width={'50%'} labelColor={'#fafafa'} color={'#FB0C0D'}  />
                         <View style={{marginTop: 20}}>
                             <Button style={{marginTop:20}} onPress={this.handleCancelPress} label={'VOLTAR'} width={'40%'} labelColor={'#fafafa'} color={'#1BC47D'} />
                         </View>
