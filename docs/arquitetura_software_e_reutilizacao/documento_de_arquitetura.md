@@ -47,6 +47,14 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 ### 2.1 Visão geral 
 ![Visao_arq](https://imgur.com/vofa7oU.png)
 
+### **Model-View-Controller**
+"O padrão de arquitetura [MVC](http://www.tiagobarros.org/docs/SMVC.pdf) _(Model-View-Controller)_ [Krasner and Pope 1998]
+é bastante utilizado no desenvolvimento de aplicações para dispositivos móveis pois determina a separação de uma aplicação em três elementos. O elemento _Model_ é formado por entidades que representam os dados da aplicação. A  _View_ tem por objetivo realizar a
+apresentação destes dados e capturar os eventos do usuário, sendo representada pelas 
+telas. O elemento _Controller_ faz a ligação entre o _Model_ e a _View_, realizando o tratamento dos
+eventos, atuando sobre a _Model_ e alterando os elementos da _View_ para representar a nova
+forma dos dados."
+
 ### 2.2 Front-end
 
 ### 2.3 Back-end
@@ -93,3 +101,8 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 
 
 ## Referências Bibliográficas
+BARROS, T.; SILVA, M.; ESPÍNOLA,E. **State MVC:** Estendendo o padrao MVC para uso no 
+desenvolvimento de aplicações para dispositivos móveis.Recife, CE. C.E.S.A.R – Centro de Estudos e Sistemas Avanc¸ados do Recife, 2007. 
+
+KRASNER, G. and POPE, S. (1998). **A cookbook for using the model view controller user interface paradigm in smalltalk-80** . In Journal of Object-Orientated Programming,
+volume 1(3), pages 26–49.
