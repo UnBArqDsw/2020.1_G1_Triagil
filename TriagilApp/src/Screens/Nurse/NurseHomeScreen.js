@@ -12,7 +12,7 @@ import PasswordIcon from '../../Icons/key.png';
 import { eraseData } from '../../utils/persist';
 
 import {hospitalLine} from '../../utils/requests';
-
+import { HOSPITAL_PASSWORD } from '../../utils/strings';
 import store from '../../reducers/store';
 
 const styles = StyleSheet.create({
@@ -50,7 +50,8 @@ class NurseHomeScreen extends React.Component {
         super(props);
 
         this.state = {
-            
+            password: '',
+            failed: false,
         };
 
         
@@ -68,19 +69,25 @@ class NurseHomeScreen extends React.Component {
 
     };
 
+    handlePasswordChange = (password) => {
+        this.setState({password});
+    };
+
     handleEnterHospitalPress = async (props) => {
         //chamar a verificação do backend
-
-        this.props.navigation.navigate('HospitalLine');
+        if (this.state.password !== {HOSPITAL_PASSWORD}){
+            this.setState({failed: true});
+        } else {
+            this.props.navigation.navigate('HospitalLine');
+        }
     }
 
     handleChangePasswordPress = async (props) => {
         //const response = await hospitalLine();
         //console.log('AQUI A RESPOSTA:\n', response.data);
-
         this.props.navigation.navigate('NurseChangePassword');
-
     }
+
     
     render () {
         const {
