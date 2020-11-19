@@ -120,6 +120,16 @@ class SignInScreen extends React.Component {
         this.props.navigation.goBack();
     };
 
+    checkString = () => {
+        //If one field is missing, it cant press "SignIn"
+        if ( this.state.cpf !== "" && this.state.name !== "" && 
+        this.state.email !== "" && this.state.password !== "" ) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
     
 
 
@@ -141,7 +151,7 @@ class SignInScreen extends React.Component {
                             
                         </View>
                         <View style={styles.bottom}>
-                            <Button onPress={this.handleSignInPress} label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
+                            <Button disabled={this.checkString()}onPress={this.handleSignInPress} label={'CADASTRAR'} width={'40%'}labelColor={'#fafafa'} color={'#1BC47D'} />
                             <View style={{marginTop: 20}}>
                                 <Button onPress={this.handleCancelPress} label={'CANCELAR'} labelColor={'#fafafa'} color={'#FB0C0D'} />
                             </View>
