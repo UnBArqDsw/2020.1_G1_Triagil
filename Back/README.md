@@ -1,7 +1,6 @@
 # TRIAGIL - Backend da Aplicação
 
-![contributor](https://img.shields.io/badge/all%20contributors-6-brightgreen) ![issues](https://img.shields.io/github/issues/UnBArqDsw/2020.1_G1_Triagil)
-
+![allcontributor](https://img.shields.io/badge/all%20contributors-6-brightgreen) ![pg](https://badgen.net/badge/icon/postgresql?icon=postgresql&label)
 ## Sobre
 
 <div align="center"><img width="300px" height="175px" src="https://imgur.com/yBMVGy9.png"/></div>
@@ -25,7 +24,8 @@ Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profission
 
 - Instale o [Docker](https://docs.docker.com/engine/install/) e [Docker Compose](https://docs.docker.com/compose/install/) em sua máquina. </br>
 
-- Execute o banco de dados: `sudo docker-compose up --build` (para as demais vezes será necessário somente executar `sudo docker-compose up`) </br>
+- Execute o banco de dados: `sudo docker-compose up --build` </br>
+(para as demais vezes será necessário somente executar `sudo docker-compose up`) </br>
 
 - Instale as dependencias em sua máquina: </br>
 `yarn add sequelize` </br>
@@ -40,10 +40,6 @@ Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profission
 - Faça as migrações das tabeladas para banco de dados: `yarn sequelize db:migrate` </br>
 
 - Execute a API Node: `yarn dev` </br>
-
-- Para visualizar as tabelas no DB recomenda-se utilizar o software [PostBird](https://www.electronjs.org/apps/postbird) </br>
-
-- Para injeção de dados recomenda-se utilizar o software [Insomnia](https://insomnia.rest/) </br>
 
 ## Outros
 
