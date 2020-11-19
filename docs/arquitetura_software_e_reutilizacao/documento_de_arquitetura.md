@@ -87,6 +87,10 @@ forma dos dados."
 
 ## 10 Tamanho e Desempenho
 
+O triagil é uma aplicação mobile com aproximadamente "X" MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
+
+Além disso trabalhamos com requisições de serviços externos que realizam comunicação com o frontend da aplicação, dessa forma, podemos esperar que o desempenho e manutenibilidade sejam garantidos.
+
 ## 11 Qualidade
 
 **Histórico de Versão**
@@ -101,6 +105,7 @@ forma dos dados."
 |19/11 | 1.5.0| Adição de imagem ao tópico 2.1 | Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro |
 |19/11 | 1.6.0| Adição do tópico referências | Vitor Alves e Nathalia |
 |19/11 | 1.6.1| Corrigindo e adicionando referências bibliográficas| Débora Vilela |
+|19/11 | 1.7.0| Acrescentando tópico de tamanho e desempenho| Francisco Heronildo e Nathalia |
 
 
 
