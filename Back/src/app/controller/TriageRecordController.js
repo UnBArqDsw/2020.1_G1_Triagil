@@ -14,8 +14,8 @@ class TriageRecordController {
            triageRecord.manchester_priority = 5;
       } else if(triageRecord.perda_aguda_completa_visao ||  triageRecord.menigismo_headache || triageRecord.pain_headache >= 7){
         triageRecord.manchester_priority = 4;
-      } else if((triageRecord.temperature_headache >= 35.00 && triageRecord.temperature_headache <= 37.8) || 
-      triageRecord.inconsciencia_headach || triageRecord.diminuicao_visao || 
+      } else if((triageRecord.temperature_headache >= 35.00 && triageRecord.temperature_headache <= 37.8) ||
+      triageRecord.inconsciencia_headach || triageRecord.diminuicao_visao ||
       (triageRecord.pain_headache >= 4 && triageRecord.pain_headache <= 6) || triageRecord.nausea_e_vomito){
         triageRecord.manchester_priority = 3;
       } else if(triageRecord.pain_headache >= 1 && triageRecord.pain_headache <= 3){
@@ -45,9 +45,9 @@ class TriageRecordController {
 
     if (triageRecord.convulsion){
 
-      if(triageRecord.comprometimentoViasAereas || 
-        (triageRecord.alteracoesGlicemicasNumber < 70 && triageRecord.alteracoesGlicemicasNumber > 250) || 
-        triageRecord.respiracaoInadequada || triageRecord.sinaisNeurologicosFocais 
+      if(triageRecord.comprometimentoViasAereas ||
+        (triageRecord.alteracoesGlicemicasNumber < 70 && triageRecord.alteracoesGlicemicasNumber > 250) ||
+        triageRecord.respiracaoInadequada || triageRecord.sinaisNeurologicosFocais
         || triageRecord.criseConvulsivaReentrante || triageRecord.menigismo) {
         triageRecord.manchester_priority = 5;
       } else if(triageRecord.overdoseEnvenenamento || triageRecord.traumaCranianoRecente) {
@@ -58,6 +58,27 @@ class TriageRecordController {
         triageRecord.manchester_priority = 2;
       }
 
+    }
+
+    if(triageRecord.fainting){
+
+      if(triageRecord.alteracao_consciencia_fainting || triageRecord.comprometimento_vias_aereas_fainting ||
+        (triageRecord.alteracoes_glicemicas_fainting && triageRecord.alteracoes_glicemicas_fainting) ||
+        triageRecord.rigidez || triageRecord.sinais_de_choque_fainting){
+        triageRecord.manchester_priority = 5;
+      } else if( triageRecord.pulso_anormal || triageRecord.dor_toracica || triageRecord.disturbio_subito_equilibrio ||
+        (triageRecord.pain_fainting >=7 && triageRecord.pain_fainting <= 10) || triageRecord.pos_comicial_fanting || triageRecord.dispneia_aguda ||
+        (triageRecord.temperature > 35 && triageRecord.temperature <= 37.8 ) ||triageRecord.relato_alergia ||
+        (triageRecord.cefaleia >= 7 && triageRecord.cefaleia <= 10) || triageRecord.deficit_neurologico || triageRecord.trauma_craniano_recente_fainting){
+        triageRecord.manchester_priority = 4;
+      } else if(triageRecord.inconsciencia_fainting || (triageRecord.pain_fainting >=4 && triageRecord.pain_fainting <= 6) ||
+          triageRecord.primeira_convulsao || triageRecord.crise_convulsiva_recente_fainting) {
+          triageRecord.manchester_priority = 3;
+      } else if((triageRecord.pain_fainting >= 1 && triageRecord.pain_fainting <= 3) || triageRecord.parestesia){
+          triageRecord.manchester_priority = 2;
+      } else {
+          triageRecord.manchester_priority = 1;
+      }
     }
 
     const record = await TriageRecord.create(triageRecord);
