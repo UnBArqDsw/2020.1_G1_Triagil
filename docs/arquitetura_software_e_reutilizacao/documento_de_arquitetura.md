@@ -39,6 +39,13 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 
 ## 2 Representação Arquitetural
 
+### 2.1 Visão geral 
+![Visao_arq](https://imgur.com/vofa7oU.png)
+
+### 2.2 Front-end
+
+### 2.3 Back-end
+
 ## 3 Metas e Restrições da Arquitetura
 
 ## 4 Visão de Casos de Uso
@@ -76,6 +83,7 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 | 18/11 | 1.2.0 | Adição do tópico Escopo | Nathalia e Miguel| 
 | 18/11 | 1.3.0 | Adição do tópico  1.5-Visão Geral | Francisco Heronildo e Débora| 
 | 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações  | Lude e Nathalia| 
+|19/11 | 1.5.0| Adição de imagem ao tópico 2.1 | Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro |
 
 
 ## Referências Bibliográficas
