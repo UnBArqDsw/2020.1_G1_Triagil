@@ -13,16 +13,14 @@ import PatientChangeNameContainer from './src/containers/PatientChangeNameContai
 import PatientChangeEmailContainer from './src/containers/PatientChangeEmailContainer';
 import PatientChangePasswordContainer from './src/containers/PatientChangePasswordContainer';
 import PatientDeleteAccountContainer from './src/containers/PatientDeleteAccountContainer';
+import NurseChangePasswordContainer from './src/containers/NurseChangePasswordContainer';
 import HospitalLineContainer from './src/containers/HospitalLineContainer';
-
 import NursePatientInfoContainer from './src/containers/NursePatientInfoContainer';
 
 
 import SignInContainer from './src/containers/SignInContainer';
 import SignInScreen from './src/Screens/SignInScreen';
 
-import NursePatientInfo from './src/Screens/Nurse/NursePatientInfoScreen';
-import NurseChangePassword from './src/Screens/Nurse/NurseChangePasswordScreen';
 
 import Background from './src/components/Background';
 
@@ -44,7 +42,7 @@ function App() {
             <Stack.Screen name="PatientChangeEmail" component={PatientChangeEmailContainer} />
             <Stack.Screen name="PatientChangePassword" component={PatientChangePasswordContainer} />
             <Stack.Screen name="PatientDeleteAccount" component={PatientDeleteAccountContainer} />
-            <Stack.Screen name="NurseChangePassword" component={NurseChangePassword} />
+            <Stack.Screen name="NurseChangePassword" component={NurseChangePasswordContainer} />
             <Stack.Screen name="HospitalLine" component={HospitalLineContainer} />
             <Stack.Screen name="SpecificPatient" component={NursePatientInfoContainer} />
 
