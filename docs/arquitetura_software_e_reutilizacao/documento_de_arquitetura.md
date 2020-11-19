@@ -21,6 +21,11 @@ Triagil: Nome dado ao aplicativo desenvolvido nesse projeto.
 
 ### 1.4 Referências
 
+* [Design Patterns](https://refactoring.guru/design-patterns) 
+* [MVC](https://www.treinaweb.com.br/blog/o-que-e-mvc/)
+* [HubCare](https://cjjcastro.gitlab.io/2019-1-hubcare-docs/project/architecture-document/#1-introducao)
+* [Cafofo](https://desenho-2019.github.io/Wiki/Din%C3%A2mica%20e%20Semin%C3%A1rio%20V/Documento%20de%20Arquitetura/#10-tamanho-e-desempenho)
+
 ### 1.5 Visão Geral
 No presente documento serão abordadas as soluções arquiteturais  utilizadas no projeto Triagil por meio de explicações detalhadas sobre cada tecnologia utilizada,e a forma como foram aplicados os  padrões de projeto em cada elemento implementado pela equipe bem como propostas de reutilização no Triagil. Para melhor visualização, o conteúdo do documento está distribuído nos seguintes tópicos:
 
@@ -84,6 +89,7 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 | 18/11 | 1.3.0 | Adição do tópico  1.5-Visão Geral | Francisco Heronildo e Débora| 
 | 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações  | Lude e Nathalia| 
 |19/11 | 1.5.0| Adição de imagem ao tópico 2.1 | Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro |
+|19/11 | 1.6.0| Adição do tópico referências | Vitor Alves e Nathalia |
 
 
 ## Referências Bibliográficas
