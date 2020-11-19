@@ -7,8 +7,9 @@ import RootContainer from '../../components/RootContainer';
 import TriTextInput from '../../components/TriTextInput';
 
 import PasswordIcon from '../../Icons/key.png';
-
 import store from '../../reducers/store';
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -63,8 +64,9 @@ class NurseChangePassword extends React.Component {
         const nurseInfo = {
             password: this.state.newPassword,
         }
-        //this.props.updateNursePassword(nurseInfo);
-
+        this.props.updateNursePassword(nurseInfo);
+        
+        console.log('OLHA OS PASSWORDS: ', this.state);
         this.props.navigation.reset({
             index: 0,
             routes: [{ name: 'NurseHomeScreen' }],

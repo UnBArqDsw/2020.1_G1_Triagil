@@ -1,7 +1,9 @@
 
 import { connect } from 'react-redux';
 import NurseChangePassword from '../Screens/Nurse/NurseChangePasswordScreen';
-import {resetSession} from '../actions/userActions';
+import { resetSession } from '../actions/userActions';
+import { updateNursePassword } from '../actions/nurseActions';
+
 
 const mapStateToProps = (state) => ({
   //name: state.user.nurse.name,
@@ -14,6 +16,8 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => {
   return {
     resetSession: () => dispatch(resetSession()),
+    updateNursePassword: (nurseInfo) => dispatch(updateNursePassword(nurseInfo)),
+
   };
 };
 

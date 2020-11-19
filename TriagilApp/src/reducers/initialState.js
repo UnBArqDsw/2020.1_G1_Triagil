@@ -13,6 +13,7 @@ const initialState = {
             cre: '',
             name: '',
             email: '',
+            password: '',
         },
     },
         
