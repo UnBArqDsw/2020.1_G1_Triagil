@@ -55,9 +55,11 @@ telas. O elemento _Controller_ faz a ligação entre o _Model_ e a _View_, reali
 eventos, atuando sobre a _Model_ e alterando os elementos da _View_ para representar a nova
 forma dos dados."
 
-### 2.2 Front-end
+### 2.2 Tecnologias
 
-### 2.3 Back-end
+### 2.2.1  Tecnologias 
+
+### 2.3 Arquitetura
 
 ## 3 Metas e Restrições da Arquitetura
 
@@ -98,6 +100,8 @@ forma dos dados."
 | 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações  | Lude e Nathalia| 
 |19/11 | 1.5.0| Adição de imagem ao tópico 2.1 | Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro |
 |19/11 | 1.6.0| Adição do tópico referências | Vitor Alves e Nathalia |
+|19/11 | 1.6.1| Corrigindo e adicionando referências bibliográficas| Débora Vilela |
+
 
 
 ## Referências Bibliográficas
