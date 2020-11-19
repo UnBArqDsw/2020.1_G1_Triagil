@@ -65,6 +65,14 @@ class PatientChangeEmail extends React.Component {
         //console.log('AQUI A STORE: ',store.getState());
         this.props.navigation.goBack();
     };
+
+    checkString = () => {
+        if (this.state.email !== "") {
+            return false;            
+        } else {
+            return true;
+        }
+    }
     
 
   
@@ -85,10 +93,9 @@ class PatientChangeEmail extends React.Component {
 
                     </View>
                     <View style={styles.bottom}>
-                        <Button onPress={this.handleChangeEmailPress} label={'ALTERAR EMAIL'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
+                        <Button disabled={this.checkString} onPress={this.handleChangeEmailPress} label={'ALTERAR EMAIL'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
                         <View style={{marginTop: 20}}>
                             <Button style={{marginTop:20}} onPress={this.handleCancelPress} label={'CANCELAR'} width={'40%'} labelColor={'#fafafa'} color={'#FB0C0D'} />
-
                         </View>
                     </View>
                 </View>
