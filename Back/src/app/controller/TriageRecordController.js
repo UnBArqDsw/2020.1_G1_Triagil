@@ -113,8 +113,14 @@ class TriageRecordController {
   }
 
   async show(req,res) {
+
+    const allTriageRecords = await TriageRecord.findAll();
+
+    if (!allTriageRecords) {
+      return res.status(400).json({ error: 'There is no records saved.' });
+    }
     return res.json({
-        triageRecord
+      allTriageRecords
     });
   }
 }
