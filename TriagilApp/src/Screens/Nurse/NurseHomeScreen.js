@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { ActivityIndicator, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 
 import Button from '../../components/Button';
@@ -12,8 +12,9 @@ import PasswordIcon from '../../Icons/key.png';
 import { eraseData } from '../../utils/persist';
 
 import {hospitalLine} from '../../utils/requests';
-import { HOSPITAL_PASSWORD } from '../../utils/strings';
+import { FAILED_LOGIN_TO_HOSPITAL, HOSPITAL_PASSWORD } from '../../utils/strings';
 import store from '../../reducers/store';
+import { HOSPITALLINE } from '../../utils/endpoints';
 
 const styles = StyleSheet.create({
     SuperiorOption: {
@@ -41,7 +42,21 @@ const styles = StyleSheet.create({
     signUpButton: {
         marginTop: 20,
         padding: 15,
-    }
+    },
+    failed_login_to_hospital: {
+        justifyContent: 'flex-start',
+        width: '60%',
+        //height: '25%',
+        textAlign: 'center',
+        backgroundColor: '#fff',
+        borderColor: '#FB0C0D',
+        borderWidth: 2,
+        //borderBottomWidth: StyleSheet.hairlineWidth,
+        borderRadius: 20,
+        padding: 10,
+        marginBottom: '5%',
+        fontSize: 18,
+      },
     
 })
 
@@ -51,6 +66,7 @@ class NurseHomeScreen extends React.Component {
 
         this.state = {
             password: '',
+            loading: false,
             failed: false,
         };
 
@@ -74,10 +90,13 @@ class NurseHomeScreen extends React.Component {
     };
 
     handleEnterHospitalPress = async (props) => {
+        const hospitalPassword = HOSPITAL_PASSWORD;
         //chamar a verificação do backend
-        if (this.state.password !== {HOSPITAL_PASSWORD}){
+        console.log('hospital password:', HOSPITAL_PASSWORD);
+        if (this.state.password !== hospitalPassword){
             this.setState({failed: true});
         } else {
+            this.setState({password: ""});
             this.props.navigation.navigate('HospitalLine');
         }
     }
@@ -88,11 +107,61 @@ class NurseHomeScreen extends React.Component {
         this.props.navigation.navigate('NurseChangePassword');
     }
 
+    checkString = () => {
+        if (this.state.password !== "" ){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     
     render () {
         const {
             name,
         } = this.props;
+
+        let content;
+
+        if (this.state.loading) {
+
+            content = (
+                <View style={{flex: 4.25, justifyContent: 'center' }}> 
+                    <ActivityIndicator size="large" color="#fff" />
+                </View>
+            );
+
+        } else if (this.state.failed) {
+
+            content = (
+                <View style={{flex: 2.5, alignItems: 'center', justifyContent: 'center', marginBottom: 50}}> 
+                    <Text style={styles.failed_login_to_hospital}>
+                        {FAILED_LOGIN_TO_HOSPITAL}
+                    </Text>
+                    <TouchableOpacity 
+                        style={styles.signUpButton}
+                        onPress={() => this.setState({failed: false})}
+                        enabled={!this.state.loading}
+                    >
+                        <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> TENTAR NOVAMENTE </Text>
+                    </TouchableOpacity>
+                </View> 
+            );
+
+        } else {
+            content =(
+                <View style={{ flex: 4 }}>
+                    <View style={styles.midle}>
+                        <TriTextInput placeholder={'Senha do Hospital'} icon={PasswordIcon} onChangeText={this.handlePasswordChange}/>
+                        <Button disabled={this.checkString()} onPress={this.handleEnterHospitalPress} label={'ENTRAR'} width={'40%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                    </View>
+
+                    <View style={styles.bottom}>
+                        <Button onPress={this.handleChangePasswordPress} label={'ALTERAR MINHA SENHA'} width={'80%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                    </View>
+                </View>
+            );
+        }
         
         return (
             <RootContainer>
@@ -108,17 +177,9 @@ class NurseHomeScreen extends React.Component {
                             Está trabalhando? Insira a senha de seu hospital.
                         </Text>
                     </View>
-                    
-                    <View style={styles.midle}>
-                        <TriTextInput placeholder={'Senha do Hospital'} icon={PasswordIcon} onChangeText={this.handlePasswordChange}/>
-                        <Button onPress={this.handleEnterHospitalPress} label={'ENTRAR'} width={'40%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
-                    </View>
 
-                    <View style={styles.bottom}>
-                        <Button onPress={this.handleChangePasswordPress} label={'ALTERAR MINHA SENHA'} width={'80%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
-                    </View>
-                    
-                    
+                    {content}
+             
                 </View>
             </RootContainer>
         );
