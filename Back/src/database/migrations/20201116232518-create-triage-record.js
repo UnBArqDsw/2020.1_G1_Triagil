@@ -358,12 +358,12 @@ module.exports = {
         allowNull: false,
       },
       rigidez: {
-        type: Sequelize.STRING,
+        type: Sequelize.BOOLEAN,
+        defaultValue: false,
         allowNull: false,
       },
       rigidez_notes: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       sinais_de_choque_fainting: {
@@ -385,8 +385,7 @@ module.exports = {
         allowNull: false,
       },
       dor_toracica_notes: {
-        type: Sequelize.BOOLEAN,
-        defaultValue: false,
+        type: Sequelize.STRING,
         allowNull: false,
       },
       disturbio_subito_equilibrio: {

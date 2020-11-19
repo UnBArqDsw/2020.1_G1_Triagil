@@ -130,5 +130,4 @@ class TriageRecord extends Model {
     );
   }
 }
-
 export default TriageRecord;
