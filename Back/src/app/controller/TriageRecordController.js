@@ -24,6 +24,23 @@ class TriageRecordController {
             triageRecord.manchester_priority = 1;
       }
     }
+    if(triageRecord. sore_throat){
+
+      if(triageRecord.comprometimento_vias_aereas_soathroat ){
+          triageRecord.manchester_priority = 5;
+      } else if(triageRecord.pain_soathroat >= 7  || triageRecord.estridor_laringeo){
+          triageRecord.manchester_priority = 4;
+      } else if(triageRecord.viagem_recente || (triageRecord.pain_soathroat >= 4 && triageRecord.pain_soathroat <= 6)
+      || (triageRecord.temperatura_soathroat >= 35.00 && triageRecord.temperatura_soathroat <= 37.8)){
+          triageRecord.manchester_priority = 3;
+      } else if(triageRecord.dificuldade_deglutir || (triageRecord.pain_soathroat >= 1 && triageRecord.pain_soathroat <= 3)
+      ||  triageRecordardencia_garganta){
+          triageRecord.manchester_priority = 2;
+      } else {
+        triageRecord.manchester_priority = 1;
+      }
+
+    }
     const record = await TriageRecord.create(triageRecord);
 
       return res.json({
