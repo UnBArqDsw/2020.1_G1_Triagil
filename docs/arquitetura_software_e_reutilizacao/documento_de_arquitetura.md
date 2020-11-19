@@ -12,6 +12,13 @@ Este documento possui o objetivo de apresentar as estruturas arquiteturais que f
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
+API: Application Programming Interface (Interface de Programação de Aplicativos)
+MVC: Model-View-Controller
+App: Application (Aplicativo)
+Backend: Possibilita o apoio e funcionamento às ações do usuário da máquina.
+Frontend: Parte da aplicação que interage diretamente com o usuário.
+Triagil: Nome dado ao aplicativo desenvolvido nesse projeto.
+
 ### 1.4 Referências
 
 ### 1.5 Visão Geral
@@ -68,6 +75,7 @@ No presente documento serão abordadas as soluções arquiteturais  utilizadas n
 | 18/11 | 1.1.0 | Adição do tópico finalidades | Francisco Heronildo e Débora| 
 | 18/11 | 1.2.0 | Adição do tópico Escopo | Nathalia e Miguel| 
 | 18/11 | 1.3.0 | Adição do tópico  1.5-Visão Geral | Francisco Heronildo e Débora| 
+| 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações  | Lude e Nathalia| 
 
 
 ## Referências Bibliográficas
