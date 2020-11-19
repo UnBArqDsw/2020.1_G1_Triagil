@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import { ActivityIndicator, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 
 import Button from '../components/Button';
@@ -13,7 +13,7 @@ import store from '../reducers/store';
 
 import { login } from '../utils/requests';
 import { storeData, getData } from '../utils/persist';
-
+import {FAILED_LOGIN} from '../utils/strings';
 
 
 const styles = StyleSheet.create({
@@ -38,7 +38,21 @@ const styles = StyleSheet.create({
     signUpButton: {
         marginTop: 20,
         padding: 15,
-    }
+    },
+    failed_login: {
+        justifyContent: 'flex-start',
+        width: '60%',
+        //height: '25%',
+        textAlign: 'center',
+        backgroundColor: '#fff',
+        borderColor: '#FB0C0D',
+        borderWidth: 2,
+        //borderBottomWidth: StyleSheet.hairlineWidth,
+        borderRadius: 20,
+        padding: 10,
+        marginBottom: '5%',
+        fontSize: 18,
+      },
     
 })
 
@@ -76,10 +90,12 @@ class LoginScreen extends React.Component {
         const response = await login(email, password);
 
         if (response.status === 200) {
-            console.log('DEU CERTO:', response.data);
+            //console.log('DEU CERTO:', response.data);
             this.identifyUser(response.data);
         } else {
-            console.log('ERRO:', JSON.stringify(response));
+            //console.log('ERRO:', JSON.stringify(response));
+            this.setState({ loading: false });
+            this.setState({ failed: true });
         }
         
     };
@@ -115,17 +131,13 @@ class LoginScreen extends React.Component {
 
         await this.props.addUserInfo(userInfo);
         
-        //Posteriormente, trocar a passagem de tela para as actions
-        //e realizar a checagem pela store
         response.accountExists.provider === false ? (
-            //setar na store as informações do usuário
             this.props.navigation.reset({
                 index: 0,
                 routes: [{ name: 'PatientHomeScreen' }],
               })
             
         ) : (
-            //setar na store as informações da enfermeira
             this.props.navigation.reset({
                 index: 0,
                 routes: [{ name: 'NurseHomeScreen' }],
@@ -134,8 +146,66 @@ class LoginScreen extends React.Component {
 
     };
 
+    checkString = () => {
+        if (this.state.email !== "" && this.state.password !== "" ){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     
     render () {
+
+        let content;
+
+        if (this.state.loading) {
+
+            content = (
+                <View style={{flex: 4.25, justifyContent: 'center' }}> 
+                    <ActivityIndicator size="large" color="#fff" />
+                </View>
+              );
+
+        } else if (this.state.failed) {
+
+            content = (
+                <View style={{flex: 2.5, alignItems: 'center', justifyContent: 'center', marginBottom: 50}}> 
+                    <Text style={styles.failed_login}>
+                        {FAILED_LOGIN}
+                    </Text>
+                    <TouchableOpacity 
+                        style={styles.signUpButton}
+                        onPress={() => this.setState({failed: false})}
+                        enabled={!this.state.loading}
+                    >
+                        <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> TENTAR NOVAMENTE </Text>
+                    </TouchableOpacity>
+                </View> 
+            );
+
+        } else {
+
+            content = (
+                <View style={{flex: 1.75}}>
+                    <View style={styles.midle}> 
+                        <TriTextInput placeholder={'Email'} icon={UserIcon} onChangeText={this.handleEmailChange}/>
+                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handlePasswordChange} secureTextEntry={true}/>
+                    </View>
+                    <View style={styles.bottom}>
+                        <Button disabled={this.checkString()} onPress={this.handleLoginPress} en label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
+                        <TouchableOpacity 
+                            style={styles.signUpButton}
+                            onPress={this.handleSignInPress}
+                            disabled={this.state.loading}
+                            >
+                            <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            );
+
+        }
 
 
         return (
@@ -144,24 +214,10 @@ class LoginScreen extends React.Component {
                     
                     <View style={styles.top}>
                         <Image style={{width:'80%', height:100}} source={whiteLogo} resizeMode='contain'/>
-                    </View>                        
+                    </View>    
 
-                    <View style={styles.midle}> 
-                        <TriTextInput placeholder={'Email'} icon={UserIcon} onChangeText={this.handleEmailChange}/>
-                        <TriTextInput placeholder={'Senha'} icon={PasswordIcon} onChangeText={this.handlePasswordChange} secureTextEntry={true}/>
-                    </View>
+                    {content}
 
-                    <View style={styles.bottom}>
-                        <Button onPress={this.handleLoginPress} label={'LOGIN'} width={'40%'} labelColor={'#00C0FF'} color={'#fafafa'} />
-                        <TouchableOpacity 
-                            style={styles.signUpButton}
-                            onPress={this.handleSignInPress}
-                            enabled={!this.state.loading}
-                            >
-                            <Text style={{fontSize: 20, color: '#fafafa', fontWeight:'bold'}}> CADASTRAR </Text>
-                        </TouchableOpacity>
-                    </View>
-                    
                 </SafeAreaView>
             </RootContainer>
         );
