@@ -75,7 +75,7 @@ class NursePatientInfoScreen extends React.Component {
     };
 
     handleGoBack = () => {
-        this.props.navigation.goBack();
+        this.props.navigation.navigate('HospitalLine');
     };
 
     handleLogOffPress = async (props) => {
@@ -88,6 +88,11 @@ class NursePatientInfoScreen extends React.Component {
             routes: [{ name: 'Login' }],
         });    
 
+    };
+
+    handleTriagePress = () => {
+        //console.log('PROPS: ', { patient: this.props.route.params.patient});
+        this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };
 
     
@@ -134,7 +139,7 @@ class NursePatientInfoScreen extends React.Component {
                     
                     <View style={styles.bottom}>
                         <Button onPress={this.handleGoBack}label={'VOLTAR'} width={'35%'} labelColor={'#FAFAFA'} color={'#FB0C0D'} />
-                        <Button label={'INICIAR TRIAGEM'} width={'55%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
+                        <Button onPress={this.handleTriagePress}label={'INICIAR TRIAGEM'} width={'55%'} labelColor={'#FAFAFA'} color={'#1BC47D'} />
                     </View>
             
                 </View>
