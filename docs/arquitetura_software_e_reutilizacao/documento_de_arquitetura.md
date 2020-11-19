@@ -15,6 +15,20 @@ Este documento possui o objetivo de apresentar as estruturas arquiteturais que f
 ### 1.4 Referências
 
 ### 1.5 Visão Geral
+No presente documento serão abordadas as soluções arquiteturais  utilizadas no projeto Triagil por meio de explicações detalhadas sobre cada tecnologia utilizada,e a forma como foram aplicados os  padrões de projeto em cada elemento implementado pela equipe bem como propostas de reutilização no Triagil. Para melhor visualização, o conteúdo do documento está distribuído nos seguintes tópicos:
+
+* Representação arquitetural;
+* Metas e Restrições da Arquitetura;
+* Visão de Casos de Uso;
+* Visão Lógica;
+* Pacotes de Design Significativos do Ponto de Vista da Arquitetura;
+* Visão de Processos;
+* Visão de Implantação;
+* Visão de Implementação;
+* Camadas;
+* Visão de Dados;
+* Tamanho e Desempenho;
+* Qualidade.
 
 ## 2 Representação Arquitetural
 
@@ -51,7 +65,9 @@ Este documento possui o objetivo de apresentar as estruturas arquiteturais que f
 | Data | Versão | Descrição | Autor(es) |
 | --- | --- | --- | --- |
 | 17/11 | 1.0.0 | Criação do documento no Pages | Francisco Heronildo|
-| 18/11 | 1.1.0 | Adição do tópico finalidades | Francisco Heronildo| 
+| 18/11 | 1.1.0 | Adição do tópico finalidades | Francisco Heronildo e Débora| 
 | 18/11 | 1.2.0 | Adição do tópico Escopo | Nathalia e Miguel| 
+| 18/11 | 1.3.0 | Adição do tópico  1.5-Visão Geral | Francisco Heronildo e Débora| 
+
 
 ## Referências Bibliográficas
