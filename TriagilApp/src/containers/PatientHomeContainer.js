@@ -11,6 +11,6 @@ const mapStateToProps = (state) => ({
   //provider: state.user.provider,
 });
 
-const ResellerHomeContainer = connect(mapStateToProps, null)(PatientHome);
+const PatientHomeContainer = connect(mapStateToProps, null)(PatientHome);
 
-export default ResellerHomeContainer;
+export default PatientHomeContainer;
