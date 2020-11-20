@@ -25,5 +25,6 @@ routes.get('/patientRecord', PatientRecordController.show);
 
 routes.post('/triageRecord', TriageRecordController.store);
 routes.get('/triageRecord', TriageRecordController.show);
+routes.put('/triageRecord', TriageRecordController.update);
 
 export default routes;
