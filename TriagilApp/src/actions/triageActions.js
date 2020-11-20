@@ -11,7 +11,7 @@ export const headacheTriage = (headacheInfo) => ({
     payload: headacheInfo,
 });
 
-export const sorethroatTriage = (sorethroatInfo) => ({
+export const soreThroatTriage = (sorethroatInfo) => ({
     type: SORETHROAT_TRIAGE,
     payload: sorethroatInfo,
 });

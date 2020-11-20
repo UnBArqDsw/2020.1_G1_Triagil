@@ -10,6 +10,7 @@ import TriTextInput from '../../../components/TriTextInput';
 
 import headacheIcon from '../../../Icons/headache.png';
 
+import store from '../../../reducers/store';
 
 import { eraseData } from '../../../utils/persist';
 
@@ -105,9 +106,52 @@ class HeadacheTriageScreen extends React.Component {
         this.props.navigation.goBack();
     };
 
-    handleSendTriagePress = () => {
+    handleSendTriagePress = async () => {
+        let headacheInfo;
+
+        headacheInfo = {
+            id_patient: this.props.route.params.patient.id_patient,
+            id_nurse: this.props.route.params.patient.id_nurse,
+            id_patient_record: this.props.route.params.patient.id_patient_record,
+            main_complain: this.state.mainComplain,
+            nurse_notes: this.state.nurseNotes,
+            drugs: this.state.drugs,
+            discriminators: this.state.discriminators,
+            has_alergies: this.state.hasAllergy,
+            alergies: this.state.allergies,
+            pain_rule: this.state.painRule,
+            covid19: this.state.covid19,
+            fc: this.state.fc,
+            fr: this.state.fr,
+            pas: this.state.pas,
+            pad: this.state.pad,
+            spo2: this.state.spo2,
+            weight: this.state.weight,
+            headache: true,
+            estadomental_alterado: this.state.hasDisturbedMentalState,
+            estado_mental_alterado_notes: this.state.estado_mental_alterado_notes,
+            sinais_de_choque_headache: this.state.hasShockSigns,
+            sinaisdechoquenotes_headache: this.state.sinaisdechoquenotes_headache,
+            convulsion_headache: this.state.hasConvulsion,
+            sinais_neurologicos_focais_headache: this.state.hasFocalSigns,
+            sinais_neurologicos_focais_notes_headache: this.state.sinais_neurologicos_focais_notes_headache,
+            aumento_subitodador: this.state.hasPainGrowth,
+            aumento_subito_da_dornotes: this.state.aumento_subito_da_dornotes,
+            perda_aguda_completa_visao: this.state.hasGreatVisionLoss,
+            menigismo_headache: this.state.hasMenigism,
+            menigismo_notes_headache: this.state.menigismo_notes_headache,
+            pain_headache: this.state.pain_headache,
+            temperature_headache: this.state.temperature_headache,
+            inconsciencia_headache: this.state.hasUnconsciouness,
+            inconsciencia_notes_headache: this.state.inconsciencia_notes_headache,
+            diminuicao_visao: this.state.hasVisionLoss,
+            nausea_e_vomito: this.state.hasDizzy,
+        };
+
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
+        this.props.headacheTriage(headacheInfo);
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
+        
     };
     
     handleChangeMainComplain = (mainComplain) => {

@@ -111,6 +111,55 @@ class ConvulsionTriageScreen extends React.Component {
     };
 
     handleSendTriagePress = () => {
+        let convulsionInfo;
+
+        convulsionInfo = {
+            id_patient: this.props.route.params.patient.id_patient,
+            id_nurse: this.props.route.params.patient.id_nurse,
+            id_patient_record: this.props.route.params.patient.id_patient_record,
+            main_complain: this.state.mainComplain,
+            nurse_notes: this.state.nurseNotes,
+            drugs: this.state.drugs,
+            discriminators: this.state.discriminators,
+            has_alergies: this.state.hasAllergy,
+            alergies: this.state.allergies,
+            pain_rule: this.state.painRule,
+            covid19: this.state.covid19,
+            fc: this.state.fc,
+            fr: this.state.fr,
+            pas: this.state.pas,
+            pad: this.state.pad,
+            spo2: this.state.spo2,
+            weight: this.state.weight,
+
+            convulsion: true,
+            convulsao_ativa: this.state.hasActiveConvulsion,
+            comprometimento_vias_aereas_convulsion: this.state.hasAerialObstruction,
+            comprometimento_vias_aereas_notes_convulsion: this.state.comprometimento_vias_aereas_notes_convulsion,
+            alteracoes_glicemicas_convulsion: this.state.hasGlicemicAlteration,
+            alteracoes_glicemicas_number_convulsion: this.state.alteracoes_glicemicas_number_convulsion,
+            respiracao_inadequada: this.state.hasDisturbedBreathing,
+            respiracao_inadequada_notes: this.state.respiracao_inadequada_notes,
+            sinais_neurologicos_focais_convulsion: this.state.hasFocalSigns,
+            sinais_neurologicos_focais_notes_convulsion: this.state.sinais_neurologicos_focais_notes_convulsion,
+            crise_convulsiva_reentrante: this.state.hasRepeatedConvulsion,
+            menigismo_convulsion: this.state.hasMenigism,
+            menigismo_notes_convulsion: this.state.menigismo_notes_convulsion,
+            overdose_envenenamento: this.state.hasOverdose,
+            overdose_envenenamento_notes: this.state.overdose_envenenamento_notes,
+            trauma_craniano_recente_convulsion: this.state.hasRecentTrauma,
+            trauma_craniano_recente_notes_convulsion: this.state.trauma_craniano_recente_notes_convulsion,
+            pos_comicial_convulsion: this.state.hasPosComicial,
+            pos_comicial_notes_convulsion: this.state.pos_comicial_notes_convulsion,
+            epilepsia_tratada: this.state.hasTreatedEpilepsy,
+            epilepsia_tratada_notes: this.state.epilepsia_tratada_notes,
+            crise_convulsiva_recente_convulsion: this.state.hasRecentConvulsion,
+            crise_convulsiva_recente_notes_convulsion: this.state.crise_convulsiva_recente_notes_convulsion,            
+
+        };
+
+        this.props.convulsionTriage(convulsionInfo);
+        
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };

@@ -97,6 +97,45 @@ class DiarrheaTriageScreen extends React.Component {
     };
 
     handleSendTriagePress = () => {
+        let diarrheaInfo;
+
+        diarrheaInfo = {
+            id_patient: this.props.route.params.patient.id_patient,
+            id_nurse: this.props.route.params.patient.id_nurse,
+            id_patient_record: this.props.route.params.patient.id_patient_record,
+            main_complain: this.state.mainComplain,
+            nurse_notes: this.state.nurseNotes,
+            drugs: this.state.drugs,
+            discriminators: this.state.discriminators,
+            has_alergies: this.state.hasAllergy,
+            alergies: this.state.allergies,
+            pain_rule: this.state.painRule,
+            covid19: this.state.covid19,
+            fc: this.state.fc,
+            fr: this.state.fr,
+            pas: this.state.pas,
+            pad: this.state.pad,
+            spo2: this.state.spo2,
+            weight: this.state.weight,
+
+            diarrhea: true,
+            vomito_com_sangue: this.state.hasBloodedPuke,
+            vomito_com_sangue_notes: this.state.vomito_com_sangue_notes,
+            dor_abdominal: this.state.hasAbdominalPain,
+            alteracao_consciencia_diarrhea: this.state.alteracao_consciencia_diarrhea,
+            perfusao_periferica: this.state.perfusao_periferica,
+            temperatura_diarrhhea: this.state.temperatura_diarrhhea,
+            fezes_enegrecidas: this.state.hasBlackPoop,
+            fezes_enegrecidas_notes: this.state.fezes_enegrecidas_notes,
+            pain_diarrhea: this.state.pain_diarrhea,
+            desidratacao: this.state.hasDehydration,
+            desidratacao_notes: this.state.desidratacao_notes,
+            vomitos_esparsos: this.state.hasDistantPuke,
+            evento_recente: this.state.hasRecentEvent,
+        };
+
+        this.props.diarrheaTriage(diarrheaInfo);
+
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };

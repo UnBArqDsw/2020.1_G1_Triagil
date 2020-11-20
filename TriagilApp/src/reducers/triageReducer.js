@@ -73,7 +73,7 @@ const triageReducer = (state = initialState.triageRecord, action) => {
         pad: action.payload.pad,
         spo2: action.payload.spo2,
         weight: action.payload.weight,
-        ore_throat: action.payload.ore_throat,
+        sore_throat: action.payload.ore_throat,
         comprometimento_vias_aereas_soathroat: action.payload.comprometimento_vias_aereas_soathroat,
         comprometimento_vias_aereas_notes_soathroat: action.payload.comprometimento_vias_aereas_notes_soathroat,
         pain_soathroat: action.payload.pain_soathroat,

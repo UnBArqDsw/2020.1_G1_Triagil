@@ -120,6 +120,63 @@ class FaintingTriageScreen extends React.Component {
     };
 
     handleSendTriagePress = () => {
+        let faintingInfo;
+        
+        faintingInfo = {
+            id_patient: this.props.route.params.patient.id_patient,
+            id_nurse: this.props.route.params.patient.id_nurse,
+            id_patient_record: this.props.route.params.patient.id_patient_record,
+            main_complain: this.state.mainComplain,
+            nurse_notes: this.state.nurseNotes,
+            drugs: this.state.drugs,
+            discriminators: this.state.discriminators,
+            has_alergies: this.state.hasAllergy,
+            alergies: this.state.allergies,
+            pain_rule: this.state.painRule,
+            covid19: this.state.covid19,
+            fc: this.state.fc,
+            fr: this.state.fr,
+            pas: this.state.pas,
+            pad: this.state.pad,
+            spo2: this.state.spo2,
+            weight: this.state.weight,
+
+            fainting: true,
+            alteracao_consciencia_fainting: this.state.alteracao_consciencia_fainting,
+            comprometimento_vias_aereas_fainting: this.state.hasAerialObstruction,
+            comprometimento_vias_areas_notes_fainting: this.state.comprometimento_vias_aereas_notes_fainting,
+            alteracoes_glicemicas_fainting: this.state.hasGlicemicAlteration,
+            alteracoes_glicemicas_number_fainting: this.state.alteracoes_glicemicas_number_fainting,
+            rigidez: this.state.hasHardness,
+            rigidez_notes: this.state.rigidez_notes,
+            sinais_de_choque_fainting: this.state.hasShockSigns,
+            sinais_de_choque_notes_fainting: this.state.sinais_de_choque_notes_fainting,
+            pulso_anormal: this.state.hasAnormalPulse,
+            dor_toracica: this.state.hasChestPain,
+            dor_toracica_notes: this.state.dor_toracica_notes,
+            disturbio_subito_equilibrio: this.state.hasBalanceDisturb,
+            disturbio_subito_equilibrio_notes: this.state.disturbio_subito_equilibrio_notes,
+            pain_fainting: this.state.pain_fainting,
+            pos_comicial_fanting: this.state.hasPosComicial,
+            pos_comicial_notes_faiting: this.state.pos_comicial_notes_faiting,
+            dispneia_aguda: this.state.hasDispneia,
+            temperature: this.state.temperature,
+            relato_alergia: this.state.hasFaintAllergies,
+            relato_alergia_notes: this.state.relato_alergia_notes,
+            cefaleia: this.state.cefaleia,
+            deficit_neurologico: this.state.hasNeurologicalDeficit,
+            trauma_craniano_recente_fainting: this.state.hasRecentTrauma,
+            trauma_craniano_recente_notes_fainting: this.state.trauma_craniano_recente_notes_fainting,
+            inconsciencia_fainting: this.state.hasUnconsciousness,
+            primeira_convulsao: this.state.hasFirstConvulsion,
+            crise_convulsiva_recente_fainting: this.state.hasRecentConvulsion,
+            crise_convulsiva_recente_notes_fainting: this.state.crise_convulsiva_recente_notes_fainting,
+            parestesia: this.state.hasParestesia,
+            parestesia_notes: this.state.parestesia_notes,
+        };
+
+        this.props.faintingTriage(faintingInfo);
+
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };

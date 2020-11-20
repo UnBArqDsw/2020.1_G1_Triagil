@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux';
 import SoreThroatTriage from '../Screens/Nurse/Triage/SoreThroatTriageScreen';
-import {soreThroatTriage} from '../actions/userActions';
+import {soreThroatTriage} from '../actions/triageActions';
 
 const mapStateToProps = (state) => ({
 

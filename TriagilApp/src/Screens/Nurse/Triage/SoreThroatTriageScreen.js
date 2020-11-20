@@ -97,6 +97,40 @@ class SoreThroatTriageScreen extends React.Component {
     };
 
     handleSendTriagePress = () => {
+        let soreThroatInfo;
+
+        soreThroatInfo = {
+            id_patient: this.props.route.params.patient.id_patient,
+            id_nurse: this.props.route.params.patient.id_nurse,
+            id_patient_record: this.props.route.params.patient.id_patient_record,
+            main_complain: this.state.mainComplain,
+            nurse_notes: this.state.nurseNotes,
+            drugs: this.state.drugs,
+            discriminators: this.state.discriminators,
+            has_alergies: this.state.hasAllergy,
+            alergies: this.state.allergies,
+            pain_rule: this.state.painRule,
+            covid19: this.state.covid19,
+            fc: this.state.fc,
+            fr: this.state.fr,
+            pas: this.state.pas,
+            pad: this.state.pad,
+            spo2: this.state.spo2,
+            weight: this.state.weight,
+            sore_throat: true,
+            comprometimento_vias_aereas_soathroat: this.state.hasAerialObstruction,
+            comprometimento_vias_aereas_notes_soathroat: this.state.comprometimento_vias_aereas_notes_soathroat,
+            pain_soathroat: this.state.pain_soathroat,
+            estridor_laringeo: this.state.hasLaryngealStridor,
+            estridor_laringeo_notes: this.state.estridor_laringeo_notes,
+            viagem_recente: this.state.hasRecentTrip,
+            temperatura_soathroat: this.state.temperatura_soathroat,
+            dificuldade_deglutir: this.state.hasSwallowingDifficulty,
+            ardencia_garganta: this.state.hasBurningSore,
+        };
+
+        this.props.soreThroatTriage(soreThroatInfo);
+
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };
