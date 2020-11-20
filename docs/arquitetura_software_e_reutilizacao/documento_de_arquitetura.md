@@ -112,6 +112,16 @@ forma dos dados."
 
 ### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
+#### 5.2.1 Diagramas de Pacotes
+
+Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma forma de pacotes, a organização e disposição de vários elementos de modelos. Um pacote é um agrupamento de elementos UML relacionados, como diagramas, documentos, classes ou até mesmo outros pacotes. Na imagem abaixo, representamos o Diagrama de Pacotes Geral da aplicação Triagil:
+
+#### Diagrama geral de pacotes
+
+![Diagrama de Pacotes Geral](https://imgur.com/Pr0tf96.png)
+
+* Mais detalhes e restante dos diagramas em: [Diagramas de Pacotes](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/estaticos/diagrama_pacotes.md)
+
 ## 6 Visão de Processos
 
 ## 7 Visão de Implantação
@@ -154,6 +164,8 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |19/11| 1.9.1|Corrigindo versionamento| Débora Vilela |
 |19/11| 2.0.0| Acrescentando tópico de qualidade| Nathalia Lorena |
 |20/11| 2.1.0| Adicionando diagrama de  Casos de uso| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
+|20/11| 2.2.0| Adicionando diagrama geral de pacotes| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
+
 
 
 
