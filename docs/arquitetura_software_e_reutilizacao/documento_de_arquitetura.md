@@ -124,6 +124,21 @@ forma dos dados."
 
 * Back-End: _Model_ e  _Controller_ do projeto
 
+    - Routes.js: arquivo onde estão definidas as rotas do projeto, que permitem a conexão do _front-end_ com o _back-end_.
+
+    - Server.js: Configuração de porta para manter o servidor ativo e instancia _App_.
+
+    - Index.js: realiza todas as conexões das models com o banco de dados.
+
+    - App: contém _controller_ e _model_.
+
+    - Config: configurações padrão (PostgreSQL, _localhost_, Express etc).
+
+    - _Migrations_: código gerado pelo _Sequelize_ onde os dados são inseridos e passam por uma conversão para uma tabela SQL.
+
+    - _Controllers_: manipula os dados e objetos para enviar para o banco de dados.
+
+    - _Models_: onde são definidos todos os atributos das _models_, ou seja, todas as informações tidas de uma determinada tabela do banco de dados.
 
 
 ## 3 Metas e Restrições da Arquitetura
@@ -194,6 +209,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.2.0| Adicionando diagrama geral de pacotes| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
 |20/11| 2.3.0| Adicionando Arquitetura - front-end| Miguel, Débora e Lude|
 |20/11| 2.3.1| Corrigindo erros ortográficos| Débora|
+|20/11| 2.4.0| Adicionando Arquitetura - back-end| Francisco, Vitor e Débora|
 
 
 
