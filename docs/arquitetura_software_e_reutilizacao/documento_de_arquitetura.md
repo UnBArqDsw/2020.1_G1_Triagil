@@ -104,7 +104,8 @@ forma dos dados."
 ## 4 Visão de Casos de Uso
 
 ### 4.1 Visão de Casos de Uso
-
+![est-l-enfemeira](https://imgur.com/1w89OCr.png)
+* Mais detalhes em [Diagrama de Caso de Uso](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_use_case.md)
 ## 5 Visão Lógica
 
 ### 5.1 Visão Geral
@@ -152,6 +153,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |19/12 | 1.9.0| Adicionando conteúdo no subtópico Tecnologias - Back-End| Débora Vilela, Francisco Heronildo e Vitor Alves |
 |19/11| 1.9.1|Corrigindo versionamento| Débora Vilela |
 |19/11| 2.0.0| Acrescentando tópico de qualidade| Nathalia Lorena |
+|20/11| 2.1.0| Adicionando diagrama de  Casos de uso| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
 
 
 
