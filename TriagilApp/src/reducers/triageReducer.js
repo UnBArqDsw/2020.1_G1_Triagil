@@ -22,14 +22,14 @@ const triageReducer = (state = initialState.triageRecord, action) => {
         alergies: "",
         pain_rule: 0,
         covid19: 0,
-        fc: 10.00,
-        fr: 17.00,
-        pas: 115.00,
-        pad: 78.00,
-        spo2: 98.00,
-        weight: 17.00,
-        headache: true,
-        estadomental_alterado: true,
+        fc: 0.00,
+        fr: 0.00,
+        pas: 0.00,
+        pad: 0.00,
+        spo2: 0.00,
+        weight: 0.00,
+        headache: false,
+        estadomental_alterado: false,
         estado_mental_alterado_notes:"",
         sinais_de_choque_headache: false ,
         sinaisdechoquenotes_headache: "",
@@ -127,7 +127,7 @@ const triageReducer = (state = initialState.triageRecord, action) => {
         vomitos_esparsos: false,
         evento_recente: false
 
-      };
+    };
 
     default:
       return state;

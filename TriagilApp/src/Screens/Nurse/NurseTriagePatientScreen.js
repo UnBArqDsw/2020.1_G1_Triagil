@@ -1,13 +1,10 @@
 import React from 'react';
 import { ActivityIndicator, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import { CheckBox } from 'react-native-elements'
 
-import Button from '../../components/Button';
 import Title from '../../components/Title';
 import RootContainer from '../../components/RootContainer';
 import SuperiorOption from '../../components/superiorOption';
-import TriTextInput from '../../components/TriTextInput';
 import ComplainCard from '../../components/ComplainCard';
 
 import headacheIcon from '../../Icons/headache.png';
@@ -45,20 +42,7 @@ const styles = StyleSheet.create({
         marginTop: 20,
         padding: 15,
     },
-    failed_login_to_hospital: {
-        justifyContent: 'flex-start',
-        width: '60%',
-        //height: '25%',
-        textAlign: 'center',
-        backgroundColor: '#fff',
-        borderColor: '#FB0C0D',
-        borderWidth: 2,
-        //borderBottomWidth: StyleSheet.hairlineWidth,
-        borderRadius: 20,
-        padding: 10,
-        marginBottom: '5%',
-        fontSize: 18,
-      },
+
     
 })
 
@@ -90,8 +74,9 @@ class NurseTriageScreen extends React.Component {
     handleHeadachePress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
-            'TriagePatient', { patient: this.props.route.params.patient }
-        );  
+            'HeadacheTriage', { patient: this.props.route.params.patient }
+        ); 
+        this.setState({loading: false});
         
     };
 
@@ -100,6 +85,7 @@ class NurseTriageScreen extends React.Component {
         this.props.navigation.navigate(
             'TriagePatient', { patient: this.props.route.params.patient }
         );  
+        this.setState({loading: false});
         
     };
     handleDiarrheaPress = async () => {
@@ -107,21 +93,24 @@ class NurseTriageScreen extends React.Component {
         this.props.navigation.navigate(
             'TriagePatient', { patient: this.props.route.params.patient }
         );  
-        
+        this.setState({loading: false});
+
     };
     handleDizzyPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
             'TriagePatient', { patient: this.props.route.params.patient }
         );  
-        
+        this.setState({loading: false});
+
     };
     handleConvulsionPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
             'TriagePatient', { patient: this.props.route.params.patient }
         );  
-        
+        this.setState({loading: false});
+
     };
 
 
@@ -143,8 +132,6 @@ class NurseTriageScreen extends React.Component {
                         <ComplainCard onPress={this.handleDiarrheaPress} disabled={this.state.loading} icon={diarrheaIcon} label={'DIARREIA E VÔMITO'} />
                         <ComplainCard onPress={this.handleDizzyPress} disabled={this.state.loading} icon={dizzyIcon} label={'DESMAIO, TONTURA, VERTIGEM'} />
                         <ComplainCard onPress={this.handleConvulsionPress} disabled={this.state.loading} icon={convulsionIcon} label={'CONVULSÃO'} />
-
-                        
 
                     </View>
              

@@ -21,6 +21,9 @@ import NurseTriageContainer from './src/containers/NurseTriagePatientContainer';
 import SignInContainer from './src/containers/SignInContainer';
 import SignInScreen from './src/Screens/SignInScreen';
 
+import HeadacheTriage from './src/Screens/Nurse/Triage/HeadacheTriageScreen';
+
+
 import Background from './src/components/Background';
 
 
@@ -45,6 +48,7 @@ function App() {
             <Stack.Screen name="HospitalLine" component={HospitalLineContainer} />
             <Stack.Screen name="SpecificPatient" component={NursePatientInfoContainer} />
             <Stack.Screen name="TriagePatient" component={NurseTriageContainer} />
+            <Stack.Screen name="HeadacheTriage" component={HeadacheTriage} />
 
           </Stack.Navigator>
         </NavigationContainer>
