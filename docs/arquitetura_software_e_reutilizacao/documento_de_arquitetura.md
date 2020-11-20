@@ -163,6 +163,10 @@ As restrições para o projeto Triagil são as seguintes:
 
 ### 5.1 Visão Geral
 
+[Diagrama de Classes](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/estaticos/diagrama_classes.md
+)
+![Diagrama de Classes ](https://i.imgur.com/VyIhd2K.png)
+
 ### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 #### 5.2.1 Diagramas de Pacotes
@@ -287,6 +291,8 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11|2.7.2| Corrigindo enumeração de tópicos do documento| Débora Vilela |
 |20/11|2.8.0| Acrescentando tópico Visão de Implementação| Débora Vilela |
 |20/11|2.9.0| Acrescentando tópico Visão de Implantação| Débora Vilela |
+|20/11|3.0.0| Acrescentando diagrama no tópico 5.1| Lude Ribeiro, Nathalia Lorena, Francisco Heronildo, Miguel Alves, Vitor Alves, Débora Vilela |
+
 
 
 ## Referências Bibliográficas
