@@ -3,7 +3,6 @@ import TriageRecord from '../models/TriageRecord';
 class TriageRecordController {
   async store(req, res) {
 
-
     let triageRecord = req.body;
 
     if(triageRecord.headache){
@@ -26,7 +25,7 @@ class TriageRecordController {
 
     }
 
-    if(triageRecord. sore_throat){
+    if(triageRecord.sore_throat){
 
       if(triageRecord.comprometimento_vias_aereas_soathroat ){
           triageRecord.manchester_priority = 5;
