@@ -6,15 +6,13 @@ const initialState = {
             cpf: '',
             name: '',
             email: '',
-            password:'',
-            
+            password: '',
         },
         nurse: {
             id: 0,
             cre: '',
             name: '',
             email: '',
-            password: '',
         },
     },
         
