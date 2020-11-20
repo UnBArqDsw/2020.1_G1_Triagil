@@ -148,7 +148,7 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 |19/11 | 1.7.1| Acrescentando mais uma referência no tópico de referências| Nathalia |
 |19/12 | 1.8.0| Adicionando conteúdo no subtópico Tecnologias - Front-End| Débora Vilela, Miguel Alves e Lude Ribeiro |
 |19/12 | 1.9.0| Adicionando conteúdo no subtópico Tecnologias - Back-End| Débora Vilela, Francisco Heronildo e Vitor Alves |
-|19/11| Corrigindo versionamento| Débora Vilela |
+|19/11| 1.9.1|Corrigindo versionamento| Débora Vilela |
 
 
 
