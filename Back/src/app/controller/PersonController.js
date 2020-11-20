@@ -24,8 +24,8 @@ class PersonController {
     const personPasswordhash = personExists.password_hash;
     const checkPasswordPerson = bcryptjs.compare(req.body.password, personPasswordhash);
 
-    if(!checkPasswordPerson){
-      return res.status(400).json({ error: 'Password is wrong!' });
+    if(!(await checkPasswordPerson)){
+      return res.status(400).json({ error: 'Password is wrong!'});
     }
 
     return res.json({
