@@ -47,9 +47,21 @@ class ConvulsionTriageScreen extends React.Component {
         super(props);
 
         this.state = {
-            password: '',
-            loading: false,
-            failed: false,
+            nurseNotes: "",
+            drugs: "",
+            discriminators: "",
+            allergies: "",
+            painRule: 0,
+            covid19: 0,
+            fc: 0.0,
+            fr: 0.0,
+            pas: 0.0,
+            pad: 0.0,
+            spo2: 0.0,
+            weight: 0.0,
+
+
+            
             hasAllergy: false,
             hasActiveConvulsion: false,
             hasAerialObstruction: false,
@@ -63,6 +75,19 @@ class ConvulsionTriageScreen extends React.Component {
             hasPosComicial: false,
             hasTreatedEpilepsy: false,
             hasRecentConvulsion: false,
+
+
+          comprometimento_vias_aereas_notes_convulsion: "",
+          alteracoes_glicemicas_number_convulsion:0,
+          respiracao_inadequada_notes: "",
+          sinais_neurologicos_focais_notes_convulsion: "",
+          menigismo_notes_convulsion:"",
+          overdose_envenenamento_notes: "",
+          trauma_craniano_recente_notes_convulsion: "",
+          pos_comicial_notes_convulsion: "",
+          epilepsia_tratada_notes: "",
+          crise_convulsiva_recente_notes_convulsion: ""
+
 
         };
 
@@ -90,6 +115,100 @@ class ConvulsionTriageScreen extends React.Component {
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };
 
+    handleChangeMainComplain = (mainComplain) => {
+        this.setState({mainComplain});
+    };
+    
+    handleNurseObsChange = (nurseNotes) => {
+        this.setState({nurseNotes});
+    };
+    
+    handleDrugsChange = (drugs) => {
+        this.setState({drugs});
+    };
+
+    handleDiscriminatorsChange = (discriminators) => {
+        this.setState({discriminators});
+    };
+    
+    handleAllergiesChange = (allergies) => {
+        this.setState({allergies: allergies});
+    };
+    
+    handlePainRuleChange = (painRule) => {
+        this.setState({painRule});
+    };
+    
+    handleCovidChange = (covid19) => {
+        this.setState({covid19});
+    };
+    
+
+    handleFCChange = (fc) => {
+        this.setState({fc});
+    };
+
+    handleFRChange = (fr) => {
+        this.setState({fr});
+    };
+    
+    handlePASChange = (pas) => {
+        this.setState({pas});
+    };
+
+    handlePADChange = (pad) => {
+        this.setState({pad});
+    };
+
+    handleSPOChange = (spo2) => {
+        this.setState({spo2});
+    };
+    
+    handleWeightChange = (weight) => {
+        this.setState({weight});
+    }; 
+    ////////////////////////////////////////////////
+
+    handleComprometimento_vias_aereas_notes_convulsionChange = (comprometimento_vias_aereas_notes_convulsion) => {
+        this.setState({comprometimento_vias_aereas_notes_convulsion });
+    };
+
+    handleAlteracoes_glicemicas_number_convulsionChange = (alteracoes_glicemicas_number_convulsion) => {
+        this.setState({alteracoes_glicemicas_number_convulsion});
+    };
+
+    handleRespiracao_inadequada_notesChange = (respiracao_inadequada_notes) => {
+        this.setState({respiracao_inadequada_notes});
+    };
+
+    handleSinais_neurologicos_focais_notes_convulsionChange = (sinais_neurologicos_focais_notes_convulsion) => {
+        this.setState({sinais_neurologicos_focais_notes_convulsion});
+    };
+
+    handleMenigismo_notes_convulsionChange = (menigismo_notes_convulsion) => {
+        this.setState({menigismo_notes_convulsion});
+    };
+
+    handleOverdose_envenenamento_notesChange = (overdose_envenenamento_notes) => {
+        this.setState({overdose_envenenamento_notes});
+    };
+
+    handleTrauma_craniano_recente_notes_convulsionChange = (trauma_craniano_recente_notes_convulsion) => {
+        this.setState({trauma_craniano_recente_notes_convulsion});
+    };
+
+    handlePos_comicial_notes_convulsionChange = (pos_comicial_notes_convulsion) => {
+        this.setState({pos_comicial_notes_convulsion});
+    };
+
+    handleEpilepsia_tratada_notesChange = (epilepsia_tratada_notes) => {
+        this.setState({epilepsia_tratada_notes});
+    };
+
+    handleCrise_convulsiva_recente_notes_convulsionChange = (crise_convulsiva_recente_notes_convulsion) => {
+        this.setState({crise_convulsiva_recente_notes_convulsion});
+    };
+
 
     
     render () {
@@ -102,8 +221,8 @@ class ConvulsionTriageScreen extends React.Component {
                     </View>
                     <View style={{flex: 3, justifyContent: 'center', alignItems: 'center'}}>
 
-                        <TriTextInput placeholder={'Queixa Principal'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Medicamentos'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                    <TriTextInput placeholder={'Queixa Principal'} icon={convulsionIcon} onChangeText={this.handleChangeMainComplain}/>
+                        <TriTextInput placeholder={'Medicamentos'} icon={convulsionIcon} onChangeText={this.handleDrugsChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -113,14 +232,15 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasAllergy}
                             onPress={()=>this.setState({hasAllergy: !this.state.hasAllergy })}
                         />
-                        <TriTextInput placeholder={'Quais alergias?'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'COVID19?\n0 - Não\n1 - Sim'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Frequência Cardíaca(FC)'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Frequência Resíratória(FR)'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(PAS) P. Arterial. Sistólica'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(PAD) P. Arterial. Distólica'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(SPO02%) Sat.Per.O2'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Peso'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Quais alergias?'} icon={convulsionIcon} onChangeText={this.handleAllergiesChange}/>
+                        <TriTextInput placeholder={'Escala de dor'} icon={convulsionIcon} onChangeText={this.handlePainRuleChange}/>
+                        <TriTextInput placeholder={'COVID19?\n0 - Não\n1 - Sim'} icon={convulsionIcon} onChangeText={this.handleCovidChange}/>
+                        <TriTextInput placeholder={'Frequência Cardíaca(FC)'} icon={convulsionIcon} onChangeText={this.handleFCChange}/>
+                        <TriTextInput placeholder={'Frequência Resíratória(FR)'} icon={convulsionIcon} onChangeText={this.handleFRChange}/>
+                        <TriTextInput placeholder={'(PAS) P. Arterial. Sistólica'} icon={convulsionIcon} onChangeText={this.handlePASChange}/>
+                        <TriTextInput placeholder={'(PAD) P. Arterial. Distólica'} icon={convulsionIcon} onChangeText={this.handlePADChange}/>
+                        <TriTextInput placeholder={'(SPO02%) Sat.Per.O2'} icon={convulsionIcon} onChangeText={this.handleSPOChange}/>
+                        <TriTextInput placeholder={'Peso'} icon={convulsionIcon} onChangeText={this.handleWeightChange}/>
                         
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
@@ -140,7 +260,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasAerialObstruction}
                             onPress={()=>this.setState({hasAerialObstruction: !this.state.hasAerialObstruction})}
                         />
-                        <TriTextInput placeholder={'Obs Comprometimento\nVias Aéreas'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Comprometimento\nVias Aéreas'} icon={convulsionIcon} onChangeText={this.handleComprometimento_vias_aereas_notes_convulsionChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -150,7 +270,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasGlicemicAlteration}
                             onPress={()=>this.setState({hasGlicemicAlteration: !this.state.hasGlicemicAlteration})}
                         />
-                        <TriTextInput placeholder={'Alterações Glicêmicas valor'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Alterações Glicêmicas valor'} icon={convulsionIcon} onChangeText={this.handleAlteracoes_glicemicas_number_convulsionChange}/>
 
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
@@ -161,7 +281,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasDisturbedBreathing}
                             onPress={()=>this.setState({hasDisturbedBreathing: !this.state.hasDisturbedBreathing})}
                         />
-                        <TriTextInput placeholder={'Obs Respiração Inadequada'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Respiração Inadequada'} icon={convulsionIcon} onChangeText={this.handleSinais_neurologicos_focais_notes_convulsionChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -171,7 +291,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasFocalSigns}
                             onPress={()=>this.setState({hasFocalSigns: !this.state.hasFocalSigns})}
                         />
-                        <TriTextInput placeholder={'Obs Sinais Neurológicos\nFocais'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Sinais Neurológicos\nFocais'} icon={convulsionIcon} onChangeText={this.handleSinais_neurologicos_focais_notes_convulsionChange}/>
 
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
@@ -191,7 +311,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasMenigism}
                             onPress={()=>this.setState({hasMenigism: !this.state.hasMenigism})}
                         />
-                        <TriTextInput placeholder={'Obs Menigismo'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Menigismo'} icon={convulsionIcon} onChangeText={this.handleMenigismo_notes_convulsionChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -211,7 +331,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasRecentTrauma}
                             onPress={()=>this.setState({hasRecentTrauma: !this.state.hasRecentTrauma})}
                         />
-                        <TriTextInput placeholder={'Obs Trauma\nCraniano Recente'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Trauma\nCraniano Recente'} icon={convulsionIcon} onChangeText={this.handleTrauma_craniano_recente_notes_convulsionChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -221,7 +341,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasPosComicial}
                             onPress={()=>this.setState({hasPosComicial: !this.state.hasPosComicial})}
                         />
-                        <TriTextInput placeholder={'Obs Em \nPós Comicial'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Em \nPós Comicial'} icon={convulsionIcon} onChangeText={this.handlePos_comicial_notes_convulsionChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -231,7 +351,7 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasTreatedEpilepsy}
                             onPress={()=>this.setState({hasTreatedEpilepsy: !this.state.hasTreatedEpilepsy})}
                         />
-                        <TriTextInput placeholder={'Obs Epilepsia Tratada'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Epilepsia Tratada'} icon={convulsionIcon} onChangeText={this.handleEpilepsia_tratada_notesChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -241,11 +361,11 @@ class ConvulsionTriageScreen extends React.Component {
                             checked={this.state.hasRecentConvulsion}
                             onPress={()=>this.setState({hasRecentConvulsion: !this.state.hasRecentConvulsion})}
                         />
-                        <TriTextInput placeholder={'Obs Crise\nConvulsiva Recente'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Crise\nConvulsiva Recente'} icon={convulsionIcon} onChangeText={this.handleCrise_convulsiva_recente_notes_convulsionChange}/>
 
 
-                        <TriTextInput placeholder={'Discriminadores'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Observações da\nenfermeira(o)'} icon={convulsionIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Discriminadores'} icon={convulsionIcon} onChangeText={this.handleDiscriminatorsChange}/>
+                        <TriTextInput placeholder={'Observações da\nenfermeira(o)'} icon={convulsionIcon} onChangeText={this.handleNurseObsChange}/>
 
                     </View>
 

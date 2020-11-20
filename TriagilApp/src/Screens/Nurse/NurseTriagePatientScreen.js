@@ -83,7 +83,7 @@ class NurseTriageScreen extends React.Component {
     handleSoreThroatPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
-            'TriagePatient', { patient: this.props.route.params.patient }
+            'SoreThroatTriage', { patient: this.props.route.params.patient }
         );  
         this.setState({loading: false});
         
@@ -91,7 +91,7 @@ class NurseTriageScreen extends React.Component {
     handleDiarrheaPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
-            'TriagePatient', { patient: this.props.route.params.patient }
+            'DiarrheaTriage', { patient: this.props.route.params.patient }
         );  
         this.setState({loading: false});
 
@@ -99,7 +99,7 @@ class NurseTriageScreen extends React.Component {
     handleDizzyPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
-            'TriagePatient', { patient: this.props.route.params.patient }
+            'FaintingTriage', { patient: this.props.route.params.patient }
         );  
         this.setState({loading: false});
 
@@ -107,7 +107,7 @@ class NurseTriageScreen extends React.Component {
     handleConvulsionPress = async () => {
         this.setState({loading: true});
         this.props.navigation.navigate(
-            'TriagePatient', { patient: this.props.route.params.patient }
+            'ConvulsionTriage', { patient: this.props.route.params.patient }
         );  
         this.setState({loading: false});
 

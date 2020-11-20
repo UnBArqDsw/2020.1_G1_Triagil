@@ -1,12 +1,11 @@
 import React from 'react';
-import { ActivityIndicator, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import { CheckBox } from 'react-native-elements'
 
 import Button from '../../../components/Button';
 import Title from '../../../components/Title';
 import RootContainer from '../../../components/RootContainer';
-import SuperiorOption from '../../../components/superiorOption';
 import TriTextInput from '../../../components/TriTextInput';
 
 import headacheIcon from '../../../Icons/headache.png';
@@ -48,9 +47,21 @@ class HeadacheTriageScreen extends React.Component {
         super(props);
 
         this.state = {
-            password: '',
-            loading: false,
-            failed: false,
+            mainComplain: "",
+            nurseNotes: "",
+            drugs: "",
+            discriminators: "",
+            allergies: "",
+            painRule: 0,
+            covid19: 0,
+            fc: 0.0,
+            fr: 0.0,
+            pas: 0.0,
+            pad: 0.0,
+            spo2: 0.0,
+            weight: 0.0,
+
+
             hasAllergy: false,
             hasDisturbedMentalState: false, 
             hasShockSigns: false,
@@ -62,6 +73,17 @@ class HeadacheTriageScreen extends React.Component {
             hasMenigism: false,
             hasUnconsciouness: false,
             hasDizzy: false,
+
+
+            estado_mental_alterado_notes:"",
+            sinaisdechoquenotes_headache: "",
+            sinais_neurologicos_focais_notes_headache:"",
+            aumento_subito_da_dornotes: "" ,
+            menigismo_notes_headache: "",
+            pain_headache: 0,
+            temperature_headache: 0.0,
+            inconsciencia_notes_headache: "",
+
         };
 
         
@@ -87,9 +109,94 @@ class HeadacheTriageScreen extends React.Component {
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
     };
-
-
     
+    handleChangeMainComplain = (mainComplain) => {
+        this.setState({mainComplain});
+    };
+    
+    handleNurseObsChange = (nurseNotes) => {
+        this.setState({nurseNotes});
+    };
+    
+    handleDrugsChange = (drugs) => {
+        this.setState({drugs});
+    };
+
+    handleDiscriminatorsChange = (discriminators) => {
+        this.setState({discriminators});
+    };
+    
+    handleAllergiesChange = (allergies) => {
+        this.setState({allergies: allergies});
+    };
+    
+    handlePainRuleChange = (painRule) => {
+        this.setState({painRule});
+    };
+    
+    handleCovidChange = (covid19) => {
+        this.setState({covid19});
+    };
+    
+
+    handleFCChange = (fc) => {
+        this.setState({fc});
+    };
+
+    handleFRChange = (fr) => {
+        this.setState({fr});
+    };
+    
+    handlePASChange = (pas) => {
+        this.setState({pas});
+    };
+
+    handlePADChange = (pad) => {
+        this.setState({pad});
+    };
+
+    handleSPOChange = (spo2) => {
+        this.setState({spo2});
+    };
+    
+    handleWeightChange = (weight) => {
+        this.setState({weight});
+    };
+    
+    handleMentalStateChange = (estado_mental_alterado_notes) => {
+        this.setState({estado_mental_alterado_notes});
+    };
+
+    handleShockChange = (sinaisdechoquenotes_headache) => {
+        this.setState({sinaisdechoquenotes_headache});
+    };
+
+    handleFocalChange = (sinais_neurologicos_focais_notes_headache) => {
+        this.setState({sinais_neurologicos_focais_notes_headache});
+    };
+
+    handlePainGrowthChange = (aumento_subito_da_dornotes) => {
+        this.setState({aumento_subito_da_dornotes});
+    };
+
+    handleMenigismChange = (menigismo_notes_headache) => {
+        this.setState({menigismo_notes_headache});
+    };
+
+    handlePainScaleChange = (pain_headache) => {
+        this.setState({pain_headache});
+    }
+
+    handleTemperatureChange = (temperature_headache) => {
+        this.setState({temperature_headache});
+    };
+
+    handleUnconsciounessChange = (inconsciencia_notes_headache) => {
+        this.setState({inconsciencia_notes_headache});
+    };
+
+
+
     render () {
         return (    
             <RootContainer>
@@ -100,8 +207,8 @@ class HeadacheTriageScreen extends React.Component {
                     </View>
                     <View style={{flex: 3, justifyContent: 'center', alignItems: 'center'}}>
 
-                        <TriTextInput placeholder={'Queixa Principal'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Medicamentos'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Queixa Principal'} icon={headacheIcon} onChangeText={this.handleChangeMainComplain}/>
+                        <TriTextInput placeholder={'Medicamentos'} icon={headacheIcon} onChangeText={this.handleDrugsChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -111,15 +218,17 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasAllergy}
                             onPress={()=>this.setState({hasAllergy: !this.state.hasAllergy })}
                         />
-                        <TriTextInput placeholder={'Quais alergias?'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'COVID19?\n0 - Não\n1 - Sim'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Frequência Cardíaca(FC)'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Frequência Resíratória(FR)'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(PAS) P. Arterial. Sistólica'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(PAD) P. Arterial. Distólica'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'(SPO02%) Sat.Per.O2'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Peso'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <CheckBox
+                        <TriTextInput placeholder={'Quais alergias?'} icon={headacheIcon} onChangeText={this.handleAllergiesChange}/>
+                        <TriTextInput placeholder={'Escala de dor'} icon={headacheIcon} onChangeText={this.handlePainRuleChange}/>
+                        <TriTextInput placeholder={'COVID19?\n0 - Não\n1 - Sim'} icon={headacheIcon} onChangeText={this.handleCovidChange}/>
+                        <TriTextInput placeholder={'Frequência Cardíaca(FC)'} icon={headacheIcon} onChangeText={this.handleFCChange}/>
+                        <TriTextInput placeholder={'Frequência Resíratória(FR)'} icon={headacheIcon} onChangeText={this.handleFRChange}/>
+                        <TriTextInput placeholder={'(PAS) P. Arterial. Sistólica'} icon={headacheIcon} onChangeText={this.handlePASChange}/>
+                        <TriTextInput placeholder={'(PAD) P. Arterial. Distólica'} icon={headacheIcon} onChangeText={this.handlePADChange}/>
+                        <TriTextInput placeholder={'(SPO02%) Sat.Per.O2'} icon={headacheIcon} onChangeText={this.handleSPOChange}/>
+                        <TriTextInput placeholder={'Peso'} icon={headacheIcon} onChangeText={this.handleWeightChange}/>
+                       
+                       <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
                             center
@@ -128,7 +237,7 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasDisturbedMentalState}
                             onPress={()=>this.setState({hasDisturbedMentalState: !this.state.hasDisturbedMentalState})}
                         />
-                        <TriTextInput placeholder={'Obs Estado Mental'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Estado Mental'} icon={headacheIcon} onChangeText={this.handleMentalStateChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -138,7 +247,7 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasShockSigns}
                             onPress={()=>this.setState({hasShockSigns: !this.state.hasShockSigns})}
                         />
-                        <TriTextInput placeholder={'Obs Sinais de Choque'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Sinais de Choque'} icon={headacheIcon} onChangeText={this.handleShockChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -157,7 +266,7 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasFocalSigns}
                             onPress={()=>this.setState({hasFocalSigns: !this.state.hasFocalSigns})}
                         />
-                        <TriTextInput placeholder={'Obs Sinais Neurológicos\nFocais'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Sinais Neurológicos\nFocais'} icon={headacheIcon} onChangeText={this.handleFocalChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -167,7 +276,7 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasPainGrowth}
                             onPress={()=>this.setState({hasPainGrowth: !this.state.hasPainGrowth})}
                         />
-                        <TriTextInput placeholder={'Obs Aumento Súbito dor'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Aumento Súbito dor'} icon={headacheIcon} onChangeText={this.handlePainGrowthChange}/>
                         <CheckBox
                         containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                         textStyle={{color:'#64757B'}}
@@ -195,9 +304,9 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasMenigism}
                             onPress={()=>this.setState({hasMenigism: !this.state.hasMenigism})}
                         />
-                        <TriTextInput placeholder={'Obs de Menigismo'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Dor Escala 1-10'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Temperatura'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs de Menigismo'} icon={headacheIcon} onChangeText={this.handleMenigismChange}/>
+                        <TriTextInput placeholder={'Dor Escala 1-10'} icon={headacheIcon} onChangeText={this.handlePainScaleChange}/>
+                        <TriTextInput placeholder={'Temperatura'} icon={headacheIcon} onChangeText={this.handleTemperatureChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -207,7 +316,7 @@ class HeadacheTriageScreen extends React.Component {
                             checked={this.state.hasUnconsciouness}
                             onPress={()=>this.setState({hasUnconsciouness: !this.state.hasUnconsciouness})}
                         />
-                        <TriTextInput placeholder={'Obs Inconsciência'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Obs Inconsciência'} icon={headacheIcon} onChangeText={this.handleUnconsciounessChange}/>
                         <CheckBox
                             containerStyle={{backgroundColor:'#C3ECFA', width: '80%', borderRadius: 15}}
                             textStyle={{color:'#64757B'}}
@@ -218,8 +327,8 @@ class HeadacheTriageScreen extends React.Component {
                             onPress={()=>this.setState({hasDizzy: !this.state.hasDizzy})}
                         />
 
-                        <TriTextInput placeholder={'Discriminadores'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
-                        <TriTextInput placeholder={'Observações da\nenfermeira(o)'} icon={headacheIcon} onChangeText={this.handlePasswordChange}/>
+                        <TriTextInput placeholder={'Discriminadores'} icon={headacheIcon} onChangeText={this.handleDiscriminatorsChange}/>
+                        <TriTextInput placeholder={'Observações da\nenfermeira(o)'} icon={headacheIcon} onChangeText={this.handleNurseObsChange}/>
 
                     </View>
 
