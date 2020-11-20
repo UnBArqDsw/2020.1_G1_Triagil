@@ -166,6 +166,18 @@ Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma form
 
 ## 6 Visão de Processos
 
+### 6.1 Diagrama de Sequência
+
+O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante usada porque incide especificamente sobre linhas da vida, ou os processos e objetos que vivem simultaneamente, e as mensagens trocadas entre eles para desempenhar uma função antes do término da linha da vida.
+
+**Diagrama de Sequência do fluxo principal do Triagil**
+
+![Diagrama de Sequência Fluxo Principal](https://imgur.com/ay8IsKs.png)
+
+* Mais detalhes e restante dos diagramas em: [Diagramas de Sequencia](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_sequencia.md)
+
+
+
 ## 7 Visão de Implantação
 
 ## 8 Visão da Implementação
@@ -210,7 +222,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.3.0| Adicionando Arquitetura - front-end| Miguel, Débora e Lude|
 |20/11| 2.3.1| Corrigindo erros ortográficos| Débora|
 |20/11| 2.4.0| Adicionando Arquitetura - back-end| Francisco, Vitor e Débora|
-
+|20/11| 2.5.0| Adicionando tópico de visão de processos| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 
 
 
