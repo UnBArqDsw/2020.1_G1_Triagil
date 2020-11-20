@@ -1,3 +1,5 @@
+//app types
+export const RESET_SESSION = 'RESET_SESSION';
 //user types
 export const ADD_USER_INFO = 'ADD_USER_INFO';
 
@@ -8,3 +10,13 @@ export const UPDATE_PATIENT_PASSWORD = 'UPDATE_PATIENT_PASSWORD';
 
 //nurse types
 export const ADD_NURSE_INFO = 'ADD_NURSE_INFO';
+export const UPDATE_NURSE_PASSWORD = 'UPDATE_NURSE_PASSWORD';
+
+
+//triage types
+export const RESET_TRIAGE = 'RESET_TRIAGE';
+export const HEADACHE_TRIAGE = 'HEADACHE_TRIAGE';
+export const SORETHROAT_TRIAGE = 'SORETHROAT_TRIAGE';
+export const DIARRHEA_TRIAGE = 'DIARRHEA_TRIAGE';
+export const FAINTING_TRIAGE = 'FAINTING_TRIAGE';
+export const CONVULSION_TRIAGE = 'CONVULSION_TRIAGE';

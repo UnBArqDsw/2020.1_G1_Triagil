@@ -7,17 +7,17 @@ import bcryptjs from 'bcryptjs';
 class LoginController {
 
   async show(req,res) {
-    const patientExists = await Patient.findOne({ where: { email: req.body.email } });
-    if (!patientExists) {
+    const accountExists = await Patient.findOne({ where: { email: req.body.email } });
+    if (!accountExists) {
       //return res.status(400).json({ error: 'Patient does not exists.' });
 
-      const nurseExists = await Nurse.findOne({ where: { email: req.body.email } });
+      const accountExists = await Nurse.findOne({ where: { email: req.body.email } });
 
-      if (!nurseExists) {
+      if (!accountExists) {
         return res.status(400).json({ error: 'Person does not exists.' });
       }
 
-      const nursePasswordhash = nurseExists.password_hash;
+      const nursePasswordhash = accountExists.password_hash;
       const checkPasswordNurse = bcryptjs.compare(req.body.password, nursePasswordhash);
 
       if(!(await checkPasswordNurse)){
@@ -25,12 +25,12 @@ class LoginController {
       }
 
       return res.json({
-        nurseExists
+        accountExists
       });
 
     }
 
-    const patientPasswordhash = patientExists.password_hash;
+    const patientPasswordhash = accountExists.password_hash;
     const checkPasswordPatient = bcryptjs.compare(req.body.password, patientPasswordhash);
 
     if(!(await checkPasswordPatient)){
@@ -38,7 +38,7 @@ class LoginController {
     }
 
     return res.json({
-      patientExists
+      accountExists
     });
 
   }

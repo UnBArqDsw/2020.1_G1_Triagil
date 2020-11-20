@@ -7,8 +7,9 @@ import RootContainer from '../../components/RootContainer';
 import TriTextInput from '../../components/TriTextInput';
 
 import PasswordIcon from '../../Icons/key.png';
-
 import store from '../../reducers/store';
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
 
 })
 
-class PatientChangePassword extends React.Component {
+class NurseChangePassword extends React.Component {
     constructor(props) {
         super(props);
 
@@ -60,21 +61,25 @@ class PatientChangePassword extends React.Component {
 
     handleChangePasswordPress = async () => {
         //disparar a action e transicionar a tela
-        const patientInfo = {
+        const nurseInfo = {
             password: this.state.newPassword,
         }
-        this.props.updatePatientPassword(patientInfo);
-
+        this.props.updateNursePassword(nurseInfo);
+        
+        console.log('OLHA OS PASSWORDS: ', this.state);
         this.props.navigation.reset({
             index: 0,
-            routes: [{ name: 'PatientHomeScreen' }],
+            routes: [{ name: 'NurseHomeScreen' }],
         });    
 
     };
 
     handleCancelPress = async () => {
         //console.log('AQUI A STORE: ',store.getState());
-        this.props.navigation.goBack();
+        this.props.navigation.reset({
+            index: 0,
+            routes: [{ name: 'NurseHomeScreen' }],
+        });
     };
 
     checkString = () => {
@@ -126,5 +131,5 @@ class PatientChangePassword extends React.Component {
     }
 }
 
-export default PatientChangePassword;
+export default NurseChangePassword;
 

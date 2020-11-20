@@ -1,6 +1,6 @@
 
 import { connect } from 'react-redux';
-import NurseHome from '../Screens/Nurse/NurseHomeScreen';
+import HospitalLine from '../Screens/Nurse/HospitalLineScreen';
 import {resetSession} from '../actions/userActions';
 
 const mapStateToProps = (state) => ({
@@ -17,6 +17,6 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-const NurseHomeContainer = connect(mapStateToProps, mapDispatchToProps)(NurseHome);
+const HospitalLineContainer = connect(mapStateToProps, mapDispatchToProps)(HospitalLine);
 
-export default NurseHomeContainer;
+export default HospitalLineContainer;

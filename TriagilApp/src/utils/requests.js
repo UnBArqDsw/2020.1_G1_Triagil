@@ -3,6 +3,8 @@ import MockAdapter from 'axios-mock-adapter';
 import {
   LOGIN,
   SIGNIN,
+  HOSPITALLINE,
+  TRIAGEPATIENT,
 } from './endpoints';
 
 const request = (endpoint, method, object, config) => {
@@ -84,8 +86,41 @@ const signin = async (cpf, name, email, password, mocked) => {
   
     return response;
 };
+
+const hospitalLine = async () => {
+
+  const response = await request(HOSPITALLINE, 'GET', null);
+
+  return response;
+};
+
+const triagePatient = async (triageInfo) => {
+
+  const response = await request(TRIAGEPATIENT, 'POST', triageInfo, null);
+
+  return response;
+};
+
+const getTriagePriority = async () => {
+
+  const response = await request(TRIAGEPATIENT, 'GET', null);
+
+  return response;
+};
+
+
+const changePriority = async (recordInfo) => {
+ 
+  const response = await request(TRIAGEPATIENT, 'PUT', recordInfo, null );
+
+  return response;
+}
   
 export {
   login,
   signin,
+  hospitalLine,
+  triagePatient,
+  getTriagePriority,
+  changePriority
 };
