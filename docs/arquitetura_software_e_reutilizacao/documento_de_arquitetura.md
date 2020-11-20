@@ -188,6 +188,9 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 * Mais detalhes e restante dos diagramas em: [Diagramas de Sequencia](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_sequencia.md)
 
 ##  7 Visão de Implantação
+O diagrama a seguir mostra como os nós físicos do sistema se comunicam.
+![implantacao](https://imgur.com/Rgrkywn.png)
+
 
 ## 8 Visão da Implementação
 
@@ -283,6 +286,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.7.1| Alterando tópico de Tamanho e Desempenho| Nathalia Lorena|
 |20/11|2.7.2| Corrigindo enumeração de tópicos do documento| Débora Vilela |
 |20/11|2.8.0| Acrescentando tópico Visão de Implementação| Débora Vilela |
+|20/11|2.9.0| Acrescentando tópico Visão de Implantação| Débora Vilela |
 
 
 ## Referências Bibliográficas
