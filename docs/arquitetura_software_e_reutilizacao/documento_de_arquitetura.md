@@ -96,8 +96,35 @@ forma dos dados."
 
 * Front-End: _View_ do projeto
 
+    - App.js: arquivo raiz, que chama o restante do aplicativo na parte do front-end. Nele há o provider que recebe a store.
+
+    - Assets: recursos que queira usar. No caso do nosso projeto, foi criada por padrão.
+
+    - Icons e Images: estão armazenados ícones e imagens utilizados no projeto, respectivamente.
+
+    - Screens: onde as telas foram desenvolvidas. A maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.
+
+    - Utils: onde ficam configurações que podem ser úteis e utilizáveis em várias partes do projeto (strings, rotas,etc)
+
+    - Store: A _store_ é uma container/despensa onde deposita informações que são importantes do aplicativo e podem ser acessadas por todo o app. Ela que contém os estados do nosso aplicativo (states) que definimos como importantes para serem compartilhados entre as instâncias. O arquivo Store.js é onde a store é criada; nela é importado o InitialState, que define a Store e como ela vai ser de acordo com o estado inicial definido para ela; 
+
+    - Reducers: parte do código  responsável por atualizar a _store_. Define como _store_ vai funcionar. Exemplo: UserReducer vai atualizar o  Store no objeto User. 
+
+    - Actions: quando disparada, chama o reducer e identifica o precisa ser feito. Instrução sobre qual reducer deve ser ativado, e também carrega a informação que o reducer precisa. 
+
+    - Type.js: responsável por definir o tipo da action. 
+
+    - Containers: envelopam e contém a tela. Responsável por mapear a store para uma tela específica (a partir do método mapStateToProps) e por disparar as actions (mapDispatchToProps).
+
+    - Comunicação com o Back-End: através das requisições com a API Rest. Os dados são obtidos e enviados em JSON numa requisição HTTP.
+
+    - Components:  - components nativos ou desenvolvidos que podem ser usados naquele momento ou futuramente ao sobrescrever o método. Ele pode ser instanciado e tem um código onde os métodos podem ser 
+    reutilizados muitas vezes. Todos os métodos  foram desenvolvidos originais específicos para o Triagil.
+
 
 * Back-End: _Model_ e  _Controller_ do projeto
+
+
 
 ## 3 Metas e Restrições da Arquitetura
 
@@ -165,6 +192,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |19/11| 2.0.0| Acrescentando tópico de qualidade| Nathalia Lorena |
 |20/11| 2.1.0| Adicionando diagrama de  Casos de uso| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
 |20/11| 2.2.0| Adicionando diagrama geral de pacotes| Débora, Nathalia, Francisco, Lude, Miguel e Vitor|
+|20/11| 2.3.0| Adicionando Arquitetura - front-end| Miguel, Débora e Lude|
 
 
 
