@@ -58,9 +58,37 @@ forma dos dados."
 
 ### 2.2 Tecnologias
 
-### 2.2.1  Tecnologias 
+* Front-End:
+
+    -  React Native: utilizada para desenvolvimento do front-end mobile do Triagil, é um _framework_ JavaScript criado para construir a interface do usuário em aplicativos para dispositivos móveis . Criado pelo Facebook baseado no React - que cria interfaces voltadas para aplicações web, o React Native é a solução para criar aplicativos nativos tanto para Android quanto para iOS; isso significa que um único código pode ser escrito e servirá tanto para Android quanto para iOS. Podemos dizer que o React Native:utiliza sintaxe declarativa, parte do processo de integração contínua é baseado em componentes, é multiplataforma.
+
+    - Expo: _framework_ para auxiliar o desenvolvimento de aplicações em React Native para ter interação com o mobile, para _buildar_ e gerar uma versão instalável do aplicativo, desenvolver e fazer o apk para instalar no celular e _deploy_. Pode ser usado para _deploy_ contínuo. Possui códigos prontos de funções para desenvolvimento. Possui a base dele em JavaScript.
+
+    - Yarn e NPM: gerenciador de pacotes que utilizamos. 
+
+    - Redux: tecnologia para aplicar uma arquitetura para o React Native. _Container_ de estados que possibilita que as aplicações possam  compartilhar estados entre telas/instâncias na aplicações onde não poderia ser possível essa comunicação. Se bem utilizado participa do ciclo de vida do React Native.
+
+    - Axios: é um cliente HTTP baseado em _Promises_ para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js.
+
+    - CSS: _Cascading Style Sheets_ ou Folhas de Estilo em Cascata é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML; descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.
+
+
+* Back-End:
+
+    - Node.js:
+    - Express:
+    - Nodemon:
+    - Sucrase:
+    - Sequelize:
+    - PostgreSQL:
+    - Docker:
+    - Bcript.js:
 
 ### 2.3 Arquitetura
+
+* Front-End: _View_ do projeto
+
+* Back-End: _Model_ e  _Controller_ do projeto
 
 ## 3 Metas e Restrições da Arquitetura
 
@@ -109,6 +137,7 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 |19/11 | 1.6.1| Corrigindo e adicionando referências bibliográficas| Débora Vilela |
 |19/11 | 1.7.0| Acrescentando tópico de tamanho e desempenho| Francisco Heronildo e Nathalia |
 |19/11 | 1.7.1| Acrescentando mais uma referência no tópico de referências| Nathalia |
+|19/12 | 1.8.0| Adicionando conteúdo no subtópico Tecnologias - Front-End| Débora Vilela, Miguel Alves e Lude Ribeiro |
 
 
 
@@ -119,3 +148,5 @@ desenvolvimento de aplicações para dispositivos móveis.Recife, CE. C.E.S.A.R 
 
 KRASNER, G. and POPE, S. (1998). **A cookbook for using the model view controller user interface paradigm in smalltalk-80** . In Journal of Object-Orientated Programming,
 volume 1(3), pages 26–49.
+
+CSS. Disponível em: <https://developer.mozilla.org/pt-BR/docs/Web/CSS> Acesso em 19 de novembro de 2020.
