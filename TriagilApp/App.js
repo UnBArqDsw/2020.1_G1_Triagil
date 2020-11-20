@@ -25,7 +25,7 @@ import FaintingTriageContainer from './src/containers/FaintingTriageContainer';
 
 import SignInContainer from './src/containers/SignInContainer';
 import SignInScreen from './src/Screens/SignInScreen';
-
+import TriageClassificationScreen from './src/Screens/Nurse/Triage/TriageClassificationScreen';
 
 import Background from './src/components/Background';
 
@@ -56,6 +56,7 @@ function App() {
             <Stack.Screen name="DiarrheaTriage" component={DiarrheaTriageContainer} />
             <Stack.Screen name="FaintingTriage" component={FaintingTriageContainer} />
             <Stack.Screen name="ConvulsionTriage" component={ConvulsionTriageContainer} />
+            <Stack.Screen name="TriageClassification" component={TriageClassificationScreen} />
 
           </Stack.Navigator>
         </NavigationContainer>

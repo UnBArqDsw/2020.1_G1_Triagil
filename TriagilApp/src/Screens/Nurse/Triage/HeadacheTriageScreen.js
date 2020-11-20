@@ -150,7 +150,7 @@ class HeadacheTriageScreen extends React.Component {
 
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
         this.props.headacheTriage(headacheInfo);
-        //this.props.navigation.navigate('TriagePatient', { patient: this.props.route.params.patient });    
+        this.props.navigation.navigate('TriageClassification');    
         
     };
     
