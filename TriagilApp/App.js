@@ -16,11 +16,10 @@ import PatientDeleteAccountContainer from './src/containers/PatientDeleteAccount
 import NurseChangePasswordContainer from './src/containers/NurseChangePasswordContainer';
 import HospitalLineContainer from './src/containers/HospitalLineContainer';
 import NursePatientInfoContainer from './src/containers/NursePatientInfoContainer';
-
+import NurseTriageContainer from './src/containers/NurseTriagePatientContainer';
 
 import SignInContainer from './src/containers/SignInContainer';
 import SignInScreen from './src/Screens/SignInScreen';
-import TriagePatient from './src/Screens/Nurse/NurseTriagePatientScreen';
 
 import Background from './src/components/Background';
 
@@ -45,7 +44,7 @@ function App() {
             <Stack.Screen name="NurseChangePassword" component={NurseChangePasswordContainer} />
             <Stack.Screen name="HospitalLine" component={HospitalLineContainer} />
             <Stack.Screen name="SpecificPatient" component={NursePatientInfoContainer} />
-            <Stack.Screen name="TriagePatient" component={TriagePatient} />
+            <Stack.Screen name="TriagePatient" component={NurseTriageContainer} />
 
           </Stack.Navigator>
         </NavigationContainer>
