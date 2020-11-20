@@ -131,6 +131,8 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 
 ## 11 Qualidade
 
+A arquitetura utilizada pela equipe contribui com o software em diversos aspectos, como por exemplo a escolha da tecnologia React-Native proporciona o uso enterprise, crescimento exponencial do aplicativo, performance, escalabilidade, testabilidade, interoperabilidade e usabilidade.
+A separação de camadas como propõe o padrão adotado pela equipe ajuda na redução de acoplamento e promove o aumento de coesão nas classes do projeto. Assim, quando o modelo MVC é utilizado, pode facilitar em muito a manutenção do código e sua reutilização em outros projetos.
 
 **Histórico de Versão**
 
@@ -149,6 +151,7 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 |19/12 | 1.8.0| Adicionando conteúdo no subtópico Tecnologias - Front-End| Débora Vilela, Miguel Alves e Lude Ribeiro |
 |19/12 | 1.9.0| Adicionando conteúdo no subtópico Tecnologias - Back-End| Débora Vilela, Francisco Heronildo e Vitor Alves |
 |19/11| 1.9.1|Corrigindo versionamento| Débora Vilela |
+|19/11| 2.0.0| Acrescentando tópico de qualidade| Nathalia Lorena |
 
 
 
