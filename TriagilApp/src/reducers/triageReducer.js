@@ -1,7 +1,7 @@
 import initialState from './initialState';
 import { RESET_TRIAGE} from '../actions/types';
 
-const userReducer = (state = initialState.user, action) => {
+const triageReducer = (state = initialState.triageRecord, action) => {
   console.log(`Action: ${JSON.stringify(action)}`);
 
   if (action === undefined) {
@@ -134,4 +134,4 @@ const userReducer = (state = initialState.user, action) => {
   }
 };
 
-export default userReducer;
+export default triageReducer;
