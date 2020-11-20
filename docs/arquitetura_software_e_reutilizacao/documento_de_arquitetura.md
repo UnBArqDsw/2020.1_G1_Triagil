@@ -143,6 +143,17 @@ forma dos dados."
 
 ## 3 Metas e Restrições da Arquitetura
 
+
+As restrições para o projeto Triagil são as seguintes:
+
+- Para utilizar a aplicação é preciso ter o App instalado e ter conexão com a internet;
+- Temos o objetivo de posteriormente disponibilizar a aplicação nas plataformas Apple Store e Play Store.
+- Utilizamos o framework Expo na versão 3.28.2
+- Para o Front end, será utilizado React-Native, na versão 0.63, que é uma biblioteca JavaScript;
+- A versão do Docker-Compose 1.27;
+- A equipe possui 6 integrantes;
+- Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.
+
 ## 4 Visão de Casos de Uso
 
 ### 4.1 Visão de Casos de Uso
@@ -243,7 +254,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.5.0| Adicionando tópico de visão de processos| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 |20/11| 2.6.0| Adicionando tópico de visão de dados| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 |20/11|2.6.1| Corrigindo enumeração de tópicos do documento| Débora Vilela |
-
+|20/11| 2.7.0| Acrescentando tópico de Metas e Restrições da Arquitetura| Nathalia Lorena|
 
 
 ## Referências Bibliográficas
