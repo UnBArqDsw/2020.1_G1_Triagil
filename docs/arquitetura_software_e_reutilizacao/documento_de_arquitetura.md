@@ -186,8 +186,27 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 
 ### 8.2 Camadas
 
-## 9 Visão de Dados (opcional)
+## 9 Visão de Dados 
 
+* [Person](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Person.js)
+
+![Person](https://imgur.com/8gSbJ4g.png)
+
+* [Patient](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Patient.js)
+
+![Patient](https://imgur.com/yXyeDdp.png)
+
+* [Nurse](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Nurse.js)
+
+![Nurse](https://imgur.com/LAPK5LX.png)
+
+* [PatientRecord](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/PatientRecord.js)
+
+![patientrecord](https://imgur.com/Omi7OyQ.png)
+
+* [TriageRecord](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/TriageRecord.js)
+
+![TriageRecord](https://imgur.com/yOXv7DD.png)
 ## 10 Tamanho e Desempenho
 
 O triagil é uma aplicação mobile com aproximadamente "X" MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
@@ -223,6 +242,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.3.1| Corrigindo erros ortográficos| Débora|
 |20/11| 2.4.0| Adicionando Arquitetura - back-end| Francisco, Vitor e Débora|
 |20/11| 2.5.0| Adicionando tópico de visão de processos| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
+|20/11| 2.6.0| Adicionando tópico de visão de dados| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 
 
 
