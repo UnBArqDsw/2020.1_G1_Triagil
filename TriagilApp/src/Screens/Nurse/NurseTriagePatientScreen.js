@@ -70,7 +70,6 @@ class NurseTriageScreen extends React.Component {
             password: '',
             loading: false,
             failed: false,
-            checked: false,
         };
 
         
@@ -88,10 +87,46 @@ class NurseTriageScreen extends React.Component {
 
     };
 
+    handleHeadachePress = async () => {
+        this.setState({loading: true});
+        this.props.navigation.navigate(
+            'TriagePatient', { patient: this.props.route.params.patient }
+        );  
+        
+    };
+
+    handleSoreThroatPress = async () => {
+        this.setState({loading: true});
+        this.props.navigation.navigate(
+            'TriagePatient', { patient: this.props.route.params.patient }
+        );  
+        
+    };
+    handleDiarrheaPress = async () => {
+        this.setState({loading: true});
+        this.props.navigation.navigate(
+            'TriagePatient', { patient: this.props.route.params.patient }
+        );  
+        
+    };
+    handleDizzyPress = async () => {
+        this.setState({loading: true});
+        this.props.navigation.navigate(
+            'TriagePatient', { patient: this.props.route.params.patient }
+        );  
+        
+    };
+    handleConvulsionPress = async () => {
+        this.setState({loading: true});
+        this.props.navigation.navigate(
+            'TriagePatient', { patient: this.props.route.params.patient }
+        );  
+        
+    };
+
+
     
     render () {
-        const patient = this.props.route.params.patient;
-        console.log('OLHA:',patient);
         return (    
             <RootContainer>
                 <View style={styles.SuperiorOption}>
@@ -103,11 +138,13 @@ class NurseTriageScreen extends React.Component {
                     </View>
                     <View style={{flex: 3, justifyContent: 'center', alignItems: 'center'}}>
 
-                        <ComplainCard icon={headacheIcon} label={'DOR DE CABEÇA'} />
-                        <ComplainCard icon={soreThroatIcon} label={'DOR DE GARGANTA'} />
-                        <ComplainCard icon={diarrheaIcon} label={'DIARREIA E VÔMITO'} />
-                        <ComplainCard icon={dizzyIcon} label={'DESMAIO, TONTURA, VERTIGEM'} />
-                        <ComplainCard icon={convulsionIcon} label={'CONVULSÃO'} />
+                        <ComplainCard onPress={this.handleHeadachePress} disabled={this.state.loading} icon={headacheIcon} label={'DOR DE CABEÇA'} />
+                        <ComplainCard onPress={this.handleSoreThroatPress} disabled={this.state.loading} icon={soreThroatIcon} label={'DOR DE GARGANTA'} />
+                        <ComplainCard onPress={this.handleDiarrheaPress} disabled={this.state.loading} icon={diarrheaIcon} label={'DIARREIA E VÔMITO'} />
+                        <ComplainCard onPress={this.handleDizzyPress} disabled={this.state.loading} icon={dizzyIcon} label={'DESMAIO, TONTURA, VERTIGEM'} />
+                        <ComplainCard onPress={this.handleConvulsionPress} disabled={this.state.loading} icon={convulsionIcon} label={'CONVULSÃO'} />
+
+                        
 
                     </View>
              
