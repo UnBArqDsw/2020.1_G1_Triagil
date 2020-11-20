@@ -35,7 +35,7 @@ Triagil trata-se de uma aplicação que tem como objetivo auxiliar os profission
 
 ## Uso
 
-O Triagil no momento ainda não encontra-se em um ambiente de produção então deverá ser executado localmente. E para isso é necessários seguir os passos que estão disponiveis nos diretórios do [Backend]() e no [Frontend]()
+O Triagil no momento ainda não encontra-se em um ambiente de produção então deverá ser executado localmente. E para isso é necessários seguir os passos que estão disponiveis nos diretórios do [Backend](https://github.com/UnBArqDsw/2020.1_G1_Triagil/tree/master/Back#instala%C3%A7%C3%A3o) e no [Frontend](https://github.com/UnBArqDsw/2020.1_G1_Triagil/tree/master/TriagilApp#instala%C3%A7%C3%A3o)
 
 ## Vídeo
 
