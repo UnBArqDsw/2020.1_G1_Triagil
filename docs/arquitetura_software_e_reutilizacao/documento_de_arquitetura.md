@@ -188,12 +188,36 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 * Mais detalhes e restante dos diagramas em: [Diagramas de Sequencia](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_sequencia.md)
 
 
-
 ## 7 Visão da Implementação
 
 ### 7.1 Visão Geral
+O padrão arquitetural MVC foi escolhido para ser a estrutura padrão do projeto. O projeto foi dividido em duas camadas: _Front-end e Back-end_. 
+
+O _back-end_ do Triagil ficou composto por duas camadas: _Model_ e _Controller_; e o _front-end_ ficou como _View_ do projeto.
 
 ### 7.2 Camadas
+
+* Front-end: 
+
+    *   _**Screens**_: onde as telas foram desenvolvidas. Possui na maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.
+
+    - _**Utils**_: onde ficam configurações que podem ser úteis e utilizáveis em várias partes do projeto (_strings_, rotas,etc)
+
+    - _**Reducers**_: parte do código  responsável por atualizar a _store_. Define como _store_ vai funcionar. Exemplo: _UserReducer_ vai atualizar o  _Store_ no objeto _User_. 
+
+    - _**Actions**_: quando disparada, chama o _reducer_ e identifica o precisa ser feito. Instrução sobre qual _reducer_ deve ser ativado, e também carrega a informação que o reducer precisa. 
+
+    - _**Containers**_: envelopam e contém a tela. Responsável por mapear a _store_ para uma tela específica (a partir do método _mapStateToProps_) e por disparar as _actions (mapDispatchToProps)_.
+
+    - _**Components**_: componentes nativos ou desenvolvidos que podem ser usados naquele momento ou futuramente ao sobrescrever o método. Ele pode ser instanciado e tem um código onde os métodos podem ser 
+    reutilizados muitas vezes. Todos os métodos  foram desenvolvidos originais específicos para o Triagil.
+
+* Back-end: 
+
+    - _**Controllers**_: manipula os dados e objetos para enviar para o banco de dados.
+
+    - _**Models**_: onde são definidos todos os atributos das _models_, ou seja, todas as informações tidas de uma determinada tabela do banco de dados.
+
 
 ## 8 Visão de Dados 
 
@@ -256,6 +280,8 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11|2.6.1| Corrigindo enumeração de tópicos do documento| Débora Vilela |
 |20/11| 2.7.0| Acrescentando tópico de Metas e Restrições da Arquitetura| Nathalia Lorena|
 |20/11| 2.7.1| Alterando tópico de Tamanho e Desempenho| Nathalia Lorena|
+|20/11|2.7.2| Corrigindo enumeração de tópicos do documento| Débora Vilela |
+|20/11|2.8.0| Acrescentando tópico Visão de Implementação| Débora Vilela |
 
 
 ## Referências Bibliográficas
@@ -271,3 +297,8 @@ CSS. Disponível em: <https://developer.mozilla.org/pt-BR/docs/Web/CSS> Acesso e
 Axios. Disponível em: <https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/>. Acesso em 19 de novembro de 2020.
 
 Node.js. Disponível em: <https://www.devmedia.com.br/guia/node-js/40312> Acesso em 19 de novembro de 2020.
+
+
+
+
+
