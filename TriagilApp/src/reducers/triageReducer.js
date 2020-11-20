@@ -1,22 +1,16 @@
-const initialState = {
-    user: {
-        provider: false,
-        patient: {
-            id: 0,
-            cpf: '',
-            name: '',
-            email: '',
-            password: '',
-        },
-        nurse: {
-            id: 0,
-            cre: '',
-            name: '',
-            email: '',
-            password: '',
-        },
-    },
-    triageRecord: {
+import initialState from './initialState';
+import { RESET_TRIAGE} from '../actions/types';
+
+const userReducer = (state = initialState.user, action) => {
+  console.log(`Action: ${JSON.stringify(action)}`);
+
+  if (action === undefined) {
+    return state;
+  }
+
+  switch (action.type) {
+    case RESET_TRIAGE:
+      return {
         id_patient: 0,
         id_nurse: 0,
         id_patient_record: 0,
@@ -132,10 +126,12 @@ const initialState = {
         desidratacao_notes: "",
         vomitos_esparsos: false,
         evento_recente: false
-    }
 
-        
+      };
+
+    default:
+      return state;
+  }
 };
-  
-export default initialState;
-  
+
+export default userReducer;

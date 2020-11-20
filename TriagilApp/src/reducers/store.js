@@ -3,9 +3,11 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import initialState from './initialState';
 
 import userReducer from './userReducer';
+import triageReducer from './triageReducer';
 
 const reducers = combineReducers({
   user: userReducer,
+  triageRecord: triageReducer,
 
 });
 
