@@ -25,6 +25,7 @@ Triagil: Nome dado ao aplicativo desenvolvido nesse projeto.
 * [MVC](https://www.treinaweb.com.br/blog/o-que-e-mvc/)
 * [HubCare](https://cjjcastro.gitlab.io/2019-1-hubcare-docs/project/architecture-document/#1-introducao)
 * [Cafofo](https://desenho-2019.github.io/Wiki/Din%C3%A2mica%20e%20Semin%C3%A1rio%20V/Documento%20de%20Arquitetura/#10-tamanho-e-desempenho)
+* [React-Native](https://reactnative.dev/)
 
 ### 1.5 Visão Geral
 No presente documento serão abordadas as soluções arquiteturais  utilizadas no projeto Triagil por meio de explicações detalhadas sobre cada tecnologia utilizada,e a forma como foram aplicados os  padrões de projeto em cada elemento implementado pela equipe bem como propostas de reutilização no Triagil. Para melhor visualização, o conteúdo do documento está distribuído nos seguintes tópicos:
@@ -93,6 +94,7 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 
 ## 11 Qualidade
 
+
 **Histórico de Versão**
 
 | Data | Versão | Descrição | Autor(es) |
@@ -106,10 +108,12 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 |19/11 | 1.6.0| Adição do tópico referências | Vitor Alves e Nathalia |
 |19/11 | 1.6.1| Corrigindo e adicionando referências bibliográficas| Débora Vilela |
 |19/11 | 1.7.0| Acrescentando tópico de tamanho e desempenho| Francisco Heronildo e Nathalia |
+|19/11 | 1.7.1| Acrescentando mais uma referência no tópico de referências| Nathalia |
 
 
 
 ## Referências Bibliográficas
+
 BARROS, T.; SILVA, M.; ESPÍNOLA,E. **State MVC:** Estendendo o padrao MVC para uso no 
 desenvolvimento de aplicações para dispositivos móveis.Recife, CE. C.E.S.A.R – Centro de Estudos e Sistemas Avanc¸ados do Recife, 2007. 
 
