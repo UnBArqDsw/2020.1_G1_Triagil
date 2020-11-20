@@ -10,9 +10,10 @@ import TriTextInput from '../../../components/TriTextInput';
 
 import headacheIcon from '../../../Icons/headache.png';
 
-import store from '../../../reducers/store';
 
 import { eraseData } from '../../../utils/persist';
+import { triagePatient } from '../../../utils/requests';
+import store from '../../../reducers/store';
 
 const styles = StyleSheet.create({
     SuperiorOption: {
@@ -108,11 +109,12 @@ class HeadacheTriageScreen extends React.Component {
 
     handleSendTriagePress = async () => {
         let headacheInfo;
+        let nurseId = store.getState();
 
         headacheInfo = {
             id_patient: this.props.route.params.patient.id_patient,
-            id_nurse: this.props.route.params.patient.id_nurse,
-            id_patient_record: this.props.route.params.patient.id_patient_record,
+            id_nurse: nurseId.user.nurse.id,
+            id_patient_record: this.props.route.params.patient.id,
             main_complain: this.state.mainComplain,
             nurse_notes: this.state.nurseNotes,
             drugs: this.state.drugs,
@@ -149,7 +151,39 @@ class HeadacheTriageScreen extends React.Component {
         };
 
         //console.log('PROPS: ', { patient: this.props.route.params.patient});
+        await this.props.headacheTriage(headacheInfo);
+        
+        let data;
+        data = store.getState();
+        console.log("DATA: ", this.props.route.params);
+        const response = await triagePatient(data.triageRecord);
+
+
+
+
+
+
+
         this.props.headacheTriage(headacheInfo);
+
+
+
+
+
+
+
+
+
+        this.props.headacheTriage(headacheInfo);
+
+
+
+
+
+
+
+
+
         this.props.navigation.navigate('TriageClassification');    
         
     };

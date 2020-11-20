@@ -4,6 +4,7 @@ import {
   LOGIN,
   SIGNIN,
   HOSPITALLINE,
+  TRIAGEPATIENT,
 } from './endpoints';
 
 const request = (endpoint, method, object, config) => {
@@ -92,9 +93,34 @@ const hospitalLine = async () => {
 
   return response;
 };
+
+const triagePatient = async (triageInfo) => {
+
+  const response = await request(TRIAGEPATIENT, 'POST', triageInfo, null);
+
+  return response;
+};
+
+const getTriagePriority = async () => {
+
+  const response = await request(TRIAGEPATIENT, 'GET', null);
+
+  return response;
+};
+
+
+const changePriority = async (recordInfo) => {
+ 
+  const response = await request(TRIAGEPATIENT, 'PUT', recordInfo, null );
+
+  return response;
+}
   
 export {
   login,
   signin,
   hospitalLine,
+  triagePatient,
+  getTriagePriority,
+  changePriority
 };

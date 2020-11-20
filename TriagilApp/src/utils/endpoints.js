@@ -10,8 +10,11 @@ const SIGNIN = `${SERVER}/patient`;
 
 const HOSPITALLINE = `${SERVER}/patientRecord`;
 
+const TRIAGEPATIENT = `${SERVER}/triageRecord`;
+
 export {
   LOGIN,
   SIGNIN,
-  HOSPITALLINE
+  HOSPITALLINE,
+  TRIAGEPATIENT
 };
