@@ -219,7 +219,7 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 
 ## 9 Tamanho e Desempenho
 
-O triagil é uma aplicação mobile com aproximadamente "X" MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
+O triagil é uma aplicação mobile com aproximadamente 51,1MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
 
 Além disso trabalhamos com requisições de serviços externos que realizam comunicação com o frontend da aplicação, dessa forma, podemos esperar que o desempenho e manutenibilidade sejam garantidos.
 
@@ -255,6 +255,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.6.0| Adicionando tópico de visão de dados| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 |20/11|2.6.1| Corrigindo enumeração de tópicos do documento| Débora Vilela |
 |20/11| 2.7.0| Acrescentando tópico de Metas e Restrições da Arquitetura| Nathalia Lorena|
+|20/11| 2.7.1| Alterando tópico de Tamanho e Desempenho| Nathalia Lorena|
 
 
 ## Referências Bibliográficas
