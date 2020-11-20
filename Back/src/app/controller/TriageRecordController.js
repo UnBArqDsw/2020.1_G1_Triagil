@@ -123,6 +123,15 @@ class TriageRecordController {
       allTriageRecords
     });
   }
+  async update(req,res) {
+    const triageRecordExists = await TriageRecord.findOne({ where: { id: req.body.id } });
+
+    const triageRecordChanged = await triageRecordExists.update({manchester_priority: req.body.manchester_priority });
+
+    return res.json({
+      triageRecordChanged
+    });
+  }
 }
 
 export default new TriageRecordController();
