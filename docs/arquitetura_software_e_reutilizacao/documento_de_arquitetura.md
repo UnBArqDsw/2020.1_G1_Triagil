@@ -187,15 +187,16 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 
 * Mais detalhes e restante dos diagramas em: [Diagramas de Sequencia](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_sequencia.md)
 
+##  7 Visão de Implantação
 
-## 7 Visão da Implementação
+## 8 Visão da Implementação
 
-### 7.1 Visão Geral
+### 8.1 Visão Geral
 O padrão arquitetural MVC foi escolhido para ser a estrutura padrão do projeto. O projeto foi dividido em duas camadas: _Front-end e Back-end_. 
 
 O _back-end_ do Triagil ficou composto por duas camadas: _Model_ e _Controller_; e o _front-end_ ficou como _View_ do projeto.
 
-### 7.2 Camadas
+### 8.2 Camadas
 
 * Front-end: 
 
@@ -219,7 +220,7 @@ O _back-end_ do Triagil ficou composto por duas camadas: _Model_ e _Controller_;
     - _**Models**_: onde são definidos todos os atributos das _models_, ou seja, todas as informações tidas de uma determinada tabela do banco de dados.
 
 
-## 8 Visão de Dados 
+## 9 Visão de Dados 
 
 * [Person](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Person.js)
 
@@ -241,7 +242,7 @@ O _back-end_ do Triagil ficou composto por duas camadas: _Model_ e _Controller_;
 
 ![TriageRecord](https://imgur.com/yOXv7DD.png)
 
-## 9 Tamanho e Desempenho
+## 10 Tamanho e Desempenho
 
 O triagil é uma aplicação mobile com aproximadamente 51,1MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
 
