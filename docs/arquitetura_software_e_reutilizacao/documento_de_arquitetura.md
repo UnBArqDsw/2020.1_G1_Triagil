@@ -75,18 +75,27 @@ forma dos dados."
 
 * Back-End:
 
-    - Node.js:
-    - Express:
-    - Nodemon:
-    - Sucrase:
-    - Sequelize:
-    - PostgreSQL:
-    - Docker:
-    - Bcript.js:
+    - Node.js: Node.js é uma tecnologia usada para executar código JavaScript fora do navegador. o principal bloco de construção de aplicações web com JavaScript e Node.js é o Express. 
+
+    - Express: É com esse framework de caráter minimalista e muito simples de aprender que criamos desde web sites até APIs RESTful com JavaScript. No Triagil teve a função de conexão com as rotas em HTTP. 
+
+    - Nodemon: atualização automática do servidor.
+
+    - Sucrase: interpretador de diversos tipos de JavaScript para interpretar algumas notações no Node.
+
+    - Sequelize: ORM que faz o mapeamento dos dados que cria tabelas, linhas e colunas no banco de dados. Ele pega as informações que são passadas e faz a transição para uma tabela SQL.
+
+    - PostgreSQL: embora não tenhamos utilizado esse banco de dados diretamente, uma imagem dele foi adicionada ao Docker.
+
+    - Docker: utilizado para orquestração de imagens em um projeto. No Triagil, fez a orquestração da imagem do PostgreSQL.
+
+    - Bcript.js: usada para criptografar a senha para ser salva no banco de dados, de forma a proteger dados sensíveis. Nesse caso, é manipulado apenas o REST de um dado sensível, garantido a segurança da informação.
+
 
 ### 2.3 Arquitetura
 
 * Front-End: _View_ do projeto
+
 
 * Back-End: _Model_ e  _Controller_ do projeto
 
@@ -138,6 +147,7 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 |19/11 | 1.7.0| Acrescentando tópico de tamanho e desempenho| Francisco Heronildo e Nathalia |
 |19/11 | 1.7.1| Acrescentando mais uma referência no tópico de referências| Nathalia |
 |19/12 | 1.8.0| Adicionando conteúdo no subtópico Tecnologias - Front-End| Débora Vilela, Miguel Alves e Lude Ribeiro |
+|19/12 | 1.8.0| Adicionando conteúdo no subtópico Tecnologias - Back-End| Débora Vilela, Francisco Heronildo e Vitor Alves |
 
 
 
@@ -150,3 +160,7 @@ KRASNER, G. and POPE, S. (1998). **A cookbook for using the model view controlle
 volume 1(3), pages 26–49.
 
 CSS. Disponível em: <https://developer.mozilla.org/pt-BR/docs/Web/CSS> Acesso em 19 de novembro de 2020.
+
+Axios. Disponível em: <https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/>. Acesso em 19 de novembro de 2020.
+
+Node.js. Disponível em: <https://www.devmedia.com.br/guia/node-js/40312> Acesso em 19 de novembro de 2020.
