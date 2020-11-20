@@ -102,7 +102,7 @@ forma dos dados."
 
     - _Icons_ e _Images_: estão armazenados ícones e imagens utilizados no projeto, respectivamente.
 
-    - _Screens_: onde as telas foram desenvolvidas. A maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.
+    - _Screens_: onde as telas foram desenvolvidas. Possui na maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.
 
     - _Utils_: onde ficam configurações que podem ser úteis e utilizáveis em várias partes do projeto (_strings_, rotas,etc)
 
@@ -178,15 +178,13 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 
 
 
-## 7 Visão de Implantação
+## 7 Visão da Implementação
 
-## 8 Visão da Implementação
+### 7.1 Visão Geral
 
-### 8.1 Visão Geral
+### 7.2 Camadas
 
-### 8.2 Camadas
-
-## 9 Visão de Dados 
+## 8 Visão de Dados 
 
 * [Person](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Person.js)
 
@@ -207,7 +205,8 @@ O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante
 * [TriageRecord](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/TriageRecord.js)
 
 ![TriageRecord](https://imgur.com/yOXv7DD.png)
-## 10 Tamanho e Desempenho
+
+## 9 Tamanho e Desempenho
 
 O triagil é uma aplicação mobile com aproximadamente "X" MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.
 
@@ -243,6 +242,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11| 2.4.0| Adicionando Arquitetura - back-end| Francisco, Vitor e Débora|
 |20/11| 2.5.0| Adicionando tópico de visão de processos| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
 |20/11| 2.6.0| Adicionando tópico de visão de dados| Nathalia, Miguel, Lude, Francisco, Vitor e Débora|
+|20/11|2.6.1| Corrigindo enumeração de tópicos do documento| Débora Vilela |
 
 
 
