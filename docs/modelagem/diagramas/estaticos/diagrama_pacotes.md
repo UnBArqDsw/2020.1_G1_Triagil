@@ -45,6 +45,11 @@ Abaixo, os diagramas de pacotes do projeto Triagil:
 **Data:** 26 de Setembro de 2020 </br>
 **Versão:** [1.0](https:\\unbbr-my.sharepoint.com\personal\160006210_aluno_unb_br\_layouts/15/onedrive.aspx?id=%2Fpersonal%2F160006210%5Faluno%5Funb%5Fbr%2FDocuments%2FADS%20%2D%20GRUPO%5F01%2FDiagramas%2FUML%20%2D%20Est%C3%A1ticos%2FPacotes)
 
+![Diagrama de Pacotes Geral](https://imgur.com/CYIDJ6i.png)
+**Autor(es):** Débora Vilela</br>
+**Data:** 26 de Setembro de 2020 </br>
+**Versão:** [2.0](https:\\unbbr-my.sharepoint.com\personal\160006210_aluno_unb_br\_layouts/15/onedrive.aspx?id=%2Fpersonal%2F160006210%5Faluno%5Funb%5Fbr%2FDocuments%2FADS%20%2D%20GRUPO%5F01%2FDiagramas%2FUML%20%2D%20Est%C3%A1ticos%2FPacotes)
+
 
 **Histórico de Versão**
 

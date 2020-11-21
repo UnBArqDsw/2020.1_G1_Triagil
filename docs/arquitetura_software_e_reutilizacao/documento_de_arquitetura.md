@@ -181,7 +181,7 @@ Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma form
 
 #### Diagrama geral de pacotes
 
-![Diagrama de Pacotes Geral](https://imgur.com/Pr0tf96.png)
+![Diagrama de Pacotes Geral](https://imgur.com/CYIDJ6i.png)
 
 * Mais detalhes e restante dos diagramas em: [Diagramas de Pacotes](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/estaticos/diagrama_pacotes.md)
 
