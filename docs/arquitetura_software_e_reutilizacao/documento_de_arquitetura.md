@@ -60,6 +60,8 @@ forma dos dados."
 
 * Front-End:
 
+    ![front](https://imgur.com/zHUMwoY.png)
+
     -  React Native: utilizada para desenvolvimento do front-end mobile do Triagil, é um _framework_ JavaScript criado para construir a interface do usuário em aplicativos para dispositivos móveis . Criado pelo Facebook baseado no React - que cria interfaces voltadas para aplicações web, o React Native é a solução para criar aplicativos nativos tanto para Android quanto para iOS; isso significa que um único código pode ser escrito e servirá tanto para Android quanto para iOS. Podemos dizer que o React Native:utiliza sintaxe declarativa, parte do processo de integração contínua é baseado em componentes, é multiplataforma.
 
     - Expo: _framework_ para auxiliar o desenvolvimento de aplicações em React Native para ter interação com o mobile, para _buildar_ e gerar uma versão instalável do aplicativo, desenvolver e fazer o apk para instalar no celular e _deploy_. Pode ser usado para _deploy_ contínuo. Possui códigos prontos de funções para desenvolvimento. Possui a base dele em JavaScript.
@@ -74,6 +76,8 @@ forma dos dados."
 
 
 * Back-End:
+
+    ![back](https://imgur.com/TtMRTyo.png)
 
     - Node.js: Node.js é uma tecnologia usada para executar código JavaScript fora do navegador. o principal bloco de construção de aplicações web com JavaScript e Node.js é o Express. 
 
@@ -120,6 +124,8 @@ forma dos dados."
 
     - _Components_: componentes nativos ou desenvolvidos que podem ser usados naquele momento ou futuramente ao sobrescrever o método. Ele pode ser instanciado e tem um código onde os métodos podem ser 
     reutilizados muitas vezes. Todos os métodos  foram desenvolvidos originais específicos para o Triagil.
+
+    ![arqfront](https://imgur.com/O3mfDWD.png)
 
 
 * Back-End: _Model_ e  _Controller_ do projeto
@@ -309,7 +315,7 @@ A ideia do reuso é evitar retrabalho no desenvolvimento de um novo projeto, sem
 |20/11|2.9.0| Acrescentando tópico Visão de Implantação| Débora Vilela |
 |20/11|3.0.0| Acrescentando diagrama no tópico 5.1| Lude Ribeiro, Nathalia Lorena, Francisco Heronildo, Miguel Alves, Vitor Alves, Débora Vilela |
 |20/11|3.1.0| Acrescentando tópico de reutilização de software| Nathalia Lorena |
-
+|20/11| 3.2.0| Adicionando imagens ao documento| Débora Vilela e Miguel |
 
 
 ## Referências Bibliográficas
