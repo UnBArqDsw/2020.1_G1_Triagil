@@ -260,6 +260,22 @@ Além disso trabalhamos com requisições de serviços externos que realizam com
 A arquitetura utilizada pela equipe contribui com o software em diversos aspectos, como por exemplo a escolha da tecnologia React-Native proporciona o uso enterprise, crescimento exponencial do aplicativo, performance, escalabilidade, testabilidade, interoperabilidade e usabilidade.
 A separação de camadas como propõe o padrão adotado pela equipe ajuda na redução de acoplamento e promove o aumento de coesão nas classes do projeto. Assim, quando o modelo MVC é utilizado, pode facilitar em muito a manutenção do código e sua reutilização em outros projetos.
 
+## 12 Reutilização de software
+
+A ideia do reuso é evitar retrabalho no desenvolvimento de um novo projeto, sempre levando em consideração trabalhos anteriores, fazendo com que soluções previamente desenvolvidas sejam aproveitadas e implementadas em novos contextos além de ser considerada uma boa prática de desenvolvimento. Nosso front-end  foi desenvolvido com o propósito de ter a maior quantidade de reutilização possível. Segue abaixo alguns arquivos que foram reutilizados no front-end:
+
+* [HospitalLineScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/HospitalLineScreen.js)
+* [NursePatientInfoScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/NursePatientInfoScreen.js)
+* [NurseTriagePatientScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/NurseTriagePatientScreen.js)
+* [ConvulsionTriageScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/ConvulsionTriageScreen.js)
+* [DiarrheaTriageScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/DiarrheaTriageScreen.js)
+* [FaintingTriageScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/FaintingTriageScreen.js)
+* [HeadacheTriageScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/HeadacheTriageScreen.js)
+* [SoreThroatTriageScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/SoreThroatTriageScreen.js)
+* [TriageClassificationScreen.js](https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/TriageClassificationScreen.js)
+
+
+
 **Histórico de Versão**
 
 | Data | Versão | Descrição | Autor(es) |
@@ -292,6 +308,7 @@ A separação de camadas como propõe o padrão adotado pela equipe ajuda na red
 |20/11|2.8.0| Acrescentando tópico Visão de Implementação| Débora Vilela |
 |20/11|2.9.0| Acrescentando tópico Visão de Implantação| Débora Vilela |
 |20/11|3.0.0| Acrescentando diagrama no tópico 5.1| Lude Ribeiro, Nathalia Lorena, Francisco Heronildo, Miguel Alves, Vitor Alves, Débora Vilela |
+|20/11|3.1.0| Acrescentando tópico de reutilização de software| Nathalia Lorena |
 
 
 
