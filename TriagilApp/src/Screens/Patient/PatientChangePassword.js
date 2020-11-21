@@ -76,6 +76,20 @@ class PatientChangePassword extends React.Component {
         //console.log('AQUI A STORE: ',store.getState());
         this.props.navigation.goBack();
     };
+
+    checkString = () => {
+        if (this.state.password !== "") {
+            //If password is provided
+            if (this.state.newPassword === this.state.confirmNewPassword) {
+                //If the new password matches the newPassword,
+                //then the button can be pressed
+                return false;
+            }
+            return true;            
+        } else {
+            return true;
+        }
+    }
     
 
   
@@ -100,7 +114,7 @@ class PatientChangePassword extends React.Component {
 
                     </View>
                     <View style={styles.bottom}>
-                        <Button onPress={this.handleChangePasswordPress} label={'ALTERAR SENHA'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
+                        <Button disabled={this.checkString()}onPress={this.handleChangePasswordPress} label={'ALTERAR SENHA'} width={'50%'} labelColor={'#fafafa'} color={'#1BC47D'} />
                         <View style={{marginTop: 20}}>
                             <Button style={{marginTop:20}} onPress={this.handleCancelPress} label={'CANCELAR'} width={'40%'} labelColor={'#fafafa'} color={'#FB0C0D'} />
 
