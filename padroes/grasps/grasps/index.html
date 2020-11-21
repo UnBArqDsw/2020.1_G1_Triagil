@@ -1,0 +1,1614 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../images/icon-color-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>GRASPs - Triagil</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="red">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grasps" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="Triagil" class="md-header-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../../images/icon-white.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Triagil
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              GRASPs
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Triagil" class="md-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../../images/icon-white.png" alt="logo">
+
+    </a>
+    Triagil
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
+      Início
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/design_sprint/ds/" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    <label class="md-nav__link" for="nav-2-2">
+      Requisitos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Requisitos" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Requisitos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1" >
+    <label class="md-nav__link" for="nav-2-2-1">
+      Pré-Rastriabilidade
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Pré-Rastriabilidade" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Pré-Rastriabilidade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/pre-rastriabilidade/5w2h/" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/pre-rastriabilidade/rp/" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/pre-rastriabilidade/causa_e_efeito/" class="md-nav__link">
+      Causa-Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/pre-rastriabilidade/mapa_mental/" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2" >
+    <label class="md-nav__link" for="nav-2-2-2">
+      Elicitação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Elicitação" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Elicitação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/elicitacao/brainstorming/" class="md-nav__link">
+      Brainstorming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/elicitacao/entrevista/" class="md-nav__link">
+      Entrevista
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/elicitacao/questionario/" class="md-nav__link">
+      Questionário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/elicitacao/storyboard/" class="md-nav__link">
+      Storyboard
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-3" type="checkbox" id="nav-2-2-3" >
+    <label class="md-nav__link" for="nav-2-2-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/priorizacao/first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/priorizacao/moscow/" class="md-nav__link">
+      MoSCoW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-4" type="checkbox" id="nav-2-2-4" >
+    <label class="md-nav__link" for="nav-2-2-4">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/modelagem/lexico/" class="md-nav__link">
+      Léxicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/modelagem/glossario/" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/modelagem/backlog/" class="md-nav__link">
+      Backlog Inicial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/requisitos/prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/documentos/plano_custos/" class="md-nav__link">
+      Plano de Custos e Esforços
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/documentos/plano_risco/" class="md-nav__link">
+      Plano de Riscos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+    <label class="md-nav__link" for="nav-2-5">
+      Apresentação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Apresentação" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Apresentação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5-1" type="checkbox" id="nav-2-5-1" >
+    <label class="md-nav__link" for="nav-2-5-1">
+      Metodologias
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Metodologias" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        Metodologias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/apresentacao/metodologia/scrum/" class="md-nav__link">
+      Scrum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/apresentacao/metodologia/xp/" class="md-nav__link">
+      Programação Extrema(XP)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../base/modelagem_bpmn/bpmn/" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+    <label class="md-nav__link" for="nav-3-1">
+      UML – Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/estaticos/diagrama_classes/" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/estaticos/diagrama_pacotes/" class="md-nav__link">
+      Diagrama de Pacotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/estaticos/diagrama_componentes/" class="md-nav__link">
+      Diagrama de Componentes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    <label class="md-nav__link" for="nav-3-2">
+      UML – Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/dinamicos/diagrama_sequencia/" class="md-nav__link">
+      Diagrama de Sequências
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/dinamicos/diagrama_comunicacao/" class="md-nav__link">
+      Diagrama de Comunicação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/dinamicos/diagrama_atividade/" class="md-nav__link">
+      Diagrama de Atividades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/dinamicos/diagrama_estado/" class="md-nav__link">
+      Diagrama de Estados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/diagramas/dinamicos/diagrama_use_case/" class="md-nav__link">
+      Diagrama de Caso de Uso
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+    <label class="md-nav__link" for="nav-3-3">
+      Iniciativa Extra
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativa Extra" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativa Extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/extra/backlog/" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/extra/prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3" >
+    <label class="md-nav__link" for="nav-3-3-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/extra/priorizacao/first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../modelagem/extra/priorizacao/moscow/" class="md-nav__link">
+      MoSCoW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GRASPs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      GRASPs
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grasps-foco-criador" class="md-nav__link">
+    GRASPs - Foco: Criador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grasp-foco-especialista" class="md-nav__link">
+    GRASP - Foco: Especialista
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grasps-foco-demais-padroes" class="md-nav__link">
+    GRASPS - Foco: Demais Padrões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polimorfismo" class="md-nav__link">
+    Polimorfismo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixo-acoplamento" class="md-nav__link">
+    Baixo acoplamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alta-coesao" class="md-nav__link">
+    Alta Coesão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlador" class="md-nav__link">
+    Controlador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fabricacaoinvencao-pura" class="md-nav__link">
+    Fabricação/Invenção Pura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indirecao" class="md-nav__link">
+    Indireção
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variacoes-protegidas" class="md-nav__link">
+    Variações protegidas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposta-do-grupo-para-implementacao-no-projeto" class="md-nav__link">
+    Proposta do Grupo para implementação no Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposta do Grupo para implementação no Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#especialista-criador" class="md-nav__link">
+    Especialista Criador
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polimorfismo_1" class="md-nav__link">
+    Polimorfismo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de versões
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gofs/criacionais/" class="md-nav__link">
+      GOF's – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gofs/estruturais/" class="md-nav__link">
+      GOF's – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gofs/comportamentais/" class="md-nav__link">
+      GOF's – Comportamentais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" >
+    <label class="md-nav__link" for="nav-4-5">
+      Toys
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Toys" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        <span class="md-nav__icon md-icon"></span>
+        Toys
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../toys/gofsCriacionais/" class="md-nav__link">
+      Toys – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../toys/gofsEstruturais/" class="md-nav__link">
+      Toys – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../toys/gofsComportamentais/" class="md-nav__link">
+      Toys – Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Arquitetura de Software & Reutilização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Arquitetura de Software & Reutilização" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Arquitetura de Software & Reutilização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../arquitetura_software_e_reutilizacao/documento_de_arquitetura/" class="md-nav__link">
+      Documento de Arquitetura
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grasps-foco-criador" class="md-nav__link">
+    GRASPs - Foco: Criador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grasp-foco-especialista" class="md-nav__link">
+    GRASP - Foco: Especialista
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grasps-foco-demais-padroes" class="md-nav__link">
+    GRASPS - Foco: Demais Padrões
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polimorfismo" class="md-nav__link">
+    Polimorfismo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixo-acoplamento" class="md-nav__link">
+    Baixo acoplamento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alta-coesao" class="md-nav__link">
+    Alta Coesão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlador" class="md-nav__link">
+    Controlador
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fabricacaoinvencao-pura" class="md-nav__link">
+    Fabricação/Invenção Pura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indirecao" class="md-nav__link">
+    Indireção
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variacoes-protegidas" class="md-nav__link">
+    Variações protegidas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposta-do-grupo-para-implementacao-no-projeto" class="md-nav__link">
+    Proposta do Grupo para implementação no Projeto
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposta do Grupo para implementação no Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#especialista-criador" class="md-nav__link">
+    Especialista Criador
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polimorfismo_1" class="md-nav__link">
+    Polimorfismo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    Histórico de versões
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/edit/master/docs/padroes/grasps/grasps.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="grasps">GRASPs</h1>
+<p>Para entender o que são <strong>GRASPs</strong>, primeiro é preciso entender o que são os padrões de projeto. Eles são soluções, princípios, práticas e costumes usados durante o desenvolvimento de um software, codificados em um formato estruturado, descrevendo o problema e a respectiva solução adotada. Ou seja, são uma série de técnicas aplicadas com o intuito de se resolver um problema. De forma bem simples, são justamente essas ações conjuntas tomadas com o objetivo de solucionar uma questão.</p>
+<p><strong>GRASPs</strong> é a sigla utilizada para se referir aos <strong>Padrões de Software para Atribuição de Responsabilidade Geral</strong>, tendo sua formação do inglês <em>"General Responsability Assignment Software Patterns"</em>. E o que isso quer dizer? Que são justamente os padrões adotados para delegar as responsabilidades para as classes corretas.</p>
+<p>Assim, podemos entender qual a proposta geral dos <strong>GRASPs</strong>, pois são um padrão de projeto e com seu foco em atribuir as responsabilidades aos responsáveis devidos, de maneira que possa gerar organização, menor nível de acoplamento, segurança e etc. Porém, ele também se especializa dentro de sua proposta e possui alguns focos interessantes a serem destacados.</p>
+<h2 id="grasps-foco-criador">GRASPs - Foco: Criador</h2>
+<p>O <strong>GRASP</strong> também pode ser feito visto em foco da visão do "Criador", visando assim a classe responsável pela criação de cada instância. Assim, é avaliado a partir desse <strong>GRASP</strong> qual classe deve instânciar corretamente, visto que nem sempre a classe a qual a própria instância pertence será a melhor para ser a classe criadora. Essa avaliação é realizada justamente pelo <strong>GRASP</strong> "Criador" que visa determinar o melhor responsável pela instanciação dentro do determinado contexto do projeto.</p>
+<p>O <strong>GRASP</strong> "Criador" também precisa se atentar para as relações existentes dentro do projeto. Muito semelhante ao diagrama de classes, ele precisa analisar relações como as de TODO/PARTE, por exemplo. Respeitando essas relações as atribuições podem ser feitas de maneira mais coerentes e organizadas para promover inclusive encapsulamentos.</p>
+<ul>
+<li>Exemplo produzido pelo grupo</li>
+</ul>
+<p><img alt="Exemplo de Foco Criador" src="https://i.imgur.com/9OAL8bl.png" /></p>
+<h2 id="grasp-foco-especialista">GRASP - Foco: Especialista</h2>
+<p>O <strong>GRASP</strong> Especialista é um padrão que têm seu foco e preocupação na atribuição das responsabilidades para a entidade mais especialista dentro do contexto. É literalmente atribuir a repsonsabilidade para a entidade mais específica possível. Ele se relaciona de maneira bem próxima com o <strong>GRASP</strong> Criador, afinal todo criador é um especialista. Porém, o contrário não é válido. Assim sendo, ao aplicar um <strong>GRASP</strong> Criador, também se aplicou um <strong>GRASP</strong> Especialista, visto que nos preocupamos em atribuir à entidade mais especializada a responsabilidade de criar as instâncias.</p>
+<p>É a identificação da melhor classe para realizar qualquer ação, não apenas na criação de instâncias, mas de todos os aspectos do sistema.O <strong>GRASP</strong> Especialista é aplicado por todo o código, não somente em um momento ou local específico. Ele é aplicado em todo o código, distribuindo as ações e responsabilidades de maneira eficiente e mais eficaz. Sua utilização gera baixo acoplamento e diminui as dependências entre as classes, trazendo maior coesão. Ele também respeita as relações entre as entidades, como as citadas acima, de TODO/PARTE.</p>
+<ul>
+<li>Exemplo produzido pelo grupo</li>
+</ul>
+<p><img alt="Ex Foco Especialista" src="https://i.imgur.com/RibLzLO.png" /></p>
+<h2 id="grasps-foco-demais-padroes">GRASPS - Foco: Demais Padrões</h2>
+<p>Existem vários outros padrões <strong>GRASP</strong>. E realmente é bastante vasta a extensão que eles podem cobrir, desde sistemas específicas a soluções genéricas, existe bastante liberdade em adotar ou criar um padrão para solucionar uma questão. É o caso da Invenção Pura, que caracteriza o desenvolvimento de um novo padrão que foi aplicado para solucionar uma questão específica. Podemos exemplificar essa Invenção Pura com a criação de uma API para autenticar os usuários de um sistema. A simples necessidade de autenticação já geraria a justificativa para utilizar a Invenção Pura, que no caso se manifesta como a API. Requisitos não funcionais apoiam bastante essa prática, aqui eles dão prerrogativa para fazer o uso dessa técnica.</p>
+<p>Ao utilizarmos <strong>GRASPS</strong> com a noção de especialização, geramos polimorfismos e níveis de abstração (método abstrato). As noções de herança, sobrecarga e sobrescrita começam a fazer sentido e instintivamente aparecem nas ideias dos projetos. E não é nenhuma surpresa constatarmos que Polimorfismo é outro padrão <strong>GRASP</strong>.</p>
+<p>Variações Protegidas caracterizam outro padrão. É necessário uma variação entre as filhas e um encapsulamento para que exista a ideias de variação protegida. Ela vem trazer um baixo acoplamento.</p>
+<ul>
+<li>Exemplo produzido pelo grupo</li>
+</ul>
+<p><img alt="Ex Foco Demais Padroes" src="https://i.imgur.com/Cew2QcP.png" /></p>
+<h2 id="polimorfismo">Polimorfismo</h2>
+<p>O polimorfismo é um padrão que vem da orientação a objetos, no qual ela utilizar subclasses que se originam de uma superclasse, estas subclasses podem invocar metodos da superclasse e sobreescrevelos, pois em cada subclasses ela se comporta de forma diferente. No triagil temos a classe person e suas subclasses nurse e patient, no qual as subclasses vão utilizar o método acessHospital(), porém cada um dos agentes irá utilizar esse método de forma diferente, pois os pacientes não terão o mesmo acesso que a enfermeira.</p>
+<ul>
+<li>Exemplo produzido pelo grupo</li>
+</ul>
+<p><img alt="Ex Polimorfismo" src="https://imgur.com/933Wovj.png" /></p>
+<h2 id="baixo-acoplamento">Baixo acoplamento</h2>
+<p>Esse princípio oferece baixo acoplamento de classes genéricas por serem altamente reutilizadas e sugere o não acoplamento para classes instáveis que precisam ser modificadas constantemente.  Determina que as classes não devem depender de objetos concretos e sim de abstrações, para permitir que haja mudanças sem impacto. </p>
+<h2 id="alta-coesao">Alta Coesão</h2>
+<p>Nesse princípio, é empregado que as classes devem ser manter focadas apenas nas suas próprias responsabilidades, de forma que a classe tem menos métodos, o código fica mais reutilizável e sem margens pra incompreensão.</p>
+<h2 id="controlador">Controlador</h2>
+<p>Atribui a responsabilidade de lidar com os eventos do sistema para uma classe que representa um cenário de caso de uso do sistema. Essa classe fica responsável por controlar as operações e delegar ações para outros objetos, de forma a tirar o controle da interface apresentada ao usuário. </p>
+<h2 id="fabricacaoinvencao-pura">Fabricação/Invenção Pura</h2>
+<p>Nesse princípio, há a criação de uma classe prestadora de serviço e que não possui vínculo com o problema, é uma classe fictícia. Ao utilizar essa classe há ganho de alta coesão e baixo acoplamento das classes, o que facilita o reuso de código.</p>
+<h2 id="indirecao">Indireção</h2>
+<p>Utiliza um objeto intermediário entre componentes fazendo com que não estejam acoplados um ao outro. Funciona em harmonia com o Baixo Acoplamento, facilitando a reutilização.</p>
+<h2 id="variacoes-protegidas">Variações protegidas</h2>
+<p>O padrão variações protegidas protege elementos das variações em outros elementos (objetos, sistemas, subsistemas) envolvendo o foco de instabilidade com uma interface e usando polimorfismo para criar várias implementações desta interface.</p>
+<h2 id="proposta-do-grupo-para-implementacao-no-projeto">Proposta do Grupo para implementação no Projeto</h2>
+<p>Com base em tudo isso listado acima o grupo desenvolveu também um exemplo como proposta para implesmentação no projeto Triagil. O nossos GRASP's de sujestão segue os seguintes focos:</p>
+<h3 id="especialista-criador">Especialista Criador</h3>
+<p><img alt="Ex Sujestao" src="https://i.imgur.com/Cew2QcP.png" /></p>
+<h3 id="polimorfismo_1">Polimorfismo</h3>
+<p><img alt="Ex Sujestao 2" src="https://i.imgur.com/fu8HRCl.png" /></p>
+<hr />
+<h3 id="historico-de-versoes">Histórico de versões</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">10/10/2020</td>
+<td align="center">1.0.0</td>
+<td align="center">Criação do documento no pages</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">10/10/2020</td>
+<td align="center">1.1.0</td>
+<td align="center">Adicionando introdução e definição dos GRASPs</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">10/10/2020</td>
+<td align="center">1.2.0</td>
+<td align="center">Adicionado introducao e descricao de GRASP criador</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">10/10/2020</td>
+<td align="center">1.3.0</td>
+<td align="center">Adicionado descrição de GRASP Especialista</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">10/10/2020</td>
+<td align="center">1.4.0</td>
+<td align="center">Adicionando outros padrões</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">12/10/2020</td>
+<td align="center">1.5.0</td>
+<td align="center">Adicionando exemplo do criador e do especialista</td>
+<td align="center">Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">12/10/2020</td>
+<td align="center">1.6.0</td>
+<td align="center">Adicionando exemplo dos outros padrões e proposta de invenção pura</td>
+<td align="center">Lude Ribeiro</td>
+</tr>
+<tr>
+<td align="center">14/10/2020</td>
+<td align="center">1.7.0</td>
+<td align="center">Adicionando exemplo de proposta de polimorfismo e pequenas correções</td>
+<td align="center">Francisco Heronildo e João Vitor Alves</td>
+</tr>
+<tr>
+<td align="center">15/10/2020</td>
+<td align="center">1.7.1</td>
+<td align="center">Adicionando justificativa do polimorfismo</td>
+<td align="center">João Vitor Alves e  Francisco Heronildo</td>
+</tr>
+<tr>
+<td align="center">16/10/2020</td>
+<td align="center">1.7.2</td>
+<td align="center">Correções de português e adicionando exemplo de GRASP Polimorfismo</td>
+<td align="center">Lude Ribeiro e Miguel Alves</td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">1.8.0</td>
+<td align="center">Adicionando tópicos Baixo Acoplamento e Alta Coesão</td>
+<td align="center">Débora Vilela</td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">1.9.0</td>
+<td align="center">Adicionando tópicos Controlador e Fabricação/Invenção Pura</td>
+<td align="center">Débora Vilela</td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">2.0.0</td>
+<td align="center">Adicionando tópicos Indireção e Variações protegidas</td>
+<td align="center">Débora Vilela</td>
+</tr>
+<tr>
+<td align="center">24/10/2020</td>
+<td align="center">2.1.0</td>
+<td align="center">Adicionando novas referências</td>
+<td align="center">Débora Vilela</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias">Referências</h2>
+<p>SERRANO,Milene. <strong>AULA - GRASPs</strong> , 64 slides. 2020. Material apresentado para Disciplina de Arquitetura de Desenho de Software do curso de engenharia de software da UnB, FGA. Acesso em: 10, Outubro de 2020.</p>
+<p>UFU, <strong>Padrões GRASP</strong>, 2012. 111 slides. Disponível em: <a href="http://www.facom.ufu.br/~bacala/ESOF/05a-Padr%C3%B5es%20GRASP.pdf">http://www.facom.ufu.br/~bacala/ESOF/05a-Padr%C3%B5es%20GRASP.pdf</a>. Acesso em: 14, Outubro de 2020.</p>
+<p>Padrões GRASP - Padrões de atribuir responsabilidades. Disponível em: <a href="https://medium.com/@leandrovboas/padr%C3%B5es-grasp-padr%C3%B5es-de-atribuir-responsabilidades-1ae4351eb204">https://medium.com/@leandrovboas/padr%C3%B5es-grasp-padr%C3%B5es-de-atribuir-responsabilidades-1ae4351eb204</a> </p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../../modelagem/extra/priorizacao/moscow/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                MoSCoW
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../gofs/criacionais/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                GOF's – Criacionais
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 UnB Gama - FGA
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2245 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../images/icon-color-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>Documento de Arquitetura - Triagil</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="red">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documento-de-arquitetura-do-triagil" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Triagil" class="md-header-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../images/icon-white.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Triagil
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Documento de Arquitetura
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Triagil" class="md-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../images/icon-white.png" alt="logo">
+
+    </a>
+    Triagil
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Início
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/design_sprint/ds/" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    <label class="md-nav__link" for="nav-2-2">
+      Requisitos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Requisitos" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Requisitos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1" >
+    <label class="md-nav__link" for="nav-2-2-1">
+      Pré-Rastriabilidade
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Pré-Rastriabilidade" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Pré-Rastriabilidade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/pre-rastriabilidade/5w2h/" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/pre-rastriabilidade/rp/" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/pre-rastriabilidade/causa_e_efeito/" class="md-nav__link">
+      Causa-Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/pre-rastriabilidade/mapa_mental/" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2" >
+    <label class="md-nav__link" for="nav-2-2-2">
+      Elicitação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Elicitação" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Elicitação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/elicitacao/brainstorming/" class="md-nav__link">
+      Brainstorming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/elicitacao/entrevista/" class="md-nav__link">
+      Entrevista
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/elicitacao/questionario/" class="md-nav__link">
+      Questionário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/elicitacao/storyboard/" class="md-nav__link">
+      Storyboard
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-3" type="checkbox" id="nav-2-2-3" >
+    <label class="md-nav__link" for="nav-2-2-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/priorizacao/first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/priorizacao/moscow/" class="md-nav__link">
+      MoSCoW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-4" type="checkbox" id="nav-2-2-4" >
+    <label class="md-nav__link" for="nav-2-2-4">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/modelagem/lexico/" class="md-nav__link">
+      Léxicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/modelagem/glossario/" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/modelagem/backlog/" class="md-nav__link">
+      Backlog Inicial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/requisitos/prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/documentos/plano_custos/" class="md-nav__link">
+      Plano de Custos e Esforços
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/documentos/plano_risco/" class="md-nav__link">
+      Plano de Riscos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+    <label class="md-nav__link" for="nav-2-5">
+      Apresentação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Apresentação" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Apresentação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5-1" type="checkbox" id="nav-2-5-1" >
+    <label class="md-nav__link" for="nav-2-5-1">
+      Metodologias
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Metodologias" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        Metodologias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/apresentacao/metodologia/scrum/" class="md-nav__link">
+      Scrum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/apresentacao/metodologia/xp/" class="md-nav__link">
+      Programação Extrema(XP)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../base/modelagem_bpmn/bpmn/" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+    <label class="md-nav__link" for="nav-3-1">
+      UML – Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/estaticos/diagrama_classes/" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/estaticos/diagrama_pacotes/" class="md-nav__link">
+      Diagrama de Pacotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/estaticos/diagrama_componentes/" class="md-nav__link">
+      Diagrama de Componentes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    <label class="md-nav__link" for="nav-3-2">
+      UML – Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/dinamicos/diagrama_sequencia/" class="md-nav__link">
+      Diagrama de Sequências
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/dinamicos/diagrama_comunicacao/" class="md-nav__link">
+      Diagrama de Comunicação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/dinamicos/diagrama_atividade/" class="md-nav__link">
+      Diagrama de Atividades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/dinamicos/diagrama_estado/" class="md-nav__link">
+      Diagrama de Estados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/diagramas/dinamicos/diagrama_use_case/" class="md-nav__link">
+      Diagrama de Caso de Uso
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
+    <label class="md-nav__link" for="nav-3-3">
+      Iniciativa Extra
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativa Extra" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativa Extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/extra/backlog/" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/extra/prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3" >
+    <label class="md-nav__link" for="nav-3-3-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/extra/priorizacao/first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../modelagem/extra/priorizacao/moscow/" class="md-nav__link">
+      MoSCoW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/grasps/grasps/" class="md-nav__link">
+      GRASPs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/gofs/criacionais/" class="md-nav__link">
+      GOF's – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/gofs/estruturais/" class="md-nav__link">
+      GOF's – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/gofs/comportamentais/" class="md-nav__link">
+      GOF's – Comportamentais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" >
+    <label class="md-nav__link" for="nav-4-5">
+      Toys
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Toys" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        <span class="md-nav__icon md-icon"></span>
+        Toys
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/toys/gofsCriacionais/" class="md-nav__link">
+      Toys – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/toys/gofsEstruturais/" class="md-nav__link">
+      Toys – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../padroes/toys/gofsComportamentais/" class="md-nav__link">
+      Toys – Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    <label class="md-nav__link" for="nav-5">
+      Arquitetura de Software & Reutilização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Arquitetura de Software & Reutilização" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Arquitetura de Software & Reutilização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Documento de Arquitetura
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Documento de Arquitetura
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" class="md-nav__link">
+    1.1 Finalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2 Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-visao-geral" class="md-nav__link">
+    2.1 Visão geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-view-controller" class="md-nav__link">
+    Model-View-Controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-tecnologias" class="md-nav__link">
+    2.2 Tecnologias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-arquitetura" class="md-nav__link">
+    2.3 Arquitetura
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metas-e-restricoes-da-arquitetura" class="md-nav__link">
+    3 Metas e Restrições da Arquitetura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-casos-de-uso" class="md-nav__link">
+    4 Visão de Casos de Uso
+  </a>
+  
+    <nav class="md-nav" aria-label="4 Visão de Casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-visao-de-casos-de-uso" class="md-nav__link">
+    4.1 Visão de Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" class="md-nav__link">
+    5 Visão Lógica
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Visão Lógica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    5.1 Visão Geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura" class="md-nav__link">
+    5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagramas-de-pacotes" class="md-nav__link">
+    5.2.1 Diagramas de Pacotes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-geral-de-pacotes" class="md-nav__link">
+    Diagrama geral de pacotes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processos" class="md-nav__link">
+    6 Visão de Processos
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Visão de Processos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-sequencia" class="md-nav__link">
+    6.1 Diagrama de Sequência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-de-implantacao" class="md-nav__link">
+    7 Visão de Implantação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-da-implementacao" class="md-nav__link">
+    8 Visão da Implementação
+  </a>
+  
+    <nav class="md-nav" aria-label="8 Visão da Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-visao-geral" class="md-nav__link">
+    8.1 Visão Geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-camadas" class="md-nav__link">
+    8.2 Camadas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-visao-de-dados" class="md-nav__link">
+    9 Visão de Dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tamanho-e-desempenho" class="md-nav__link">
+    10 Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-qualidade" class="md-nav__link">
+    11 Qualidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-reutilizacao-de-software" class="md-nav__link">
+    12 Reutilização de software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1 Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-finalidade" class="md-nav__link">
+    1.1 Finalidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-escopo" class="md-nav__link">
+    1.2 Escopo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definicoes-acronimos-e-abreviacoes" class="md-nav__link">
+    1.3 Definições, Acrônimos e Abreviações
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-referencias" class="md-nav__link">
+    1.4 Referências
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-visao-geral" class="md-nav__link">
+    1.5 Visão Geral
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2 Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-visao-geral" class="md-nav__link">
+    2.1 Visão geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-view-controller" class="md-nav__link">
+    Model-View-Controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-tecnologias" class="md-nav__link">
+    2.2 Tecnologias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-arquitetura" class="md-nav__link">
+    2.3 Arquitetura
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metas-e-restricoes-da-arquitetura" class="md-nav__link">
+    3 Metas e Restrições da Arquitetura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visao-de-casos-de-uso" class="md-nav__link">
+    4 Visão de Casos de Uso
+  </a>
+  
+    <nav class="md-nav" aria-label="4 Visão de Casos de Uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-visao-de-casos-de-uso" class="md-nav__link">
+    4.1 Visão de Casos de Uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-visao-logica" class="md-nav__link">
+    5 Visão Lógica
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Visão Lógica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-visao-geral" class="md-nav__link">
+    5.1 Visão Geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura" class="md-nav__link">
+    5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-diagramas-de-pacotes" class="md-nav__link">
+    5.2.1 Diagramas de Pacotes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-geral-de-pacotes" class="md-nav__link">
+    Diagrama geral de pacotes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visao-de-processos" class="md-nav__link">
+    6 Visão de Processos
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Visão de Processos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-diagrama-de-sequencia" class="md-nav__link">
+    6.1 Diagrama de Sequência
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-visao-de-implantacao" class="md-nav__link">
+    7 Visão de Implantação
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-visao-da-implementacao" class="md-nav__link">
+    8 Visão da Implementação
+  </a>
+  
+    <nav class="md-nav" aria-label="8 Visão da Implementação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-visao-geral" class="md-nav__link">
+    8.1 Visão Geral
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-camadas" class="md-nav__link">
+    8.2 Camadas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-visao-de-dados" class="md-nav__link">
+    9 Visão de Dados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tamanho-e-desempenho" class="md-nav__link">
+    10 Tamanho e Desempenho
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-qualidade" class="md-nav__link">
+    11 Qualidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-reutilizacao-de-software" class="md-nav__link">
+    12 Reutilização de software
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/edit/master/docs/arquitetura_software_e_reutilizacao/documento_de_arquitetura.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="documento-de-arquitetura-do-triagil">Documento de Arquitetura do TRIAGIL</h1>
+<h2 id="1-introducao">1 Introdução</h2>
+<h3 id="11-finalidade">1.1 Finalidade</h3>
+<p>Este documento tem como finalidade descrever a arquitetura da aplicação Triagil. Ele apresenta as decisões de arquitetura para o projeto de forma objetiva e clara e também contém informações que servem de guia para desenvolvedores compreenderem o fluxo de informações e tecnologias envolvidas.</p>
+<h3 id="12-escopo">1.2 Escopo</h3>
+<p>Este documento possui o objetivo de apresentar as estruturas arquiteturais que fundamentaram a construção do projeto Triagil, bem como apresentar os padrões adotados pela equipe, tecnologias escolhidas, dessa forma, auxiliando no entendimento da estrutura do projeto.</p>
+<h3 id="13-definicoes-acronimos-e-abreviacoes">1.3 Definições, Acrônimos e Abreviações</h3>
+<ul>
+<li><strong>API:</strong> Application Programming Interface (Interface de Programação de Aplicativos).</li>
+<li><strong>MVC:</strong> Model-View-Controller.</li>
+<li><strong>App:</strong> Application (Aplicativo)</li>
+<li><strong>Back-end:</strong> Possibilita o apoio e funcionamento às ações do usuário da máquina.</li>
+<li><strong>Front-end:</strong> Parte da aplicação que interage diretamente com o usuário.</li>
+<li><strong>Triagil:</strong> Nome dado ao aplicativo desenvolvido nesse projeto.</li>
+</ul>
+<h3 id="14-referencias">1.4 Referências</h3>
+<ul>
+<li><a href="https://refactoring.guru/design-patterns">Design Patterns</a> </li>
+<li><a href="https://www.treinaweb.com.br/blog/o-que-e-mvc/">MVC</a></li>
+<li><a href="https://cjjcastro.gitlab.io/2019-1-hubcare-docs/project/architecture-document/#1-introducao">HubCare</a></li>
+<li><a href="https://desenho-2019.github.io/Wiki/Din%C3%A2mica%20e%20Semin%C3%A1rio%20V/Documento%20de%20Arquitetura/#10-tamanho-e-desempenho">Cafofo</a></li>
+<li><a href="https://reactnative.dev/">React-Native</a></li>
+<li><a href="https://fga-desenho-2019-2.github.io/Wiki/seminario5/arquitetura/">Qr Comer</a></li>
+</ul>
+<h3 id="15-visao-geral">1.5 Visão Geral</h3>
+<p>No presente documento serão abordadas as soluções arquiteturais  utilizadas no projeto Triagil por meio de explicações detalhadas sobre cada tecnologia utilizada,e a forma como foram aplicados os  padrões de projeto em cada elemento implementado pela equipe bem como propostas de reutilização no Triagil. Para melhor visualização, o conteúdo do documento está distribuído nos seguintes tópicos:</p>
+<ul>
+<li>Representação arquitetural;</li>
+<li>Metas e Restrições da Arquitetura;</li>
+<li>Visão de Casos de Uso;</li>
+<li>Visão Lógica;</li>
+<li>Pacotes de Design Significativos do Ponto de Vista da Arquitetura;</li>
+<li>Visão de Processos;</li>
+<li>Visão de Implantação;</li>
+<li>Visão de Implementação;</li>
+<li>Camadas;</li>
+<li>Visão de Dados;</li>
+<li>Tamanho e Desempenho;</li>
+<li>Qualidade.</li>
+</ul>
+<h2 id="2-representacao-arquitetural">2 Representação Arquitetural</h2>
+<h3 id="21-visao-geral">2.1 Visão geral</h3>
+<p><img alt="Visao_arq" src="https://imgur.com/vofa7oU.png" /></p>
+<h3 id="model-view-controller"><strong>Model-View-Controller</strong></h3>
+<p>"O padrão de arquitetura <a href="http://www.tiagobarros.org/docs/SMVC.pdf">MVC</a> <em>(Model-View-Controller)</em> [Krasner and Pope 1998]
+é bastante utilizado no desenvolvimento de aplicações para dispositivos móveis pois determina a separação de uma aplicação em três elementos. O elemento <em>Model</em> é formado por entidades que representam os dados da aplicação. A  <em>View</em> tem por objetivo realizar a
+apresentação destes dados e capturar os eventos do usuário, sendo representada pelas 
+telas. O elemento <em>Controller</em> faz a ligação entre o <em>Model</em> e a <em>View</em>, realizando o tratamento dos
+eventos, atuando sobre a <em>Model</em> e alterando os elementos da <em>View</em> para representar a nova
+forma dos dados."</p>
+<h3 id="22-tecnologias">2.2 Tecnologias</h3>
+<ul>
+<li>
+<p>Front-End:</p>
+<p><img alt="front" src="https://imgur.com/zHUMwoY.png" /></p>
+<ul>
+<li>
+<p>React Native: utilizada para desenvolvimento do front-end mobile do Triagil, é um <em>framework</em> JavaScript criado para construir a interface do usuário em aplicativos para dispositivos móveis . Criado pelo Facebook baseado no React - que cria interfaces voltadas para aplicações web, o React Native é a solução para criar aplicativos nativos tanto para Android quanto para iOS; isso significa que um único código pode ser escrito e servirá tanto para Android quanto para iOS. Podemos dizer que o React Native:utiliza sintaxe declarativa, parte do processo de integração contínua é baseado em componentes, é multiplataforma.</p>
+</li>
+<li>
+<p>Expo: <em>framework</em> para auxiliar o desenvolvimento de aplicações em React Native para ter interação com o mobile, para <em>buildar</em> e gerar uma versão instalável do aplicativo, desenvolver e fazer o apk para instalar no celular e <em>deploy</em>. Pode ser usado para <em>deploy</em> contínuo. Possui códigos prontos de funções para desenvolvimento. Possui a base dele em JavaScript.</p>
+</li>
+<li>
+<p>Yarn e NPM: gerenciador de pacotes que utilizamos. </p>
+</li>
+<li>
+<p>Redux: tecnologia para aplicar uma arquitetura para o React Native. <em>Container</em> de estados que possibilita que as aplicações possam  compartilhar estados entre telas/instâncias na aplicações onde não poderia ser possível essa comunicação. Se bem utilizado participa do ciclo de vida do React Native.</p>
+</li>
+<li>
+<p>Axios: é um cliente HTTP baseado em <em>Promises</em> para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js.</p>
+</li>
+<li>
+<p>CSS: <em>Cascading Style Sheets</em> ou Folhas de Estilo em Cascata é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML; descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Back-End:</p>
+<p><img alt="back" src="https://imgur.com/TtMRTyo.png" /></p>
+<ul>
+<li>
+<p>Node.js: Node.js é uma tecnologia usada para executar código JavaScript fora do navegador. o principal bloco de construção de aplicações web com JavaScript e Node.js é o Express. </p>
+</li>
+<li>
+<p>Express: É com esse framework de caráter minimalista e muito simples de aprender que criamos desde web sites até APIs RESTful com JavaScript. No Triagil teve a função de conexão com as rotas em HTTP. </p>
+</li>
+<li>
+<p>Nodemon: atualização automática do servidor.</p>
+</li>
+<li>
+<p>Sucrase: interpretador de diversos tipos de JavaScript para interpretar algumas notações no Node.</p>
+</li>
+<li>
+<p>Sequelize: ORM que faz o mapeamento dos dados que cria tabelas, linhas e colunas no banco de dados. Ele pega as informações que são passadas e faz a transição para uma tabela SQL.</p>
+</li>
+<li>
+<p>PostgreSQL: embora não tenhamos utilizado esse banco de dados diretamente, uma imagem dele foi adicionada ao Docker.</p>
+</li>
+<li>
+<p>Docker: utilizado para orquestração de imagens em um projeto. No Triagil, fez a orquestração da imagem do PostgreSQL.</p>
+</li>
+<li>
+<p>Bcript.js: usada para criptografar a senha para ser salva no banco de dados, de forma a proteger dados sensíveis. Nesse caso, é manipulado apenas o REST de um dado sensível, garantido a segurança da informação.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-arquitetura">2.3 Arquitetura</h3>
+<ul>
+<li>
+<p>Front-End: <em>View</em> do projeto</p>
+<ul>
+<li>
+<p>App.js: arquivo raiz, que chama o restante do aplicativo na parte do <em>front-end</em>. Nele há o <em>provider</em> que recebe a <em>store</em>.</p>
+</li>
+<li>
+<p><em>Assets</em>: recursos que queira usar. No caso do nosso projeto, foi criada por padrão.</p>
+</li>
+<li>
+<p><em>Icons</em> e <em>Images</em>: estão armazenados ícones e imagens utilizados no projeto, respectivamente.</p>
+</li>
+<li>
+<p><em>Screens</em>: onde as telas foram desenvolvidas. Possui na maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.</p>
+</li>
+<li>
+<p><em>Utils</em>: onde ficam configurações que podem ser úteis e utilizáveis em várias partes do projeto (<em>strings</em>, rotas,etc)</p>
+</li>
+<li>
+<p>Store: A <em>store</em> é uma container/despensa onde deposita informações que são importantes do aplicativo e podem ser acessadas por todo o app. Ela que contém os estados do nosso aplicativo (states) que definimos como importantes para serem compartilhados entre as instâncias. O arquivo Store.js é onde a <em>store</em> é criada; nela é importado o <em>InitialState</em>, que define a <em>Store</em> e como ela vai ser de acordo com o estado inicial definido para ela; </p>
+</li>
+<li>
+<p><em>Reducers</em>: parte do código  responsável por atualizar a <em>store</em>. Define como <em>store</em> vai funcionar. Exemplo: <em>UserReducer</em> vai atualizar o  <em>Store</em> no objeto <em>User</em>. </p>
+</li>
+<li>
+<p><em>Actions</em>: quando disparada, chama o <em>reducer</em> e identifica o precisa ser feito. Instrução sobre qual <em>reducer</em> deve ser ativado, e também carrega a informação que o reducer precisa. </p>
+</li>
+<li>
+<p>Type.js: responsável por definir o tipo da <em>action</em>. </p>
+</li>
+<li>
+<p><em>Containers</em>: envelopam e contém a tela. Responsável por mapear a <em>store</em> para uma tela específica (a partir do método <em>mapStateToProps</em>) e por disparar as <em>actions (mapDispatchToProps)</em>.</p>
+</li>
+<li>
+<p>Comunicação com o <em>Back-End</em>: através das requisições com a API Rest. Os dados são obtidos e enviados em JSON numa requisição HTTP.</p>
+</li>
+<li>
+<p><em>Components</em>: componentes nativos ou desenvolvidos que podem ser usados naquele momento ou futuramente ao sobrescrever o método. Ele pode ser instanciado e tem um código onde os métodos podem ser 
+reutilizados muitas vezes. Todos os métodos  foram desenvolvidos originais específicos para o Triagil.</p>
+</li>
+</ul>
+<p><img alt="arqfront" src="https://imgur.com/O3mfDWD.png" /></p>
+</li>
+<li>
+<p>Back-End: <em>Model</em> e  <em>Controller</em> do projeto</p>
+<ul>
+<li>
+<p>Routes.js: arquivo onde estão definidas as rotas do projeto, que permitem a conexão do <em>front-end</em> com o <em>back-end</em>.</p>
+</li>
+<li>
+<p>Server.js: Configuração de porta para manter o servidor ativo e instancia <em>App</em>.</p>
+</li>
+<li>
+<p>Index.js: realiza todas as conexões das models com o banco de dados.</p>
+</li>
+<li>
+<p>App: contém <em>controller</em> e <em>model</em>.</p>
+</li>
+<li>
+<p>Config: configurações padrão (PostgreSQL, <em>localhost</em>, Express etc).</p>
+</li>
+<li>
+<p><em>Migrations</em>: código gerado pelo <em>Sequelize</em> onde os dados são inseridos e passam por uma conversão para uma tabela SQL.</p>
+</li>
+<li>
+<p><em>Controllers</em>: manipula os dados e objetos para enviar para o banco de dados.</p>
+</li>
+<li>
+<p><em>Models</em>: onde são definidos todos os atributos das <em>models</em>, ou seja, todas as informações tidas de uma determinada tabela do banco de dados.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-metas-e-restricoes-da-arquitetura">3 Metas e Restrições da Arquitetura</h2>
+<p>As restrições para o projeto Triagil são as seguintes:</p>
+<ul>
+<li>Para utilizar a aplicação é preciso ter o App instalado e ter conexão com a internet;</li>
+<li>Temos o objetivo de posteriormente disponibilizar a aplicação nas plataformas Apple Store e Play Store.</li>
+<li>Utilizamos o framework Expo na versão 3.28.2</li>
+<li>Para o Front end, será utilizado React-Native, na versão 0.63, que é uma biblioteca JavaScript;</li>
+<li>A versão do Docker-Compose 1.27;</li>
+<li>A equipe possui 6 integrantes;</li>
+<li>Tempo limitado à aproximadamente 4 meses, que é o tempo de duração da disciplina.</li>
+</ul>
+<h2 id="4-visao-de-casos-de-uso">4 Visão de Casos de Uso</h2>
+<h3 id="41-visao-de-casos-de-uso">4.1 Visão de Casos de Uso</h3>
+<p><img alt="est-l-enfemeira" src="https://imgur.com/1w89OCr.png" />
+* Mais detalhes em <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_use_case.md">Diagrama de Caso de Uso</a></p>
+<h2 id="5-visao-logica">5 Visão Lógica</h2>
+<h3 id="51-visao-geral">5.1 Visão Geral</h3>
+<p><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/estaticos/diagrama_classes.md">Diagrama de Classes</a>
+<img alt="Diagrama de Classes " src="https://i.imgur.com/VyIhd2K.png" /></p>
+<h3 id="52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura">5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura</h3>
+<h4 id="521-diagramas-de-pacotes">5.2.1 Diagramas de Pacotes</h4>
+<p>Diagramas de pacotes são diagramas estruturais usados para mostrar, em uma forma de pacotes, a organização e disposição de vários elementos de modelos. Um pacote é um agrupamento de elementos UML relacionados, como diagramas, documentos, classes ou até mesmo outros pacotes. Na imagem abaixo, representamos o Diagrama de Pacotes Geral da aplicação Triagil:</p>
+<h4 id="diagrama-geral-de-pacotes">Diagrama geral de pacotes</h4>
+<p><img alt="Diagrama de Pacotes Geral" src="https://imgur.com/CYIDJ6i.png" /></p>
+<ul>
+<li>Mais detalhes e restante dos diagramas em: <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/estaticos/diagrama_pacotes.md">Diagramas de Pacotes</a></li>
+</ul>
+<h2 id="6-visao-de-processos">6 Visão de Processos</h2>
+<h3 id="61-diagrama-de-sequencia">6.1 Diagrama de Sequência</h3>
+<p>O diagrama de sequência é uma solução dinâmica de modelagem em UML bastante usada porque incide especificamente sobre linhas da vida, ou os processos e objetos que vivem simultaneamente, e as mensagens trocadas entre eles para desempenhar uma função antes do término da linha da vida.</p>
+<p><strong>Diagrama de Sequência do fluxo principal do Triagil</strong></p>
+<p><img alt="Diagrama de Sequência Fluxo Principal" src="https://imgur.com/ay8IsKs.png" /></p>
+<ul>
+<li>Mais detalhes e restante dos diagramas em: <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/docs/modelagem/diagramas/dinamicos/diagrama_sequencia.md">Diagramas de Sequencia</a></li>
+</ul>
+<h2 id="7-visao-de-implantacao">7 Visão de Implantação</h2>
+<p>O diagrama a seguir mostra como os nós físicos do sistema se comunicam.
+<img alt="implantacao" src="https://imgur.com/Rgrkywn.png" /></p>
+<h2 id="8-visao-da-implementacao">8 Visão da Implementação</h2>
+<h3 id="81-visao-geral">8.1 Visão Geral</h3>
+<p>O padrão arquitetural MVC foi escolhido para ser a estrutura padrão do projeto. O projeto foi dividido em duas camadas: <em>Front-end e Back-end</em>. </p>
+<p>O <em>back-end</em> do Triagil ficou composto por duas camadas: <em>Model</em> e <em>Controller</em>; e o <em>front-end</em> ficou como <em>View</em> do projeto.</p>
+<h3 id="82-camadas">8.2 Camadas</h3>
+<ul>
+<li>
+<p>Front-end: </p>
+<ul>
+<li>
+<p><em><strong>Screens</strong></em>: onde as telas foram desenvolvidas. Possui na maioria das telas, o que a tela tem que conter, criar funções e fazer chamadas e imports, onde estaria a "main" da tela, onde acontece a renderização, quais componentes serão utilizados naquela tela.</p>
+</li>
+<li>
+<p><em><strong>Utils</strong></em>: onde ficam configurações que podem ser úteis e utilizáveis em várias partes do projeto (<em>strings</em>, rotas,etc)</p>
+</li>
+<li>
+<p><em><strong>Reducers</strong></em>: parte do código  responsável por atualizar a <em>store</em>. Define como <em>store</em> vai funcionar. Exemplo: <em>UserReducer</em> vai atualizar o  <em>Store</em> no objeto <em>User</em>. </p>
+</li>
+<li>
+<p><em><strong>Actions</strong></em>: quando disparada, chama o <em>reducer</em> e identifica o precisa ser feito. Instrução sobre qual <em>reducer</em> deve ser ativado, e também carrega a informação que o reducer precisa. </p>
+</li>
+<li>
+<p><em><strong>Containers</strong></em>: envelopam e contém a tela. Responsável por mapear a <em>store</em> para uma tela específica (a partir do método <em>mapStateToProps</em>) e por disparar as <em>actions (mapDispatchToProps)</em>.</p>
+</li>
+<li>
+<p><em><strong>Components</strong></em>: componentes nativos ou desenvolvidos que podem ser usados naquele momento ou futuramente ao sobrescrever o método. Ele pode ser instanciado e tem um código onde os métodos podem ser 
+reutilizados muitas vezes. Todos os métodos  foram desenvolvidos originais específicos para o Triagil.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Back-end: </p>
+<ul>
+<li>
+<p><em><strong>Controllers</strong></em>: manipula os dados e objetos para enviar para o banco de dados.</p>
+</li>
+<li>
+<p><em><strong>Models</strong></em>: onde são definidos todos os atributos das <em>models</em>, ou seja, todas as informações tidas de uma determinada tabela do banco de dados.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="9-visao-de-dados">9 Visão de Dados</h2>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Person.js">Person</a></li>
+</ul>
+<p><img alt="Person" src="https://imgur.com/8gSbJ4g.png" /></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Patient.js">Patient</a></li>
+</ul>
+<p><img alt="Patient" src="https://imgur.com/yXyeDdp.png" /></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/Nurse.js">Nurse</a></li>
+</ul>
+<p><img alt="Nurse" src="https://imgur.com/LAPK5LX.png" /></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/PatientRecord.js">PatientRecord</a></li>
+</ul>
+<p><img alt="patientrecord" src="https://imgur.com/Omi7OyQ.png" /></p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/Back/src/app/models/TriageRecord.js">TriageRecord</a></li>
+</ul>
+<p><img alt="TriageRecord" src="https://imgur.com/yOXv7DD.png" /></p>
+<h2 id="10-tamanho-e-desempenho">10 Tamanho e Desempenho</h2>
+<p>O triagil é uma aplicação mobile com aproximadamente 51,1MB, que foi desenvolvida para ser eficaz e eficiente. Mesmo o produto ainda não estando em ambiente de produção ele foi estruturado para restringir o uso de memória cache, logo não ultiza muito do espaço interno do aparelho do usuário.</p>
+<p>Além disso trabalhamos com requisições de serviços externos que realizam comunicação com o frontend da aplicação, dessa forma, podemos esperar que o desempenho e manutenibilidade sejam garantidos.</p>
+<h2 id="11-qualidade">11 Qualidade</h2>
+<p>A arquitetura utilizada pela equipe contribui com o software em diversos aspectos, como por exemplo a escolha da tecnologia React-Native proporciona o uso enterprise, crescimento exponencial do aplicativo, performance, escalabilidade, testabilidade, interoperabilidade e usabilidade.
+A separação de camadas como propõe o padrão adotado pela equipe ajuda na redução de acoplamento e promove o aumento de coesão nas classes do projeto. Assim, quando o modelo MVC é utilizado, pode facilitar em muito a manutenção do código e sua reutilização em outros projetos.</p>
+<h2 id="12-reutilizacao-de-software">12 Reutilização de software</h2>
+<p>A ideia do reuso é evitar retrabalho no desenvolvimento de um novo projeto, sempre levando em consideração trabalhos anteriores, fazendo com que soluções previamente desenvolvidas sejam aproveitadas e implementadas em novos contextos além de ser considerada uma boa prática de desenvolvimento. Nosso front-end  foi desenvolvido com o propósito de ter a maior quantidade de reutilização possível. Segue abaixo alguns arquivos que foram reutilizados no front-end:</p>
+<ul>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/HospitalLineScreen.js">HospitalLineScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/NursePatientInfoScreen.js">NursePatientInfoScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/NurseTriagePatientScreen.js">NurseTriagePatientScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/ConvulsionTriageScreen.js">ConvulsionTriageScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/DiarrheaTriageScreen.js">DiarrheaTriageScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/FaintingTriageScreen.js">FaintingTriageScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/HeadacheTriageScreen.js">HeadacheTriageScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/SoreThroatTriageScreen.js">SoreThroatTriageScreen.js</a></li>
+<li><a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/blob/master/TriagilApp/src/Screens/Nurse/Triage/TriageClassificationScreen.js">TriageClassificationScreen.js</a></li>
+</ul>
+<p><strong>Histórico de Versão</strong></p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17/11</td>
+<td>1.0.0</td>
+<td>Criação do documento no Pages</td>
+<td>Francisco Heronildo</td>
+</tr>
+<tr>
+<td>18/11</td>
+<td>1.1.0</td>
+<td>Adição do tópico finalidades</td>
+<td>Francisco Heronildo e Débora</td>
+</tr>
+<tr>
+<td>18/11</td>
+<td>1.2.0</td>
+<td>Adição do tópico Escopo</td>
+<td>Nathalia e Miguel</td>
+</tr>
+<tr>
+<td>18/11</td>
+<td>1.3.0</td>
+<td>Adição do tópico  1.5-Visão Geral</td>
+<td>Francisco Heronildo e Débora</td>
+</tr>
+<tr>
+<td>18/11</td>
+<td>1.4.0</td>
+<td>Adição do tópico Definições, Acrônimos e Abreviações</td>
+<td>Lude e Nathalia</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.5.0</td>
+<td>Adição de imagem ao tópico 2.1</td>
+<td>Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.6.0</td>
+<td>Adição do tópico referências</td>
+<td>Vitor Alves e Nathalia</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.6.1</td>
+<td>Corrigindo e adicionando referências bibliográficas</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.7.0</td>
+<td>Acrescentando tópico de tamanho e desempenho</td>
+<td>Francisco Heronildo e Nathalia</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.7.1</td>
+<td>Acrescentando mais uma referência no tópico de referências</td>
+<td>Nathalia</td>
+</tr>
+<tr>
+<td>19/12</td>
+<td>1.8.0</td>
+<td>Adicionando conteúdo no subtópico Tecnologias - Front-End</td>
+<td>Débora Vilela, Miguel Alves e Lude Ribeiro</td>
+</tr>
+<tr>
+<td>19/12</td>
+<td>1.9.0</td>
+<td>Adicionando conteúdo no subtópico Tecnologias - Back-End</td>
+<td>Débora Vilela, Francisco Heronildo e Vitor Alves</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>1.9.1</td>
+<td>Corrigindo versionamento</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>19/11</td>
+<td>2.0.0</td>
+<td>Acrescentando tópico de qualidade</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.1.0</td>
+<td>Adicionando diagrama de  Casos de uso</td>
+<td>Débora, Nathalia, Francisco, Lude, Miguel e Vitor</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.2.0</td>
+<td>Adicionando diagrama geral de pacotes</td>
+<td>Débora, Nathalia, Francisco, Lude, Miguel e Vitor</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.3.0</td>
+<td>Adicionando Arquitetura - front-end</td>
+<td>Miguel, Débora e Lude</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.3.1</td>
+<td>Corrigindo erros ortográficos</td>
+<td>Débora</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.4.0</td>
+<td>Adicionando Arquitetura - back-end</td>
+<td>Francisco, Vitor e Débora</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.5.0</td>
+<td>Adicionando tópico de visão de processos</td>
+<td>Nathalia, Miguel, Lude, Francisco, Vitor e Débora</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.6.0</td>
+<td>Adicionando tópico de visão de dados</td>
+<td>Nathalia, Miguel, Lude, Francisco, Vitor e Débora</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.6.1</td>
+<td>Corrigindo enumeração de tópicos do documento</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.7.0</td>
+<td>Acrescentando tópico de Metas e Restrições da Arquitetura</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.7.1</td>
+<td>Alterando tópico de Tamanho e Desempenho</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.7.2</td>
+<td>Corrigindo enumeração de tópicos do documento</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.8.0</td>
+<td>Acrescentando tópico Visão de Implementação</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>2.9.0</td>
+<td>Acrescentando tópico Visão de Implantação</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>3.0.0</td>
+<td>Acrescentando diagrama no tópico 5.1</td>
+<td>Lude Ribeiro, Nathalia Lorena, Francisco Heronildo, Miguel Alves, Vitor Alves, Débora Vilela</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>3.1.0</td>
+<td>Acrescentando tópico de reutilização de software</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>3.2.0</td>
+<td>Adicionando imagens ao documento</td>
+<td>Débora Vilela e Miguel</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>3.2.1</td>
+<td>Corrigindo tópico de Definições, Acrônimos e Abreviações</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>20/11</td>
+<td>3.2.2</td>
+<td>Acrescentando mais uma referência no tópico de Referências</td>
+<td>Nathalia Lorena</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<p>BARROS, T.; SILVA, M.; ESPÍNOLA,E. <strong>State MVC:</strong> Estendendo o padrao MVC para uso no 
+desenvolvimento de aplicações para dispositivos móveis.Recife, CE. C.E.S.A.R – Centro de Estudos e Sistemas Avanc¸ados do Recife, 2007. </p>
+<p>KRASNER, G. and POPE, S. (1998). <strong>A cookbook for using the model view controller user interface paradigm in smalltalk-80</strong> . In Journal of Object-Orientated Programming,
+volume 1(3), pages 26–49.</p>
+<p>CSS. Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">https://developer.mozilla.org/pt-BR/docs/Web/CSS</a> Acesso em 19 de novembro de 2020.</p>
+<p>Axios. Disponível em: <a href="https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/">https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/</a>. Acesso em 19 de novembro de 2020.</p>
+<p>Node.js. Disponível em: <a href="https://www.devmedia.com.br/guia/node-js/40312">https://www.devmedia.com.br/guia/node-js/40312</a> Acesso em 19 de novembro de 2020.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../padroes/toys/gofsComportamentais/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Toys – Comportamentais
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 UnB Gama - FGA
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

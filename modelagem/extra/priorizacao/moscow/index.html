@@ -1,0 +1,1650 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../../images/icon-color-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.5">
+    
+    
+      
+        <title>MoSCoW - Triagil</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.21aed14c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7C&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="red">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#moscow" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../../.." title="Triagil" class="md-header-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../../../images/icon-white.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Triagil
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              MoSCoW
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Triagil" class="md-nav__button md-logo" aria-label="Triagil">
+      
+  <img src="../../../../images/icon-white.png" alt="logo">
+
+    </a>
+    Triagil
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/" title="Ir ao repositório" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." class="md-nav__link">
+      Início
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    <label class="md-nav__link" for="nav-2">
+      Base
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Base" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/design_sprint/ds/" class="md-nav__link">
+      Design Sprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    <label class="md-nav__link" for="nav-2-2">
+      Requisitos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Requisitos" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Requisitos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-1" type="checkbox" id="nav-2-2-1" >
+    <label class="md-nav__link" for="nav-2-2-1">
+      Pré-Rastriabilidade
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Pré-Rastriabilidade" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Pré-Rastriabilidade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/pre-rastriabilidade/5w2h/" class="md-nav__link">
+      5W2H
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/pre-rastriabilidade/rp/" class="md-nav__link">
+      Rich Picture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/pre-rastriabilidade/causa_e_efeito/" class="md-nav__link">
+      Causa-Efeito
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/pre-rastriabilidade/mapa_mental/" class="md-nav__link">
+      Mapa Mental
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-2" type="checkbox" id="nav-2-2-2" >
+    <label class="md-nav__link" for="nav-2-2-2">
+      Elicitação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Elicitação" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Elicitação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/elicitacao/brainstorming/" class="md-nav__link">
+      Brainstorming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/elicitacao/entrevista/" class="md-nav__link">
+      Entrevista
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/elicitacao/questionario/" class="md-nav__link">
+      Questionário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/elicitacao/storyboard/" class="md-nav__link">
+      Storyboard
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-3" type="checkbox" id="nav-2-2-3" >
+    <label class="md-nav__link" for="nav-2-2-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/priorizacao/first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/priorizacao/moscow/" class="md-nav__link">
+      MoSCoW
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2-4" type="checkbox" id="nav-2-2-4" >
+    <label class="md-nav__link" for="nav-2-2-4">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/modelagem/lexico/" class="md-nav__link">
+      Léxicos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/modelagem/glossario/" class="md-nav__link">
+      Glossário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/modelagem/backlog/" class="md-nav__link">
+      Backlog Inicial
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/requisitos/prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/documentos/plano_custos/" class="md-nav__link">
+      Plano de Custos e Esforços
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/documentos/plano_risco/" class="md-nav__link">
+      Plano de Riscos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+    <label class="md-nav__link" for="nav-2-5">
+      Apresentação
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Apresentação" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Apresentação
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5-1" type="checkbox" id="nav-2-5-1" >
+    <label class="md-nav__link" for="nav-2-5-1">
+      Metodologias
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Metodologias" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-1">
+        <span class="md-nav__icon md-icon"></span>
+        Metodologias
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/apresentacao/metodologia/scrum/" class="md-nav__link">
+      Scrum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/apresentacao/metodologia/xp/" class="md-nav__link">
+      Programação Extrema(XP)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../base/modelagem_bpmn/bpmn/" class="md-nav__link">
+      Modelagem BPMN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    <label class="md-nav__link" for="nav-3">
+      Modelagem
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Modelagem" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Modelagem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" >
+    <label class="md-nav__link" for="nav-3-1">
+      UML – Diagramas Estáticos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Estáticos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Estáticos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/estaticos/diagrama_classes/" class="md-nav__link">
+      Diagrama de Classes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/estaticos/diagrama_pacotes/" class="md-nav__link">
+      Diagrama de Pacotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/estaticos/diagrama_componentes/" class="md-nav__link">
+      Diagrama de Componentes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" >
+    <label class="md-nav__link" for="nav-3-2">
+      UML – Diagramas Dinâmicos
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="UML – Diagramas Dinâmicos" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        UML – Diagramas Dinâmicos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/dinamicos/diagrama_sequencia/" class="md-nav__link">
+      Diagrama de Sequências
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/dinamicos/diagrama_comunicacao/" class="md-nav__link">
+      Diagrama de Comunicação
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/dinamicos/diagrama_atividade/" class="md-nav__link">
+      Diagrama de Atividades
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/dinamicos/diagrama_estado/" class="md-nav__link">
+      Diagrama de Estados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../diagramas/dinamicos/diagrama_use_case/" class="md-nav__link">
+      Diagrama de Caso de Uso
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+    <label class="md-nav__link" for="nav-3-3">
+      Iniciativa Extra
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Iniciativa Extra" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Iniciativa Extra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../backlog/" class="md-nav__link">
+      Backlog do Produto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../prototipo/prototipo_de_alta/" class="md-nav__link">
+      Protótipo de Alta Fidelidade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3-3" type="checkbox" id="nav-3-3-3" checked>
+    <label class="md-nav__link" for="nav-3-3-3">
+      Priorização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Priorização" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Priorização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../first_thing_first/" class="md-nav__link">
+      First Thing First
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MoSCoW
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      MoSCoW
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-a-tecnica-moscow" class="md-nav__link">
+    Sobre a técnica MoSCoW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacao-da-tecnica-no-projeto" class="md-nav__link">
+    Aplicação da técnica no projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos Funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Não Funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    <label class="md-nav__link" for="nav-4">
+      Padrões de Projeto
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Padrões de Projeto" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Padrões de Projeto
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/grasps/grasps/" class="md-nav__link">
+      GRASPs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/gofs/criacionais/" class="md-nav__link">
+      GOF's – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/gofs/estruturais/" class="md-nav__link">
+      GOF's – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/gofs/comportamentais/" class="md-nav__link">
+      GOF's – Comportamentais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" >
+    <label class="md-nav__link" for="nav-4-5">
+      Toys
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Toys" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        <span class="md-nav__icon md-icon"></span>
+        Toys
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/toys/gofsCriacionais/" class="md-nav__link">
+      Toys – Criacionais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/toys/gofsEstruturais/" class="md-nav__link">
+      Toys – Estruturais
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../padroes/toys/gofsComportamentais/" class="md-nav__link">
+      Toys – Comportamentais
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    <label class="md-nav__link" for="nav-5">
+      Arquitetura de Software & Reutilização
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Arquitetura de Software & Reutilização" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Arquitetura de Software & Reutilização
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../arquitetura_software_e_reutilizacao/documento_de_arquitetura/" class="md-nav__link">
+      Documento de Arquitetura
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sobre-a-tecnica-moscow" class="md-nav__link">
+    Sobre a técnica MoSCoW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacao-da-tecnica-no-projeto" class="md-nav__link">
+    Aplicação da técnica no projeto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos Funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos Não Funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    Referências Bibliográficas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/UnBArqDsw/2020.1_G1_Triagil/edit/master/docs/modelagem/extra/priorizacao/moscow.md" title="Editar esta página" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="moscow">MoSCoW</h1>
+<h2 id="introducao">Introdução</h2>
+<p>É uma técnica de priorização utilizada para elencar os requisitos de um projeto de acordo com a sua criticidade e seu valor no negócio. Ajuda a priorizar o escopo de forma a dividir quais tarefas são de extrema importância para o sucesso do projeto e quais poderão ser descartadas caso o projeto sofra mudança de prazo e/ou perda de recursos.</p>
+<h2 id="sobre-a-tecnica-moscow">Sobre a técnica MoSCoW</h2>
+<p>MoSCoW é um acrônimo para as 4 (quatro) categorias de requisitos utilizados na priorização: <strong>M</strong> de <em>must have</em>, <strong>S</strong> de <em>should have</em>, <strong>C</strong> de <em>could have</em> e <strong>W</strong> para <em>won't have</em> ou <em>would like</em>,como comumente é usado. É importante ressaltar que os requisitos usados nessa priorização devem ser independentes, ou seja, não precisam de outros requisitos pré-existentes para serem desenvolvidos.</p>
+<ul>
+<li>
+<p><strong>Must:</strong> São requisitos de extrema importância para o projeto; sem essas funcionalidades, o produto perde sentido e valor. <strong>Têm</strong> que ser implementadas.</p>
+</li>
+<li>
+<p><strong>Should:</strong> São tão importantes quanto Must, mas o nível de criticidade para o projeto é menor, ou seja, se não forem desenvolvidos não haverá perda de valor de negócio. <strong>Devem</strong> ser desenvolvidas posteriormente ao Must.</p>
+</li>
+<li>
+<p><strong>Could:</strong> São requisitos ligados à desejos do cliente, que <strong>poderiam</strong>, mas não precisam ser desenvolvidos. Geralmente estão relacionados à melhora da experiência do usuário. Devem ser implementatos caso haja tempo e recurso disponíveis.</p>
+</li>
+<li>
+<p><strong>Won't/Would Like:</strong> Requisitos colocados nessa categoria não são necessários para o projeto e não geram tanto valor de negócio. Serão desenvolvidos talvez em próximas versões e apenas depois de todos os requisitos das categorias acima serem desenvolvidos. Essa categoria ajuda a diminuir o escopo.</p>
+</li>
+</ul>
+<h2 id="aplicacao-da-tecnica-no-projeto">Aplicação da técnica no projeto</h2>
+<p>Na tabela abaixo, estão ordenados os requisitos elicitados nos documentos <a href="https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/brainstorming.md">Brainstorming</a>, <a href="https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/entrevista.md">Entrevista</a>, <a href="https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/questionario.md">Questionário</a> e <a href="https://unbarqdsw.github.io/2020.1_G1_Triagil/docs/base/requisitos/elicitacao/storyboard.md">Storyboard</a>.</p>
+<h2 id="requisitos-funcionais">Requisitos Funcionais</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Requisitos</th>
+<th align="center">Origem</th>
+<th align="center">Descrição</th>
+<th align="left">Classificação MoSCoW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RF01</td>
+<td align="center">BS01</td>
+<td align="center">O enfermeiro deve visualizar a lista de pacientes "normal" e "preferencial"</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF02</td>
+<td align="center">BS02</td>
+<td align="center">O enfermeiro deve realizar seu cadastro com a chave de acesso do hospital</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF03</td>
+<td align="center">BS04, Q13</td>
+<td align="center">O enfermeiro deve ter acesso ao dados de todos os pacientes</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF04</td>
+<td align="center">BS06, SB07</td>
+<td align="center">A enfermeira deve ter a opção de alterar ou confirmar a classificação do paciente feita por ela</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF05</td>
+<td align="center">BS08</td>
+<td align="center">O enfermeiro deve poder corrigir a classificação do paciente em apenas 1 nível abaixo ou acima da análise que ele fez previamente</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF06</td>
+<td align="center">BS09, Q03</td>
+<td align="center">O enfermeiro deve cadastrar novos pacientes</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF07</td>
+<td align="center">BS13</td>
+<td align="center">O enfermeiro tem acesso à parte de priorização da triagem</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF08</td>
+<td align="center">BS20, Q04, SB01</td>
+<td align="center">O paciente pode se cadastrar no aplicativo a qualquer momento</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF09</td>
+<td align="center">BS21</td>
+<td align="center">O login do paciente para entrar na fila do hospital só pode ser feito ao entrar na rede de hospital</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF10</td>
+<td align="center">BS24</td>
+<td align="center">O sistema Triágil deve enviar ao hospital atualização constante da fila de pacientes de acordo com os níveis de classificação</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RF11</td>
+<td align="center">ENT01</td>
+<td align="center">O aplicativo deve possuir uma fila</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF12</td>
+<td align="center">ENT03</td>
+<td align="center">O aplicativo deve apresentar fila ou filas de triagem para o/a enfermeiro(a)</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF13</td>
+<td align="center">ENT04</td>
+<td align="center">O aplicativo deve possuir uma aba com informações consideradas essenciaIs pelos profissionais da saúde</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF14</td>
+<td align="center">ENT05</td>
+<td align="center">O aplicativo deve apresentar o histórico médico do paciente</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RF15</td>
+<td align="center">Q01</td>
+<td align="center">O enfermeiro deve realizar cadastro com vinculação de algum hospital</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF16</td>
+<td align="center">Q02</td>
+<td align="center">O enfermeiro deve consultar pacientes já cadastrados</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF17</td>
+<td align="center">Q05</td>
+<td align="center">O sistema deve autenticar os dados enfermeiro e do hospital</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RF18</td>
+<td align="center">SB08</td>
+<td align="center">O enfermeiro deve alterar a posição do paciente na fila</td>
+<td align="left">MUST</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requisitos-nao-funcionais">Requisitos Não Funcionais</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Requisitos</th>
+<th align="center">Origem</th>
+<th align="center">Descrição</th>
+<th align="left">Classificação MoSCoW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">RNF01</td>
+<td align="center">BS03</td>
+<td align="center">O sistema Triagil deve guardar o histórico de enferemiros que realizaram a triagem do dia</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RNF02</td>
+<td align="center">BS05, Q06, SB05</td>
+<td align="center">O sistema Triagil deve classificar de acordo com o protocolo de Manchester</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF03</td>
+<td align="center">BS07, Q07, SB06</td>
+<td align="center">O sistema Tragil não deve tirar a autonomia do enfermeiro no processo de triagem</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF04</td>
+<td align="center">BS10</td>
+<td align="center">O sistema Triagil deve atender aos hospitais públicos e privados</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RNF05</td>
+<td align="center">BS11</td>
+<td align="center">Os dados da triagem devem chegar sem alteração para o médico, de forma a evitar repetição de perguntas</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RNF06</td>
+<td align="center">BS12</td>
+<td align="center">O enfermeiro deve ser o centro do sistema</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF07</td>
+<td align="center">BS14</td>
+<td align="center">O sistema Triagil deve verificar se o paciente está cadastrado no sistema</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF08</td>
+<td align="center">BS15, SB02, SB03</td>
+<td align="center">O sistema Triagil deve confirmar os dados do paciente no banco de dados</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF09</td>
+<td align="center">BS16, Q11</td>
+<td align="center">O hospital deve ter uma ligação ao banco externo do Triagil</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF10</td>
+<td align="center">BS17</td>
+<td align="center">O sistema Triágil deve verificar o vínculo entre enfermeiro e hospital</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF11</td>
+<td align="center">BS18</td>
+<td align="center">O hospital deve enviar dados dos enfermeiros para nosso sistema</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF12</td>
+<td align="center">BS19</td>
+<td align="center">O sistema deve ser unificado</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RNF13</td>
+<td align="center">BS22</td>
+<td align="center">O acesso à rede do hospital deve ser feito por um código de acesso</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF14</td>
+<td align="center">BS23</td>
+<td align="center">O sistema deve diferenciar oS acessos aS funcionalidades de acordo com o login de paciente e enfermeiro</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF15</td>
+<td align="center">BS25</td>
+<td align="center">O aplicativo pode ser customizado de acordo com o hospital</td>
+<td align="left">COULD</td>
+</tr>
+<tr>
+<td align="center">RNF16</td>
+<td align="center">ENT02</td>
+<td align="center">O aplicativo deve possuir informações persistentes do paciente</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF17</td>
+<td align="center">ENT06, Q12</td>
+<td align="center">O sistema deve ser de fácil adaptação</td>
+<td align="left">SHOULD</td>
+</tr>
+<tr>
+<td align="center">RNF18</td>
+<td align="center">Q08</td>
+<td align="center">O sistema deve ser seguro</td>
+<td align="left">MUST</td>
+</tr>
+<tr>
+<td align="center">RNF19</td>
+<td align="center">Q09</td>
+<td align="center">O sistema deve ter uma boa usabilidade</td>
+<td align="left">COULD</td>
+</tr>
+<tr>
+<td align="center">RNF20</td>
+<td align="center">Q10</td>
+<td align="center">O sistema deve ter alta disponibilidade</td>
+<td align="left">COULD</td>
+</tr>
+<tr>
+<td align="center">RNF21</td>
+<td align="center">SB04</td>
+<td align="center">O Triagil deve ser associado a rede do hospital</td>
+<td align="left">MUST</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Histórico de versões</strong></p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15/09/2020</td>
+<td>1.0.0</td>
+<td>Criação do documento na wiki</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>16/09/2020</td>
+<td>1.1.0</td>
+<td>Adição dos tópicos expositivos</td>
+<td>Débora Vilela</td>
+</tr>
+<tr>
+<td>16/09/2020</td>
+<td>1.2.0</td>
+<td>Adição das tabelas classificadas pelo MoSCoW</td>
+<td>Nathalia Lorena</td>
+</tr>
+<tr>
+<td>28/09/2020</td>
+<td>1.2.1</td>
+<td>Correções dos links dos rastros</td>
+<td>Francisco e Miguel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<p>Framework de priorização: MoSCoW. Disponível em: https://vidadeproduto.com.br/framework-moscow/ Acesso em 16 de setembro de 2020.</p>
+<p>Priorizando Backlog com a Técnica MoSCoW. Disponível em: https://cafecomscrum.com/2015/11/07/priorizando-backlog-com-a-tecnica-moscow/ Acesso em 16 de setembro de 2020. </p>
+<p>Técnica MoSCoW – o que é? Vantagens e desvantagens em utilizar. Disponível em: https://www.linkedin.com/pulse/t%C3%A9cnica-moscow-o-que-%C3%A9-vantagens-e-desvantagens-em-felipe Acesso em 16 de setembro de 2020</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../first_thing_first/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                First Thing First
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../../../padroes/grasps/grasps/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                GRASPs
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 UnB Gama - FGA
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
