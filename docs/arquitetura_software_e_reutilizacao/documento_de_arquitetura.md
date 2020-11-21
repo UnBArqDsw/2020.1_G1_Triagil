@@ -12,12 +12,12 @@ Este documento possui o objetivo de apresentar as estruturas arquiteturais que f
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
-API: Application Programming Interface (Interface de Programação de Aplicativos)
-MVC: Model-View-Controller
-App: Application (Aplicativo)
-Backend: Possibilita o apoio e funcionamento às ações do usuário da máquina.
-Frontend: Parte da aplicação que interage diretamente com o usuário.
-Triagil: Nome dado ao aplicativo desenvolvido nesse projeto.
+* **API:** Application Programming Interface (Interface de Programação de Aplicativos).
+* **MVC:** Model-View-Controller.
+* **App:** Application (Aplicativo)
+* **Back-end:** Possibilita o apoio e funcionamento às ações do usuário da máquina.
+* **Front-end:** Parte da aplicação que interage diretamente com o usuário.
+* **Triagil:** Nome dado ao aplicativo desenvolvido nesse projeto.
 
 ### 1.4 Referências
 
@@ -290,7 +290,7 @@ A ideia do reuso é evitar retrabalho no desenvolvimento de um novo projeto, sem
 | 18/11 | 1.1.0 | Adição do tópico finalidades | Francisco Heronildo e Débora| 
 | 18/11 | 1.2.0 | Adição do tópico Escopo | Nathalia e Miguel| 
 | 18/11 | 1.3.0 | Adição do tópico  1.5-Visão Geral | Francisco Heronildo e Débora| 
-| 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações  | Lude e Nathalia| 
+| 18/11 | 1.4.0 | Adição do tópico Definições, Acrônimos e Abreviações | Lude e Nathalia| 
 |19/11 | 1.5.0| Adição de imagem ao tópico 2.1 | Débora Vilela, Francisco Heronildo, Vitor Alves, Miguel Alves e Lude Ribeiro |
 |19/11 | 1.6.0| Adição do tópico referências | Vitor Alves e Nathalia |
 |19/11 | 1.6.1| Corrigindo e adicionando referências bibliográficas| Débora Vilela |
@@ -316,6 +316,7 @@ A ideia do reuso é evitar retrabalho no desenvolvimento de um novo projeto, sem
 |20/11|3.0.0| Acrescentando diagrama no tópico 5.1| Lude Ribeiro, Nathalia Lorena, Francisco Heronildo, Miguel Alves, Vitor Alves, Débora Vilela |
 |20/11|3.1.0| Acrescentando tópico de reutilização de software| Nathalia Lorena |
 |20/11| 3.2.0| Adicionando imagens ao documento| Débora Vilela e Miguel |
+|20/11| 3.2.1| Corrigindo tópico de Definições, Acrônimos e Abreviações | Débora Vilela e Miguel |
 
 
 ## Referências Bibliográficas
