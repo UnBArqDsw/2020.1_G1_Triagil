@@ -1,4 +1,4 @@
-## Como contribuir para a documentação do Triagil
+## Como contribuir para o Triagil
 
 * Clone o repositório: `git clone https://github.com/UnBArqDsw/2020.1_G1_Triagil.git`
 * Abra os arquivos: `cd Documentos/GitHub/2020.1_G1_Triagil/docs `
@@ -13,7 +13,8 @@ Todas as Issues devem seguir o nosso **_Issue Template_** disponível no reposit
 
 #### Braches
 
-A brach `master` é apenas uma versão estável mais recente. Todos o desenvolvimento deve ser feito em braches específicas. Depois de clonar o repositório, crie sua Branch relacionado a Issue.
+A brach `master` é apenas uma versão estável mais recente, enquanto a `devel` é um ambiente de desnvolvimento da aplicação.
+Todos o desenvolvimento deve ser feito em braches específicas. Depois de clonar o repositório, crie sua Branch relacionado a Issue.
 
 * Devem ser compostas pelo nome dado a issue;
 * Devem ser compostas por letras minúsculas;
@@ -26,7 +27,7 @@ A brach `master` é apenas uma versão estável mais recente. Todos o desenvolvi
 #### Commits
 
 * Os _Commits_ devem ser escritos em português do Brasil;
-* Devem seguir a forma nominal do _gerúndio_ ou _particípio_;
+* Devem seguir a forma nominal do _gerúndio_;
 * Devem ser uma mesagem curta e objetiva;
 * Devem ser da seguinte forma:  ` Mensagem `.
 
@@ -35,5 +36,6 @@ A brach `master` é apenas uma versão estável mais recente. Todos o desenvolvi
 
 #### Pull Requests
 
-* No repositório da documentação, certifique-se de sempre criar seu _Pull Request_ para fundir com a branch `master`;
+* Na parte de documentação, certifique-se de sempre criar seu _Pull Request_ para fundir com a branch `master`;
+* Na parte de código, certifique-se de sempre criar seu _Pull Request_ para fundir com a branch `devel`;
 * Ao criar o seu _Pull Request_, não se esqueça de seguir nosso **_Pull Request Template_** disponível no repositório.
